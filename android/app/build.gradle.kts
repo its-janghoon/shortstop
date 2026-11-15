@@ -67,6 +67,8 @@ android {
         unitTests.isIncludeAndroidResources = true
         unitTests.all {
             it.systemProperty("shortstop.shared", sharedDir.asFile.absolutePath)
+            // ./gradlew testDebugUnitTest -Pshots=<dir> renders the screens to PNG (ShotsTest).
+            it.systemProperty("shortstop.shots", providers.gradleProperty("shots").getOrElse(""))
         }
     }
 

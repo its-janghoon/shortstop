@@ -48,6 +48,18 @@ class MainScreenTest {
     }
 
     @Test
+    fun removeAnimationsJumpsStraightToTheEndOfThePlay() {
+        val ctx = androidx.test.core.app.ApplicationProvider.getApplicationContext<android.content.Context>()
+        android.provider.Settings.Global.putFloat(ctx.contentResolver, android.provider.Settings.Global.ANIMATOR_DURATION_SCALE, 0f)
+        val r = runBlocking { TestShared.engine.analyze(Input(examples.first { it.id == "grandkid" }.text)) }
+        var seen = -1f
+        compose.mainClock.autoAdvance = false
+        compose.setContent { seen = rememberPlayClock(r).value }
+        compose.mainClock.advanceTimeByFrame()
+        assertEquals(Play(r).end, seen, 1e-3f)
+    }
+
+    @Test
     fun resultShowsVerdictKeptListReceiptAndOneActionButton() {
         val ex = examples.first { it.id == "bank-locked" }
         val r = runBlocking { TestShared.engine.analyze(Input(ex.text)) }
