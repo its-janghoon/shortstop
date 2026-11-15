@@ -14,6 +14,8 @@ export interface WebConfig {
   projectId: string;
   appId: string;
   recaptchaSiteKey?: string;
+  /** Use an App Check debug token (local testing only). */
+  appCheckDebug?: boolean;
 }
 
 export function configFromEnv(env: Record<string, string | undefined>): WebConfig | null {
@@ -23,6 +25,7 @@ export function configFromEnv(env: Record<string, string | undefined>): WebConfi
     projectId: env.VITE_FIREBASE_PROJECT_ID ?? "",
     appId: env.VITE_FIREBASE_APP_ID ?? "",
     recaptchaSiteKey: env.VITE_RECAPTCHA_SITE_KEY,
+    appCheckDebug: env.VITE_APPCHECK_DEBUG === "1",
   };
   return c.apiKey && c.projectId && c.appId ? c : null;
 }
@@ -52,21 +55,24 @@ export async function sha256(s: string): Promise<string> {
 export async function connect(cfg: WebConfig): Promise<Backend> {
   const app: FirebaseApp = initializeApp(cfg);
 
-  if (!cfg.recaptchaSiteKey) {
-    // Judges may run with a debug token; see TESTING.md.
-    (self as unknown as { FIREBASE_APPCHECK_DEBUG_TOKEN?: boolean | string }).FIREBASE_APPCHECK_DEBUG_TOKEN ??= true;
+  if (cfg.recaptchaSiteKey || cfg.appCheckDebug) {
+    if (!cfg.recaptchaSiteKey) {
+      // Local runs only: needs a debug token registered in the console. See TESTING.md.
+      (self as unknown as { FIREBASE_APPCHECK_DEBUG_TOKEN?: boolean | string }).FIREBASE_APPCHECK_DEBUG_TOKEN ??= true;
+    }
+    initializeAppCheck(app, {
+      provider: new ReCaptchaEnterpriseProvider(cfg.recaptchaSiteKey || "debug"),
+      isTokenAutoRefreshEnabled: true,
+    });
   }
-  initializeAppCheck(app, {
-    provider: new ReCaptchaEnterpriseProvider(cfg.recaptchaSiteKey ?? "debug"),
-    isTokenAutoRefreshEnabled: true,
-  });
 
-  await signInAnonymously(getAuth(app)).catch(() => undefined);
+  const soon = <T,>(p: Promise<T>, ms = 6000) => Promise.race([p, new Promise<undefined>((r) => setTimeout(() => r(undefined), ms))]);
+  await soon(signInAnonymously(getAuth(app)).catch(() => undefined));
 
   const rc = getRemoteConfig(app);
   rc.settings.minimumFetchIntervalMillis = 60 * 60 * 1000;
   rc.defaultConfig = Object.fromEntries(Object.entries(defaults).filter(([k]) => !k.startsWith("$"))) as Record<string, string | number | boolean>;
-  await fetchAndActivate(rc).catch(() => undefined);
+  await soon(fetchAndActivate(rc).catch(() => undefined));
   const config = {
     escalate_below_confidence: getValue(rc, "escalate_below_confidence").asNumber(),
     on_device_max_chars: getValue(rc, "on_device_max_chars").asNumber(),
@@ -76,11 +82,21 @@ export async function connect(cfg: WebConfig): Promise<Backend> {
   };
 
   const ai = getAI(app, { backend: new GoogleAIBackend() });
+  type DeviceStatus = Awaited<ReturnType<Backend["onDeviceStatus"]>>;
+  const lm = (self as unknown as { LanguageModel?: { availability: (o?: unknown) => Promise<string> } }).LanguageModel;
+  const device: DeviceStatus = lm
+    ? (((await soon(
+        lm
+          .availability({ expectedInputs: [{ type: "text", languages: ["en"] }], expectedOutputs: [{ type: "text", languages: ["en"] }] })
+          .catch(() => "unavailable"),
+        3000,
+      )) ?? "unavailable") as DeviceStatus)
+    : "unavailable";
   const generationConfig = { responseMimeType: "application/json", responseJsonSchema: responseSchema };
   const triageModel = getGenerativeModel(ai, {
     mode: config.strict_on_device ? InferenceMode.ONLY_ON_DEVICE : InferenceMode.PREFER_ON_DEVICE,
     onDeviceParams: {
-      createOptions: { expectedInputs: [{ type: "text" }, { type: "image" }] } as never,
+      createOptions: { expectedInputs: [{ type: "text", languages: ["en"] }, { type: "image" }], expectedOutputs: [{ type: "text", languages: ["en"] }] } as never,
       promptOptions: { responseConstraint: responseSchema },
     },
     inCloudParams: { model: config.cloud_model, generationConfig },
@@ -88,7 +104,7 @@ export async function connect(cfg: WebConfig): Promise<Backend> {
   const photoModel = getGenerativeModel(ai, {
     mode: InferenceMode.ONLY_ON_DEVICE,
     onDeviceParams: {
-      createOptions: { expectedInputs: [{ type: "text" }, { type: "image" }] } as never,
+      createOptions: { expectedInputs: [{ type: "text", languages: ["en"] }, { type: "image" }], expectedOutputs: [{ type: "text", languages: ["en"] }] } as never,
       promptOptions: { responseConstraint: responseSchema },
     },
   });
@@ -106,7 +122,14 @@ export async function connect(cfg: WebConfig): Promise<Backend> {
   };
 
   const models: Models = {
-    triage: async (prompt, image) => (image ? call(photoModel, [prompt, await blobPart(image)]) : call(triageModel, [prompt])),
+    triage: async (prompt, image) => {
+      if (image) {
+        if (device !== "available") throw new Error("on-device model not ready");
+        return call(photoModel, [prompt, await blobPart(image)]);
+      }
+      // If the on-device model is not ready, do not wait for a download; go to the cloud (masked text only).
+      return call(device === "available" || config.strict_on_device ? triageModel : deepModel, [prompt]);
+    },
     deep: (prompt) => call(deepModel, [prompt]),
   };
 
@@ -122,10 +145,6 @@ export async function connect(cfg: WebConfig): Promise<Backend> {
       // Only the hash of the site name is stored. No message text, no user data.
       await setDoc(doc(db, "reports", await sha256(domain)), { count: increment(1), last: serverTimestamp() }, { merge: true });
     },
-    onDeviceStatus: async () => {
-      const lm = (self as unknown as { LanguageModel?: { availability: (o?: unknown) => Promise<string> } }).LanguageModel;
-      if (!lm) return "unavailable";
-      return (await lm.availability().catch(() => "unavailable")) as Awaited<ReturnType<Backend["onDeviceStatus"]>>;
-    },
+    onDeviceStatus: async () => device,
   };
 }

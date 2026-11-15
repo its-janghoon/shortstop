@@ -50,9 +50,10 @@ export async function mount(root: HTMLElement, opts: { initialText?: string } = 
     $("#status span").textContent = s.text + extra;
   };
   const cfg = configFromEnv(import.meta.env);
+  compose();
   try {
     backend = cfg ? await connect(cfg) : undefined;
-    setStatus(backend ? await backend.onDeviceStatus() : "rules");
+    setStatus(backend ? await Promise.race([backend.onDeviceStatus(), new Promise<"unavailable">((r) => setTimeout(() => r("unavailable"), 3000))]) : "rules");
   } catch {
     setStatus("rules");
   }
@@ -157,7 +158,6 @@ export async function mount(root: HTMLElement, opts: { initialText?: string } = 
     }
   }
 
-  compose();
   if (draft) void run();
   return {
     run,
