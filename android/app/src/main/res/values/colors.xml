@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="grass">#FF0F3D2A</color>
+    <color name="chalk">#FFF4F1E6</color>
+    <color name="dirt">#FFC98A52</color>
+    <color name="ink">#FF0B1A12</color>
+</resources>
