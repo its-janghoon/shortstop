@@ -1,0 +1,9 @@
+.gradle/
+.kotlin/
+build/
+local.properties
+*.iml
+.idea/
+captures/
+# Firebase config for this app. Fetch it with the Firebase CLI (see README).
+app/google-services.json
