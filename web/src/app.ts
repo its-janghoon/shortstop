@@ -2,104 +2,169 @@ import examples from "../../shared/examples.json";
 import { analyze, NeedsOnDeviceError } from "../../engine/src/engine";
 import { registrable } from "../../engine/src/links";
 import { configFromEnv, connect, type Backend } from "../../engine/src/firebase";
-import { renderResult } from "./ui";
+import { esc, fieldHtml, ICONS, icon, phoneResultHtml } from "./ui";
 
-const STATUS: Record<string, string> = {
-  available: "On-device AI is ready",
-  downloadable: "On-device AI can be downloaded",
-  downloading: "On-device AI is downloading",
-  unavailable: "No on-device AI here, the cloud will be used with masked text",
-  rules: "AI not set up. Rules only",
+const STATUS: Record<string, { text: string; tone: "ok" | "warn" | "off" }> = {
+  available: { text: "Gemini Nano on this device", tone: "ok" },
+  downloadable: { text: "On-device model can be downloaded", tone: "warn" },
+  downloading: { text: "On-device model downloading", tone: "warn" },
+  unavailable: { text: "No on-device model · cloud sees masked text", tone: "warn" },
+  rules: { text: "AI not set up · rules only", tone: "off" },
 };
+
+const IDLE_FIELD = `
+  <div class="play-head"><h3>The play</h3><p class="big">Every check starts on your device.</p></div>
+  <div class="diamond idle"><svg viewBox="0 0 760 470" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+    <path d="M380 440 L618 236 L380 32 L142 236 Z" fill="rgba(201,138,82,.10)" stroke="rgba(255,255,255,.3)" stroke-width="3"/>
+    <path d="M380 440 L740 130 M380 440 L20 130" stroke="rgba(255,255,255,.12)" stroke-width="3"/>
+    <line class="wall" x1="470" y1="40" x2="470" y2="430"/>
+    <text x="478" y="58" class="lbl cloudc">MASKED ONLY</text><text x="40" y="58" class="lbl">YOUR DEVICE</text><text x="720" y="58" text-anchor="end" class="lbl cloudc">CLOUD</text>
+    <circle cx="262" cy="196" r="34" fill="var(--chalk)"/><text x="262" y="202" text-anchor="middle" class="base">SS</text>
+    <text x="262" y="254" text-anchor="middle" class="t">Small model on your device</text><text x="262" y="274" text-anchor="middle" class="sub">catches it first, hides your secrets</text>
+    <circle cx="618" cy="236" r="30" fill="var(--cloud)"/><text x="618" y="242" text-anchor="middle" class="base dark">1B</text>
+    <text x="618" y="290" text-anchor="middle" class="t">Big model in the cloud</text><text x="618" y="310" text-anchor="middle" class="sub">only when unsure, only masked text</text>
+  </svg></div>
+  <div class="sent home"><em>${icon("home")}Try an example</em>Pick one on the left, or paste your own text.</div>`;
 
 /** Mount the checker into a page. Used by the web app and the extension side panel. */
 export async function mount(root: HTMLElement, opts: { initialText?: string } = {}) {
-  root.innerHTML = `
-    <header><h1>Shortstop</h1><p class="tag">Small model first. Your secrets stay home.</p></header>
-    <p class="status" id="status">Starting…</p>
-    <label for="input" class="sr">Message to check</label>
-    <textarea id="input" rows="6" placeholder="Paste a text, e-mail or link. Or drop a screenshot."></textarea>
-    <div class="row">
-      <button id="check" class="primary">Check</button>
-      <button id="photo" type="button">Add screenshot</button>
-      <input id="file" type="file" accept="image/*" hidden />
-      <span id="photoName" class="muted"></span>
-    </div>
-    <div class="examples" aria-label="Examples">
-      ${examples.examples.map((e) => `<button class="ex ex-${e.kind}" data-id="${e.id}">${e.label}</button>`).join("")}
-    </div>
-    <div id="out"></div>`;
+  root.innerHTML = `${ICONS}
+  <div class="stripes"></div><div class="lights"></div>
+  <div class="wrap">
+    <header class="brand"><div class="logo"><i></i></div><div><h1>Shortstop</h1><p>Small model first. Your secrets stay home.</p></div>
+      <div class="pill off" id="status"><b></b><span>Starting…</span></div></header>
+    <div class="phone"><div class="screen" id="screen"></div></div>
+    <section class="field" id="field">${IDLE_FIELD}</section>
+  </div>`;
 
-  const $ = <T extends HTMLElement>(id: string) => root.querySelector<T>(`#${id}`)!;
-  const input = $<HTMLTextAreaElement>("input");
-  const out = $("out");
+  const $ = <T extends HTMLElement>(sel: string) => root.querySelector<T>(sel)!;
+  const screen = $("#screen");
+  const field = $("#field");
   let image: Blob | undefined;
-  if (opts.initialText) input.value = opts.initialText;
+  let draft = opts.initialText ?? "";
 
   let backend: Backend | undefined;
+  const setStatus = (key: string, extra = "") => {
+    const s = STATUS[key]!;
+    $("#status").className = `pill ${s.tone}`;
+    $("#status span").textContent = s.text + extra;
+  };
   const cfg = configFromEnv(import.meta.env);
   try {
     backend = cfg ? await connect(cfg) : undefined;
-    $("status").textContent = backend ? STATUS[await backend.onDeviceStatus()]! : STATUS.rules!;
-  } catch (e) {
-    $("status").textContent = `${STATUS.rules} (${(e as Error).message})`;
+    setStatus(backend ? await backend.onDeviceStatus() : "rules");
+  } catch {
+    setStatus("rules");
   }
 
-  const setImage = (b?: Blob, name = "") => {
+  function compose() {
+    screen.className = "screen compose";
+    screen.innerHTML = `
+      <div class="from">Check a message</div>
+      <label for="input" class="sr">Message to check</label>
+      <textarea id="input" placeholder="Paste a text, e-mail or link.">${esc(draft)}</textarea>
+      <div class="row">
+        <button id="photo" type="button" class="ghost">${icon("image")}<span id="photoName">${image ? "Screenshot added" : "Add screenshot"}</span></button>
+        <input id="file" type="file" accept="image/*" hidden />
+      </div>
+      <h4 class="ex-h">Or try one</h4>
+      <div class="examples">${examples.examples
+        .map((e) => `<button class="ex ex-${e.kind}" data-id="${e.id}">${icon(e.kind === "safe" ? "check" : e.kind === "mask" ? "lock" : "alert")}${e.label}</button>`)
+        .join("")}</div>
+      <button id="check" class="btn">Check it</button>`;
+    const input = $<HTMLTextAreaElement>("#input");
+    input.oninput = () => (draft = input.value);
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) void run();
+    });
+    input.addEventListener("paste", (e) => {
+      const f = [...(e.clipboardData?.files ?? [])].find((x) => x.type.startsWith("image/"));
+      if (f) setImage(f);
+    });
+    $("#photo").onclick = () => $<HTMLInputElement>("#file").click();
+    $<HTMLInputElement>("#file").onchange = (ev) => setImage((ev.target as HTMLInputElement).files?.[0]);
+    screen.querySelectorAll<HTMLButtonElement>(".ex").forEach((b) => {
+      b.onclick = () => {
+        draft = examples.examples.find((e) => e.id === b.dataset.id)!.text;
+        image = undefined;
+        void run(b.textContent ?? "");
+      };
+    });
+    $("#check").onclick = () => void run();
+  }
+
+  function setImage(b?: Blob) {
     image = b;
-    $("photoName").textContent = b ? name || "screenshot" : "";
-  };
-  $("photo").onclick = () => $<HTMLInputElement>("file").click();
-  $<HTMLInputElement>("file").onchange = (ev) => {
-    const f = (ev.target as HTMLInputElement).files?.[0];
-    setImage(f, f?.name);
-  };
+    const n = root.querySelector("#photoName");
+    if (n) n.textContent = b ? "Screenshot added" : "Add screenshot";
+  }
+
   root.addEventListener("dragover", (e) => e.preventDefault());
   root.addEventListener("drop", (e) => {
     e.preventDefault();
     const f = e.dataTransfer?.files[0];
-    if (f?.type.startsWith("image/")) setImage(f, f.name);
-  });
-  input.addEventListener("paste", (e) => {
-    const f = [...(e.clipboardData?.files ?? [])].find((x) => x.type.startsWith("image/"));
-    if (f) setImage(f, "pasted screenshot");
-  });
-
-  root.querySelectorAll<HTMLButtonElement>(".ex").forEach((b) => {
-    b.onclick = () => {
-      input.value = examples.examples.find((e) => e.id === b.dataset.id)!.text;
-      setImage();
+    if (f?.type.startsWith("image/")) {
+      setImage(f);
       void run();
-    };
+    }
   });
 
-  async function run() {
-    const text = input.value;
-    if (!text.trim() && !image) return;
-    out.innerHTML = `<p class="checking">Checking…</p>`;
+  async function run(label = "") {
+    if (!draft.trim() && !image) return;
+    screen.className = "screen checking";
+    screen.innerHTML = `<div class="from">Checking…</div><div class="msg pending">${esc(draft.slice(0, 400))}</div><div class="spinner" aria-label="Checking"></div>`;
     try {
       const r = await analyze(
-        { text, ...(image ? { image } : {}) },
+        { text: draft, ...(image ? { image } : {}) },
         backend ? { models: backend.models, config: backend.config, isReported: backend.isReported } : {},
       );
-      out.innerHTML = renderResult(r);
-      if (backend && r.verdict === "scam" && r.links.length) {
-        const btn = document.createElement("button");
-        btn.textContent = "Report this site";
-        btn.onclick = async () => {
-          for (const l of r.links) if (l.reasons.length) await backend!.report(registrable(l.host));
-          btn.textContent = "Reported. Thank you";
-          btn.disabled = true;
-        };
-        out.querySelector(".card")?.append(btn);
+      const from = label ? `Example · ${label.trim()}` : image ? "Your screenshot" : "Your message";
+      const { html, play } = phoneResultHtml(r, from);
+      screen.className = "screen result";
+      screen.innerHTML = `${html}
+        <div class="actions">
+          ${backend && r.verdict === "scam" && r.links.some((l) => l.reasons.length) ? `<button id="report" class="ghost">${icon("alert")}Report this site</button>` : ""}
+          <button id="again" class="btn">${icon("back")}Check another</button>
+        </div>`;
+      field.innerHTML = fieldHtml(r, play);
+      // Restart CSS animations on every check.
+      for (const el of [screen, field]) {
+        el.classList.remove("go");
+        void el.offsetWidth;
+        el.classList.add("go");
       }
+      screen.querySelectorAll<HTMLElement>(".sec .raw").forEach((raw) =>
+        raw.addEventListener("animationend", () => raw.parentElement!.classList.add("done"), { once: true }),
+      );
+      $("#again").onclick = () => {
+        image = undefined;
+        compose();
+        field.innerHTML = IDLE_FIELD;
+      };
+      const rep = root.querySelector<HTMLButtonElement>("#report");
+      if (rep)
+        rep.onclick = async () => {
+          for (const l of r.links) if (l.reasons.length) await backend!.report(registrable(l.host));
+          rep.innerHTML = `${icon("check")}Reported. Thank you`;
+          rep.disabled = true;
+        };
     } catch (e) {
-      out.innerHTML = `<p class="error">${e instanceof NeedsOnDeviceError ? e.message : `Could not check: ${(e as Error).message}`}</p>`;
+      compose();
+      screen.insertAdjacentHTML(
+        "afterbegin",
+        `<p class="error">${esc(e instanceof NeedsOnDeviceError ? e.message : `Could not check: ${(e as Error).message}`)}</p>`,
+      );
     }
   }
-  $("check").onclick = () => void run();
-  input.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) void run();
-  });
-  return { run, setText: (t: string) => ((input.value = t), run()) };
+
+  compose();
+  if (draft) void run();
+  return {
+    run,
+    setText: (t: string) => {
+      draft = t;
+      image = undefined;
+      return run();
+    },
+  };
 }

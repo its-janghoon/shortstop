@@ -97,6 +97,8 @@ export async function analyze(input: Input, deps: Deps = {}): Promise<Result> {
     }
   }
 
+  let triage: ModelAnswer | undefined;
+  let triageWhere: "on_device" | "in_cloud" = "on_device";
   if (!deps.models) {
     const a = rulesAnswer(links, words);
     return finish(a, "rules");
@@ -104,8 +106,6 @@ export async function analyze(input: Input, deps: Deps = {}): Promise<Result> {
   const models = deps.models;
 
   // 2. Triage. Prefer on device. Photos must stay on device.
-  let triage: ModelAnswer | undefined;
-  let triageWhere: "on_device" | "in_cloud" = "on_device";
   const parts = input.image ? [masked.text] : chunks(masked.text, cfg.on_device_max_chars);
   const names: string[] = [];
   for (const part of parts) {
@@ -193,6 +193,7 @@ export async function analyze(input: Input, deps: Deps = {}): Promise<Result> {
       signals,
       action,
       decidedBy,
+      ...(triage ? { firstLook: { where: triageWhere, verdict: triage.verdict, confidence: triage.confidence } } : {}),
       links,
       masked: masked.text,
       mask: masked.entries,

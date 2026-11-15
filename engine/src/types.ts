@@ -65,6 +65,8 @@ export interface Result {
   signals: string[];
   action: string;
   decidedBy: Where;
+  /** The triage (first look) answer, if a model ran. */
+  firstLook?: { where: Exclude<Where, "rules">; verdict: Verdict; confidence: number };
   links: LinkFinding[];
   masked: string;
   mask: MaskEntry[];
