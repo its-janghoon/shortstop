@@ -24,7 +24,7 @@ Every answer comes with a **receipt**: where each step ran, how long it took, an
 | Web app (hosted demo) | `web/` |
 | Chrome extension (right-click check, side panel, paste guard) | `extension/` |
 | Prompts, answer schema, config defaults, demo examples | `shared/` (read by every platform) |
-| Android app | `android/` (coming) |
+| Android app (share target, Gemini Nano via ML Kit Prompt API) | `android/` |
 
 ## Firebase
 
@@ -50,6 +50,25 @@ yarn build             # dist/web and dist/extension
 Without a Firebase config the app runs in rules-only mode.
 
 Load the extension: `chrome://extensions` → Developer mode → Load unpacked → `dist/extension`.
+
+## Android
+
+Kotlin + Jetpack Compose, `minSdk` 26 (needed by `firebase-ai-ondevice`), `targetSdk` 37. Needs JDK 17+ and the Android SDK (`sdk.dir` in `android/local.properties`).
+
+```sh
+cd android
+# Firebase config is not in git. Fetch it once:
+npx firebase-tools apps:sdkconfig ANDROID 1:973536798905:android:7bb757c6ce99deebb1d368 \
+  --project shortstop-b108a --out app/google-services.json
+./gradlew testDebugUnitTest assembleDebug lint
+adb install app/build/outputs/apk/debug/app-debug.apk
+```
+
+- Without `google-services.json` the app builds and runs in rules-only mode.
+- `shared/*.json` is copied into the app assets at build time; the unit tests read the same files.
+- Debug builds use the App Check debug provider: copy the token from logcat (`DebugAppCheckProvider`) into Firebase console → App Check → Apps → Manage debug tokens. Release builds use Play Integrity. App Check failures never block the app.
+- On-device AI runs only on [phones that support the ML Kit Prompt API](https://developers.google.com/ml-kit/genai#prompt-device). Elsewhere the status chip says the cloud sees masked text only, and screenshots are refused.
+- Share a text or a screenshot to "Check with Shortstop" from any app. History is kept in a local Room database (masked text only, excluded from backup) and can be cleared.
 
 ## Privacy
 
