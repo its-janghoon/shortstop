@@ -1,13 +1,9 @@
 package io.github.itsjanghoon.shortstop.ui
 
-import androidx.compose.animation.core.Animatable
-import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.RepeatMode
-import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.animateFloat
 import androidx.compose.animation.core.infiniteRepeatable
 import androidx.compose.animation.core.rememberInfiniteTransition
-import androidx.compose.animation.core.spring
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
@@ -26,6 +22,7 @@ import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawingPadding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -34,7 +31,6 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
@@ -62,6 +58,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextDecoration
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -95,6 +92,9 @@ fun fmtMs(ms: Long) = when {
 
 @Composable
 fun MainScreen(state: UiState, actions: UiActions) {
+    val shown = state.result?.takeIf { state.screen == Screen.RESULT }
+    val clock = rememberPlayClock(state.result)
+    val t = if (shown != null) clock.value else 0f
     Box(
         Modifier
             .fillMaxSize()
@@ -131,11 +131,12 @@ fun MainScreen(state: UiState, actions: UiActions) {
                 when (state.screen) {
                     Screen.COMPOSE -> ComposeCard(state, actions)
                     Screen.CHECKING -> CheckingCard(state)
-                    Screen.RESULT -> state.result?.let { ResultCard(it, state, actions) }
+                    Screen.RESULT -> state.result?.let { ResultCard(it, state, actions, t) }
                     Screen.HISTORY -> HistoryCard(state.history, actions)
                 }
             }
-            if (state.screen == Screen.RESULT) state.result?.let { Receipt(it) }
+            if (state.screen == Screen.RESULT) state.result?.let { Receipt(it, t) }
+            if (state.screen == Screen.COMPOSE) IdleField()
         }
     }
 }
@@ -333,9 +334,12 @@ private fun CheckingCard(state: UiState) {
 }
 
 /** The message as Shortstop keeps it: secrets shown as their placeholders, bad links in red. */
-fun maskedMessage(r: Result, tokenBg: Color = Ball.ink, tokenFg: Color = Ball.chalk): AnnotatedString = buildAnnotatedString {
+fun maskedMessage(r: Result, t: Float = Float.MAX_VALUE, tokenBg: Color = Ball.ink, tokenFg: Color = Ball.chalk): AnnotatedString = buildAnnotatedString {
     val bad = r.links.filter { it.reasons.isNotEmpty() }.map { it.url }
     val known = r.mask.map { it.token }.toSet()
+    val byToken = r.mask.associate { it.token to it.value }
+    val play = Play(r)
+    var n = 0
     var i = 0
     fun plain(s: String) {
         var rest = s
@@ -353,8 +357,14 @@ fun maskedMessage(r: Result, tokenBg: Color = Ball.ink, tokenFg: Color = Ball.ch
     for (m in TOKEN_SPLIT.findAll(r.masked)) {
         plain(r.masked.substring(i, m.range.first))
         if (m.value in known) {
-            withStyle(SpanStyle(background = tokenBg, color = tokenFg, fontWeight = FontWeight.ExtraBold, fontSize = 13.sp)) {
-                append("\u00a0${m.value.drop(1).dropLast(1)}\u00a0")
+            val label = m.value.drop(1).dropLast(1)
+            val shownChars = wipeChars(label, t, play.tokenAt(n++))
+            if (shownChars == 0) {
+                withStyle(SpanStyle(background = Ball.scam.copy(alpha = .18f))) { append(byToken.getValue(m.value)) }
+            } else {
+                withStyle(SpanStyle(background = tokenBg, color = tokenFg, fontWeight = FontWeight.ExtraBold, fontSize = 13.sp)) {
+                    append("\u00a0${label.take(shownChars)}\u00a0")
+                }
             }
         } else {
             append(m.value)
@@ -366,25 +376,27 @@ fun maskedMessage(r: Result, tokenBg: Color = Ball.ink, tokenFg: Color = Ball.ch
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
-private fun ResultCard(r: Result, state: UiState, actions: UiActions) {
+private fun ResultCard(r: Result, state: UiState, actions: UiActions, t: Float) {
+    val play = remember(r) { Play(r) }
     Text(state.from, color = Ball.muted, fontSize = 13.sp, fontWeight = FontWeight.Bold)
     if (r.masked.isNotBlank()) {
         Text(
-            maskedMessage(r),
+            maskedMessage(r, t),
             color = Ball.ink,
             fontSize = 16.sp,
             lineHeight = 26.sp,
             modifier = Modifier.fillMaxWidth().clip(RoundedCornerShape(18.dp, 18.dp, 18.dp, 4.dp)).background(Ball.paper).padding(14.dp)
+                .appear(t, 0f)
                 .testTag("message"),
         )
     }
-    VerdictCard(r)
+    VerdictCard(r, t, play.verdictAt)
     if (r.signals.isNotEmpty()) {
         FlowRow(horizontalArrangement = Arrangement.spacedBy(7.dp), verticalArrangement = Arrangement.spacedBy(7.dp)) {
-            for (s in r.signals) Ghost(s, chipGlyph(s), tint = verdictInk(r.verdict)) {}
+            for ((k, s) in r.signals.withIndex()) Ghost(s, chipGlyph(s), Modifier.appear(t, play.verdictAt + .8f + k * .1f), verdictInk(r.verdict)) {}
         }
     }
-    if (r.mask.isNotEmpty()) Kept(r)
+    if (r.mask.isNotEmpty()) Kept(r, Modifier.appear(t, play.maskDone + .1f))
     BigButton(
         actionLabel(r.verdict),
         if (r.verdict == Verdict.SAFE) Glyph.CHECK else Glyph.PHONE,
@@ -404,26 +416,21 @@ private fun ResultCard(r: Result, state: UiState, actions: UiActions) {
 }
 
 @Composable
-private fun VerdictCard(r: Result) {
+private fun VerdictCard(r: Result, t: Float, at: Float) {
     val w = word(r.verdict)
     val bg = verdictColor(r.verdict)
     val fg = if (r.verdict == Verdict.SUSPICIOUS) Ball.ink else Color.White
-    val slam = remember(r) { Animatable(0f) }
-    val stamp = remember(r) { Animatable(0f) }
-    val shake = remember(r) { Animatable(0f) }
-    LaunchedEffect(r) {
-        slam.animateTo(1f, spring(dampingRatio = .45f, stiffness = Spring.StiffnessMediumLow))
-        stamp.animateTo(1f, spring(dampingRatio = .4f, stiffness = Spring.StiffnessMedium))
-        if (r.verdict == Verdict.SCAM) {
-            for (x in listOf(-8f, 7f, -4f, 2f, 0f)) shake.animateTo(x, tween(60, easing = FastOutSlowInEasing))
-        }
-    }
+    val slam = backOut(prog(t, at, .55f))
+    val stamp = backOut(prog(t, at + .7f, .35f))
+    val stampIn = prog(t, at + .7f, .1f)
+    val shook = if (r.verdict == Verdict.SCAM) shake(t, at + .5f) else 0f
+    val shownAt = prog(t, at, .15f)
     Box(Modifier.fillMaxWidth().padding(top = 8.dp)) {
         Column(
             Modifier
                 .fillMaxWidth()
                 .graphicsLayer {
-                    val p = slam.value
+                    val p = slam
                     if (r.verdict == Verdict.SAFE) {
                         translationY = (1 - p) * 20.dp.toPx()
                     } else {
@@ -431,7 +438,7 @@ private fun VerdictCard(r: Result) {
                         scaleY = 1.5f - .5f * p
                         rotationZ = -5f * (1 - p)
                     }
-                    alpha = p.coerceIn(0f, 1f)
+                    alpha = shownAt
                 }
                 .clip(RoundedCornerShape(26.dp))
                 .background(bg)
@@ -447,7 +454,7 @@ private fun VerdictCard(r: Result) {
                 lineHeight = 58.sp,
                 fontWeight = FontWeight.Black,
                 letterSpacing = (-3).sp,
-                modifier = Modifier.graphicsLayer { translationX = shake.value.dp.toPx() },
+                modifier = Modifier.graphicsLayer { translationX = shook.dp.toPx() },
             )
             Spacer(Modifier.size(4.dp))
             Text(r.action, color = fg, fontSize = 17.sp, lineHeight = 23.sp, fontWeight = FontWeight.SemiBold)
@@ -460,13 +467,13 @@ private fun VerdictCard(r: Result) {
             modifier = Modifier
                 .align(Alignment.TopEnd)
                 .graphicsLayer {
-                    val p = stamp.value
+                    val p = stamp
                     translationY = (-14).dp.toPx()
-                    translationX = 6.dp.toPx()
+                    translationX = (-6).dp.toPx()
                     rotationZ = 9f + 21f * (1 - p)
                     scaleX = 2.4f - 1.4f * p
                     scaleY = 2.4f - 1.4f * p
-                    alpha = p.coerceIn(0f, 1f)
+                    alpha = stampIn
                 }
                 .clip(RoundedCornerShape(10.dp))
                 .background(Ball.chalk)
@@ -477,9 +484,9 @@ private fun VerdictCard(r: Result) {
 }
 
 @Composable
-private fun Kept(r: Result) {
+private fun Kept(r: Result, modifier: Modifier = Modifier) {
     Column(
-        Modifier
+        modifier
             .fillMaxWidth()
             .drawBehind {
                 drawRoundRect(
@@ -503,9 +510,9 @@ private fun Kept(r: Result) {
                     color = Ball.chalk,
                     fontSize = 12.sp,
                     fontWeight = FontWeight.ExtraBold,
-                    modifier = Modifier.clip(RoundedCornerShape(5.dp)).background(Ball.ink).padding(horizontal = 5.dp),
+                    modifier = Modifier.widthIn(min = 92.dp).clip(RoundedCornerShape(5.dp)).background(Ball.ink).padding(horizontal = 5.dp),
                 )
-                Text(m.value, color = Ball.ink, fontSize = 14.sp)
+                Text(m.value, color = Ball.ink, fontSize = 14.sp, modifier = Modifier.weight(1f))
             }
         }
     }
@@ -513,7 +520,8 @@ private fun Kept(r: Result) {
 
 /** E6: where each step ran, what left the device, and how long it took. */
 @Composable
-private fun Receipt(r: Result) {
+private fun Receipt(r: Result, t: Float) {
+    val play = remember(r) { Play(r) }
     val sent = r.receipt.filter { it.sent != null }
     val leaked = r.mask.count { m -> sent.any { it.sent!!.contains(m.value) } }
     val total = r.receipt.sumOf { it.ms }
@@ -537,9 +545,12 @@ private fun Receipt(r: Result) {
             lineHeight = 27.sp,
             fontWeight = FontWeight.ExtraBold,
         )
+        Diamond(r, t)
+        DiamondLegend(r, t)
         val tone = if (cloud) Ball.cloud else Ball.ok
         Column(
             Modifier
+                .appear(t, if (cloud) play.throwAt + .6f else play.verdictAt)
                 .fillMaxWidth()
                 .clip(RoundedCornerShape(16.dp))
                 .background(tone.copy(alpha = .1f))
@@ -650,8 +661,28 @@ private fun HistoryCard(history: List<Check>, actions: UiActions) {
                 )
                 Text(fmt.format(Date(c.at)), color = Ball.muted, fontSize = 12.sp)
             }
-            Text(c.masked, color = Ball.ink, fontSize = 14.sp, maxLines = 3)
+            Text(c.masked, color = Ball.ink, fontSize = 14.sp, maxLines = 3, overflow = TextOverflow.Ellipsis)
         }
     }
     BigButton("Clear history", null, Modifier.testTag("clear"), bg = Ball.scam) { actions.clearHistory() }
+}
+
+/** The empty field on the compose screen, like IDLE_FIELD on the web. */
+@Composable
+private fun IdleField() {
+    Column(
+        Modifier
+            .fillMaxWidth()
+            .clip(RoundedCornerShape(30.dp))
+            .background(Color.Black.copy(alpha = .2f))
+            .border(1.dp, Color.White.copy(alpha = .08f), RoundedCornerShape(30.dp))
+            .padding(20.dp)
+            .testTag("field"),
+        verticalArrangement = Arrangement.spacedBy(12.dp),
+    ) {
+        Text("THE PLAY", color = Ball.chalk.copy(alpha = .7f), fontSize = 13.sp, fontWeight = FontWeight.Bold, letterSpacing = 2.sp)
+        Text("Every check starts on your device.", color = Ball.chalk, fontSize = 22.sp, lineHeight = 27.sp, fontWeight = FontWeight.ExtraBold)
+        Diamond(null, null)
+        DiamondLegend(null, null)
+    }
 }
