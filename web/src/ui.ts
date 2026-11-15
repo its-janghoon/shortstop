@@ -114,7 +114,7 @@ export function fieldHtml(r: Result, p: Play): string {
       ? "rules hid the secrets instead"
       : `hid ${r.mask.length} secret${r.mask.length === 1 ? "" : "s"} · ${fl.verdict} (${fl.confidence.toFixed(2)})`;
   const firstSent = sent[sent.length - 1]?.sent ?? "";
-  const shown = firstSent.match(/<msg>\n?([\s\S]*?)\n?<\/msg>/)?.[1] ?? firstSent;
+  const shown = firstSent.match(/<msg>\n([\s\S]*?)\n<\/msg>/)?.[1] ?? firstSent;
   const tokens = (s: string) => esc(s).replace(/\[([A-Z]+_\d+)\]/g, "<code>$1</code>");
   const t = (n: number) => `style="--d:${n.toFixed(2)}s"`;
   const throwAt = p.verdictAt - 1.3;
