@@ -1,0 +1,2249 @@
+{
+  "$comment": "Synthetic English texts written for Shortstop. No real people, numbers or companies.",
+  "items": [
+    {
+      "id": "scam-001",
+      "kind": "scam",
+      "category": "parcel",
+      "text": "ACME PARCEL: Delivery attempt failed for parcel AP-88213. Address incomplete. Update it within 12h or the parcel goes back: acme-parcel-redelivery.co/u/88213",
+      "secrets": []
+    },
+    {
+      "id": "scam-002",
+      "kind": "scam",
+      "category": "parcel",
+      "text": "Northwind Post: Your item is held at the depot due to unpaid customs duty ($2.45). Release it now: northwind-post-customs.info/release",
+      "secrets": []
+    },
+    {
+      "id": "scam-003",
+      "kind": "scam",
+      "category": "parcel",
+      "text": "[Globex Logistics] We could not deliver your package today. Reschedule and pay the $0.99 redelivery fee: globex-redeliver.top/r?id=55k1",
+      "secrets": []
+    },
+    {
+      "id": "scam-004",
+      "kind": "scam",
+      "category": "parcel",
+      "text": "FINAL NOTICE: your parcel will be destroyed tomorrow. Confirm your address and pay the storage fee at acmeparcel-support.co",
+      "secrets": []
+    },
+    {
+      "id": "scam-005",
+      "kind": "scam",
+      "category": "parcel",
+      "text": "Subject: Action needed - shipment 4471-AX on hold\n\nDear customer,\n\nYour shipment from an overseas seller arrived at our Fabrikam Freight sorting center, but the declared weight did not match. A balance of $3.20 must be settled before release. If the balance is not paid within 48 hours, the shipment will be returned to sender and a return fee of $29.00 will be charged to the card on file.\n\nSettle balance: https://fabrikam-freight-billing.com/settle\n\nThank you,\nFabrikam Freight Customer Care",
+      "secrets": []
+    },
+    {
+      "id": "scam-006",
+      "kind": "scam",
+      "category": "parcel",
+      "text": "Acme Parcel: your package is waiting at our warehouse. Reply Y to get your tracking link, then copy it into your browser to schedule delivery.",
+      "secrets": []
+    },
+    {
+      "id": "scam-007",
+      "kind": "scam",
+      "category": "parcel",
+      "text": "Hi, this is the courier for your Contoso order. I'm outside but the buzzer isn't working and the gate code doesn't open. Can you text me the code again, or the code from the text we just sent you, so I can confirm the drop-off? - Mike, driver 214",
+      "secrets": [
+        "Mike"
+      ]
+    },
+    {
+      "id": "scam-008",
+      "kind": "scam",
+      "category": "parcel",
+      "text": "Acme Parcel: We tried to deliver your package on Nov 14. A small address correction is needed before we try again. You can check the status at acmeparcel.com.track-status.info",
+      "secrets": []
+    },
+    {
+      "id": "scam-009",
+      "kind": "scam",
+      "category": "parcel",
+      "text": "Your Northwind Market order #NW-20931 is delayed at customs. To avoid a return, our agent will call you from (312) 555-0119 to confirm your card for the $4.10 import fee.",
+      "secrets": [
+        "(312) 555-0119"
+      ]
+    },
+    {
+      "id": "scam-010",
+      "kind": "scam",
+      "category": "parcel",
+      "text": "Hello Laura, it's Dana from the post office on Elm. A parcel addressed to you was damaged and we need to re-label it. What's the best email to send the claim form to? There is a small handling fee, which we can take by card over the phone.",
+      "secrets": [
+        "Laura",
+        "Dana"
+      ]
+    },
+    {
+      "id": "scam-011",
+      "kind": "scam",
+      "category": "bank",
+      "text": "Acme Bank ALERT: A charge of $742.18 at ELECTRO-WORLD was blocked. If this wasn't you, verify now: acrnebank.com/verify",
+      "secrets": []
+    },
+    {
+      "id": "scam-012",
+      "kind": "scam",
+      "category": "bank",
+      "text": "Contoso Credit Union: Your online access is suspended after 3 failed logins. Restore access: contoso-cu-secure.net/login",
+      "secrets": []
+    },
+    {
+      "id": "scam-013",
+      "kind": "scam",
+      "category": "bank",
+      "text": "Dear Valued Member,\n\nWe noticed unusual activity on your Fabrikam Savings account. For your protection, your account has been temporarily limited. To lift the limit, please confirm your identity within 24 hours by entering your card number, expiry date and online banking password at fabrikam-savings-verify.com.\n\nFailure to verify will result in permanent closure.\n\nSecurity Department",
+      "secrets": []
+    },
+    {
+      "id": "scam-014",
+      "kind": "scam",
+      "category": "bank",
+      "text": "Northwind Bank: your debit card ending 4417 has been frozen. Call our fraud desk now at (646) 555-0137 to unfreeze it.",
+      "secrets": [
+        "(646) 555-0137"
+      ]
+    },
+    {
+      "id": "scam-015",
+      "kind": "scam",
+      "category": "bank",
+      "text": "Globex Bank: New payee 'R. Kerrigan' was added to your account. Not you? Cancel at globex-bank-cancel.help immediately.",
+      "secrets": [
+        "R. Kerrigan"
+      ]
+    },
+    {
+      "id": "scam-016",
+      "kind": "scam",
+      "category": "bank",
+      "text": "Hi, this is the Acme Bank fraud team. We've just sent a one-time code to your phone to confirm it's really you. Please read the 6 digits back to us so we can stop the transfer.",
+      "secrets": []
+    },
+    {
+      "id": "scam-017",
+      "kind": "scam",
+      "category": "bank",
+      "text": "Northwind Bank: We have flagged a $1,280.00 transfer from your account. If you did not make it, reply NO and an agent will call you to secure your funds.",
+      "secrets": []
+    },
+    {
+      "id": "scam-018",
+      "kind": "scam",
+      "category": "bank",
+      "text": "Subject: Your account safety review\n\nHello Michael Reyes,\n\nAs part of our yearly safety review, our team noticed your account still uses an older security setup. To keep your money safe, a specialist will move your balance to a new protected account while we update your profile. You will receive a call today from our Safe Account Team at (415) 555-0162. Please have your online banking details ready.\n\nKind regards,\nContoso Bank Customer Protection",
+      "secrets": [
+        "Michael Reyes",
+        "(415) 555-0162"
+      ]
+    },
+    {
+      "id": "scam-019",
+      "kind": "scam",
+      "category": "bank",
+      "text": "Acme Bank: your card has been paused for your safety. No action is needed online. A member of our team will call you shortly; to confirm it's us, they will ask for your card PIN.",
+      "secrets": []
+    },
+    {
+      "id": "scam-020",
+      "kind": "scam",
+      "category": "bank",
+      "text": "URGENT: Initech Federal Credit account 58200471193 will be closed today. Confirm your details: initech-fcu.account-review.co",
+      "secrets": [
+        "58200471193"
+      ]
+    },
+    {
+      "id": "scam-021",
+      "kind": "scam",
+      "category": "family",
+      "text": "Grandpa it's me, I got in a car accident and I'm at the police station. I need $2,000 for bail. Please don't tell Mom and Dad, I'm so embarrassed. Can you wire it to my lawyer?",
+      "secrets": []
+    },
+    {
+      "id": "scam-022",
+      "kind": "scam",
+      "category": "family",
+      "text": "Hi Mum, this is my new number, my phone broke. Can you save it? I need to pay a bill today and my banking app won't work on the new phone. Could you help me out?",
+      "secrets": []
+    },
+    {
+      "id": "scam-023",
+      "kind": "scam",
+      "category": "family",
+      "text": "Hey Dad, new number, old one got water damaged. Text me here from now on x",
+      "secrets": []
+    },
+    {
+      "id": "scam-024",
+      "kind": "scam",
+      "category": "family",
+      "text": "Mom, I'm abroad and my wallet was stolen. I'm OK but I need $650 for a ticket home. Please send it as gift cards, it's the only thing that works here. I'll explain later.",
+      "secrets": []
+    },
+    {
+      "id": "scam-025",
+      "kind": "scam",
+      "category": "family",
+      "text": "Hello, this is Officer Grant with the county police. Your grandson was arrested after an accident and asked us to call you. Bail is $4,500 and must be paid in cash today; a courier will come to your house to collect it. He asked that you keep this private.",
+      "secrets": [
+        "Grant"
+      ]
+    },
+    {
+      "id": "scam-026",
+      "kind": "scam",
+      "category": "family",
+      "text": "Hi Auntie, it's Sophie. I'm on my friend's phone, mine died. Are you home? I need a favour, I'll explain. Can you call me back on this number? (917) 555-0128",
+      "secrets": [
+        "Sophie",
+        "(917) 555-0128"
+      ]
+    },
+    {
+      "id": "scam-027",
+      "kind": "scam",
+      "category": "family",
+      "text": "Dad, I'm stuck at the airport and my card was declined. Can you send $300 to my friend's account so she can get me a hotel? Account: 2049 5512 9087. Sorry, will pay you back.",
+      "secrets": [
+        "2049 5512 9087"
+      ]
+    },
+    {
+      "id": "scam-028",
+      "kind": "scam",
+      "category": "family",
+      "text": "Hi Mom, it's me. Don't call, the mic is broken on this phone. I need to pay my landlord before 5 or I'll get a late fee. Could you transfer $480 for me just for today? I'll send it back tomorrow ❤️",
+      "secrets": []
+    },
+    {
+      "id": "scam-029",
+      "kind": "scam",
+      "category": "family",
+      "text": "Grandma please help!! I'm in the hospital after a crash and they won't treat me until the deposit is paid. Buy 4 x $200 store gift cards and send me photos of the backs. Hurry!!",
+      "secrets": []
+    },
+    {
+      "id": "scam-030",
+      "kind": "scam",
+      "category": "family",
+      "text": "Subject: Please read, it's about Ethan\n\nMrs. Carter,\n\nMy name is Paul Hensley, I'm a public defender representing your grandson Ethan. He was involved in a traffic incident last night and is in custody. He is unhurt but very scared, and he asked me to contact you directly rather than his parents.\n\nThe judge has set bail at $8,000. Because of the weekend, the court accepts payment only through a bonded courier or a cryptocurrency ATM. I can send you the instructions. Please do not discuss this case with anyone, as there is a gag order in place.\n\nPaul Hensley\nAttorney at Law",
+      "secrets": [
+        "Ethan",
+        "Carter",
+        "Paul Hensley"
+      ]
+    },
+    {
+      "id": "scam-031",
+      "kind": "scam",
+      "category": "investment",
+      "text": "🚀 Turn $250 into $5,000 in 7 days with our AI crypto bot. Guaranteed returns. Join now: globex-ai-profit.io",
+      "secrets": []
+    },
+    {
+      "id": "scam-032",
+      "kind": "scam",
+      "category": "investment",
+      "text": "Hi, I'm Lena, a trading mentor. My students made 38% last month on gold signals. Want to join my VIP chat group? Only 5 spots left this week.",
+      "secrets": [
+        "Lena"
+      ]
+    },
+    {
+      "id": "scam-033",
+      "kind": "scam",
+      "category": "investment",
+      "text": "Hey, sorry, is this Kevin? We met at the conference in Denver. Here's the platform I mentioned for the bond fund: fabrikam-capital-markets.com. Returns have been a steady 2% a week for me.",
+      "secrets": [
+        "Kevin"
+      ]
+    },
+    {
+      "id": "scam-034",
+      "kind": "scam",
+      "category": "investment",
+      "text": "Your Northwind Coin wallet has 0.84 BTC waiting to be claimed. Pay the network fee of 0.01 BTC to release it: northwind-wallet-claim.app",
+      "secrets": []
+    },
+    {
+      "id": "scam-035",
+      "kind": "scam",
+      "category": "investment",
+      "text": "Subject: Pre-IPO allocation for selected investors\n\nDear Investor,\n\nInitech Quantum Holdings will list on a major exchange next quarter. A small number of pre-IPO shares are reserved for private clients at $2.10 per share; analysts expect a listing price above $18. The minimum allocation is $10,000, payable by wire to our escrow partner.\n\nThis offer closes Friday. Reply to receive the subscription form.\n\nRegards,\nAdrian Vale\nSenior Partner, Initech Private Wealth",
+      "secrets": [
+        "Adrian Vale"
+      ]
+    },
+    {
+      "id": "scam-036",
+      "kind": "scam",
+      "category": "investment",
+      "text": "Good morning! Your account on Contoso Exchange shows a profit of $12,840. To withdraw, our compliance team needs the 15% tax deposit first. Once it is received, the full balance will reach your bank within 2 hours.",
+      "secrets": []
+    },
+    {
+      "id": "scam-037",
+      "kind": "scam",
+      "category": "investment",
+      "text": "CRYPTO GIVEAWAY 🎁 Send any amount of ETH to the event wallet and get double back instantly. Only for the next 60 minutes: umbrella-eth-event.live",
+      "secrets": []
+    },
+    {
+      "id": "scam-038",
+      "kind": "scam",
+      "category": "investment",
+      "text": "Hi Rachel, it was lovely chatting last week. As promised, here's how my uncle's team trades: open an account on umbrellatrade.vip, start small with $500 and they will guide you. I've doubled my savings since spring.",
+      "secrets": [
+        "Rachel"
+      ]
+    },
+    {
+      "id": "scam-039",
+      "kind": "scam",
+      "category": "investment",
+      "text": "Protect your retirement from the coming crash. Move your savings into physical gold with Globex Metals, zero fees, risk-free. Call 1-888-555-0104 today, offer ends Friday.",
+      "secrets": [
+        "1-888-555-0104"
+      ]
+    },
+    {
+      "id": "scam-040",
+      "kind": "scam",
+      "category": "investment",
+      "text": "Hello, this is Mark from Fabrikam Asset Recovery. Our records show you lost money to an online trading site in 2024. We have recovered $7,300 of your funds. To release them we need a one-time processing fee of $450.",
+      "secrets": [
+        "Mark"
+      ]
+    },
+    {
+      "id": "scam-041",
+      "kind": "scam",
+      "category": "techsupport",
+      "text": "WARNING! Your computer is infected with 5 viruses. Call Contoso Support at 1-800-555-0199 immediately. Do not shut down your PC.",
+      "secrets": [
+        "1-800-555-0199"
+      ]
+    },
+    {
+      "id": "scam-042",
+      "kind": "scam",
+      "category": "techsupport",
+      "text": "Contoso Security: Your device license expired and your files are at risk. Renew protection now: contoso-support.help/renew",
+      "secrets": []
+    },
+    {
+      "id": "scam-043",
+      "kind": "scam",
+      "category": "techsupport",
+      "text": "Subject: Order Confirmation - Fabrikam Total Security (3 devices)\n\nThank you for your purchase. Your card will be charged $399.99 for the annual plan today.\n\nIf you did not authorize this, call our billing desk within 24 hours at 1-888-555-0173 to cancel and get a refund.\n\nFabrikam Billing Team",
+      "secrets": [
+        "1-888-555-0173"
+      ]
+    },
+    {
+      "id": "scam-044",
+      "kind": "scam",
+      "category": "techsupport",
+      "text": "Hi, this is Ben from the Initech IT help desk. We're rolling out a security update today and your laptop hasn't checked in. Could you open remote-help.initech-it.co and read me the 9-digit session code so I can finish it for you?",
+      "secrets": [
+        "Ben"
+      ]
+    },
+    {
+      "id": "scam-045",
+      "kind": "scam",
+      "category": "techsupport",
+      "text": "Northwind Internet: we detected hackers using your Wi-Fi. A technician must connect to your computer to remove them. Call 1-877-555-0150 now.",
+      "secrets": [
+        "1-877-555-0150"
+      ]
+    },
+    {
+      "id": "scam-046",
+      "kind": "scam",
+      "category": "techsupport",
+      "text": "Hello, I'm calling from your internet provider's technical department. Your connection has been sending error reports. I'll text you a link to the free Help Desk app so I can fix it remotely. There is no charge for this.",
+      "secrets": []
+    },
+    {
+      "id": "scam-047",
+      "kind": "scam",
+      "category": "techsupport",
+      "text": "Contoso Defender - Access to this PC has been blocked for security reasons. Error #0x80072ee7. Call 1-844-555-0112 (toll free). Closing this page may cause data loss.",
+      "secrets": [
+        "1-844-555-0112"
+      ]
+    },
+    {
+      "id": "scam-048",
+      "kind": "scam",
+      "category": "techsupport",
+      "text": "Hi Sandra, Fabrikam refunds team here. You were overcharged $39 for last year's antivirus support, so we owe you a refund. Please log in to your bank while I'm connected so I can deposit it.",
+      "secrets": [
+        "Sandra"
+      ]
+    },
+    {
+      "id": "scam-049",
+      "kind": "scam",
+      "category": "techsupport",
+      "text": "Your Umbrella Mail account will be closed due to suspicious activity. Keep your mailbox: umbrella-mail-keep.com/verify",
+      "secrets": []
+    },
+    {
+      "id": "scam-050",
+      "kind": "scam",
+      "category": "techsupport",
+      "text": "IT notice: your mailbox password expires today. To keep your current password, sign in at portal-northwind.com-password.site within 2 hours.\n- Northwind IT Service Desk",
+      "secrets": []
+    },
+    {
+      "id": "scam-051",
+      "kind": "scam",
+      "category": "prize",
+      "text": "Congratulations! You've won a $1,000 Globex Mart gift card. Claim now: globex-winner.click/claim",
+      "secrets": []
+    },
+    {
+      "id": "scam-052",
+      "kind": "scam",
+      "category": "prize",
+      "text": "You have been selected in the Acme Customer Rewards draw! Pay $4.95 shipping to receive your new tablet: acme-rewards-draw.com",
+      "secrets": []
+    },
+    {
+      "id": "scam-053",
+      "kind": "scam",
+      "category": "prize",
+      "text": "Subject: WINNING NOTIFICATION REF/IL-2026/0098\n\nDear Winner,\n\nWe are pleased to inform you that your email address won $850,000.00 in the International Online Lottery held on 3 November. To process your claim, contact our claims agent Mr. Henry Obi at claims@intl-lottery-board.co with your full name, address, phone number and a copy of your ID. A clearance fee of $350 applies.\n\nYours faithfully,\nDr. Grace Mensah\nLottery Coordinator",
+      "secrets": [
+        "Henry Obi",
+        "claims@intl-lottery-board.co",
+        "Grace Mensah"
+      ]
+    },
+    {
+      "id": "scam-054",
+      "kind": "scam",
+      "category": "prize",
+      "text": "Northwind Air: You're our 1,000,000th visitor! Spin the wheel for free flights: northwind-air-prize.win",
+      "secrets": []
+    },
+    {
+      "id": "scam-055",
+      "kind": "scam",
+      "category": "prize",
+      "text": "Hi Tom, this is Julia from the Contoso Mall marketing team. You were drawn as the winner of our October shopping raffle (the $500 voucher). For the tax paperwork we just need your date of birth and the last 4 digits of your SSN, then we'll mail it out.",
+      "secrets": [
+        "Tom",
+        "Julia"
+      ]
+    },
+    {
+      "id": "scam-056",
+      "kind": "scam",
+      "category": "prize",
+      "text": "Congratulations from Fabrikam Coffee! Your receipt code won a year of free coffee. To check you're a real customer we place a $1 hold on your card, refunded within 3 days: fabrikam-coffee-rewards.com",
+      "secrets": []
+    },
+    {
+      "id": "scam-057",
+      "kind": "scam",
+      "category": "prize",
+      "text": "FINAL ATTEMPT: Your sweepstakes prize of $25,000 and a new car is waiting. Call (702) 555-0188 to arrange delivery. A small insurance fee is required.",
+      "secrets": [
+        "(702) 555-0188"
+      ]
+    },
+    {
+      "id": "scam-058",
+      "kind": "scam",
+      "category": "prize",
+      "text": "Hello! Thank you for your survey answers last week. You qualified for the loyalty reward from Acme Market. Please confirm your shipping address by replying to this message.",
+      "secrets": []
+    },
+    {
+      "id": "scam-059",
+      "kind": "scam",
+      "category": "prize",
+      "text": "UNCLAIMED: $2,350 cash prize registered to this number. Reply CLAIM with your bank name and account number.",
+      "secrets": []
+    },
+    {
+      "id": "scam-060",
+      "kind": "scam",
+      "category": "prize",
+      "text": "Initech Gaming: You won 500 free spins + $200 bonus! Activate within 1 hour: initech-casino-bonus.top",
+      "secrets": []
+    },
+    {
+      "id": "scam-061",
+      "kind": "scam",
+      "category": "romance",
+      "text": "Hi, is this Emily? It's Grace from the book club, I think I saved your number wrong. Sorry if I have the wrong person!",
+      "secrets": [
+        "Emily",
+        "Grace"
+      ]
+    },
+    {
+      "id": "scam-062",
+      "kind": "scam",
+      "category": "romance",
+      "text": "My love, I miss you so much. The customs office is holding the gift I sent you, it has jewelry and $40,000 cash. You just need to pay the $1,800 clearance fee and they will release it to you.",
+      "secrets": []
+    },
+    {
+      "id": "scam-063",
+      "kind": "scam",
+      "category": "romance",
+      "text": "Darling, I'm on the oil rig and my bank card is blocked out here. I need $2,500 for my flight to finally meet you. I'll pay you back the moment I land. You are my everything.",
+      "secrets": []
+    },
+    {
+      "id": "scam-064",
+      "kind": "scam",
+      "category": "romance",
+      "text": "Dear Linda,\n\nI hope you are smiling today. Every night I read your messages again before I sleep. You know I am Colonel James Whitfield, serving with the peacekeeping mission, and my contract ends in two months.\n\nMy commander says I can come home early on leave, but the leave application costs $3,200 and our base cannot access my salary account. If you could pay it through the agent I will send you, I will be in your arms by Christmas and I will repay you double.\n\nPlease keep this between us, my superiors must not know.\n\nForever yours,\nJames",
+      "secrets": [
+        "Linda",
+        "James Whitfield",
+        "James"
+      ]
+    },
+    {
+      "id": "scam-065",
+      "kind": "scam",
+      "category": "romance",
+      "text": "Good morning beautiful ☀️ I dreamed of our trip again. I talked to my financial advisor about the crypto we discussed; if you put in even $1,000 now, by Christmas we could buy the tickets together. I'll show you how step by step.",
+      "secrets": []
+    },
+    {
+      "id": "scam-066",
+      "kind": "scam",
+      "category": "romance",
+      "text": "Hey David, I know we only met online 3 weeks ago but I feel so close to you. My mother is in the hospital in Manila and they want a deposit before surgery. I hate asking. Could you lend me $900? I'll pay you back next month.",
+      "secrets": [
+        "David"
+      ]
+    },
+    {
+      "id": "scam-067",
+      "kind": "scam",
+      "category": "romance",
+      "text": "Babe can you buy me 3 x $100 gift cards for my phone bill? My card isn't working abroad. Send me pics of the codes. Love you 😘",
+      "secrets": []
+    },
+    {
+      "id": "scam-068",
+      "kind": "scam",
+      "category": "romance",
+      "text": "Hi handsome, I saw your profile and I'd like to chat. I'm not on this site often, add me at my private email: lovely.anna@fabrikam-mail.co",
+      "secrets": [
+        "lovely.anna@fabrikam-mail.co"
+      ]
+    },
+    {
+      "id": "scam-069",
+      "kind": "scam",
+      "category": "romance",
+      "text": "Sweetheart, my visa interview is next Tuesday. The embassy needs proof that I have $3,000 in funds. If you send it to my account just to show them, I'll send it straight back after. Account 4471 0093 2215, Northwind Bank.",
+      "secrets": [
+        "4471 0093 2215"
+      ]
+    },
+    {
+      "id": "scam-070",
+      "kind": "scam",
+      "category": "romance",
+      "text": "Dear, I can't video call because the camera on my work laptop is broken and our base blocks it anyway. But I have to pay a $650 fee to release my last salary payment. Please, you're the only one I trust.",
+      "secrets": []
+    },
+    {
+      "id": "scam-071",
+      "kind": "scam",
+      "category": "job",
+      "text": "Hi! Northwind Recruitment here. Earn $300-$800/day working from home, 1 hour a day. No experience needed. Reply YES to get started.",
+      "secrets": []
+    },
+    {
+      "id": "scam-072",
+      "kind": "scam",
+      "category": "job",
+      "text": "Hello Priya, I'm Olivia from Globex Talent. Your profile matches a remote data entry role at $28/h. The team would like to do the interview by chat today. Are you free at 3 PM?",
+      "secrets": [
+        "Priya",
+        "Olivia"
+      ]
+    },
+    {
+      "id": "scam-073",
+      "kind": "scam",
+      "category": "job",
+      "text": "Welcome to the Fabrikam Task Team! Today's tasks: like 30 products to boost ratings, $5 each. To unlock the next level of tasks you need to top up $100 in your work account first; it will be returned with your commission.",
+      "secrets": []
+    },
+    {
+      "id": "scam-074",
+      "kind": "scam",
+      "category": "job",
+      "text": "Subject: Offer - Remote Administrative Assistant\n\nDear Jordan Lee,\n\nCongratulations, you've been selected for the Remote Administrative Assistant role at Initech Logistics ($24/hour). To set up your home office, we will send you a check for $3,800. Please deposit it, keep $300 for your first week, and send the rest to our approved equipment vendor by wire. The vendor will ship your laptop and printer.\n\nPlease send your full name, home address and banking details to hr@initech-logistics-careers.co so we can begin.\n\nBest regards,\nMelissa Grant\nHR Manager",
+      "secrets": [
+        "Jordan Lee",
+        "hr@initech-logistics-careers.co",
+        "Melissa Grant"
+      ]
+    },
+    {
+      "id": "scam-075",
+      "kind": "scam",
+      "category": "job",
+      "text": "We're hiring parcel re-shippers! Receive packages at home, relabel them and send them on. $2,400/month. Start tomorrow: acme-reship-jobs.com",
+      "secrets": []
+    },
+    {
+      "id": "scam-076",
+      "kind": "scam",
+      "category": "job",
+      "text": "Hi, this is Karen with Contoso Staffing. Thanks for applying! Before your start date we need your SSN and a photo of both sides of your driver's license for the background check. Please text them to this number.",
+      "secrets": [
+        "Karen"
+      ]
+    },
+    {
+      "id": "scam-077",
+      "kind": "scam",
+      "category": "job",
+      "text": "Congrats, you passed the online assessment! The training kit is $89 and is fully refunded with your first paycheck. Pay at umbrella-careers.work/kit to secure your seat.",
+      "secrets": []
+    },
+    {
+      "id": "scam-078",
+      "kind": "scam",
+      "category": "job",
+      "text": "Part-time job: rate hotels online for 20-40 minutes and earn $150-$500 a day. Message our coordinator at +1 213-555-0157.",
+      "secrets": [
+        "+1 213-555-0157"
+      ]
+    },
+    {
+      "id": "scam-079",
+      "kind": "scam",
+      "category": "job",
+      "text": "Mystery shopper wanted! You will receive a $2,000 check, buy gift cards at Globex Mart, and report on your experience. Keep $300 as your payment.",
+      "secrets": []
+    },
+    {
+      "id": "scam-080",
+      "kind": "scam",
+      "category": "job",
+      "text": "Hello! I found your CV on a job site. We are a growing online store and need a payment processing assistant. You'll receive client payments into your personal account and forward them to suppliers, keeping 8%. Fully legal and remote.",
+      "secrets": []
+    },
+    {
+      "id": "scam-081",
+      "kind": "scam",
+      "category": "government",
+      "text": "State Toll Services: You have an unpaid toll balance of $6.85. To avoid a late fee of $50, pay now: statetoll-payment.co/pay",
+      "secrets": []
+    },
+    {
+      "id": "scam-082",
+      "kind": "scam",
+      "category": "government",
+      "text": "Tax Agency: You are eligible for a tax refund of $812.40. Submit your card details to receive it: tax-refund-claim.info",
+      "secrets": []
+    },
+    {
+      "id": "scam-083",
+      "kind": "scam",
+      "category": "government",
+      "text": "FINAL NOTICE: Your benefits number has been suspended due to suspicious activity. Call (202) 555-0193 now to avoid legal action.",
+      "secrets": [
+        "(202) 555-0193"
+      ]
+    },
+    {
+      "id": "scam-084",
+      "kind": "scam",
+      "category": "government",
+      "text": "Subject: Notice of unpaid tax - Case 4429-T\n\nDear Taxpayer,\n\nOur records show an outstanding balance of $3,214.00 on your federal return. A warrant will be issued for your arrest if payment is not received within 24 hours. To settle the balance, buy prepaid cards for the full amount and call the Tax Agency Collections Officer at (202) 555-0108 with the card numbers.\n\nTax Agency\nEnforcement Division",
+      "secrets": [
+        "(202) 555-0108"
+      ]
+    },
+    {
+      "id": "scam-085",
+      "kind": "scam",
+      "category": "government",
+      "text": "Department of Motor Vehicles: Our records show your driver's license will be suspended on Nov 20 because of an unresolved traffic notice. You can review the notice and pay online at dmv-state.gov-notice.com.",
+      "secrets": []
+    },
+    {
+      "id": "scam-086",
+      "kind": "scam",
+      "category": "government",
+      "text": "Hello, this is Officer Daniel Ross from the county sheriff's office. You missed jury duty last week and a warrant has been issued. You can resolve this today by paying the $1,500 fine by phone. Please call me back at (312) 555-0145.",
+      "secrets": [
+        "Daniel Ross",
+        "(312) 555-0145"
+      ]
+    },
+    {
+      "id": "scam-087",
+      "kind": "scam",
+      "category": "government",
+      "text": "Federal Benefits Office: your monthly payment increase of $243 is ready. Confirm your identity with your SSN at benefits-increase-2026.com",
+      "secrets": []
+    },
+    {
+      "id": "scam-088",
+      "kind": "scam",
+      "category": "government",
+      "text": "Hi Maria, I'm calling from the Federal Grants Office. You've been approved for a $9,000 home improvement grant. There's a one-time $199 processing fee, then the money goes straight to your account.",
+      "secrets": [
+        "Maria"
+      ]
+    },
+    {
+      "id": "scam-089",
+      "kind": "scam",
+      "category": "government",
+      "text": "Immigration notice: errors were found in your visa file. Pay $480 within 48h to avoid deportation. Call +1 646-555-0171.",
+      "secrets": [
+        "+1 646-555-0171"
+      ]
+    },
+    {
+      "id": "scam-090",
+      "kind": "scam",
+      "category": "government",
+      "text": "City Parking: A parking ticket (#PK-55821) was issued to your vehicle on Nov 12. Pay within 7 days to avoid the fine doubling: citypark-tickets.net",
+      "secrets": []
+    },
+    {
+      "id": "scam-091",
+      "kind": "scam",
+      "category": "invoice",
+      "text": "Your Contoso Stream subscription has been renewed for $89.99. If you did not authorize this, call 1-866-555-0131 within 24h.",
+      "secrets": [
+        "1-866-555-0131"
+      ]
+    },
+    {
+      "id": "scam-092",
+      "kind": "scam",
+      "category": "invoice",
+      "text": "Subject: Invoice INV-20481 from Fabrikam Design Studio\n\nHi,\n\nPlease find attached invoice INV-20481 for the October design work ($2,450.00). As of this month our bank details have changed, so kindly pay to the new account below.\n\nAccount name: Fabrikam Design Studio Ltd\nAccount number: 6620 1184 3375\nRouting: 021000555\n\nThanks for your continued business,\nNadia Brooks\nAccounts",
+      "secrets": [
+        "6620 1184 3375",
+        "021000555",
+        "Nadia Brooks"
+      ]
+    },
+    {
+      "id": "scam-093",
+      "kind": "scam",
+      "category": "invoice",
+      "text": "Globex Antivirus: your 3-year plan auto-renewed for $499. Didn't order it? Cancel and get a refund at globex-refund-desk.com",
+      "secrets": []
+    },
+    {
+      "id": "scam-094",
+      "kind": "scam",
+      "category": "invoice",
+      "text": "Hi Steve, Northwind Office Supplies here. Just a reminder that invoice #NW-7731 for $1,186.20 is 15 days overdue. Could you settle it today via the payment link? northwind-office-pay.com/inv/7731 Thanks!",
+      "secrets": [
+        "Steve"
+      ]
+    },
+    {
+      "id": "scam-095",
+      "kind": "scam",
+      "category": "invoice",
+      "text": "DOMAIN RENEWAL NOTICE: your website domain expires in 3 days. Renew for $79/year to avoid losing your site and email: domain-registry-renewals.net",
+      "secrets": []
+    },
+    {
+      "id": "scam-096",
+      "kind": "scam",
+      "category": "invoice",
+      "text": "Your Umbrella Music membership could not be renewed. Update your payment details to keep listening: umbrella-music-billing.com",
+      "secrets": []
+    },
+    {
+      "id": "scam-097",
+      "kind": "scam",
+      "category": "invoice",
+      "text": "Hello, this is the accounts department of Initech Cloud. Your annual workspace plan ($1,200) failed to process. Please reply with an updated card number so we don't interrupt your team's access.",
+      "secrets": []
+    },
+    {
+      "id": "scam-098",
+      "kind": "scam",
+      "category": "invoice",
+      "text": "PAYMENT RECEIVED: $649.00 to Contoso Electronics for 'Gaming Laptop'. Not you? Call 1-833-555-0166 to dispute.",
+      "secrets": [
+        "1-833-555-0166"
+      ]
+    },
+    {
+      "id": "scam-099",
+      "kind": "scam",
+      "category": "invoice",
+      "text": "Subject: Re: Q4 vendor payment\n\nHi Anna,\n\nI'm in meetings all day so I can't take calls. We need to pay a new supplier before end of day for the Globex contract. Please send $18,400 by wire to the details I'll send next, and keep this between us until the deal is announced.\n\nThanks,\nRobert\nSent from my phone",
+      "secrets": [
+        "Anna",
+        "Robert"
+      ]
+    },
+    {
+      "id": "scam-100",
+      "kind": "scam",
+      "category": "invoice",
+      "text": "Acme Shield: Thank you for renewing. $299.99 has been charged to your account. To cancel, open the attached form and enter your online banking login.",
+      "secrets": []
+    },
+    {
+      "id": "safe-001",
+      "kind": "safe",
+      "category": "delivery",
+      "text": "Acme Parcel: your package is out for delivery today between 1 PM and 5 PM. Track it in the Acme Parcel app or at acmeparcel.com/track.",
+      "secrets": []
+    },
+    {
+      "id": "safe-002",
+      "kind": "safe",
+      "category": "delivery",
+      "text": "Northwind Post: we couldn't deliver your parcel today because no one was home. We'll try again tomorrow. No payment is needed. You can also pick it up at the Elm Street branch with ID.",
+      "secrets": []
+    },
+    {
+      "id": "safe-003",
+      "kind": "safe",
+      "category": "delivery",
+      "text": "Your Globex Market order #GM-33419 has shipped. Expected delivery: Thursday. Details: globexmarket.com/orders",
+      "secrets": []
+    },
+    {
+      "id": "safe-004",
+      "kind": "safe",
+      "category": "delivery",
+      "text": "Fabrikam Freight: a signature is required for your delivery on Nov 18. If you won't be home, choose a pickup point at fabrikamfreight.com/manage. We never ask for payment by text.",
+      "secrets": []
+    },
+    {
+      "id": "safe-005",
+      "kind": "safe",
+      "category": "delivery",
+      "text": "Acme Parcel: import duty of $12.40 is due on your international shipment AP-55102 before delivery. Pay in the Acme Parcel app (Account > Payments) or at acmeparcel.com/duties. Questions: 1-800-555-0100.",
+      "secrets": [
+        "1-800-555-0100"
+      ]
+    },
+    {
+      "id": "safe-006",
+      "kind": "safe",
+      "category": "delivery",
+      "text": "Hi, it's Luis with Contoso Furniture delivery. We're about 20 minutes away with your sofa. Can someone be home to sign? Reply here or call the store at (617) 555-0123.",
+      "secrets": [
+        "Luis",
+        "(617) 555-0123"
+      ]
+    },
+    {
+      "id": "safe-007",
+      "kind": "safe",
+      "category": "delivery",
+      "text": "Delivered: your Northwind Market package was left in your mailroom. See the photo in the app.",
+      "secrets": []
+    },
+    {
+      "id": "safe-008",
+      "kind": "safe",
+      "category": "delivery",
+      "text": "Acme Parcel: your parcel is delayed by weather. New estimated delivery: Monday. No action needed. Track at acmeparcel.com.",
+      "secrets": []
+    },
+    {
+      "id": "safe-009",
+      "kind": "safe",
+      "category": "delivery",
+      "text": "Your parcel is ready at Locker 14, Main St Station. Pickup code 448812. It stays there for 3 days.",
+      "secrets": []
+    },
+    {
+      "id": "safe-010",
+      "kind": "safe",
+      "category": "delivery",
+      "text": "Globex Market: we're sorry, your order was damaged in transit. We've refunded $34.99 to your original payment method; it may take 3-5 business days. See Your Orders at globexmarket.com.",
+      "secrets": []
+    },
+    {
+      "id": "safe-011",
+      "kind": "safe",
+      "category": "bank",
+      "text": "Acme Bank: Did you spend $82.40 at Fresh Grocer on Nov 15? Reply YES or NO. Acme Bank will never ask for your PIN, password or one-time code.",
+      "secrets": []
+    },
+    {
+      "id": "safe-012",
+      "kind": "safe",
+      "category": "bank",
+      "text": "Acme Bank: your October statement is ready. Log in to the app to view it. We will never ask for your code or password by text or phone.",
+      "secrets": []
+    },
+    {
+      "id": "safe-013",
+      "kind": "safe",
+      "category": "bank",
+      "text": "Contoso Credit Union: your direct deposit of $2,315.60 has posted to checking.",
+      "secrets": []
+    },
+    {
+      "id": "safe-014",
+      "kind": "safe",
+      "category": "bank",
+      "text": "Northwind Bank: Your new debit card has shipped and should arrive in 5-7 days. Activate it in the app. If you didn't request a new card, call the number on the back of your current card.",
+      "secrets": []
+    },
+    {
+      "id": "safe-015",
+      "kind": "safe",
+      "category": "bank",
+      "text": "Fabrikam Savings: Low balance alert. Your checking balance is below $100.",
+      "secrets": []
+    },
+    {
+      "id": "safe-016",
+      "kind": "safe",
+      "category": "bank",
+      "text": "Subject: We've updated our privacy notice\n\nHello Sam Ortiz,\n\nWe've made some changes to how we describe the data we collect. You don't need to do anything. You can read the full notice in the app under Profile > Legal, or at globexbank.com/privacy.\n\nReminder: Globex Bank will never call or e-mail you asking for your password, PIN or one-time passcodes.\n\nGlobex Bank",
+      "secrets": [
+        "Sam Ortiz"
+      ]
+    },
+    {
+      "id": "safe-017",
+      "kind": "safe",
+      "category": "bank",
+      "text": "Acme Bank: we declined a card payment of $1,240.00 at an online store because it looked unusual. If it was you, confirm in the Acme Bank app and try again. If not, no action is needed; your card is safe. We will never ask you to move money to a 'safe account'.",
+      "secrets": []
+    },
+    {
+      "id": "safe-018",
+      "kind": "safe",
+      "category": "bank",
+      "text": "Initech Federal Credit Union: Your loan payment of $412.00 is due on Nov 25. Pay in online banking or set up autopay.",
+      "secrets": []
+    },
+    {
+      "id": "safe-019",
+      "kind": "safe",
+      "category": "bank",
+      "text": "Hi Rosa, this is Kim from Contoso Credit Union, following up on your mortgage application. Your appraisal is scheduled. Please upload the remaining pay stub in your secure portal when you get a chance; no need to send anything by email.",
+      "secrets": [
+        "Rosa",
+        "Kim"
+      ]
+    },
+    {
+      "id": "safe-020",
+      "kind": "safe",
+      "category": "bank",
+      "text": "Northwind Bank: You sent $50.00 to Jake Miller. If this wasn't you, call us at the number on the back of your card.",
+      "secrets": [
+        "Jake Miller"
+      ]
+    },
+    {
+      "id": "safe-021",
+      "kind": "safe",
+      "category": "2fa",
+      "text": "Your Acme verification code is 482913. It expires in 10 minutes. Don't share it with anyone; Acme staff will never ask for it.",
+      "secrets": []
+    },
+    {
+      "id": "safe-022",
+      "kind": "safe",
+      "category": "2fa",
+      "text": "Contoso: 739201 is your sign-in code. If you didn't request it, you can ignore this message.",
+      "secrets": []
+    },
+    {
+      "id": "safe-023",
+      "kind": "safe",
+      "category": "2fa",
+      "text": "Use 5512 to confirm your Northwind Bank login. We will never call to ask for this code.",
+      "secrets": []
+    },
+    {
+      "id": "safe-024",
+      "kind": "safe",
+      "category": "2fa",
+      "text": "Globex Market: Your one-time password is 660148. Never share this code.",
+      "secrets": []
+    },
+    {
+      "id": "safe-025",
+      "kind": "safe",
+      "category": "2fa",
+      "text": "Fabrikam ID: Your security code is 304-119.",
+      "secrets": []
+    },
+    {
+      "id": "safe-026",
+      "kind": "safe",
+      "category": "2fa",
+      "text": "Acme Bank: Code 918274 approves adding the new payee 'Tom Becker'. If you are not making this change, do not share the code and call us.",
+      "secrets": [
+        "Tom Becker"
+      ]
+    },
+    {
+      "id": "safe-027",
+      "kind": "safe",
+      "category": "2fa",
+      "text": "Initech: someone (hopefully you) requested a password reset. Your code is 271036. If this wasn't you, you can safely ignore this.",
+      "secrets": []
+    },
+    {
+      "id": "safe-028",
+      "kind": "safe",
+      "category": "2fa",
+      "text": "Umbrella Health: Your code to view lab results is 845530. Our staff will never ask you to read it back.",
+      "secrets": []
+    },
+    {
+      "id": "safe-029",
+      "kind": "safe",
+      "category": "2fa",
+      "text": "Northwind Air: Use code 119384 to verify the email address for your new account.",
+      "secrets": []
+    },
+    {
+      "id": "safe-030",
+      "kind": "safe",
+      "category": "2fa",
+      "text": "Contoso: We noticed a new sign-in to your account from Chicago, IL. If this was you, there's nothing to do. If not, change your password at contoso.com/security.",
+      "secrets": []
+    },
+    {
+      "id": "safe-031",
+      "kind": "safe",
+      "category": "family",
+      "text": "Hi Mom, landed safely! Will call when I get to the hotel.",
+      "secrets": []
+    },
+    {
+      "id": "safe-032",
+      "kind": "safe",
+      "category": "family",
+      "text": "Dad can you pick up milk on the way home? Thanks!",
+      "secrets": []
+    },
+    {
+      "id": "safe-033",
+      "kind": "safe",
+      "category": "family",
+      "text": "Grandma, thank you so much for the birthday card and the $20! Love you ❤️ - Lily",
+      "secrets": [
+        "Lily"
+      ]
+    },
+    {
+      "id": "safe-034",
+      "kind": "safe",
+      "category": "family",
+      "text": "Hey Mom, it's Jake, using Sarah's phone because mine died at practice. Can you pick me up at 6 at the usual spot instead of 5:30? Coach kept us late.",
+      "secrets": [
+        "Jake",
+        "Sarah"
+      ]
+    },
+    {
+      "id": "safe-035",
+      "kind": "safe",
+      "category": "family",
+      "text": "Happy anniversary you two! Dinner's on us next week 🥂",
+      "secrets": []
+    },
+    {
+      "id": "safe-036",
+      "kind": "safe",
+      "category": "family",
+      "text": "Hi honey, I sent you $200 for your textbooks. It should show up in your account tomorrow. Let me know when it does. Love, Dad",
+      "secrets": []
+    },
+    {
+      "id": "safe-037",
+      "kind": "safe",
+      "category": "family",
+      "text": "Reminder: Grandpa's 80th is Saturday at 2 at Aunt Carol's. Bring a folding chair!",
+      "secrets": [
+        "Carol"
+      ]
+    },
+    {
+      "id": "safe-038",
+      "kind": "safe",
+      "category": "family",
+      "text": "Kids are asleep, movie is ready whenever you get home 😊",
+      "secrets": []
+    },
+    {
+      "id": "safe-039",
+      "kind": "safe",
+      "category": "family",
+      "text": "Mom, I paid you back the $60 for the concert tickets, check your account. Thanks for covering me!",
+      "secrets": []
+    },
+    {
+      "id": "safe-040",
+      "kind": "safe",
+      "category": "family",
+      "text": "Hi Grandpa, I put the photos from Emma's recital in the family album. Tell me if you can't open it and I'll show you on Sunday.",
+      "secrets": [
+        "Emma"
+      ]
+    },
+    {
+      "id": "safe-041",
+      "kind": "safe",
+      "category": "appointment",
+      "text": "Reminder: You have an appointment with Dr. Patel at Northwind Dental on Tue Nov 18 at 9:30 AM. Reply C to confirm or call (312) 555-0110.",
+      "secrets": [
+        "Patel",
+        "(312) 555-0110"
+      ]
+    },
+    {
+      "id": "safe-042",
+      "kind": "safe",
+      "category": "appointment",
+      "text": "Fabrikam Auto: your car is ready for pickup. Total: $286.40. We're open until 6 PM.",
+      "secrets": []
+    },
+    {
+      "id": "safe-043",
+      "kind": "safe",
+      "category": "appointment",
+      "text": "Your table for 4 at Contoso Bistro is booked for Friday at 7:30 PM. Need to change it? Reply to this text.",
+      "secrets": []
+    },
+    {
+      "id": "safe-044",
+      "kind": "safe",
+      "category": "appointment",
+      "text": "Umbrella Clinic: Your flu shot appointment is tomorrow at 10:15 AM. Please bring your insurance card. No payment is due online.",
+      "secrets": []
+    },
+    {
+      "id": "safe-045",
+      "kind": "safe",
+      "category": "appointment",
+      "text": "Acme Vet: Biscuit is due for his annual vaccines. Book online at acmevet.com/book or call us. A $25 no-show fee applies to missed appointments.",
+      "secrets": []
+    },
+    {
+      "id": "safe-046",
+      "kind": "safe",
+      "category": "appointment",
+      "text": "Hair appointment reminder: Wednesday 4 PM with Jess. Reply CANCEL if you can't make it.",
+      "secrets": [
+        "Jess"
+      ]
+    },
+    {
+      "id": "safe-047",
+      "kind": "safe",
+      "category": "appointment",
+      "text": "Globex Pharmacy: Your prescription is ready for pickup. Your copay is $15.00. Pick it up within 10 days or it goes back to stock.",
+      "secrets": []
+    },
+    {
+      "id": "safe-048",
+      "kind": "safe",
+      "category": "appointment",
+      "text": "Initech HR: Your benefits enrollment meeting is on Thursday at 2 PM in Room 4B.",
+      "secrets": []
+    },
+    {
+      "id": "safe-049",
+      "kind": "safe",
+      "category": "appointment",
+      "text": "Northwind Eye Care: Time for your yearly eye exam! Schedule at northwindeyecare.com.",
+      "secrets": []
+    },
+    {
+      "id": "safe-050",
+      "kind": "safe",
+      "category": "appointment",
+      "text": "Contoso Plumbing: Your technician Ray is on the way and will arrive in 30-45 min. You pay after the job by card or check; we never ask for payment in advance.",
+      "secrets": [
+        "Ray"
+      ]
+    },
+    {
+      "id": "safe-051",
+      "kind": "safe",
+      "category": "receipt",
+      "text": "Thanks for shopping at Globex Mart! $47.82 was charged to your card ending 1123. Keep this text as your receipt.",
+      "secrets": []
+    },
+    {
+      "id": "safe-052",
+      "kind": "safe",
+      "category": "receipt",
+      "text": "Receipt from Contoso Coffee: 1 latte, 1 muffin. Total $8.75. Thanks for visiting!",
+      "secrets": []
+    },
+    {
+      "id": "safe-053",
+      "kind": "safe",
+      "category": "receipt",
+      "text": "Fabrikam Stream: Your subscription renewed. You were charged $12.99 for December. Manage or cancel any time at fabrikamstream.com/account.",
+      "secrets": []
+    },
+    {
+      "id": "safe-054",
+      "kind": "safe",
+      "category": "receipt",
+      "text": "Northwind Air: Booking confirmed. Flight NW 482, Boston to Denver, Dec 3, 8:05 AM. Confirmation code QX7R2L.",
+      "secrets": []
+    },
+    {
+      "id": "safe-055",
+      "kind": "safe",
+      "category": "receipt",
+      "text": "Acme Hotels: Your reservation at Acme Inn Downtown is confirmed. A hold of $150 will be placed on your card at check-in and released at check-out.",
+      "secrets": []
+    },
+    {
+      "id": "safe-056",
+      "kind": "safe",
+      "category": "receipt",
+      "text": "Your Umbrella Rides trip: $18.40. You can tip your driver in the app.",
+      "secrets": []
+    },
+    {
+      "id": "safe-057",
+      "kind": "safe",
+      "category": "receipt",
+      "text": "Initech Store: Order #IN-77120 confirmed. 1 x USB-C hub, $39.00. Ships in 2 days.",
+      "secrets": []
+    },
+    {
+      "id": "safe-058",
+      "kind": "safe",
+      "category": "receipt",
+      "text": "Globex Electric: Your bill of $142.17 is due Nov 28. Autopay is on, so it will be paid automatically. View the bill at globexelectric.com.",
+      "secrets": []
+    },
+    {
+      "id": "safe-059",
+      "kind": "safe",
+      "category": "receipt",
+      "text": "Contoso Gym: Your monthly membership of $29.99 was charged today. Thanks for being a member!",
+      "secrets": []
+    },
+    {
+      "id": "safe-060",
+      "kind": "safe",
+      "category": "receipt",
+      "text": "Refund processed: $64.00 for the returned 'Rain jacket, M' has been sent to your card ending 8820. Northwind Outfitters.",
+      "secrets": []
+    },
+    {
+      "id": "safe-061",
+      "kind": "safe",
+      "category": "school",
+      "text": "Maple Grove Elementary: School will start 2 hours late tomorrow due to snow.",
+      "secrets": []
+    },
+    {
+      "id": "safe-062",
+      "kind": "safe",
+      "category": "school",
+      "text": "Hi parents, the field trip permission slip is due Friday. Cost is $15, cash or check in the envelope. - Ms. Rivera",
+      "secrets": [
+        "Rivera"
+      ]
+    },
+    {
+      "id": "safe-063",
+      "kind": "safe",
+      "category": "school",
+      "text": "Reminder: picture day is Tuesday!",
+      "secrets": []
+    },
+    {
+      "id": "safe-064",
+      "kind": "safe",
+      "category": "school",
+      "text": "Maple Grove High: Your student's lunch account balance is low ($2.10). Add funds in the parent portal at maplegrovehs.edu/portal.",
+      "secrets": []
+    },
+    {
+      "id": "safe-065",
+      "kind": "safe",
+      "category": "school",
+      "text": "Coach Daniels: Practice is canceled today because of rain. See you Thursday.",
+      "secrets": [
+        "Daniels"
+      ]
+    },
+    {
+      "id": "safe-066",
+      "kind": "safe",
+      "category": "school",
+      "text": "Parent-teacher conferences are Nov 20-21. Sign up for a time slot on the school website.",
+      "secrets": []
+    },
+    {
+      "id": "safe-067",
+      "kind": "safe",
+      "category": "school",
+      "text": "Northwind University Financial Aid: Your spring tuition payment of $3,450 is due Jan 10. Pay through the student portal. We will never ask for payment by gift card or wire.",
+      "secrets": []
+    },
+    {
+      "id": "safe-068",
+      "kind": "safe",
+      "category": "school",
+      "text": "Hi Mrs. Chen, Leo forgot his lunch today, so we gave him one from the cafeteria. - Front office",
+      "secrets": [
+        "Chen",
+        "Leo"
+      ]
+    },
+    {
+      "id": "safe-069",
+      "kind": "safe",
+      "category": "school",
+      "text": "Book fair this week in the library! Students can bring cash or use the online wallet.",
+      "secrets": []
+    },
+    {
+      "id": "safe-070",
+      "kind": "safe",
+      "category": "school",
+      "text": "URGENT from Maple Grove Elementary: Because of a water main break, school closes at noon today. Please arrange pickup. Students will wait in the gym.",
+      "secrets": []
+    },
+    {
+      "id": "safe-071",
+      "kind": "safe",
+      "category": "work",
+      "text": "Team, standup moved to 10:30 tomorrow. Same link.",
+      "secrets": []
+    },
+    {
+      "id": "safe-072",
+      "kind": "safe",
+      "category": "work",
+      "text": "Hi Alex, can you send me the Q3 slides before the 2 PM meeting? Thanks! - Priya",
+      "secrets": [
+        "Alex",
+        "Priya"
+      ]
+    },
+    {
+      "id": "safe-073",
+      "kind": "safe",
+      "category": "work",
+      "text": "Initech Payroll: Your November pay stub is in the HR portal. To change your direct deposit, do it in the portal; payroll never accepts changes by email.",
+      "secrets": []
+    },
+    {
+      "id": "safe-074",
+      "kind": "safe",
+      "category": "work",
+      "text": "Reminder: October expense reports are due Friday.",
+      "secrets": []
+    },
+    {
+      "id": "safe-075",
+      "kind": "safe",
+      "category": "work",
+      "text": "Hi all, IT will patch the mail servers tonight from 10 PM to midnight. You'll be asked to sign in again tomorrow on the usual company login page. No need to click any links in email. - Contoso IT",
+      "secrets": []
+    },
+    {
+      "id": "safe-076",
+      "kind": "safe",
+      "category": "work",
+      "text": "Lunch order for the offsite: reply with your sandwich choice by noon.",
+      "secrets": []
+    },
+    {
+      "id": "safe-077",
+      "kind": "safe",
+      "category": "work",
+      "text": "Fabrikam Finance: Northwind Office Supplies asked us to update their bank details. Per policy, we called them on the number in our vendor file and confirmed it. No action is needed from you.",
+      "secrets": []
+    },
+    {
+      "id": "safe-078",
+      "kind": "safe",
+      "category": "work",
+      "text": "Welcome aboard, Marcus! Your laptop will be ready at the front desk on Monday at 9.",
+      "secrets": [
+        "Marcus"
+      ]
+    },
+    {
+      "id": "safe-079",
+      "kind": "safe",
+      "category": "work",
+      "text": "Can someone cover my shift Saturday 2-8? I'll trade for Sunday. - Tina",
+      "secrets": [
+        "Tina"
+      ]
+    },
+    {
+      "id": "safe-080",
+      "kind": "safe",
+      "category": "work",
+      "text": "Hi Jordan, the client approved the invoice. Payment of $4,800 should land on the 30th through the usual account. Let me know if anything looks off. - Beth",
+      "secrets": [
+        "Jordan",
+        "Beth"
+      ]
+    },
+    {
+      "id": "safe-081",
+      "kind": "safe",
+      "category": "friendlink",
+      "text": "Check out this recipe! acmekitchen.com/recipes/lemon-pasta",
+      "secrets": []
+    },
+    {
+      "id": "safe-082",
+      "kind": "safe",
+      "category": "friendlink",
+      "text": "Here's the concert info, tickets go on sale Friday at 10: globexarena.com/events",
+      "secrets": []
+    },
+    {
+      "id": "safe-083",
+      "kind": "safe",
+      "category": "friendlink",
+      "text": "Hey! Northwind Air has a sale until Sunday, flights from $89. northwindair.com/deals - want to go in March?",
+      "secrets": []
+    },
+    {
+      "id": "safe-084",
+      "kind": "safe",
+      "category": "friendlink",
+      "text": "Found the hiking trail we talked about: northwindparks.org/trails/ridge-loop",
+      "secrets": []
+    },
+    {
+      "id": "safe-085",
+      "kind": "safe",
+      "category": "friendlink",
+      "text": "Sending you the photos from Saturday, they're in our shared album.",
+      "secrets": []
+    },
+    {
+      "id": "safe-086",
+      "kind": "safe",
+      "category": "friendlink",
+      "text": "Did you see the tax agency's free filing tool is open now? taxagency.gov/file - took me 20 minutes.",
+      "secrets": []
+    },
+    {
+      "id": "safe-087",
+      "kind": "safe",
+      "category": "friendlink",
+      "text": "lol this cat video made my day, you have to watch it when you're home",
+      "secrets": []
+    },
+    {
+      "id": "safe-088",
+      "kind": "safe",
+      "category": "friendlink",
+      "text": "Here's the address for the party: 22 Birch Lane. See you at 7!",
+      "secrets": [
+        "22 Birch Lane"
+      ]
+    },
+    {
+      "id": "safe-089",
+      "kind": "safe",
+      "category": "friendlink",
+      "text": "I split the dinner bill in the Contoso Pay app, your share is $23.50. No rush!",
+      "secrets": []
+    },
+    {
+      "id": "safe-090",
+      "kind": "safe",
+      "category": "friendlink",
+      "text": "Hey Nina, I'm selling my old bike for $120. The listing is here if your brother still wants one: fabrikammarket.com/item/88214",
+      "secrets": [
+        "Nina"
+      ]
+    },
+    {
+      "id": "safe-091",
+      "kind": "safe",
+      "category": "marketing",
+      "text": "Acme Outfitters: 30% off all jackets this weekend. Shop at acmeoutfitters.com. Reply STOP to opt out.",
+      "secrets": []
+    },
+    {
+      "id": "safe-092",
+      "kind": "safe",
+      "category": "marketing",
+      "text": "Globex Mart: Your weekly deals are here! Unsubscribe any time at globexmart.com/unsubscribe.",
+      "secrets": []
+    },
+    {
+      "id": "safe-093",
+      "kind": "safe",
+      "category": "marketing",
+      "text": "LAST CHANCE: Northwind Air sale ends tonight at midnight! Book now at northwindair.com. Reply STOP to unsubscribe.",
+      "secrets": []
+    },
+    {
+      "id": "safe-094",
+      "kind": "safe",
+      "category": "marketing",
+      "text": "Contoso Coffee: Free pastry with any drink, today only. Show this text at checkout. Txt STOP to end.",
+      "secrets": []
+    },
+    {
+      "id": "safe-095",
+      "kind": "safe",
+      "category": "marketing",
+      "text": "Subject: You've earned a reward!\n\nHi Megan,\n\nYou've collected 500 points this year, enough for a $10 reward. It's already in your Fabrikam Rewards account and will be applied automatically at your next checkout, in store or at fabrikam.com.\n\nYou're receiving this because you joined Fabrikam Rewards. Unsubscribe or manage preferences: fabrikam.com/preferences",
+      "secrets": [
+        "Megan"
+      ]
+    },
+    {
+      "id": "safe-096",
+      "kind": "safe",
+      "category": "marketing",
+      "text": "Initech Books: New releases from your favorite authors. Browse at initechbooks.com. Unsubscribe at the bottom of this email.",
+      "secrets": []
+    },
+    {
+      "id": "safe-097",
+      "kind": "safe",
+      "category": "marketing",
+      "text": "Umbrella Wireless: Get $200 off a new phone when you trade in your old one. Visit any Umbrella Wireless store or umbrellawireless.com/upgrade. Msg&data rates may apply. Reply STOP to cancel.",
+      "secrets": []
+    },
+    {
+      "id": "safe-098",
+      "kind": "safe",
+      "category": "marketing",
+      "text": "Acme Pizza: Tuesdays are 2-for-1! Order at acmepizza.com. Reply STOP to opt out.",
+      "secrets": []
+    },
+    {
+      "id": "safe-099",
+      "kind": "safe",
+      "category": "marketing",
+      "text": "Congratulations, you're a Gold member! Contoso Hotels upgraded your status after your 10 stays this year. Enjoy late checkout and free breakfast. See benefits at contosohotels.com/gold.",
+      "secrets": []
+    },
+    {
+      "id": "safe-100",
+      "kind": "safe",
+      "category": "marketing",
+      "text": "Northwind Garden Center: Fall bulbs are in! 15% off this week. Unsubscribe: northwindgarden.com/unsub",
+      "secrets": []
+    },
+    {
+      "id": "mask-001",
+      "kind": "mask",
+      "category": "lease",
+      "text": "Can you check this lease for anything unusual?\n\nResidential Lease Agreement\nLandlord: Gregory Hale, 1200 Oak Street, Unit 3, Riverton\nTenant: Maria Lopez, phone (415) 555-0134, maria.lopez@acmemail.com\nPremises: 77 Willow Lane, Apt 2B, Riverton\nRent: $1,650 per month, paid by ACH from account no. 4410 2287 1934.\nSecurity deposit: $3,300.",
+      "secrets": [
+        "Gregory Hale",
+        "1200 Oak Street",
+        "Maria Lopez",
+        "(415) 555-0134",
+        "maria.lopez@acmemail.com",
+        "77 Willow Lane",
+        "4410 2287 1934"
+      ]
+    },
+    {
+      "id": "mask-002",
+      "kind": "mask",
+      "category": "medical",
+      "text": "Please explain this discharge note in plain English.\n\nPatient: Robert Kim   DOB: 03/14/1961   SSN: 078-05-1120\nAddress: 45 Cedar Ave, Lakeview\nAttending: Dr. Helen Park\nDiagnosis: community-acquired pneumonia, improving. Continue amoxicillin 875 mg twice daily for 5 days. Follow up with your primary care doctor in 1 week. Call (312) 555-0187 if fever goes above 101F.",
+      "secrets": [
+        "Robert Kim",
+        "078-05-1120",
+        "45 Cedar Ave",
+        "Helen Park",
+        "(312) 555-0187"
+      ]
+    },
+    {
+      "id": "mask-003",
+      "kind": "mask",
+      "category": "hr",
+      "text": "Make this termination letter sound kinder:\n\nDear Kevin Wright,\n\nThis letter confirms that your employment with Northwind Logistics ends on November 30, 2026. Your final paycheck, including 6 days of unused vacation, will be deposited to account 3301 8842 7710. Please return your badge to Linda Torres in HR, 900 Harbor Blvd, Suite 200. Questions: linda.torres@northwind-logistics.example or (617) 555-0122.",
+      "secrets": [
+        "Kevin Wright",
+        "3301 8842 7710",
+        "Linda Torres",
+        "900 Harbor Blvd",
+        "linda.torres@northwind-logistics.example",
+        "(617) 555-0122"
+      ]
+    },
+    {
+      "id": "mask-004",
+      "kind": "mask",
+      "category": "cv",
+      "text": "Improve my resume summary:\n\nAisha Rahman\n18 Pine Court, Brookfield | (646) 555-0158 | aisha.rahman@fabrikam-mail.com\n\nData analyst with 6 years of experience in retail forecasting. Led a team of 4 at Globex Retail and built dashboards used by 300 store managers. Looking for a senior analytics role.",
+      "secrets": [
+        "Aisha Rahman",
+        "18 Pine Court",
+        "(646) 555-0158",
+        "aisha.rahman@fabrikam-mail.com"
+      ]
+    },
+    {
+      "id": "mask-005",
+      "kind": "mask",
+      "category": "support",
+      "text": "Draft a reply to this customer:\n\nTicket #48213\nFrom: Daniel Brooks <dan.brooks@contoso-mail.com>\nI was charged twice for my order. The card was 4111 1111 1111 1111, exp 08/28. My shipping address is 360 Elm Street, Apt 5, Fairview. Please refund the second charge. Call me at (202) 555-0176 if needed.",
+      "secrets": [
+        "Daniel Brooks",
+        "dan.brooks@contoso-mail.com",
+        "4111 1111 1111 1111",
+        "360 Elm Street",
+        "(202) 555-0176"
+      ]
+    },
+    {
+      "id": "mask-006",
+      "kind": "mask",
+      "category": "email",
+      "text": "Summarize this thread:\n\nFrom: Sarah Mitchell\nTo: Tom Becker\nThe closing for 14 Birch Road is set for Dec 2. Wire the down payment of $62,000 from your account 7781 2290 4436 to the title company only after you call me to confirm. My cell is (303) 555-0149.\n\nFrom: Tom Becker\nThanks. My SSN for the title form is 078-05-1133. Can you send the form to tom.becker@acmemail.com?",
+      "secrets": [
+        "Sarah Mitchell",
+        "Tom Becker",
+        "14 Birch Road",
+        "7781 2290 4436",
+        "(303) 555-0149",
+        "078-05-1133",
+        "tom.becker@acmemail.com"
+      ]
+    },
+    {
+      "id": "mask-007",
+      "kind": "mask",
+      "category": "contract",
+      "text": "Is this freelance contract fair to me?\n\nThis agreement is between Initech Media LLC and Jamal Carter (\"Contractor\"), residing at 820 Lakeside Drive, Westbrook. Payment of $5,500 will be sent to the Contractor's account 9920 1147 3385 within 30 days of delivery. Contractor contact: jamal.carter@globexmail.com, (213) 555-0115.",
+      "secrets": [
+        "Jamal Carter",
+        "820 Lakeside Drive",
+        "9920 1147 3385",
+        "jamal.carter@globexmail.com",
+        "(213) 555-0115"
+      ]
+    },
+    {
+      "id": "mask-008",
+      "kind": "mask",
+      "category": "insurance",
+      "text": "Help me write a cover letter for this insurance claim:\n\nPolicyholder: Emily Nguyen\nPolicy no. UMB-55120-HX\nAddress: 3 Harbor View Ct, Seaside\nIncident: water leak from the upstairs unit on Nov 2, damaging the kitchen ceiling.\nUpstairs neighbor: Mr. Frank Olsen, Unit 2\nContact: (858) 555-0190, emily.nguyen@umbrella-mail.example",
+      "secrets": [
+        "Emily Nguyen",
+        "UMB-55120-HX",
+        "3 Harbor View Ct",
+        "Frank Olsen",
+        "(858) 555-0190",
+        "emily.nguyen@umbrella-mail.example"
+      ]
+    },
+    {
+      "id": "mask-009",
+      "kind": "mask",
+      "category": "tax",
+      "text": "Check my numbers for the tax form:\n\nName: Carlos Mendez   SSN 078-05-1141\nSpouse: Ana Mendez   SSN 078-05-1142\nAddress: 1550 Sunset Blvd, Apt 9, Palmdale\nW-2 wages: $68,400; withholding: $7,210\nRefund to account 0044 1782 9931, routing 011000555.",
+      "secrets": [
+        "Carlos Mendez",
+        "078-05-1141",
+        "Ana Mendez",
+        "078-05-1142",
+        "1550 Sunset Blvd",
+        "0044 1782 9931"
+      ]
+    },
+    {
+      "id": "mask-010",
+      "kind": "mask",
+      "category": "medical",
+      "text": "Translate this referral letter into Spanish:\n\nDear Dr. Alvarez,\n\nI am referring my patient, Grace Liu (DOB 07/22/1988), of 62 Maple Ave, Springfield, for evaluation of recurring migraines. She can be reached at (217) 555-0103 or grace.liu@acmemail.com.\n\nSincerely,\nDr. Samuel Price",
+      "secrets": [
+        "Alvarez",
+        "Grace Liu",
+        "62 Maple Ave",
+        "(217) 555-0103",
+        "grace.liu@acmemail.com",
+        "Samuel Price"
+      ]
+    },
+    {
+      "id": "mask-011",
+      "kind": "mask",
+      "category": "contract",
+      "text": "Fill in a bill of sale with these details:\nSeller: Peter Novak, 410 River Road, Millbrook, (518) 555-0161\nBuyer: Hannah Schultz, 29 Spruce Street, Millbrook, hannah.s@contoso-mail.com\nVehicle: 2017 sedan, 84,000 miles\nPrice: $9,800, paid by bank transfer from account 5512 0087 3341.",
+      "secrets": [
+        "Peter Novak",
+        "410 River Road",
+        "(518) 555-0161",
+        "Hannah Schultz",
+        "29 Spruce Street",
+        "hannah.s@contoso-mail.com",
+        "5512 0087 3341"
+      ]
+    },
+    {
+      "id": "mask-012",
+      "kind": "mask",
+      "category": "support",
+      "text": "Why did this support chat go wrong?\n\nAgent: Can I have your name and the card on the account?\nCustomer: Olivia Grant, card 5555 5555 5555 4444.\nAgent: And the billing address?\nCustomer: 7 Chestnut Lane, Hillcrest.\nAgent: Thanks. I'll send a reset link to olivia.grant@fabrikam-mail.com.",
+      "secrets": [
+        "Olivia Grant",
+        "5555 5555 5555 4444",
+        "7 Chestnut Lane",
+        "olivia.grant@fabrikam-mail.com"
+      ]
+    },
+    {
+      "id": "mask-013",
+      "kind": "mask",
+      "category": "lease",
+      "text": "Review my rental application before I send it:\nApplicant: Benjamin Ortiz\nCurrent address: 2210 Valley Road, Apt 14, Eastport\nSSN: 078-05-1150\nEmployer: Globex Foods, supervisor Rachel Adams, (414) 555-0127\nMonthly income: $5,200\nReference: Mark Young, (414) 555-0128",
+      "secrets": [
+        "Benjamin Ortiz",
+        "2210 Valley Road",
+        "078-05-1150",
+        "Rachel Adams",
+        "(414) 555-0127",
+        "Mark Young",
+        "(414) 555-0128"
+      ]
+    },
+    {
+      "id": "mask-014",
+      "kind": "mask",
+      "category": "hr",
+      "text": "Shorten this offer letter:\n\nDear Chloe Bennett,\n\nWe are pleased to offer you the position of Product Designer at Contoso Labs, starting January 5, 2027, at a salary of $112,000. Please sign and return this letter to Victor Hayes, Contoso Labs, 500 Market Street, Floor 6. For payroll setup we have recorded your SSN 078-05-1162 and your email chloe.bennett@acmemail.com.",
+      "secrets": [
+        "Chloe Bennett",
+        "Victor Hayes",
+        "500 Market Street",
+        "078-05-1162",
+        "chloe.bennett@acmemail.com"
+      ]
+    },
+    {
+      "id": "mask-015",
+      "kind": "mask",
+      "category": "school",
+      "text": "Help me write an email to the teacher based on this:\nStudent: Mia Thompson, grade 4\nParent: Laura Thompson, (708) 555-0181, laura.t@northwind-mail.com\nAddress: 15 Hawthorn Drive, Oakdale\nIssue: she has a peanut allergy and needs an epinephrine auto-injector kept in the nurse's office.",
+      "secrets": [
+        "Mia Thompson",
+        "Laura Thompson",
+        "(708) 555-0181",
+        "laura.t@northwind-mail.com",
+        "15 Hawthorn Drive"
+      ]
+    },
+    {
+      "id": "mask-016",
+      "kind": "mask",
+      "category": "legal",
+      "text": "Make this demand letter firmer:\nTo: Steven Clarke, 88 Granite Way, Northfield\nFrom: Amanda Ross, 12 Quarry Road, Northfield\nRe: unpaid loan of $2,500\nYou agreed to repay me by October 1. Please transfer the money to my account 6607 2213 9048 by December 1, or I will file in small claims court. Reach me at (952) 555-0144.",
+      "secrets": [
+        "Steven Clarke",
+        "88 Granite Way",
+        "Amanda Ross",
+        "12 Quarry Road",
+        "6607 2213 9048",
+        "(952) 555-0144"
+      ]
+    },
+    {
+      "id": "mask-017",
+      "kind": "mask",
+      "category": "medical",
+      "text": "What do these lab results mean?\nPatient: Hiroshi Tanaka   RRN 850315-1234567\nAddress: 301 Ocean Ave, Bayside\nOrdering physician: Dr. Mei Lin\nHbA1c 7.2% (high), fasting glucose 142 mg/dL, LDL 128 mg/dL.\nResults sent to hiroshi.tanaka@contoso-mail.com",
+      "secrets": [
+        "Hiroshi Tanaka",
+        "850315-1234567",
+        "301 Ocean Ave",
+        "Mei Lin",
+        "hiroshi.tanaka@contoso-mail.com"
+      ]
+    },
+    {
+      "id": "mask-018",
+      "kind": "mask",
+      "category": "email",
+      "text": "Fix the grammar in my email:\nHi Mr. Duncan, the heater in my unit at 640 Forest Ave, Apt 3C still dont work. I paid november rent from account 1188 4402 7765 on time. Please call me at (503) 555-0109. Thanks, Jenna Morales (jenna.morales@acmemail.com)",
+      "secrets": [
+        "Duncan",
+        "640 Forest Ave",
+        "1188 4402 7765",
+        "(503) 555-0109",
+        "Jenna Morales",
+        "jenna.morales@acmemail.com"
+      ]
+    },
+    {
+      "id": "mask-019",
+      "kind": "mask",
+      "category": "loan",
+      "text": "Check this loan form for mistakes:\nBorrower: William Foster, SSN 078-05-1171\nCo-borrower: Karen Foster, SSN 078-05-1172\nProperty: 19 Lighthouse Road, Port Haven\nCurrent bank: Northwind Bank, checking account 7700 3412 8856\nPhone: (207) 555-0138",
+      "secrets": [
+        "William Foster",
+        "078-05-1171",
+        "Karen Foster",
+        "078-05-1172",
+        "19 Lighthouse Road",
+        "7700 3412 8856",
+        "(207) 555-0138"
+      ]
+    },
+    {
+      "id": "mask-020",
+      "kind": "mask",
+      "category": "cv",
+      "text": "Turn this CV into a short bio:\nNoah Fischer | 5 Garden Street, Apt 1, Elmwood | noah.fischer@globexmail.com | (402) 555-0172\nSoftware engineer, 8 years. Initech (2019-2026): led the payments API team. Fabrikam (2016-2019): backend developer.\nReference: Dr. Ingrid Sato, ingrid.sato@initech.example",
+      "secrets": [
+        "Noah Fischer",
+        "5 Garden Street",
+        "noah.fischer@globexmail.com",
+        "(402) 555-0172",
+        "Ingrid Sato",
+        "ingrid.sato@initech.example"
+      ]
+    },
+    {
+      "id": "mask-021",
+      "kind": "mask",
+      "category": "support",
+      "text": "Write a refund request from this order info:\nOrder 55-90213, Globex Mart\nName: Isabella Rossi\nShip to: 1020 Meadow Lane, Greenville\nPaid with card 4012 8888 8888 1881\nPhone: (864) 555-0116\nThe blender arrived broken.",
+      "secrets": [
+        "Isabella Rossi",
+        "1020 Meadow Lane",
+        "4012 8888 8888 1881",
+        "(864) 555-0116"
+      ]
+    },
+    {
+      "id": "mask-022",
+      "kind": "mask",
+      "category": "hr",
+      "text": "Summarize this HR complaint neutrally:\nComplainant: Tyler Brooks, Warehouse, employee ID 44812\nRespondent: Gary Whitman, Shift Lead\nOn Nov 3, Gary Whitman shouted at Tyler Brooks in front of the team and threatened to cut his hours. Witness: Denise Park, (608) 555-0153. The complainant lives at 77 Ash Street and asked to be contacted at tyler.b@fabrikam-mail.com.",
+      "secrets": [
+        "Tyler Brooks",
+        "Gary Whitman",
+        "Denise Park",
+        "(608) 555-0153",
+        "77 Ash Street",
+        "tyler.b@fabrikam-mail.com"
+      ]
+    },
+    {
+      "id": "mask-023",
+      "kind": "mask",
+      "category": "legal",
+      "text": "Help me draft a parenting schedule:\nParent A: Melissa Grant, 230 Elm Court, Ridgefield, (203) 555-0124\nParent B: Jason Grant, 18 Bay Road, Ridgefield, (203) 555-0125\nChildren: Ava Grant (8), Leo Grant (5)\nSchool: Ridgefield Elementary, pickup at 3:15",
+      "secrets": [
+        "Melissa Grant",
+        "230 Elm Court",
+        "(203) 555-0124",
+        "Jason Grant",
+        "18 Bay Road",
+        "(203) 555-0125",
+        "Ava Grant",
+        "Leo Grant"
+      ]
+    },
+    {
+      "id": "mask-024",
+      "kind": "mask",
+      "category": "bank",
+      "text": "Write a dispute letter:\nI, Omar Haddad, of 4400 Pinecrest Drive, Apt 12, Sterling, dispute a charge of $389.00 on my card 5105 1051 0510 5100 from 'GLX ONLINE' on Oct 29. My checking account is 2235 7781 0046. Contact: omar.haddad@acmemail.com.",
+      "secrets": [
+        "Omar Haddad",
+        "4400 Pinecrest Drive",
+        "5105 1051 0510 5100",
+        "2235 7781 0046",
+        "omar.haddad@acmemail.com"
+      ]
+    },
+    {
+      "id": "mask-025",
+      "kind": "mask",
+      "category": "email",
+      "text": "Find a time that works for everyone in this thread:\nFrom: Rebecca Stone <rebecca.stone@contoso.example>\nCan we meet Tue or Wed?\nFrom: Luis Navarro <luis.navarro@contoso.example>\nWed after 2 works. I'll be at the 300 Harbor Street office.\nFrom: Kate Moreno <kate.moreno@fabrikam.example>\nTue only, call me at (206) 555-0107.",
+      "secrets": [
+        "Rebecca Stone",
+        "rebecca.stone@contoso.example",
+        "Luis Navarro",
+        "luis.navarro@contoso.example",
+        "300 Harbor Street",
+        "Kate Moreno",
+        "kate.moreno@fabrikam.example",
+        "(206) 555-0107"
+      ]
+    },
+    {
+      "id": "mask-026",
+      "kind": "mask",
+      "category": "medical",
+      "text": "Turn this intake form into a short summary for my new doctor:\nName: George Patel\nDOB 11/02/1955, SSN 078-05-1180\nAddress: 9 Willowbrook Ct, Fairhaven\nEmergency contact: Anita Patel (daughter), (774) 555-0166\nMedications: lisinopril 10 mg, metformin 500 mg\nAllergies: penicillin",
+      "secrets": [
+        "George Patel",
+        "078-05-1180",
+        "9 Willowbrook Ct",
+        "Anita Patel",
+        "(774) 555-0166"
+      ]
+    },
+    {
+      "id": "mask-027",
+      "kind": "mask",
+      "category": "lease",
+      "text": "Compare this renewal notice to my old lease:\nTo: Sophie Martin and Lucas Martin\nUnit: 1801 Bayshore Blvd, Apt 22, Clearwater\nNew rent: $2,100 (was $1,950), starting Feb 1.\nPay to Northwind Property Management, account 8844 1209 3367.\nManager: Diane Holt, diane.holt@northwind-pm.example",
+      "secrets": [
+        "Sophie Martin",
+        "Lucas Martin",
+        "1801 Bayshore Blvd",
+        "8844 1209 3367",
+        "Diane Holt",
+        "diane.holt@northwind-pm.example"
+      ]
+    },
+    {
+      "id": "mask-028",
+      "kind": "mask",
+      "category": "school",
+      "text": "Polish this recommendation letter:\n\nTo whom it may concern,\n\nI have taught Ethan Walker at Westfield High for three years, and he is one of the most curious students I have met. He lives at 52 Maple Ave, Westfield, and can be reached at ethan.walker@acmemail.com. I am happy to talk by phone at (973) 555-0131.\n\nSincerely,\nMargaret Lowe",
+      "secrets": [
+        "Ethan Walker",
+        "52 Maple Ave",
+        "ethan.walker@acmemail.com",
+        "(973) 555-0131",
+        "Margaret Lowe"
+      ]
+    },
+    {
+      "id": "mask-029",
+      "kind": "mask",
+      "category": "insurance",
+      "text": "Write an accident description for my insurer:\nDriver: Natalie Cruz, (480) 555-0177\nOther driver: Brian Holt, (480) 555-0178, insured with Umbrella Mutual, policy UM-88123\nLocation: intersection of 5th Street and Palm Avenue, about 8:10 AM\nMy address: 2700 Desert Rose Lane, Mesa\nThe other car ran the red light and hit my rear door.",
+      "secrets": [
+        "Natalie Cruz",
+        "(480) 555-0177",
+        "Brian Holt",
+        "(480) 555-0178",
+        "UM-88123",
+        "2700 Desert Rose Lane"
+      ]
+    },
+    {
+      "id": "mask-030",
+      "kind": "mask",
+      "category": "hr",
+      "text": "Is this direct deposit form filled in correctly?\nEmployee: Fatima Ali\nAddress: 600 Linden Street, Apt 4, Corwin\nSSN: 078-05-1188\nBank: Contoso Credit Union\nRouting: 011000555\nAccount: 3390 2214 7781\nSignature: Fatima Ali",
+      "secrets": [
+        "Fatima Ali",
+        "600 Linden Street",
+        "078-05-1188",
+        "3390 2214 7781"
+      ]
+    },
+    {
+      "id": "mask-031",
+      "kind": "mask",
+      "category": "personal",
+      "text": "Sort these wedding RSVPs into yes and no:\n- Paul & Jane Rivera, 14 Rose Street, Danbury, (203) 555-0141, yes x2\n- Uncle Ted Morris, ted.morris@globexmail.com, yes x1\n- Kim Sato, 88 Lark Lane, no",
+      "secrets": [
+        "Paul & Jane Rivera",
+        "14 Rose Street",
+        "(203) 555-0141",
+        "Ted Morris",
+        "ted.morris@globexmail.com",
+        "Kim Sato",
+        "88 Lark Lane"
+      ]
+    },
+    {
+      "id": "mask-032",
+      "kind": "mask",
+      "category": "support",
+      "text": "Summarize this IT ticket:\nUser: Derek Hughes (derek.hughes@initech.example), ext. 4412\nIssue: VPN fails after the password change. Ship the replacement laptop to the home address: 33 Oakridge Drive, Bellmont. Mobile (469) 555-0193.",
+      "secrets": [
+        "Derek Hughes",
+        "derek.hughes@initech.example",
+        "33 Oakridge Drive",
+        "(469) 555-0193"
+      ]
+    },
+    {
+      "id": "mask-033",
+      "kind": "mask",
+      "category": "email",
+      "text": "Rewrite this email to my travel agent more politely:\nHi Monica, book the Dec 20 flights for me (Andrew Shaw) and my wife Julia Shaw. Use my card 4242 4242 4242 4242, exp 11/27, billing address 17 Kingfisher Road, Ashby. Send the tickets to andrew.shaw@acmemail.com.\n- Andrew",
+      "secrets": [
+        "Monica",
+        "Andrew Shaw",
+        "Julia Shaw",
+        "4242 4242 4242 4242",
+        "17 Kingfisher Road",
+        "andrew.shaw@acmemail.com",
+        "Andrew"
+      ]
+    },
+    {
+      "id": "mask-034",
+      "kind": "mask",
+      "category": "medical",
+      "text": "Summarize my therapist's note for me:\nClient: Hannah Weiss, 210 Spring Street, Apt 6, Milford\nSession 8. Client reports better sleep and fewer panic episodes since starting the breathing routine. Next session Nov 24.\nClinician: Dr. Paul Becker, (860) 555-0114\nBilling: card 6011 1111 1111 1117",
+      "secrets": [
+        "Hannah Weiss",
+        "210 Spring Street",
+        "Paul Becker",
+        "(860) 555-0114",
+        "6011 1111 1111 1117"
+      ]
+    },
+    {
+      "id": "mask-035",
+      "kind": "mask",
+      "category": "contract",
+      "text": "Explain this NDA clause:\nThis Non-Disclosure Agreement is entered into by Fabrikam Robotics Inc. and Ms. Yuna Choi, residing at 41 Highland Ave, Cedar Falls (RRN 920704-2345678). The Recipient agrees not to disclose any Confidential Information for five years. Notices go to yuna.choi@fabrikam-mail.com.",
+      "secrets": [
+        "Yuna Choi",
+        "41 Highland Ave",
+        "920704-2345678",
+        "yuna.choi@fabrikam-mail.com"
+      ]
+    },
+    {
+      "id": "mask-036",
+      "kind": "mask",
+      "category": "legal",
+      "text": "Draft a reply to this HOA notice:\nOwner: Martin Kowalski, 5 Lakeview Terrace, Unit 12\nViolation: trash bins visible from the street.\nFine: $50 if not fixed by Dec 1. Pay from account 4401 7788 2215 or by check.\nHOA manager: Sheila Grant, (612) 555-0135, sheila@northwind-hoa.example",
+      "secrets": [
+        "Martin Kowalski",
+        "5 Lakeview Terrace",
+        "4401 7788 2215",
+        "Sheila Grant",
+        "(612) 555-0135",
+        "sheila@northwind-hoa.example"
+      ]
+    },
+    {
+      "id": "mask-037",
+      "kind": "mask",
+      "category": "cv",
+      "text": "Make my nursing CV fit on one page:\nGrace Adeyemi, RN\n90 Clover Street, Apt 3, Dunmore | grace.adeyemi@contoso-mail.com | (570) 555-0102\nLicense RN-558812\nExperience: ICU nurse, Umbrella General Hospital (2018-2026)\nReference: Nurse Manager Carol Diaz, (570) 555-0103",
+      "secrets": [
+        "Grace Adeyemi",
+        "90 Clover Street",
+        "grace.adeyemi@contoso-mail.com",
+        "(570) 555-0102",
+        "Carol Diaz",
+        "(570) 555-0103"
+      ]
+    },
+    {
+      "id": "mask-038",
+      "kind": "mask",
+      "category": "support",
+      "text": "Help me complain about this phone bill:\nAccount holder: Victor Reyes\nService address: 145 Orchard Road, Kingsley\nAccount number 77120044518\nAutopay card 5555 5555 5555 4444\nI was charged $74.99 for a plan I canceled on Oct 3, and I called (737) 555-0160 twice.",
+      "secrets": [
+        "Victor Reyes",
+        "145 Orchard Road",
+        "77120044518",
+        "5555 5555 5555 4444",
+        "(737) 555-0160"
+      ]
+    },
+    {
+      "id": "mask-039",
+      "kind": "mask",
+      "category": "personal",
+      "text": "Help me write an obituary from these notes:\nWalter James Harris, 84, of 26 Elm Street, Brookhaven, died Nov 9. Survived by his wife Dorothy Harris and children Michael Harris and Susan Lee. Loved fishing and the town choir. Family contact: Susan Lee, (631) 555-0146.",
+      "secrets": [
+        "Walter James Harris",
+        "26 Elm Street",
+        "Dorothy Harris",
+        "Michael Harris",
+        "Susan Lee",
+        "(631) 555-0146"
+      ]
+    },
+    {
+      "id": "mask-040",
+      "kind": "mask",
+      "category": "email",
+      "text": "Summarize this email for my manager:\nFrom: Priya Nair <priya.nair@globex.example>\nTo: HR\nI'd like to request medical leave from Dec 1 to Jan 15 for surgery. My doctor, Dr. Alan Brooks, can confirm the dates. Please mail the forms to 812 Willow Street, Apt 2, Tarrytown, or call my cell at (914) 555-0151.",
+      "secrets": [
+        "Priya Nair",
+        "priya.nair@globex.example",
+        "Alan Brooks",
+        "812 Willow Street",
+        "(914) 555-0151"
+      ]
+    },
+    {
+      "id": "mask-041",
+      "kind": "mask",
+      "category": "invoice",
+      "text": "Check the math on this invoice:\nBill to: Hannah Lee, 300 Park Avenue, Apt 7, Linwood\nFrom: Samuel Ortiz Handyman, (719) 555-0118\n3 hrs labor x $60 = $180; parts $45; total $225\nPay to account 6630 1102 9984 within 14 days.",
+      "secrets": [
+        "Hannah Lee",
+        "300 Park Avenue",
+        "Samuel Ortiz",
+        "(719) 555-0118",
+        "6630 1102 9984"
+      ]
+    },
+    {
+      "id": "mask-042",
+      "kind": "mask",
+      "category": "legal",
+      "text": "Translate this form into Korean:\nApplicant: Minji Park, RRN 950812-2123456\nUS address: 47 Magnolia Street, Apt 5, Ridgeway\nPhone (703) 555-0169, email minji.park@acmemail.com\nSponsor: David Park, same address",
+      "secrets": [
+        "Minji Park",
+        "950812-2123456",
+        "47 Magnolia Street",
+        "(703) 555-0169",
+        "minji.park@acmemail.com",
+        "David Park"
+      ]
+    },
+    {
+      "id": "mask-043",
+      "kind": "mask",
+      "category": "bank",
+      "text": "Rewrite my fraud report to the bank so it is clearer:\nMy name is Eleanor Price. Someone used my card 4111 1111 1111 1111 at three online stores on Nov 10. My checking account is 0099 1145 7723. I live at 8 Juniper Court, Avondale, phone (623) 555-0105.",
+      "secrets": [
+        "Eleanor Price",
+        "4111 1111 1111 1111",
+        "0099 1145 7723",
+        "8 Juniper Court",
+        "(623) 555-0105"
+      ]
+    },
+    {
+      "id": "mask-044",
+      "kind": "mask",
+      "category": "medical",
+      "text": "Is this dental estimate reasonable?\nPatient: Owen Carter, 1500 Birchwood Ave, Lexford\nInsurance: Northwind Dental Plan, member 77-554-210\nTreatment: crown on tooth 14, $1,250; insurance pays $600\nPatient balance: $650, card on file 3782 822463 10005\nDentist: Dr. Leah Morgan",
+      "secrets": [
+        "Owen Carter",
+        "1500 Birchwood Ave",
+        "77-554-210",
+        "3782 822463 10005",
+        "Leah Morgan"
+      ]
+    },
+    {
+      "id": "mask-045",
+      "kind": "mask",
+      "category": "contract",
+      "text": "Is this non-compete enforceable?\nEmployee: Ryan Mitchell, 61 Sycamore Street, Dalton, SSN 078-05-1197\nEmployer: Globex Analytics, represented by CFO Teresa Wong\nThe Employee shall not work for a competitor within 50 miles for 24 months after leaving, in any role.",
+      "secrets": [
+        "Ryan Mitchell",
+        "61 Sycamore Street",
+        "078-05-1197",
+        "Teresa Wong"
+      ]
+    },
+    {
+      "id": "mask-046",
+      "kind": "mask",
+      "category": "email",
+      "text": "Make this message shorter:\nHey Ken, I'll be out Friday for my mom's surgery. If anything urgent comes up, my cell is (972) 555-0179 and my personal email is jess.ward@northwind-mail.com. My neighbor Paula Diaz at 19 Cobblestone Lane has my spare key if the courier comes. Thanks, Jess Ward",
+      "secrets": [
+        "Ken",
+        "(972) 555-0179",
+        "jess.ward@northwind-mail.com",
+        "Paula Diaz",
+        "19 Cobblestone Lane",
+        "Jess Ward"
+      ]
+    },
+    {
+      "id": "mask-047",
+      "kind": "mask",
+      "category": "school",
+      "text": "Proofread the header of my scholarship application:\nName: Sofia Hernandez\nAddress: 1312 Mission Street, Apt 4, San Alto\nPhone: (408) 555-0183\nEmail: sofia.hernandez@acmemail.com\nParents: Jorge Hernandez and Lucia Hernandez",
+      "secrets": [
+        "Sofia Hernandez",
+        "1312 Mission Street",
+        "(408) 555-0183",
+        "sofia.hernandez@acmemail.com",
+        "Jorge Hernandez",
+        "Lucia Hernandez"
+      ]
+    },
+    {
+      "id": "mask-048",
+      "kind": "mask",
+      "category": "loan",
+      "text": "Tell me if this credit application looks complete:\nApplicant: Thomas Reed\nSSN 078-05-1124\nAddress: 220 Brookside Drive, Ellsworth\nEmployer: Initech, income $84,000\nPhone (316) 555-0186\nCard to link: 5105 1051 0510 5100",
+      "secrets": [
+        "Thomas Reed",
+        "078-05-1124",
+        "220 Brookside Drive",
+        "(316) 555-0186",
+        "5105 1051 0510 5100"
+      ]
+    },
+    {
+      "id": "mask-049",
+      "kind": "mask",
+      "category": "email",
+      "text": "Who owes what in this thread?\nFrom: Nora Quinn\nI paid the roofer $3,000 from account 2290 4471 6602 for the house at 9 Alder Way.\nFrom: Jack Quinn\nI'll cover the gutter guy. His name is Eddie Marsh, number (541) 555-0112.\nFrom: Nora Quinn\nOK, send the receipts to nora.quinn@contoso-mail.com.",
+      "secrets": [
+        "Nora Quinn",
+        "2290 4471 6602",
+        "9 Alder Way",
+        "Jack Quinn",
+        "Eddie Marsh",
+        "(541) 555-0112",
+        "nora.quinn@contoso-mail.com"
+      ]
+    },
+    {
+      "id": "mask-050",
+      "kind": "mask",
+      "category": "lease",
+      "text": "Write a sublet agreement from these notes:\nOriginal tenant: Lily Chen, 455 Riverside Drive, Apt 8, Harbor City, lily.chen@fabrikam-mail.com\nSubtenant: Marco Bianchi, (305) 555-0197, current address 12 Coral Way, Harbor City\nDates: Jan 1 - Mar 31\nRent: $1,400/month, paid to the original tenant's account 5507 3321 8890",
+      "secrets": [
+        "Lily Chen",
+        "455 Riverside Drive",
+        "lily.chen@fabrikam-mail.com",
+        "Marco Bianchi",
+        "(305) 555-0197",
+        "12 Coral Way",
+        "5507 3321 8890"
+      ]
+    }
+  ]
+}

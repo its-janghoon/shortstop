@@ -42,7 +42,7 @@ export interface MaskEntry {
   value: string;
 }
 
-export type MaskKind = "EMAIL" | "PHONE" | "CARD" | "ACCOUNT" | "SSN" | "RRN" | "NAME";
+export type MaskKind = "EMAIL" | "PHONE" | "CARD" | "ACCOUNT" | "SSN" | "RRN" | "DOB" | "NAME";
 
 export interface LinkFinding {
   url: string;

@@ -1,0 +1,1571 @@
+{
+  "$comment": "Final untouched synthetic English test set for Shortstop, written without seeing the engine or other test sets. No real people, numbers or companies.",
+  "items": [
+    {
+      "id": "final-scam-001",
+      "kind": "scam",
+      "category": "delivery",
+      "text": "Acme Parcel: Hi Dana, your package is held at the depot due to an unpaid customs fee of $1.99. Pay within 24h or it will be returned: acme-parcel-redeliver.info/pay",
+      "secrets": [
+        "Dana"
+      ]
+    },
+    {
+      "id": "final-scam-002",
+      "kind": "scam",
+      "category": "delivery",
+      "text": "Northwind Post notice: we tried to deliver to 41 Larch Street but nobody was home. Reschedule and confirm your address here: northwind-post-track.top",
+      "secrets": [
+        "41 Larch Street"
+      ]
+    },
+    {
+      "id": "final-scam-003",
+      "kind": "scam",
+      "category": "delivery",
+      "text": "Hello Mr. Haddad, this is Sam from Tailspin Couriers. Your parcel came back from the sorting centre with an incomplete address. Could you reply with your full address and the last four digits of the card you paid with, so the driver can release it today?",
+      "secrets": [
+        "Mr. Haddad"
+      ]
+    },
+    {
+      "id": "final-scam-004",
+      "kind": "scam",
+      "category": "bank",
+      "text": "WOODGROVE BANK ALERT: A charge of $842.10 at Globex Electronics was attempted on your card. If this was not you, call our fraud team now on (312) 555-0187.",
+      "secrets": []
+    },
+    {
+      "id": "final-scam-005",
+      "kind": "scam",
+      "category": "bank",
+      "text": "Dear Priya Raman, we have detected unusual sign-in activity on your Woodgrove account. To avoid suspension, verify your identity at woodgrove-secure-login.net within 12 hours.",
+      "secrets": [
+        "Priya Raman"
+      ]
+    },
+    {
+      "id": "final-scam-006",
+      "kind": "scam",
+      "category": "bank",
+      "text": "Hi Tomasz, it's Karen from the Contoso Bank fraud department. We've frozen a suspicious transfer of 2,400 from your account. To reverse it I'll send you a code by text in a moment; please read it back to me so I can confirm you're the account holder.",
+      "secrets": [
+        "Tomasz",
+        "Karen"
+      ]
+    },
+    {
+      "id": "final-scam-007",
+      "kind": "scam",
+      "category": "bank",
+      "text": "Good afternoon Mrs. Adeyemi, this is the Fabrikam Credit Union security desk. For your protection we are moving your savings to a new safe account while we investigate a breach. Your case officer, Mr. Lyle, will call you at 3pm with the new account details. Please don't discuss this with branch staff, as the investigation is internal.",
+      "secrets": [
+        "Mrs. Adeyemi",
+        "Mr. Lyle"
+      ]
+    },
+    {
+      "id": "final-scam-008",
+      "kind": "scam",
+      "category": "family",
+      "text": "Hi Mum, this is my new number, my old phone fell in the sink. Can you save this one? Also I need a small favour, can you text me when you're free x",
+      "secrets": []
+    },
+    {
+      "id": "final-scam-009",
+      "kind": "scam",
+      "category": "family",
+      "text": "Dad it's me, Jake. Lost my phone and using a friend's. I'm stuck paying a bill that's due today and my banking app is locked on the new phone. Could you send $680 to my mate Ollie's account? I'll pay you back Friday, promise.",
+      "secrets": [
+        "Jake",
+        "Ollie"
+      ]
+    },
+    {
+      "id": "final-scam-010",
+      "kind": "scam",
+      "category": "family",
+      "text": "Hey auntie, it's Mina! New number, please delete the old one. Bit embarrassing but my card got declined at the vet with Biscuit and they won't let me leave without paying. Could you transfer 320 now? I'll send the details.",
+      "secrets": [
+        "Mina",
+        "Biscuit"
+      ]
+    },
+    {
+      "id": "final-scam-011",
+      "kind": "scam",
+      "category": "family",
+      "text": "Grandpa, it's Lucas. Please don't tell Mom. I was in a car accident and the police are holding me until bail is paid. My lawyer, Mr. Pratt, will call you at (646) 555-0119 and explain how to pay. Please hurry.",
+      "secrets": [
+        "Lucas",
+        "Mr. Pratt",
+        "(646) 555-0119"
+      ]
+    },
+    {
+      "id": "final-scam-012",
+      "kind": "scam",
+      "category": "family",
+      "text": "hi mama it's ahmed, this is my new whatsapp. my screen is broken so i can't call. can you pay a supplier invoice for me today, it's urgent, i'll explain later",
+      "secrets": [
+        "ahmed"
+      ]
+    },
+    {
+      "id": "final-scam-013",
+      "kind": "scam",
+      "category": "investment",
+      "text": "Hi Elena, I'm Victor, an analyst at Globex Capital. Our members made 38% last month with our AI trading signals. Spots are limited this week. Join our private group: t.me/globexsignals-vip",
+      "secrets": [
+        "Elena",
+        "Victor"
+      ]
+    },
+    {
+      "id": "final-scam-014",
+      "kind": "scam",
+      "category": "crypto",
+      "text": "Congratulations! Your Litware Wallet has been selected for the airdrop of 2,500 LWT tokens. Connect your wallet and enter your recovery phrase to claim before midnight: litware-airdrop.app",
+      "secrets": []
+    },
+    {
+      "id": "final-scam-015",
+      "kind": "scam",
+      "category": "investment",
+      "text": "Hello Kenji, good to meet you at the networking dinner last week. As promised, here is the platform my uncle uses for gold contracts. I started with 500 and I'm already at 3,100. Shall I walk you through opening an account tonight? Withdrawals are fast once you upgrade to the silver tier.",
+      "secrets": [
+        "Kenji"
+      ]
+    },
+    {
+      "id": "final-scam-016",
+      "kind": "scam",
+      "category": "crypto",
+      "text": "Hi Rafael, this is Support at Proseware Exchange. Your withdrawal of 0.42 BTC is pending because of a tax verification step. Please pay the 8% clearance fee to the deposit address below to release the funds.",
+      "secrets": [
+        "Rafael"
+      ]
+    },
+    {
+      "id": "final-scam-017",
+      "kind": "scam",
+      "category": "techsupport",
+      "text": "Initech Security: Your computer has been infected with 3 viruses. Your files will be deleted in 5 minutes. Call certified technician at 1-800-555-0144 immediately. Do not close this window.",
+      "secrets": [
+        "1-800-555-0144"
+      ]
+    },
+    {
+      "id": "final-scam-018",
+      "kind": "scam",
+      "category": "techsupport",
+      "text": "Hello, this is Daniel from Contoso Software support. Our servers show your licence was billed twice, so we owe you a refund of $299. To process it I'll need you to install AdatumDesk so I can open your banking page and enter the refund for you.",
+      "secrets": [
+        "Daniel"
+      ]
+    },
+    {
+      "id": "final-scam-019",
+      "kind": "scam",
+      "category": "techsupport",
+      "text": "Dear Ms. Kowalski, your Wingtip Cloud storage is 99% full and your photos will be removed on Friday. Renew your plan for $2.99 to keep them: wingtip-cloud-renew.com/account",
+      "secrets": [
+        "Ms. Kowalski"
+      ]
+    },
+    {
+      "id": "final-scam-020",
+      "kind": "scam",
+      "category": "prize",
+      "text": "WINNER! You've won a $1,000 Northwind gift card in our weekly draw. Claim it now at nw-rewards-claim.biz before it expires. Reply STOP to opt out.",
+      "secrets": []
+    },
+    {
+      "id": "final-scam-021",
+      "kind": "scam",
+      "category": "prize",
+      "text": "Hi Fatima, our records show you were the 10,000th visitor at Fabrikam Mall last month and you've won a family holiday. We only need a small processing fee of $49 to book the flights. Kind regards, Linda, Customer Rewards.",
+      "secrets": [
+        "Fatima",
+        "Linda"
+      ]
+    },
+    {
+      "id": "final-scam-022",
+      "kind": "scam",
+      "category": "prize",
+      "text": "Dear Olusegun, I'm writing from the Tailspin Lottery office. Your e-mail address was drawn as a second-tier winner of 750,000. Please send your full name, home address and a copy of your passport to claims.agent@tailspin-lotto.org to begin the transfer.",
+      "secrets": [
+        "Olusegun"
+      ]
+    },
+    {
+      "id": "final-scam-023",
+      "kind": "scam",
+      "category": "romance",
+      "text": "Good morning beautiful. I know we've only talked for three weeks but I feel closer to you than anyone. My contract on the rig ends soon, but my bank card was blocked and I can't pay the crew release fee. Could you help me with 1,900 just this once? I'll repay you when I land, my love. Yours, Michael",
+      "secrets": [
+        "Michael"
+      ]
+    },
+    {
+      "id": "final-scam-024",
+      "kind": "scam",
+      "category": "romance",
+      "text": "Hi Sophie, sorry for the random message, I think I got your number from a friend's group. I'm Andrew, a surgeon with the UN mission. Would you like to chat? I'm quite lonely out here.",
+      "secrets": [
+        "Sophie",
+        "Andrew"
+      ]
+    },
+    {
+      "id": "final-scam-025",
+      "kind": "scam",
+      "category": "romance",
+      "text": "Darling Rosa, the customs officers say the gift box I sent you contains jewellery and cash, so you must pay a clearance fee of 650 before they can deliver it. The agent, Mr. Banks, will text you the account. I'm so sorry for the trouble. Love, William",
+      "secrets": [
+        "Rosa",
+        "Mr. Banks",
+        "William"
+      ]
+    },
+    {
+      "id": "final-scam-026",
+      "kind": "scam",
+      "category": "job",
+      "text": "Hi! I'm Jessica, a recruiter at Adatum Digital. We have a remote part-time role: rate products online, 60-90 minutes a day, earn 200-500 per day. Are you interested? Reply YES and I'll add you to our WhatsApp training group.",
+      "secrets": [
+        "Jessica"
+      ]
+    },
+    {
+      "id": "final-scam-027",
+      "kind": "scam",
+      "category": "job",
+      "text": "Hello Arjun, thanks for finishing your first 30 tasks! Your account balance is 1,284. To unlock withdrawal you need to complete one combination order, which requires a top-up of 450 that will be refunded with commission. Let me know when you've topped up. Mentor Grace",
+      "secrets": [
+        "Arjun",
+        "Grace"
+      ]
+    },
+    {
+      "id": "final-scam-028",
+      "kind": "scam",
+      "category": "job",
+      "text": "Dear Ngozi, we were impressed by your CV on our portal and would like to offer you the Remote Admin Assistant position at Globex. Before your start date we will send you a cheque to buy home-office equipment from our approved vendor. Please deposit it and send the remainder to the vendor by transfer. HR Department",
+      "secrets": [
+        "Ngozi"
+      ]
+    },
+    {
+      "id": "final-scam-029",
+      "kind": "scam",
+      "category": "job",
+      "text": "Hi Chen, I'm Marcus from Contoso Talent. A client wants to hire you as a payment processing agent. You'll receive customer payments into your personal account and forward them, keeping 10%. Fully remote, start Monday.",
+      "secrets": [
+        "Chen",
+        "Marcus"
+      ]
+    },
+    {
+      "id": "final-scam-030",
+      "kind": "scam",
+      "category": "toll",
+      "text": "Wingtip Toll Services: You have an unpaid toll balance of $6.85. To avoid a late fee of $50, please settle at wingtip-tollpay.us/settle today.",
+      "secrets": []
+    },
+    {
+      "id": "final-scam-031",
+      "kind": "scam",
+      "category": "government",
+      "text": "Revenue Office: You are eligible for a tax refund of 412.50. Submit your bank details to receive it within 3 working days: refunds-gov-portal.info",
+      "secrets": []
+    },
+    {
+      "id": "final-scam-032",
+      "kind": "scam",
+      "category": "government",
+      "text": "Hello Mr. Ivanov, this is Officer Grant from the immigration department. There is a problem with your visa records and a warrant may be issued. To avoid arrest you must pay the outstanding fine today with gift cards. Do not hang up or tell anyone.",
+      "secrets": [
+        "Mr. Ivanov",
+        "Officer Grant"
+      ]
+    },
+    {
+      "id": "final-scam-033",
+      "kind": "scam",
+      "category": "government",
+      "text": "Dear Ayşe Demir, our records show your national health card expires this month. Kindly update your details to keep your coverage. The update takes two minutes and a 1.20 admin charge applies. Thank you, Citizen Services Team.",
+      "secrets": [
+        "Ayşe Demir"
+      ]
+    },
+    {
+      "id": "final-scam-034",
+      "kind": "scam",
+      "category": "tax",
+      "text": "Hi Luis, this is Patricia from the Tax Collections unit. Our audit found an unpaid balance of 3,870 on your 2024 return. As a courtesy we can settle it today by phone with a payment plan before it goes to court. Please call me back on (305) 555-0163 at your earliest convenience.",
+      "secrets": [
+        "Luis",
+        "Patricia",
+        "(305) 555-0163"
+      ]
+    },
+    {
+      "id": "final-scam-035",
+      "kind": "scam",
+      "category": "invoice",
+      "text": "Hi Accounts, please find attached the overdue invoice INV-20931 from Fabrikam Supplies. Note that our bank details have changed this quarter; please use the new account in the attachment for this and future payments. Regards, Helen Marsh, Finance",
+      "secrets": [
+        "Helen Marsh"
+      ]
+    },
+    {
+      "id": "final-scam-036",
+      "kind": "scam",
+      "category": "invoice",
+      "text": "Dear customer, thank you for renewing Litware Antivirus Premium. 399.99 has been charged to your account. If you did not authorise this purchase, call our billing desk at 1-888-555-0172 within 24 hours for a full refund.",
+      "secrets": [
+        "1-888-555-0172"
+      ]
+    },
+    {
+      "id": "final-scam-037",
+      "kind": "scam",
+      "category": "invoice",
+      "text": "Hi Rebecca, quick one. I'm in a board meeting and can't talk. Can you process a payment of 14,200 to a new vendor today? It's for the Northwind acquisition and is confidential. I'll send details. Thanks, David",
+      "secrets": [
+        "Rebecca",
+        "David"
+      ]
+    },
+    {
+      "id": "final-scam-038",
+      "kind": "scam",
+      "category": "invoice",
+      "text": "Hi Sanjay, hope your week is going well. Following our call, I've attached the revised statement for the March consulting work. Our auditors moved us to a new receiving bank, so the remittance details on page 2 are updated. Would you mind confirming once it's scheduled? Many thanks, Claire Dubois, Proseware Accounts",
+      "secrets": [
+        "Sanjay",
+        "Claire Dubois"
+      ]
+    },
+    {
+      "id": "final-scam-039",
+      "kind": "scam",
+      "category": "marketplace",
+      "text": "Hi, I'm very interested in your sofa. I'll buy it at full price. I'm overseas so I'll send a cheque for 1,200, which includes the mover's fee. Once it clears please transfer the extra 700 to my mover. Thanks, Robert",
+      "secrets": [
+        "Robert"
+      ]
+    },
+    {
+      "id": "final-scam-040",
+      "kind": "scam",
+      "category": "marketplace",
+      "text": "Hello! I want to buy your bike. I've paid through the Contoso Marketplace safe-pay system, but you need to upgrade to a business seller account to receive it. Click the link the system sent you and enter your card details to verify.",
+      "secrets": []
+    },
+    {
+      "id": "final-scam-041",
+      "kind": "scam",
+      "category": "marketplace",
+      "text": "Hi Kateryna, I'd like the camera you listed. My cousin will pick it up tomorrow. Before that, could you confirm you're a real seller by sending me the 6-digit code that will arrive on your phone in a minute? Sorry, lots of fakes around.",
+      "secrets": [
+        "Kateryna"
+      ]
+    },
+    {
+      "id": "final-scam-042",
+      "kind": "scam",
+      "category": "rental",
+      "text": "Hi Jordan, thanks for your interest in the apartment at 9 Birch Lane. I'm working abroad so I can't show it in person, but if you send the first month's deposit of 1,450 I'll mail you the keys. Many people are interested so please be quick. Regards, Owner",
+      "secrets": [
+        "Jordan",
+        "9 Birch Lane"
+      ]
+    },
+    {
+      "id": "final-scam-043",
+      "kind": "scam",
+      "category": "rental",
+      "text": "Hello Aiko, this is Mark, the property manager for the flat you viewed on Saturday. Good news, the landlord has chosen you. To hold it before the other applicants we need the holding deposit by transfer today. I'll e-mail the tenancy agreement once it's received. Kind regards, Mark",
+      "secrets": [
+        "Aiko",
+        "Mark"
+      ]
+    },
+    {
+      "id": "final-scam-044",
+      "kind": "scam",
+      "category": "account",
+      "text": "Your Globex Mail password expires today. Keep your current password by confirming here: globex-mail-keep.com",
+      "secrets": []
+    },
+    {
+      "id": "final-scam-045",
+      "kind": "scam",
+      "category": "account",
+      "text": "Hi Thanh, this is the Northwind Streaming team. We couldn't process your last payment and your membership is on hold. Please update your billing information so you don't lose your watch history.",
+      "secrets": [
+        "Thanh"
+      ]
+    },
+    {
+      "id": "final-scam-046",
+      "kind": "scam",
+      "category": "account",
+      "text": "Hey it's Bella from the book club! I accidentally sent my verification code to your number. Could you forward it to me? It's a 6-digit code that just came in.",
+      "secrets": [
+        "Bella"
+      ]
+    },
+    {
+      "id": "final-scam-047",
+      "kind": "scam",
+      "category": "charity",
+      "text": "Hello Mr. Moreno, I'm calling on behalf of the Firefighters' Relief Fund. After last week's storms families need help urgently. Could you make a donation today by card over the phone? Even 40 would make a huge difference.",
+      "secrets": [
+        "Mr. Moreno"
+      ]
+    },
+    {
+      "id": "final-scam-048",
+      "kind": "scam",
+      "category": "recovery",
+      "text": "Dear Hana, we are a fund recovery agency working with law enforcement. We found that you lost money to an investment scam in 2025 and we can recover 92% of it. A refundable legal fee of 300 is required to open your file.",
+      "secrets": [
+        "Hana"
+      ]
+    },
+    {
+      "id": "final-scam-049",
+      "kind": "scam",
+      "category": "utility",
+      "text": "Fabrikam Energy: Your electricity will be disconnected today at 4pm due to an overdue balance. To avoid disconnection, call our billing office at (718) 555-0128 and pay now.",
+      "secrets": [
+        "(718) 555-0128"
+      ]
+    },
+    {
+      "id": "final-scam-050",
+      "kind": "scam",
+      "category": "family",
+      "text": "Hi Margaret, it's Pastor Jim. I'm in a meeting and can't take calls, but I need a quick favour for a parishioner in hospital. Could you pick up four Wingtip gift cards of 100 each and send me photos of the backs? I'll reimburse you on Sunday.",
+      "secrets": [
+        "Margaret",
+        "Pastor Jim"
+      ]
+    },
+    {
+      "id": "final-safe-001",
+      "kind": "safe",
+      "category": "delivery",
+      "text": "Acme Parcel: Your package 4 of 4 was delivered to your front porch at 2:14pm. Track at acme.com/track. No action needed.",
+      "secrets": []
+    },
+    {
+      "id": "final-safe-002",
+      "kind": "safe",
+      "category": "delivery",
+      "text": "Hi Mrs. Nakamura, Northwind Grocery here. Your order arrives between 6 and 7pm tonight. The driver, Ravi, will call if he can't find the building.",
+      "secrets": [
+        "Mrs. Nakamura",
+        "Ravi"
+      ]
+    },
+    {
+      "id": "final-safe-003",
+      "kind": "safe",
+      "category": "delivery",
+      "text": "Tailspin Couriers: Your parcel from Litware Books is out for delivery today. Manage delivery in the Tailspin app. We will never ask you to pay a fee by text.",
+      "secrets": []
+    },
+    {
+      "id": "final-safe-004",
+      "kind": "safe",
+      "category": "bank",
+      "text": "Woodgrove Bank: You paid 42.80 to Contoso Cafe with your card ending 4421. Not you? Open the Woodgrove app or call the number on the back of your card.",
+      "secrets": []
+    },
+    {
+      "id": "final-safe-005",
+      "kind": "safe",
+      "category": "bank",
+      "text": "Contoso Bank: Your monthly statement for October is ready in online banking. We will never ask for your password or one-time codes.",
+      "secrets": []
+    },
+    {
+      "id": "final-safe-006",
+      "kind": "safe",
+      "category": "bank",
+      "text": "Hi Oluwaseun, just a reminder that your appointment with your mortgage adviser, Ms. Lin, is on Thursday at 10:30 at the High Street branch. Reply C to confirm. Fabrikam Credit Union",
+      "secrets": [
+        "Oluwaseun",
+        "Ms. Lin"
+      ]
+    },
+    {
+      "id": "final-safe-007",
+      "kind": "safe",
+      "category": "2fa",
+      "text": "Your Globex verification code is 482913. It expires in 10 minutes. If you didn't request this, ignore this message.",
+      "secrets": []
+    },
+    {
+      "id": "final-safe-008",
+      "kind": "safe",
+      "category": "2fa",
+      "text": "Initech: 703355 is your sign-in code. Never share this code. Our staff will never ask for it.",
+      "secrets": []
+    },
+    {
+      "id": "final-safe-009",
+      "kind": "safe",
+      "category": "2fa",
+      "text": "Use 119042 to verify your new Proseware account, Wei. Requested from Chrome on Windows at 09:41.",
+      "secrets": [
+        "Wei"
+      ]
+    },
+    {
+      "id": "final-safe-010",
+      "kind": "safe",
+      "category": "family",
+      "text": "mom can you send me grandma's soup recipe? the one with ginger. jiwoo wants to try making it this weekend",
+      "secrets": [
+        "jiwoo"
+      ]
+    },
+    {
+      "id": "final-safe-011",
+      "kind": "safe",
+      "category": "family",
+      "text": "Hi Dad, landed safe in Lisbon! Hotel is lovely. Tell Grandma Rosa I'll call her Sunday. Love, Inês",
+      "secrets": [
+        "Grandma Rosa",
+        "Inês"
+      ]
+    },
+    {
+      "id": "final-safe-012",
+      "kind": "safe",
+      "category": "family",
+      "text": "okaasan, i'll be home late tonight, club practice ran long. yuki's mom is driving me back so don't worry",
+      "secrets": [
+        "yuki"
+      ]
+    },
+    {
+      "id": "final-safe-013",
+      "kind": "safe",
+      "category": "family",
+      "text": "Beta, did you eat? Papa says the cricket match is on at 7, come over if you're free. Bring Ananya and the kids.",
+      "secrets": [
+        "Ananya"
+      ]
+    },
+    {
+      "id": "final-safe-014",
+      "kind": "safe",
+      "category": "family",
+      "text": "Tunde! Mummy says the wedding is now on the 14th, not the 21st. Tell Chidi and Ifeoma, I've told everyone else. — Sis",
+      "secrets": [
+        "Tunde",
+        "Chidi",
+        "Ifeoma"
+      ]
+    },
+    {
+      "id": "final-safe-015",
+      "kind": "safe",
+      "category": "friend",
+      "text": "haha omg linh that photo of you and minh at the beach 😂 send me the rest pls",
+      "secrets": [
+        "linh",
+        "minh"
+      ]
+    },
+    {
+      "id": "final-safe-016",
+      "kind": "safe",
+      "category": "friend",
+      "text": "Hey Kasia, are we still on for pierogi at your place Saturday? I'll bring wine. Marek said he might be late.",
+      "secrets": [
+        "Kasia",
+        "Marek"
+      ]
+    },
+    {
+      "id": "final-safe-017",
+      "kind": "safe",
+      "category": "friend",
+      "text": "yo dimitri, lost my charger at your flat i think. can you bring it to football thursday? cheers",
+      "secrets": [
+        "dimitri"
+      ]
+    },
+    {
+      "id": "final-safe-018",
+      "kind": "safe",
+      "category": "friend",
+      "text": "Hi Ahmed, it's Layla. I changed my number, this is the new one. No need to send anything, just save it! See you at Noor's dinner.",
+      "secrets": [
+        "Ahmed",
+        "Layla",
+        "Noor"
+      ]
+    },
+    {
+      "id": "final-safe-019",
+      "kind": "safe",
+      "category": "friend",
+      "text": "Mehmet abi, maçı izledin mi? Cem said he has a spare ticket for Sunday if you want it.",
+      "secrets": [
+        "Mehmet abi",
+        "Cem"
+      ]
+    },
+    {
+      "id": "final-safe-020",
+      "kind": "safe",
+      "category": "friend",
+      "text": "Bro Xiao Ming said the karaoke place moved. New spot is next to the noodle shop. 8pm, don't be late lol",
+      "secrets": [
+        "Xiao Ming"
+      ]
+    },
+    {
+      "id": "final-safe-021",
+      "kind": "safe",
+      "category": "appointment",
+      "text": "Reminder: Dr. Okafor will see you on Tuesday 18 Nov at 9:15am at Contoso Family Clinic. Please arrive 10 minutes early. Reply R to reschedule.",
+      "secrets": [
+        "Dr. Okafor"
+      ]
+    },
+    {
+      "id": "final-safe-022",
+      "kind": "safe",
+      "category": "appointment",
+      "text": "Hi Sung-min, your haircut with Jae at Fabrikam Studio is confirmed for Friday 4pm. See you then!",
+      "secrets": [
+        "Sung-min",
+        "Jae"
+      ]
+    },
+    {
+      "id": "final-safe-023",
+      "kind": "safe",
+      "category": "appointment",
+      "text": "Wingtip Dental: Hi Olga, this is a reminder of your check-up tomorrow at 11:00 with Dr. Petrova. Call the clinic if you need to change it.",
+      "secrets": [
+        "Olga",
+        "Dr. Petrova"
+      ]
+    },
+    {
+      "id": "final-safe-024",
+      "kind": "safe",
+      "category": "receipt",
+      "text": "Thanks for your order, Carlos! Order #NW-88213 from Northwind Outdoors: 1 x trail backpack, 89.00. View your receipt in your account.",
+      "secrets": [
+        "Carlos"
+      ]
+    },
+    {
+      "id": "final-safe-025",
+      "kind": "safe",
+      "category": "receipt",
+      "text": "Adatum Pharmacy: Your prescription is ready for pickup at the counter. Opening hours 8am-8pm.",
+      "secrets": []
+    },
+    {
+      "id": "final-safe-026",
+      "kind": "safe",
+      "category": "receipt",
+      "text": "Litware Store: Refund of 24.99 for the returned headphones has been issued to your original payment method. It may take 3-5 business days to appear.",
+      "secrets": []
+    },
+    {
+      "id": "final-safe-027",
+      "kind": "safe",
+      "category": "work",
+      "text": "Hi team, standup is moved to 10:30 today because of the client call. Priya will run it. — Tom",
+      "secrets": [
+        "Priya",
+        "Tom"
+      ]
+    },
+    {
+      "id": "final-safe-028",
+      "kind": "safe",
+      "category": "work",
+      "text": "Hey Fernanda, can you review my PR before lunch? It's the one fixing the export bug. thanks! - joão",
+      "secrets": [
+        "Fernanda",
+        "joão"
+      ]
+    },
+    {
+      "id": "final-safe-029",
+      "kind": "safe",
+      "category": "work",
+      "text": "Reminder from HR: please complete your annual security training in the Contoso Learning portal by Friday. Contact Aisha Rahman with questions.",
+      "secrets": [
+        "Aisha Rahman"
+      ]
+    },
+    {
+      "id": "final-safe-030",
+      "kind": "safe",
+      "category": "work",
+      "text": "Hi Mr. Tanaka, the quarterly report is attached in the shared drive under Finance/Q3. Let me know if the numbers look right. Best, Hiroshi",
+      "secrets": [
+        "Mr. Tanaka",
+        "Hiroshi"
+      ]
+    },
+    {
+      "id": "final-safe-031",
+      "kind": "safe",
+      "category": "work",
+      "text": "Your IT ticket #4471 has been resolved: your laptop VPN profile was updated. If the issue persists, reply to reopen. Initech IT Service Desk",
+      "secrets": []
+    },
+    {
+      "id": "final-safe-032",
+      "kind": "safe",
+      "category": "work",
+      "text": "Hey, Globex finance here. Your expense claim for the Warsaw trip was approved and will be paid with your next salary. No action needed.",
+      "secrets": []
+    },
+    {
+      "id": "final-safe-033",
+      "kind": "safe",
+      "category": "school",
+      "text": "Dear parents, the Year 4 trip to the science museum is on 3 December. Please return the signed consent form to Mrs. Alvarez by Friday. Thank you.",
+      "secrets": [
+        "Mrs. Alvarez"
+      ]
+    },
+    {
+      "id": "final-safe-034",
+      "kind": "safe",
+      "category": "school",
+      "text": "Hi, this is Ms. Nguyen from Tailspin Primary. Bao had a small bump on the playground, he's fine and back in class, just letting you know.",
+      "secrets": [
+        "Ms. Nguyen",
+        "Bao"
+      ]
+    },
+    {
+      "id": "final-safe-035",
+      "kind": "safe",
+      "category": "school",
+      "text": "Fabrikam University: Your spring course registration opens Monday at 9am. Log in to the student portal to choose your classes.",
+      "secrets": []
+    },
+    {
+      "id": "final-safe-036",
+      "kind": "safe",
+      "category": "landlord",
+      "text": "Hi Natasha, the plumber will come Wednesday morning to fix the kitchen tap. He has a key, so you don't need to be home. — Viktor (landlord)",
+      "secrets": [
+        "Natasha",
+        "Viktor"
+      ]
+    },
+    {
+      "id": "final-safe-037",
+      "kind": "safe",
+      "category": "landlord",
+      "text": "Dear residents, the building water will be shut off on Thursday from 9am to 1pm for pipe maintenance. Sorry for the inconvenience. Building management",
+      "secrets": []
+    },
+    {
+      "id": "final-safe-038",
+      "kind": "safe",
+      "category": "landlord",
+      "text": "Hello Amira, thanks for the rent, received in full. The new parking permit is in your mailbox. Best, Khalid",
+      "secrets": [
+        "Amira",
+        "Khalid"
+      ]
+    },
+    {
+      "id": "final-safe-039",
+      "kind": "safe",
+      "category": "government",
+      "text": "City Council: Your recycling collection moves to Wednesdays from 1 December. Check your schedule on the council website.",
+      "secrets": []
+    },
+    {
+      "id": "final-safe-040",
+      "kind": "safe",
+      "category": "government",
+      "text": "Your passport application has been received and is being processed. We'll e-mail you when it's ready. You don't need to do anything now.",
+      "secrets": []
+    },
+    {
+      "id": "final-safe-041",
+      "kind": "safe",
+      "category": "account",
+      "text": "Proseware: A new sign-in to your account from Firefox on Mac. If this was you, you can ignore this e-mail. If not, change your password in Settings.",
+      "secrets": []
+    },
+    {
+      "id": "final-safe-042",
+      "kind": "safe",
+      "category": "account",
+      "text": "Hi Agnieszka, your Northwind Streaming plan renews on 1 December at the usual price. You can manage your plan in the app anytime.",
+      "secrets": [
+        "Agnieszka"
+      ]
+    },
+    {
+      "id": "final-safe-043",
+      "kind": "safe",
+      "category": "travel",
+      "text": "Wingtip Airways: Hi Rahul, check-in for your flight to Kochi is now open. Your seat is 23A. Boarding pass is in the app.",
+      "secrets": [
+        "Rahul"
+      ]
+    },
+    {
+      "id": "final-safe-044",
+      "kind": "safe",
+      "category": "travel",
+      "text": "Tailspin Rail: Your 08:12 train is running 6 minutes late. We're sorry for the delay.",
+      "secrets": []
+    },
+    {
+      "id": "final-safe-045",
+      "kind": "safe",
+      "category": "friend",
+      "text": "nana, it's lupe! i finally got the new phone, this is my number now. pick you up for church at 9?",
+      "secrets": [
+        "lupe"
+      ]
+    },
+    {
+      "id": "final-safe-046",
+      "kind": "safe",
+      "category": "family",
+      "text": "Hi bà, con là Thảo. Mẹ said you're feeling better, I'll visit with Khoa on Saturday afternoon.",
+      "secrets": [
+        "Thảo",
+        "Khoa"
+      ]
+    },
+    {
+      "id": "final-safe-047",
+      "kind": "safe",
+      "category": "friend",
+      "text": "Salam Youssef, the mosque bake sale raised more than last year! Thanks for the brownies. Fatima says hi.",
+      "secrets": [
+        "Youssef",
+        "Fatima"
+      ]
+    },
+    {
+      "id": "final-safe-048",
+      "kind": "safe",
+      "category": "work",
+      "text": "Hi Señora Ruiz, your contract renewal is ready to sign in the HR portal. No rush, it's due by month end. Saludos, Pablo",
+      "secrets": [
+        "Señora Ruiz",
+        "Pablo"
+      ]
+    },
+    {
+      "id": "final-safe-049",
+      "kind": "safe",
+      "category": "friend",
+      "text": "Sasha!! happy birthday 🎉 hope Anya and the twins spoil you today. drinks on me next week",
+      "secrets": [
+        "Sasha",
+        "Anya"
+      ]
+    },
+    {
+      "id": "final-safe-050",
+      "kind": "safe",
+      "category": "receipt",
+      "text": "Contoso Utilities: Thanks, Emeka. We've received your payment of 63.20 for your October bill. Your balance is now 0.00.",
+      "secrets": [
+        "Emeka"
+      ]
+    },
+    {
+      "id": "final-mask-001",
+      "kind": "mask",
+      "category": "lease",
+      "text": "RESIDENTIAL LEASE AGREEMENT\nLandlord: Gareth Wynn\nTenant: Maria Fernandes\nPremises: 27 Willow Court, Apt 3B, Fairview\nTerm: 12 months from 1 January 2026\nRent: 1,350 per month, payable to account 40-11-22 88301245\nTenant phone: (415) 555-0134\nSigned: G. Wynn / M. Fernandes",
+      "secrets": [
+        "Gareth Wynn",
+        "Maria Fernandes",
+        "27 Willow Court, Apt 3B",
+        "88301245",
+        "(415) 555-0134",
+        "G. Wynn",
+        "M. Fernandes"
+      ]
+    },
+    {
+      "id": "final-mask-002",
+      "kind": "mask",
+      "category": "lease",
+      "text": "Can you check if this sublease clause is fair?\n\n\"This sublease is between OKONKWO, Chinedu (sublessor) and Ms. Hiroko Sato (sublessee) for the room at 112 Maple Road. Ms. Sato will pay Mr. Okonkwo directly. Contact: hiroko.sato@contoso.com.\"",
+      "secrets": [
+        "OKONKWO, Chinedu",
+        "Ms. Hiroko Sato",
+        "112 Maple Road",
+        "Ms. Sato",
+        "Mr. Okonkwo",
+        "hiroko.sato@contoso.com"
+      ]
+    },
+    {
+      "id": "final-mask-003",
+      "kind": "mask",
+      "category": "lease",
+      "text": "Hi, my landlord sent this deposit deduction letter, is it legal?\n\nDear Tenant (Lena Hoffmann),\nRe: 8 Quarry Lane, Flat 2\nFrom your deposit of 1,800 we have deducted 640 for repainting. The balance will be paid to IBAN-style account 0012 3344 5566.\nRegards, Brian Kelly, Kelly Lettings\nTel (617) 555-0151",
+      "secrets": [
+        "Lena Hoffmann",
+        "8 Quarry Lane, Flat 2",
+        "0012 3344 5566",
+        "Brian Kelly",
+        "(617) 555-0151"
+      ]
+    },
+    {
+      "id": "final-mask-004",
+      "kind": "mask",
+      "category": "contract",
+      "text": "FREELANCE SERVICES AGREEMENT\nClient: Fabrikam Ltd, represented by Nadia Petrovic\nContractor: Diego Alvarez Ruiz, 15 Cedar Ave, Rivertown\nTax ID: 078-05-1121\nPayment to: account no. 5512 0098 7741\nE-mail: diego.alvarez@proseware.com\n\n__________________\nD. Alvarez Ruiz",
+      "secrets": [
+        "Nadia Petrovic",
+        "Diego Alvarez Ruiz",
+        "15 Cedar Ave",
+        "078-05-1121",
+        "5512 0098 7741",
+        "diego.alvarez@proseware.com",
+        "D. Alvarez Ruiz"
+      ]
+    },
+    {
+      "id": "final-mask-005",
+      "kind": "mask",
+      "category": "contract",
+      "text": "Please make this NDA clearer in plain English:\n\nThis Agreement is made between Adatum Corp (\"Company\") and Mr. Rajesh Iyer (\"Recipient\"), residing at 501 Lotus Towers, Sector 9. Recipient's employee number is ADT-77120. Notices to Recipient shall be sent to r.iyer@adatum.com. Witness: S. Kapoor.",
+      "secrets": [
+        "Mr. Rajesh Iyer",
+        "501 Lotus Towers, Sector 9",
+        "ADT-77120",
+        "r.iyer@adatum.com",
+        "S. Kapoor"
+      ]
+    },
+    {
+      "id": "final-mask-006",
+      "kind": "mask",
+      "category": "contract",
+      "text": "Summarise the payment terms:\n\nSALE OF VEHICLE\nSeller: Kowalczyk, Piotr — ph. 555-0177\nBuyer: Emma Lindqvist, DOB 14/03/1991\nPrice: 7,200 paid by card 4111 1111 1111 1111\nSeller signature: P.K.    Buyer signature: E. Lindqvist",
+      "secrets": [
+        "Kowalczyk, Piotr",
+        "555-0177",
+        "Emma Lindqvist",
+        "14/03/1991",
+        "4111 1111 1111 1111",
+        "E. Lindqvist"
+      ]
+    },
+    {
+      "id": "final-mask-007",
+      "kind": "mask",
+      "category": "medical",
+      "text": "Can you explain these blood test results in simple terms?\n\nPatient: Abdullah Al-Farsi\nDOB: 02/09/1978\nMRN: 0048812\nReferring physician: Dr. Hannah Weiss\nHemoglobin 11.2 g/dL (low), Ferritin 9 ng/mL (low)\nAddress on file: 33 Palm Street, Unit 6",
+      "secrets": [
+        "Abdullah Al-Farsi",
+        "02/09/1978",
+        "0048812",
+        "Dr. Hannah Weiss",
+        "33 Palm Street, Unit 6"
+      ]
+    },
+    {
+      "id": "final-mask-008",
+      "kind": "mask",
+      "category": "medical",
+      "text": "Discharge summary — please help me understand the medication list.\n\nName: TRAN, Van Duc   Age 67\nInsurance member ID: WGT-4419-2210\nAdmitted under Prof. Elliot Grey, Ward 5\nNext of kin: Tran Thi Mai, (202) 555-0188\nMedications: metoprolol 25 mg twice daily, atorvastatin 40 mg nightly",
+      "secrets": [
+        "TRAN, Van Duc",
+        "WGT-4419-2210",
+        "Prof. Elliot Grey",
+        "Tran Thi Mai",
+        "(202) 555-0188"
+      ]
+    },
+    {
+      "id": "final-mask-009",
+      "kind": "mask",
+      "category": "medical",
+      "text": "My GP letter says this, what does 'query early arthritis' mean?\n\nDear Dr. Mensah,\nThank you for seeing Mrs. Abena Owusu (DOB 21 June 1965, NHS-style no. 943 476 5919) of 4 Elm Terrace. She reports morning stiffness in both hands...\nYours sincerely,\nDr. K. Brennan",
+      "secrets": [
+        "Dr. Mensah",
+        "Mrs. Abena Owusu",
+        "21 June 1965",
+        "943 476 5919",
+        "4 Elm Terrace",
+        "Dr. K. Brennan"
+      ]
+    },
+    {
+      "id": "final-mask-010",
+      "kind": "mask",
+      "category": "medical",
+      "text": "Rewrite this as a short note for my employer, without the diagnosis details:\n\nCLINIC NOTE — Patient: Sofia Marchetti, patient #PT-30981\nSeen by: Dr. Ahmad\nDiagnosis: lumbar strain\nRecommend 5 days rest. Patient contact: sofia.m@litware.com, mobile 555-0103",
+      "secrets": [
+        "Sofia Marchetti",
+        "PT-30981",
+        "Dr. Ahmad",
+        "sofia.m@litware.com",
+        "555-0103"
+      ]
+    },
+    {
+      "id": "final-mask-011",
+      "kind": "mask",
+      "category": "hr",
+      "text": "Help me write a reply to this HR warning letter:\n\nTo: Kwame Asante (Employee ID 20457)\nFrom: Rachel Moore, HR Business Partner\nCC: Line manager J. Fitzgerald\nRe: Attendance\nKwame, records show four late arrivals in October...\nRachel",
+      "secrets": [
+        "Kwame Asante",
+        "20457",
+        "Rachel Moore",
+        "J. Fitzgerald",
+        "Kwame",
+        "Rachel"
+      ]
+    },
+    {
+      "id": "final-mask-012",
+      "kind": "mask",
+      "category": "hr",
+      "text": "Can you turn this into a nicer offer letter?\n\nCandidate: Yuna Choi\nPosition: Data Analyst, Globex\nSalary: 68,000\nStart: 5 Jan 2026\nReports to: Mr. Delgado\nBank for payroll: Woodgrove acct 0091 7733 6612\nSSN on file: 078-05-1134",
+      "secrets": [
+        "Yuna Choi",
+        "Mr. Delgado",
+        "0091 7733 6612",
+        "078-05-1134"
+      ]
+    },
+    {
+      "id": "final-mask-013",
+      "kind": "mask",
+      "category": "hr",
+      "text": "Payroll table copied from our spreadsheet, can you total the overtime?\n\n| Employee | ID | Hours OT |\n| Nowak, Agata | E-1102 | 6 |\n| B. Osei | E-1107 | 4 |\n| Haruto Mori | E-1115 | 9 |\n| fernandez, lucia | E-1121 | 3 |",
+      "secrets": [
+        "Nowak, Agata",
+        "E-1102",
+        "B. Osei",
+        "E-1107",
+        "Haruto Mori",
+        "E-1115",
+        "fernandez, lucia",
+        "E-1121"
+      ]
+    },
+    {
+      "id": "final-mask-014",
+      "kind": "mask",
+      "category": "hr",
+      "text": "Exit interview notes, please summarise themes:\n\nInterviewee: Leila Haddad (leila.haddad@initech.com)\nInterviewer: Sam Whitaker\nManager: Okoro\nLeila said the main reason for leaving was lack of growth. She felt Okoro rarely held 1:1s.",
+      "secrets": [
+        "Leila Haddad",
+        "leila.haddad@initech.com",
+        "Sam Whitaker",
+        "Okoro",
+        "Leila"
+      ]
+    },
+    {
+      "id": "final-mask-015",
+      "kind": "mask",
+      "category": "cv",
+      "text": "Please improve my CV summary:\n\nANIKA SHARMA\n22 Rosewood Drive, Northbridge | +1 (408) 555-0126 | anika.sharma@fabrikam.com\nDate of birth: 07/11/1996\nSenior QA Engineer with 6 years of experience in test automation...\nReferences: Mr. Thomas Reid, QA Lead",
+      "secrets": [
+        "ANIKA SHARMA",
+        "22 Rosewood Drive",
+        "+1 (408) 555-0126",
+        "anika.sharma@fabrikam.com",
+        "07/11/1996",
+        "Mr. Thomas Reid"
+      ]
+    },
+    {
+      "id": "final-mask-016",
+      "kind": "mask",
+      "category": "cv",
+      "text": "Make this cover letter more confident:\n\nDear Ms. Ferreira,\nI'm applying for the Logistics Coordinator role at Northwind. ...\nKind regards,\nOmar Benali\n55 Harbour View, Seaport\n(503) 555-0193 · omar.benali@contoso.com",
+      "secrets": [
+        "Ms. Ferreira",
+        "Omar Benali",
+        "55 Harbour View",
+        "(503) 555-0193",
+        "omar.benali@contoso.com"
+      ]
+    },
+    {
+      "id": "final-mask-017",
+      "kind": "mask",
+      "category": "cv",
+      "text": "Translate this CV header into a professional format:\n\nNAME: Wójcik Magdalena\nPESEL-style ID: 91031504562\nAddress: ul. Lipowa 12/4, Old Town\nPhone: 555-0158\nEmail: m.wojcik@tailspin.com",
+      "secrets": [
+        "Wójcik Magdalena",
+        "91031504562",
+        "ul. Lipowa 12/4",
+        "555-0158",
+        "m.wojcik@tailspin.com"
+      ]
+    },
+    {
+      "id": "final-mask-018",
+      "kind": "mask",
+      "category": "support",
+      "text": "Draft a response to this support ticket:\n\nTicket #88124\nCustomer: Mr. Haruki Ono\nAccount: WWB-55012-77\nPhone: (206) 555-0110\nIssue: Customer says card 5555 5555 5555 4444 was charged twice for order NW-4410. Customer address 18 Sakura Lane.",
+      "secrets": [
+        "Mr. Haruki Ono",
+        "WWB-55012-77",
+        "(206) 555-0110",
+        "5555 5555 5555 4444",
+        "18 Sakura Lane"
+      ]
+    },
+    {
+      "id": "final-mask-019",
+      "kind": "mask",
+      "category": "support",
+      "text": "Summarise this chat log for the escalation team:\n\n[10:02] Agent (Bea): Hi, how can I help?\n[10:03] Customer (Ivan Sokolov): my router keeps dropping\n[10:04] Bea: Can I confirm your account number?\n[10:04] Ivan Sokolov: 7731-0042-19\n[10:05] Bea: And the service address?\n[10:05] Ivan Sokolov: 9 Pine Hill Road",
+      "secrets": [
+        "Bea",
+        "Ivan Sokolov",
+        "7731-0042-19",
+        "9 Pine Hill Road"
+      ]
+    },
+    {
+      "id": "final-mask-020",
+      "kind": "mask",
+      "category": "support",
+      "text": "Write a polite refund denial based on this:\n\nFrom: gabriela.souza@wingtip.com\nName: Gabriela Souza\nOrder: LW-20018\nCard used: 4242 4242 4242 4242\nShe wants a refund 95 days after purchase; policy is 30 days. Handled by: T. Ng",
+      "secrets": [
+        "gabriela.souza@wingtip.com",
+        "Gabriela Souza",
+        "4242 4242 4242 4242",
+        "T. Ng"
+      ]
+    },
+    {
+      "id": "final-mask-021",
+      "kind": "mask",
+      "category": "email",
+      "text": "Can you shorten this e-mail thread into three bullets?\n\nFrom: Chloe Martin <chloe.martin@globex.com>\nTo: Hassan Javed\nSubject: Re: Q4 budget\n\nHassan, Finance (Ms. Lee) wants the forecast by Friday.\n\n> On Mon, Hassan Javed wrote:\n> Chloe, can we push to next week? My direct line is 555-0145.\n\n--\nChloe Martin | Planning Lead",
+      "secrets": [
+        "Chloe Martin",
+        "chloe.martin@globex.com",
+        "Hassan Javed",
+        "Hassan",
+        "Ms. Lee",
+        "555-0145",
+        "Chloe"
+      ]
+    },
+    {
+      "id": "final-mask-022",
+      "kind": "mask",
+      "category": "email",
+      "text": "Help me reply kindly to my neighbour's e-mail:\n\nHi there, it's Doreen from number 14 (14 Ashby Road). Your hedge is hanging over our drive again. Could you trim it this weekend? Call me on (720) 555-0137 if easier. Thanks, Doreen & Phil",
+      "secrets": [
+        "Doreen",
+        "14 Ashby Road",
+        "(720) 555-0137",
+        "Phil"
+      ]
+    },
+    {
+      "id": "final-mask-023",
+      "kind": "mask",
+      "category": "email",
+      "text": "Translate this e-mail to Spanish:\n\nDear Mr. and Mrs. Castillo,\nYour booking ref WT-99812 for 2 guests is confirmed. We will charge card 6011 1111 1111 1117 on arrival. Please send a copy of the lead guest's passport (no. X4492017) to bookings@wingtip.com.\nBest, Anneliese",
+      "secrets": [
+        "Mr. and Mrs. Castillo",
+        "WT-99812",
+        "6011 1111 1111 1117",
+        "X4492017",
+        "Anneliese"
+      ]
+    },
+    {
+      "id": "final-mask-024",
+      "kind": "mask",
+      "category": "school",
+      "text": "Fill in the rest of this school enrolment form with neutral wording:\n\nStudent: Zhang Wei (preferred: Willie)\nDate of birth: 2015-04-22\nParent/guardian: Zhang Li, mobile 555-0181\nHome address: 6 Orchard Close, Greenvale\nPrevious school: Contoso Elementary\nMedical: peanut allergy",
+      "secrets": [
+        "Zhang Wei",
+        "Willie",
+        "2015-04-22",
+        "Zhang Li",
+        "555-0181",
+        "6 Orchard Close"
+      ]
+    },
+    {
+      "id": "final-mask-025",
+      "kind": "mask",
+      "category": "school",
+      "text": "Please write a short absence note based on this:\n\nChild: Mateo Gonzalez, Class 3C, student ID 300417\nTeacher: Mrs. Oyelaran\nAbsent 12-13 Nov, fever\nParent: Valentina Gonzalez",
+      "secrets": [
+        "Mateo Gonzalez",
+        "300417",
+        "Mrs. Oyelaran",
+        "Valentina Gonzalez"
+      ]
+    },
+    {
+      "id": "final-mask-026",
+      "kind": "mask",
+      "category": "school",
+      "text": "My son's report card comments, can you make them sound less harsh for a family letter?\n\nPupil: O'BRIEN, Liam   Roll no. 22\nForm tutor: Mr. S. Ahluwalia\nGuardian e-mail: siobhan.obrien@adatum.com\nLiam needs to focus more in maths...",
+      "secrets": [
+        "O'BRIEN, Liam",
+        "Mr. S. Ahluwalia",
+        "siobhan.obrien@adatum.com",
+        "Liam"
+      ]
+    },
+    {
+      "id": "final-mask-027",
+      "kind": "mask",
+      "category": "insurance",
+      "text": "Help me write my insurance claim description:\n\nPolicyholder: Ricardo Teixeira\nPolicy no.: FAB-HM-0045521\nAddress of loss: 70 Riverside Walk, Apt 12\nDate of loss: 3 Nov 2026\nPhone: (617) 555-0122\nWater from the flat above (Mrs. Gupta's) leaked through the ceiling.",
+      "secrets": [
+        "Ricardo Teixeira",
+        "FAB-HM-0045521",
+        "70 Riverside Walk, Apt 12",
+        "(617) 555-0122",
+        "Mrs. Gupta"
+      ]
+    },
+    {
+      "id": "final-mask-028",
+      "kind": "mask",
+      "category": "insurance",
+      "text": "Explain this car insurance claim form section to me:\n\nDriver 1: Ingrid Solberg, licence SOLBE712039IS\nDriver 2 (other party): Mr. K. Mwangi, plate KDA 552X\nWitness: Pedro, mobile 555-0116\nInsurer ref: TSP-CL-77310",
+      "secrets": [
+        "Ingrid Solberg",
+        "SOLBE712039IS",
+        "Mr. K. Mwangi",
+        "KDA 552X",
+        "Pedro",
+        "555-0116",
+        "TSP-CL-77310"
+      ]
+    },
+    {
+      "id": "final-mask-029",
+      "kind": "mask",
+      "category": "insurance",
+      "text": "Is this travel insurance denial reasonable?\n\nDear Ms. Yilmaz,\nRe: claim 55-0091-TR, member number WIN-338204\nWe are unable to cover the cancelled flight as the policy started after booking.\nInsured: Elif Yilmaz, DOB 30/01/1988\nClaims handler: R. Dawson",
+      "secrets": [
+        "Ms. Yilmaz",
+        "55-0091-TR",
+        "WIN-338204",
+        "Elif Yilmaz",
+        "30/01/1988",
+        "R. Dawson"
+      ]
+    },
+    {
+      "id": "final-mask-030",
+      "kind": "mask",
+      "category": "immigration",
+      "text": "Check this visa application form for mistakes:\n\nSurname: NAKASHIMA\nGiven names: Ren\nDate of birth: 09 SEP 1993\nPassport no.: TK8830214\nAddress in country: 41 Beacon Street, Apt 7\nSponsor: Mrs. Claire Holloway, (617) 555-0168\nEmployer: Contoso Labs",
+      "secrets": [
+        "NAKASHIMA",
+        "Ren",
+        "09 SEP 1993",
+        "TK8830214",
+        "41 Beacon Street, Apt 7",
+        "Mrs. Claire Holloway",
+        "(617) 555-0168"
+      ]
+    },
+    {
+      "id": "final-mask-031",
+      "kind": "mask",
+      "category": "immigration",
+      "text": "Write a cover letter for this residence permit renewal:\n\nApplicant: Adebayo Ogunleye\nResidence card no.: RP-2290-4417\nSpouse: Folake Ogunleye\nCurrent address: 3 Mill Lane, Eastford\nCase officer: Ms. T. Varga",
+      "secrets": [
+        "Adebayo Ogunleye",
+        "RP-2290-4417",
+        "Folake Ogunleye",
+        "3 Mill Lane",
+        "Ms. T. Varga"
+      ]
+    },
+    {
+      "id": "final-mask-032",
+      "kind": "mask",
+      "category": "immigration",
+      "text": "Please translate this invitation letter for my parents' visa:\n\nI, Nguyen Thi Lan (passport C2201845), living at 19 Hawthorn Road, invite my parents Nguyen Van Hung and Le Thi Hoa to stay with me from 1 to 30 March. Contact: lan.nguyen@fabrikam.com",
+      "secrets": [
+        "Nguyen Thi Lan",
+        "C2201845",
+        "19 Hawthorn Road",
+        "Nguyen Van Hung",
+        "Le Thi Hoa",
+        "lan.nguyen@fabrikam.com"
+      ]
+    },
+    {
+      "id": "final-mask-033",
+      "kind": "mask",
+      "category": "loan",
+      "text": "Is this loan offer a good deal?\n\nLOAN APPLICATION SUMMARY\nApplicant: Marcus Whitfield, SSN 078-05-1147\nCo-applicant: Jolene Whitfield\nProperty: 205 Spruce Avenue\nAmount: 180,000 over 25 years at 5.9%\nIncome verification account: Woodgrove 0045 1188 2093",
+      "secrets": [
+        "Marcus Whitfield",
+        "078-05-1147",
+        "Jolene Whitfield",
+        "205 Spruce Avenue",
+        "0045 1188 2093"
+      ]
+    },
+    {
+      "id": "final-mask-034",
+      "kind": "mask",
+      "category": "loan",
+      "text": "Help me answer the lender's questions:\n\nDear Mr. Abubakar,\nRegarding application LN-660128, please confirm your employer, the address 88 Kingfisher Way, and the account ending you'd like for direct debit.\nYour date of birth on file is 11/05/1984.\nKind regards,\nSusan Clarke, Underwriting, Adatum Finance",
+      "secrets": [
+        "Mr. Abubakar",
+        "LN-660128",
+        "88 Kingfisher Way",
+        "11/05/1984",
+        "Susan Clarke"
+      ]
+    },
+    {
+      "id": "final-mask-035",
+      "kind": "mask",
+      "category": "loan",
+      "text": "Make a budget table from this car-finance agreement:\n\nCustomer: Ji-ho Park  |  Customer no. 1009-3381\nGuarantor: Park Min-seo\nVehicle: 2023 hatchback\nMonthly payment 289 from card 5105 1051 0510 5100\nDealer contact: Gary, (480) 555-0109",
+      "secrets": [
+        "Ji-ho Park",
+        "1009-3381",
+        "Park Min-seo",
+        "5105 1051 0510 5100",
+        "Gary",
+        "(480) 555-0109"
+      ]
+    },
+    {
+      "id": "final-mask-036",
+      "kind": "mask",
+      "category": "bank",
+      "text": "Can you categorise these transactions?\n\nAccount holder: Isabel Duarte\nAccount: 3301-7742-9910\nCard: 4012 8888 8888 1881\n01 Nov  Northwind Grocery  -52.10\n02 Nov  Transfer to Tiago Duarte  -200.00\n03 Nov  Salary Litware  +2,950.00",
+      "secrets": [
+        "Isabel Duarte",
+        "3301-7742-9910",
+        "4012 8888 8888 1881",
+        "Tiago Duarte"
+      ]
+    },
+    {
+      "id": "final-mask-037",
+      "kind": "mask",
+      "category": "legal",
+      "text": "Summarise this witness statement:\n\nI, Joanna Kaczmarek, of 52 Station Road, state that on 2 October I saw a grey van hit the parked car belonging to Mr. Alistair Reeve. The driver, a man I later heard called 'Smithy', drove away. My phone number is 555-0172.\nSigned: J. Kaczmarek",
+      "secrets": [
+        "Joanna Kaczmarek",
+        "52 Station Road",
+        "Mr. Alistair Reeve",
+        "Smithy",
+        "555-0172",
+        "J. Kaczmarek"
+      ]
+    },
+    {
+      "id": "final-mask-038",
+      "kind": "mask",
+      "category": "legal",
+      "text": "Explain this small-claims notice:\n\nClaimant: Fabrikam Furnishings\nDefendant: HOSSEINI, Darius\nDefendant address: 17 Tulip Gardens\nCustomer account no.: FF-201955\nAmount claimed: 1,240 plus costs\nCourt clerk: Mrs. Patel",
+      "secrets": [
+        "HOSSEINI, Darius",
+        "17 Tulip Gardens",
+        "FF-201955",
+        "Mrs. Patel"
+      ]
+    },
+    {
+      "id": "final-mask-039",
+      "kind": "mask",
+      "category": "tax",
+      "text": "Help me understand this tax form summary:\n\nTaxpayer: Gloria Mendes   SSN 078-05-1158\nSpouse: Rui Mendes   SSN 078-05-1159\nDependents: Beatriz (age 9)\nAddress: 640 Coral Way, Unit 2\nPreparer: A. Volkov",
+      "secrets": [
+        "Gloria Mendes",
+        "078-05-1158",
+        "Rui Mendes",
+        "078-05-1159",
+        "Beatriz",
+        "640 Coral Way, Unit 2",
+        "A. Volkov"
+      ]
+    },
+    {
+      "id": "final-mask-040",
+      "kind": "mask",
+      "category": "medical",
+      "text": "Can you make a medication schedule from this pharmacy label?\n\nRx 4471023\nFor: Hamid Rezaei\nPrescriber: Dr. Lucy Chan\nAmoxicillin 500mg, 1 capsule three times daily for 7 days\nPharmacy phone 555-0154",
+      "secrets": [
+        "4471023",
+        "Hamid Rezaei",
+        "Dr. Lucy Chan",
+        "555-0154"
+      ]
+    },
+    {
+      "id": "final-mask-041",
+      "kind": "mask",
+      "category": "hr",
+      "text": "Write a reference letter based on these notes:\n\nEmployee: Svetlana Morozova ('Sveta')\nRole: Senior Accountant, Woodgrove, 2019-2026\nManager: me (Duncan)\nHer personal e-mail: sveta.m@northwind.com\nEmployee no. WG-08812",
+      "secrets": [
+        "Svetlana Morozova",
+        "Sveta",
+        "Duncan",
+        "sveta.m@northwind.com",
+        "WG-08812"
+      ]
+    },
+    {
+      "id": "final-mask-042",
+      "kind": "mask",
+      "category": "support",
+      "text": "Turn this into a bug report for the dev team:\n\nUser report from kemal.arslan@tailspin.com (Kemal Arslan, customer ID C-559012): the app crashed when he updated his billing address to 8 Bosphorus Street. He used card 4000 0566 5566 5556. Reported via phone (213) 555-0198.",
+      "secrets": [
+        "kemal.arslan@tailspin.com",
+        "Kemal Arslan",
+        "C-559012",
+        "8 Bosphorus Street",
+        "4000 0566 5566 5556",
+        "(213) 555-0198"
+      ]
+    },
+    {
+      "id": "final-mask-043",
+      "kind": "mask",
+      "category": "email",
+      "text": "Fix the grammar in my e-mail:\n\nHi Dr. Fitzpatrick, my daughter Aoife have appointment on monday, her health number is 772 104 3389 and we live at 2 Glenview Park now. My new mobile is 555-0107. thanks, Niamh",
+      "secrets": [
+        "Dr. Fitzpatrick",
+        "Aoife",
+        "772 104 3389",
+        "2 Glenview Park",
+        "555-0107",
+        "Niamh"
+      ]
+    },
+    {
+      "id": "final-mask-044",
+      "kind": "mask",
+      "category": "lease",
+      "text": "Review this room rental agreement:\n\nROOM LICENCE\nHouse owner: Mrs. Esperanza Vega\nLodger: Kofi Boateng, ID card no. GH-77412093\nRoom 2, 63 Laurel Street\nRent 600/month by transfer to Vega, acct 2211 0099\nEmergency contact: Ama, 555-0131",
+      "secrets": [
+        "Mrs. Esperanza Vega",
+        "Kofi Boateng",
+        "GH-77412093",
+        "63 Laurel Street",
+        "2211 0099",
+        "Ama",
+        "555-0131"
+      ]
+    },
+    {
+      "id": "final-mask-045",
+      "kind": "mask",
+      "category": "form",
+      "text": "Help me fill out the gym membership freeze form:\n\nMember name: priya desai\nMember no.: ACM-GYM-30177\nDOB: 1990-12-08\nHome address: 401 Jasmine Court\nCard on file: 3782 822463 10005\nReason: travel",
+      "secrets": [
+        "priya desai",
+        "ACM-GYM-30177",
+        "1990-12-08",
+        "401 Jasmine Court",
+        "3782 822463 10005"
+      ]
+    },
+    {
+      "id": "final-mask-046",
+      "kind": "mask",
+      "category": "contract",
+      "text": "Help me reply to this wedding photographer contract:\n\nClient(s): Hye-jin Kim & Daniel Ortiz\nEvent: 14 June 2026, Contoso Gardens\nClient phone: (312) 555-0149\nDeposit 500 paid by card 5200 8282 8282 8210\nPhotographer: Lara (Litware Studio)",
+      "secrets": [
+        "Hye-jin Kim",
+        "Daniel Ortiz",
+        "(312) 555-0149",
+        "5200 8282 8282 8210",
+        "Lara"
+      ]
+    },
+    {
+      "id": "final-mask-047",
+      "kind": "mask",
+      "category": "school",
+      "text": "Summarise this university appeal letter I drafted:\n\nTo the Exams Office,\nI, Student no. 21907734, Mohammed Siddiqui, appeal my grade for module ECON201. My tutor, Dr. Hartley, can confirm the medical circumstances. Please reply to m.siddiqui@fabrikam.edu.\nMohammed",
+      "secrets": [
+        "21907734",
+        "Mohammed Siddiqui",
+        "Dr. Hartley",
+        "m.siddiqui@fabrikam.edu",
+        "Mohammed"
+      ]
+    },
+    {
+      "id": "final-mask-048",
+      "kind": "mask",
+      "category": "insurance",
+      "text": "Write a timeline of this pet insurance claim:\n\nOwner: Ms. Charlotte Dubois\nPet: Pepper (dog)\nPolicy: GLX-PET-90213\nVet: Dr. Obi, Northwind Vets\nOwner address: 11 Fern Hollow\nOwner phone: 555-0165\nSurgery on 2 Nov, cost 2,100",
+      "secrets": [
+        "Ms. Charlotte Dubois",
+        "GLX-PET-90213",
+        "Dr. Obi",
+        "11 Fern Hollow",
+        "555-0165"
+      ]
+    },
+    {
+      "id": "final-mask-049",
+      "kind": "mask",
+      "category": "hr",
+      "text": "Rewrite this onboarding checklist as a friendly welcome e-mail:\n\nNew hire: Tanvir Hossain (goes by 'Tan')\nBuddy: Alejandra M.\nDesk: 4F-17\nLaptop asset no. INI-LT-22841\nPersonal mobile for emergencies: (646) 555-0186\nSSN received: 078-05-1173",
+      "secrets": [
+        "Tanvir Hossain",
+        "Tan",
+        "Alejandra M.",
+        "INI-LT-22841",
+        "(646) 555-0186",
+        "078-05-1173"
+      ]
+    },
+    {
+      "id": "final-mask-050",
+      "kind": "mask",
+      "category": "email",
+      "text": "Can you summarise this signed letter from my building's board?\n\nDear Unit 5C (Volkova residence),\nWe received a noise complaint from your neighbour Mr. Abe in 5D. Please keep noise down after 10pm.\nBest regards,\n\nHelga Brandt\nBoard Secretary, Willow Court Residents\nhelga.brandt@adatum.com | 555-0114",
+      "secrets": [
+        "Volkova",
+        "Mr. Abe",
+        "Helga Brandt",
+        "helga.brandt@adatum.com",
+        "555-0114"
+      ]
+    }
+  ]
+}
