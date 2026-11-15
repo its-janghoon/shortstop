@@ -5,13 +5,33 @@
   "version": "0.1.0",
   "description": "Checks texts, e-mails and links with on-device AI first. When unsure, asks the cloud with your private data hidden.",
   "minimum_chrome_version": "138",
-  "permissions": ["contextMenus", "sidePanel", "storage", "activeTab", "scripting"],
-  "optional_host_permissions": ["https://*/*"],
-  "background": { "service_worker": "background.js", "type": "module" },
-  "side_panel": { "default_path": "sidepanel.html" },
-  "action": { "default_title": "Open Shortstop" },
-  "icons": { "16": "icon-16.png", "48": "icon-48.png", "128": "icon-128.png" },
+  "permissions": [
+    "contextMenus",
+    "sidePanel",
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "optional_host_permissions": [
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "action": {
+    "default_title": "Open Shortstop"
+  },
+  "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self'"
-  }
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAof7A+gBdNtp8sw0ZApuy3ECt9tEVRQebtVoAPN5DezefkH0RYzqReFio4IzkGQKv76ISjOJu25+z2D4KAToSPDFSj9bNf2PZj1GfqrVjCc6h8CbgKvowXrSkoOMaYEbQvkqh7qOvijzk5TOMpYS1IUlk5apityN07+xuXgesTIGSESFoj2AWzoKgzIas2Y7Heesb0CvHwxBIH5nMnUu0UdaMpKDMS62y3oz4udAzH7knFfX9rJGw80mzdiHRn/A3YvH3iIPX/kOyTgt4AxI6A+6P8AvKy+RDduIXfUEgfP8GqyqwZaA+7dJYibFN6B8bLmFouqpXvwZnJSj21cbrRwIDAQAB"
 }

@@ -107,12 +107,14 @@ export function fieldHtml(r: Result, p: Play): string {
   const cloudSteps = r.receipt.filter((s) => s.where === "in_cloud");
   const cloudMs = cloudSteps.reduce((n, s) => n + s.ms, 0);
   const fl = r.firstLook;
-  const ssTitle = !fl ? "Rules on this device" : p.skippedShortstop ? "No on-device model" : `Gemini Nano · ${fmtMs(device?.ms ?? 0)}`;
+  const ssTitle = !fl ? "Rules on this device" : p.skippedShortstop ? "No on-device model" : "Gemini Nano";
   const ssSub = !fl
     ? `hid ${r.mask.length} secret${r.mask.length === 1 ? "" : "s"} · checked links`
     : p.skippedShortstop
       ? "rules hid the secrets instead"
-      : `hid ${r.mask.length} secret${r.mask.length === 1 ? "" : "s"} · ${fl.verdict} (${fl.confidence.toFixed(2)})`;
+      : `${fmtMs(device?.ms ?? 0)} · hid ${r.mask.length} secret${r.mask.length === 1 ? "" : "s"} · ${fl.verdict} (${fl.confidence.toFixed(2)})`;
+  const fbTitle = p.cloud ? "Gemini in the cloud" : "Cloud not needed";
+  const fbSub = p.cloud ? `${fmtMs(cloudMs)} · ${r.verdict} (${r.confidence.toFixed(2)}) · saw placeholders only` : "stayed on the bench";
   const firstSent = sent[sent.length - 1]?.sent ?? "";
   const shown = firstSent.match(/<msg>\n([\s\S]*?)\n<\/msg>/)?.[1] ?? firstSent;
   const tokens = (s: string) => esc(s).replace(/\[([A-Z]+_\d+)\]/g, "<code>$1</code>");
@@ -128,7 +130,7 @@ export function fieldHtml(r: Result, p: Play): string {
     <path d="M380 440 L618 236 L380 32 L142 236 Z" fill="rgba(201,138,82,.10)" stroke="rgba(255,255,255,.3)" stroke-width="3"/>
     <path d="M380 440 L740 130 M380 440 L20 130" stroke="rgba(255,255,255,.12)" stroke-width="3"/>
     <line class="wall" x1="470" y1="40" x2="470" y2="430"/>
-    <text x="478" y="58" class="lbl cloudc">MASKED ONLY</text>
+    <text x="478" y="58" class="lbl cloudc wall-lbl">MASKED ONLY</text>
     <text x="40" y="58" class="lbl">YOUR DEVICE</text>
     <text x="720" y="58" text-anchor="end" class="lbl cloudc">CLOUD</text>
     <rect x="371" y="431" width="18" height="18" transform="rotate(45 380 440)" fill="var(--chalk)"/>
@@ -142,12 +144,16 @@ export function fieldHtml(r: Result, p: Play): string {
     <g class="${p.cloud ? "" : "dim"}">
       <circle class="glow cl" ${t(p.verdictAt - 0.1)} cx="618" cy="236" r="0" fill="var(--cloud)"/>
       <circle cx="618" cy="236" r="30" fill="var(--cloud)"/><text x="618" y="242" text-anchor="middle" class="base dark">1B</text>
-      <text x="618" y="290" text-anchor="middle" class="t">${p.cloud ? `Gemini in the cloud · ${fmtMs(cloudMs)}` : "Cloud not needed"}</text>
-      <text x="618" y="310" text-anchor="middle" class="sub">${p.cloud ? `${r.verdict} (${r.confidence.toFixed(2)}) · saw placeholders only` : "stayed on the bench"}</text>
+      <text x="618" y="290" text-anchor="middle" class="t">${esc(fbTitle)}</text>
+      <text x="618" y="310" text-anchor="middle" class="sub">${esc(fbSub)}</text>
     </g>
     <circle class="ball" style="offset-path:path('${first}');--d:.2s" r="10"/>
     ${p.cloud && !p.skippedShortstop ? `<circle class="ball b2" style="offset-path:path('M 262 196 Q 450 110 618 236');--d:${throwAt.toFixed(2)}s" r="10"/>` : ""}
   </svg></div>
+  <div class="captions" aria-hidden="true">
+    <div class="${p.skippedShortstop ? "dim" : ""}"><b>SS</b><strong>${esc(ssTitle)}</strong><span>${esc(ssSub)}</span></div>
+    <div class="cl ${p.cloud ? "" : "dim"}"><b>1B</b><strong>${esc(fbTitle)}</strong><span>${esc(fbSub)}</span></div>
+  </div>
   ${
     p.cloud
       ? `<div class="sent" ${t(throwAt + 0.6)}><em>${icon("cloud")}Exactly what left your device</em>${tokens(shown)}</div>`

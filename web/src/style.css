@@ -152,11 +152,28 @@ textarea:focus { outline: 3px solid var(--dirt); }
 .cell.cloudc b { color: var(--cloud); text-shadow: 0 0 18px rgba(108,182,255,.45); }
 .cell.bad b { color: var(--scam); }
 
+.captions { display: none; }
 @media (max-width: 980px) {
   .wrap { grid-template-columns: 1fr; grid-template-rows: auto auto auto; padding: 16px; }
   .phone { min-height: 640px; }
-  .field { grid-template-rows: auto 260px auto auto; }
+  .field, .field:has(.diamond.idle) { grid-template-rows: auto; }
+  .diamond { height: 240px; }
+  .brand { flex-wrap: wrap; }
+  .pill { margin-left: 0; }
   .score { grid-template-columns: repeat(2, 1fr); }
+  /* On narrow screens the drawing shrinks, so base names move out of it as normal text. */
+  .diamond .t, .diamond .sub, .diamond .sm { display: none; }
+  .diamond .lbl { font-size: 24px; }
+  .diamond .wall-lbl { display: none; }
+  .diamond .base { font-size: 24px; }
+  .captions { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 13px; line-height: 1.35; }
+  .captions div { display: grid; gap: 2px; align-content: start; }
+  .captions b { font-size: 11px; letter-spacing: .14em; opacity: .7; }
+  .captions .cl b { color: var(--cloud); opacity: 1; }
+  .captions strong { font-size: 14.5px; }
+  .captions span { opacity: .75; }
+  .captions .dim { opacity: .45; }
+  .sent { max-height: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01s !important; animation-delay: 0s !important; }
