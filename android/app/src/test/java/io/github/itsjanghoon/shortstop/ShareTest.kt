@@ -59,4 +59,12 @@ class ShareTest {
         assertEquals(null, minimal.names)
         assertEquals(null, minimal.text)
     }
+
+    @Test
+    fun creditLineNamesTheWordListAndItsCopyright() {
+        assertEquals(
+            "Name finder word list: SCOWL (wamerican), Copyright 2000-2011 by Kevin Atkinson.",
+            credits(TestShared.shared.wordsNotice),
+        )
+    }
 }

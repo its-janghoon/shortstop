@@ -23,6 +23,8 @@ data class UiState(
     val reported: Boolean = false,
     val history: List<Check> = emptyList(),
     val examples: List<Example> = emptyList(),
+    /** One line crediting the word list (from shared/words.NOTICE). */
+    val credits: String = "",
 )
 
 interface UiActions {

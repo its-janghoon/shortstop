@@ -26,7 +26,7 @@ import kotlinx.coroutines.withTimeoutOrNull
 
 class MainViewModel(app: Application) : AndroidViewModel(app) {
     private val shortstop = app as ShortstopApp
-    private val _state = MutableStateFlow(UiState(examples = shortstop.shared.examples))
+    private val _state = MutableStateFlow(UiState(examples = shortstop.shared.examples, credits = credits(shortstop.shared.wordsNotice)))
     val state: StateFlow<UiState> = _state
     private var backend: Backend? = null
     private var job: Job? = null
@@ -116,3 +116,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
         viewModelScope.launch { shortstop.history.checks().clear() }
     }
 }
+
+/** One credit line for the word list, built from the copyright line of words.NOTICE. */
+fun credits(notice: String): String =
+    notice.lines().firstOrNull { it.startsWith("Copyright") }?.let { "Name finder word list: SCOWL (wamerican), $it." } ?: ""

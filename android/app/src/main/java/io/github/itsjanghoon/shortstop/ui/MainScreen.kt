@@ -137,6 +137,9 @@ fun MainScreen(state: UiState, actions: UiActions) {
             }
             if (state.screen == Screen.RESULT) state.result?.let { Receipt(it, t) }
             if (state.screen == Screen.COMPOSE) IdleField()
+            if (state.screen == Screen.COMPOSE && state.credits.isNotEmpty()) {
+                Text(state.credits, color = Ball.chalk.copy(alpha = .55f), fontSize = 11.sp, lineHeight = 15.sp, modifier = Modifier.padding(horizontal = 8.dp).testTag("credits"))
+            }
         }
     }
 }

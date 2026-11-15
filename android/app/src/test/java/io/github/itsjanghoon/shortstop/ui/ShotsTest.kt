@@ -82,7 +82,11 @@ class ShotsTest {
         UiState(screen = Screen.RESULT, result = r, from = from, device = device, examples = shared.examples)
 
     @Test
-    fun home() = shot("01-home", UiState(examples = shared.examples, device = DeviceStatus.UNAVAILABLE))
+    fun home() = shot("01-home", UiState(examples = shared.examples, device = DeviceStatus.UNAVAILABLE, credits = io.github.itsjanghoon.shortstop.credits(shared.wordsNotice)))
+
+    @Test
+    @Config(qualifiers = "w411dp-h1900dp-mdpi")
+    fun homeFull() = shot("01-home-full", UiState(examples = shared.examples, device = DeviceStatus.UNAVAILABLE, credits = io.github.itsjanghoon.shortstop.credits(shared.wordsNotice)))
 
     @Test
     fun examples() {
