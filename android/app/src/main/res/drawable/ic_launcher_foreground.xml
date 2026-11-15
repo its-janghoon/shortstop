@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A chalk tile with the dirt diamond, like the web logo. 108dp canvas, art inside the 66dp safe zone. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="@color/chalk"
+        android:pathData="M40,30h28a10,10 0 0 1 10,10v28a10,10 0 0 1 -10,10h-28a10,10 0 0 1 -10,-10v-28a10,10 0 0 1 10,-10z" />
+    <path
+        android:fillColor="@color/ink"
+        android:pathData="M54,36L72,54L54,72L36,54Z" />
+    <path
+        android:fillColor="@color/dirt"
+        android:pathData="M54,40L68,54L54,68L40,54Z" />
+</vector>

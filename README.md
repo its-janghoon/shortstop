@@ -24,7 +24,7 @@ Every answer comes with a **receipt**: where each step ran, how long it took, an
 | Web app (hosted demo) | `web/` |
 | Chrome extension (right-click check, side panel, paste guard) | `extension/` |
 | Prompts, answer schema, config defaults, demo examples | `shared/` (read by every platform) |
-| Android app | `android/` (coming) |
+| Android app (share target, Gemini Nano via ML Kit Prompt API) | `android/` |
 
 ## Firebase
 
@@ -50,6 +50,33 @@ yarn build             # dist/web and dist/extension
 Without a Firebase config the app runs in rules-only mode.
 
 Load the extension: `chrome://extensions` → Developer mode → Load unpacked → `dist/extension`.
+
+## Android
+
+Kotlin + Jetpack Compose, `minSdk` 26 (needed by `firebase-ai-ondevice`), `targetSdk` 37.
+
+The build needs two things from your machine; nothing in git points at them:
+
+| What | How |
+|---|---|
+| JDK 21 (AGP 9.5 needs 17+; built and tested with Temurin 21) | `export JAVA_HOME=/path/to/jdk-21` |
+| Android SDK with `platforms;android-37.0` and `build-tools;37.0.0` | `android/local.properties` with `sdk.dir=/path/to/android-sdk` (git-ignored), or `export ANDROID_HOME=/path/to/android-sdk` |
+
+```sh
+cd android
+# Firebase config is not in git. Fetch it once:
+npx firebase-tools apps:sdkconfig ANDROID 1:973536798905:android:7bb757c6ce99deebb1d368 \
+  --project shortstop-b108a --out app/google-services.json
+./gradlew testDebugUnitTest assembleDebug lint
+./gradlew testDebugUnitTest --tests '*ShotsTest*' -Pshots=/tmp/shots   # render every screen to PNG
+adb install app/build/outputs/apk/debug/app-debug.apk
+```
+
+- Without `google-services.json` the app builds and runs in rules-only mode.
+- `shared/*.json` is copied into the app assets at build time; the unit tests read the same files.
+- Debug builds use the App Check debug provider: copy the token from logcat (`DebugAppCheckProvider`) into Firebase console → App Check → Apps → Manage debug tokens. Release builds use Play Integrity. App Check failures never block the app.
+- On-device AI runs only on [phones that support the ML Kit Prompt API](https://developers.google.com/ml-kit/genai#prompt-device). Elsewhere the status chip says the cloud sees masked text only, and screenshots are refused.
+- Share a text or a screenshot to "Check with Shortstop" from any app. History is kept in a local Room database (masked text only, excluded from backup) and can be cleared.
 
 ## Privacy
 
