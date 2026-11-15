@@ -49,7 +49,7 @@ data class EngineConfig(
     val strictOnDevice: Boolean,
 )
 
-enum class MaskKind { EMAIL, PHONE, CARD, ACCOUNT, SSN, RRN, NAME }
+enum class MaskKind { EMAIL, PHONE, CARD, ACCOUNT, SSN, RRN, DOB, NAME }
 
 data class MaskEntry(val token: String, val kind: MaskKind, val value: String)
 

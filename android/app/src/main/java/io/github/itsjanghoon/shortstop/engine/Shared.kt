@@ -35,11 +35,14 @@ class Shared(
     val defaultsMap: Map<String, Any>,
     /** shared/verdict.schema.json, used to build the cloud response schema. */
     val schema: JsonObject,
+    /** shared/words.NOTICE, the license of the word list. */
+    val wordsNotice: String = "",
 ) {
     companion object {
         val FILES = listOf("prompts.json", "examples.json", "known-domains.json", "config.defaults.json", "verdict.schema.json")
 
         fun load(read: (String) -> String): Shared {
+            Words.install { read("words.txt") }
             val json = { name: String -> Json.parseToJsonElement(read(name)).jsonObject }
             val p = json("prompts.json")
             val ex = json("examples.json")
@@ -73,6 +76,7 @@ class Shared(
                 ),
                 defaultsMap = defaultsMap,
                 schema = json("verdict.schema.json"),
+                wordsNotice = runCatching { read("words.NOTICE") }.getOrDefault(""),
             )
         }
     }

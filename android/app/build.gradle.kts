@@ -10,7 +10,7 @@ if (file("google-services.json").exists()) {
     apply(plugin = libs.plugins.google.services.get().pluginId)
 }
 
-/** Copies the JSON files in ../shared (prompts, examples, schema, config defaults, known domains) into the app assets. */
+/** Copies the files the app reads from ../shared (prompts, examples, schema, config defaults, known domains, word list and its notice) into the app assets. Bench sets stay out. */
 abstract class CopySharedTask : DefaultTask() {
     @get:InputDirectory
     @get:PathSensitive(PathSensitivity.RELATIVE)
@@ -24,7 +24,7 @@ abstract class CopySharedTask : DefaultTask() {
         val out = outputDir.get().asFile.resolve("shared")
         out.deleteRecursively()
         out.mkdirs()
-        source.get().asFile.listFiles { f -> f.extension == "json" }!!.forEach { it.copyTo(out.resolve(it.name)) }
+        source.get().asFile.listFiles { f -> (f.extension == "json" && !f.name.startsWith("bench")) || f.name.startsWith("words.") }!!.forEach { it.copyTo(out.resolve(it.name)) }
     }
 }
 
