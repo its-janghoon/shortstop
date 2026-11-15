@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.ksp)
 }
 
@@ -83,13 +84,11 @@ androidComponents {
     }
 }
 
-ksp {
-    arg("room.schemaLocation", "$projectDir/schemas")
-}
-
 dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.activity.compose)
+    // Play services pull in an old Fragment; ActivityResult needs 1.3+.
+    implementation(libs.androidx.fragment)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.lifecycle.runtime.compose)
     implementation(platform(libs.compose.bom))
@@ -107,6 +106,7 @@ dependencies {
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.ai)
     implementation(libs.firebase.ai.ondevice)
+    ksp(libs.firebase.ai.ksp)
     implementation(libs.firebase.auth)
     implementation(libs.firebase.config)
     implementation(libs.firebase.firestore)
