@@ -171,7 +171,8 @@ fun Diamond(r: Result?, t: Float?, modifier: Modifier = Modifier) {
         label(measurer, "YOUR DEVICE", Offset(24f, 40f), k, Ball.chalk.copy(alpha = .8f), size = 28f)
         label(measurer, "CLOUD", Offset(740f, 40f), k, Ball.cloud, alignEnd = true, size = 28f)
         label(measurer, "MASKED ONLY", Offset(482f, 396f), k, Ball.cloud, size = 26f)
-        label(measurer, "Message in", Offset(368f, 396f), k, Ball.chalk.copy(alpha = .8f), alignEnd = true, size = 26f, spacing = 0f)
+        // Centered above home plate, inside the V of the foul lines (web: text at y 418, plate at 440).
+        label(measurer, "Message in", Offset(380f, 366f), k, Ball.chalk.copy(alpha = .8f), center = true, size = 20f, spacing = 0f)
 
         // Home plate.
         rotate(45f, p(HOME)) { drawRect(Ball.chalk, p(HOME) - Offset(9f * k, 9f * k), Size(18f * k, 18f * k)) }
@@ -254,11 +255,11 @@ fun DiamondLegend(r: Result?, t: Float?) {
         r == null -> "Small model on your device" to "catches it first, hides your secrets"
         fl == null -> "Rules on this device" to "$secrets · checked links"
         play!!.skippedShortstop -> "No on-device model" to "rules hid the secrets instead"
-        else -> "Gemini Nano · ${fmtMs(device?.ms ?: 0)}" to "$secrets · ${fl.verdict.wire} (${String.format(Locale.US, "%.2f", fl.confidence)})"
+        else -> "Gemini Nano" to "${fmtMs(device?.ms ?: 0)} · $secrets · ${fl.verdict.wire} (${String.format(Locale.US, "%.2f", fl.confidence)})"
     }
     val (cTitle, cSub) = when {
         r == null -> "Big model in the cloud" to "only when unsure, only masked text"
-        play!!.cloud -> "Gemini in the cloud · ${fmtMs(cloudMs)}" to "${r.verdict.wire} (${String.format(Locale.US, "%.2f", r.confidence)}) · saw placeholders only"
+        play!!.cloud -> "Gemini in the cloud" to "${fmtMs(cloudMs)} · ${r.verdict.wire} (${String.format(Locale.US, "%.2f", r.confidence)}) · saw placeholders only"
         else -> "Cloud not needed" to "stayed on the bench"
     }
     val tt = t ?: 99f
