@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Shortstop",
+  "short_name": "Shortstop",
+  "version": "0.1.0",
+  "description": "Checks texts, e-mails and links with on-device AI first. When unsure, asks the cloud with your private data hidden.",
+  "minimum_chrome_version": "138",
+  "permissions": ["contextMenus", "sidePanel", "storage", "activeTab", "scripting"],
+  "optional_host_permissions": ["https://*/*"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "side_panel": { "default_path": "sidepanel.html" },
+  "action": { "default_title": "Open Shortstop" },
+  "icons": { "16": "icon-16.png", "48": "icon-48.png", "128": "icon-128.png" },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

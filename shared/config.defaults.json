@@ -1,0 +1,8 @@
+{
+  "$comment": "Defaults. The same keys are served by Firebase Remote Config, so they can change without a new release.",
+  "escalate_below_confidence": 0.8,
+  "on_device_max_chars": 1500,
+  "cloud_model": "gemini-3.5-flash-lite",
+  "strict_on_device": false,
+  "report_min_count": 3
+}

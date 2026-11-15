@@ -1,0 +1,25 @@
+{
+  "$comment": "Shape every model answer must follow. Web, extension and Android all read this file.",
+  "type": "object",
+  "properties": {
+    "verdict": { "type": "string", "enum": ["safe", "suspicious", "scam"] },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "signals": {
+      "type": "array",
+      "items": { "type": "string" },
+      "maxItems": 5
+    },
+    "action": { "type": "string" },
+    "names": {
+      "type": "array",
+      "description": "Person names and street addresses found in the text, copied exactly. Triage only.",
+      "items": { "type": "string" },
+      "maxItems": 10
+    },
+    "text": {
+      "type": "string",
+      "description": "Words read from a screenshot. Image triage only."
+    }
+  },
+  "required": ["verdict", "confidence", "signals", "action"]
+}

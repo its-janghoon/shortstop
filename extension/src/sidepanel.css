@@ -1,0 +1,7 @@
+#app { padding: 16px 14px 40px; }
+header h1 { font-size: 24px; }
+.verdict { font-size: 22px; }
+.action { font-size: 16px; }
+.guard { margin-top: 24px; border-top: 1px solid var(--line); padding-top: 12px; font-size: 14px; }
+.guard h2 { font-size: 15px; margin: 0 0 6px; }
+.guard ul { padding-left: 18px; }

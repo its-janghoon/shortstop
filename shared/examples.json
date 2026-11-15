@@ -1,0 +1,41 @@
+{
+  "$comment": "Made-up messages for the demo buttons. All people and companies are fictional (Acme).",
+  "examples": [
+    {
+      "id": "parcel-fee",
+      "label": "Parcel fee text",
+      "kind": "scam",
+      "text": "Acme Parcel: your package is on hold because of an unpaid fee of $1.99. Pay within 24 hours or it will be returned: acme-parcel-redelivery.co/pay"
+    },
+    {
+      "id": "bank-locked",
+      "label": "Bank account locked",
+      "kind": "scam",
+      "text": "Dear Jane Doe, unusual sign-in on your Acme Bank account ending 4417. Your account 302918470021 is locked. Verify now at acrnebank.com/secure or call our team at 555-201-3344."
+    },
+    {
+      "id": "grandkid",
+      "label": "Grandchild in trouble",
+      "kind": "scam",
+      "text": "Grandma it's me, I lost my phone and this is a friend's number. I'm in trouble and need $900 for a lawyer today. Please don't tell mom. Can you buy gift cards and send me the codes?"
+    },
+    {
+      "id": "real-parcel",
+      "label": "Real delivery notice",
+      "kind": "safe",
+      "text": "Acme Parcel: your package was delivered at 2:14 PM and left at the front door. Track it in the Acme Parcel app or at acmeparcel.com."
+    },
+    {
+      "id": "family",
+      "label": "Family dinner",
+      "kind": "safe",
+      "text": "Hi Mom, dinner at our place on Sunday at 6? John will pick you up around 5:30."
+    },
+    {
+      "id": "contract",
+      "label": "Contract to paste into AI",
+      "kind": "mask",
+      "text": "Summarize this lease. Tenant: John Smith, 48 Maple Ave, Springfield. Phone (555) 410-7781, john.smith@acmemail.com. Deposit paid from account no. 7720 1938 4410. Monthly rent $1,850, due on the 1st. Landlord: Acme Homes LLC."
+    }
+  ]
+}

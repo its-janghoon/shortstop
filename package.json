@@ -1,0 +1,24 @@
+{
+  "name": "shortstop",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "vite --config web/vite.config.ts",
+    "build": "yarn build:web && yarn build:ext",
+    "build:web": "vite build --config web/vite.config.ts",
+    "build:ext": "vite build --config extension/vite.config.ts && vite build --config extension/vite.content.config.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "firebase": "13.3.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.300",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.0",
+    "vitest": "^3.0.0"
+  }
+}

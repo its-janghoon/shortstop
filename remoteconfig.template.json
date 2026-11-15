@@ -1,0 +1,9 @@
+{
+  "parameters": {
+    "escalate_below_confidence": { "defaultValue": { "value": "0.8" }, "valueType": "NUMBER", "description": "Ask the cloud when the on-device answer is less sure than this." },
+    "on_device_max_chars": { "defaultValue": { "value": "1500" }, "valueType": "NUMBER", "description": "Longer text is also checked in the cloud (masked)." },
+    "cloud_model": { "defaultValue": { "value": "gemini-3.5-flash-lite" }, "valueType": "STRING", "description": "Cloud model for the deep check." },
+    "strict_on_device": { "defaultValue": { "value": "false" }, "valueType": "BOOLEAN", "description": "If true, nothing ever goes to the cloud." },
+    "report_min_count": { "defaultValue": { "value": "3" }, "valueType": "NUMBER", "description": "Reports needed before a site is flagged for everyone." }
+  }
+}
