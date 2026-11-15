@@ -53,7 +53,14 @@ Load the extension: `chrome://extensions` → Developer mode → Load unpacked �
 
 ## Android
 
-Kotlin + Jetpack Compose, `minSdk` 26 (needed by `firebase-ai-ondevice`), `targetSdk` 37. Needs JDK 17+ and the Android SDK (`sdk.dir` in `android/local.properties`).
+Kotlin + Jetpack Compose, `minSdk` 26 (needed by `firebase-ai-ondevice`), `targetSdk` 37.
+
+The build needs two things from your machine; nothing in git points at them:
+
+| What | How |
+|---|---|
+| JDK 21 (AGP 9.5 needs 17+; built and tested with Temurin 21) | `export JAVA_HOME=/path/to/jdk-21` |
+| Android SDK with `platforms;android-37.0` and `build-tools;37.0.0` | `android/local.properties` with `sdk.dir=/path/to/android-sdk` (git-ignored), or `export ANDROID_HOME=/path/to/android-sdk` |
 
 ```sh
 cd android
@@ -61,6 +68,7 @@ cd android
 npx firebase-tools apps:sdkconfig ANDROID 1:973536798905:android:7bb757c6ce99deebb1d368 \
   --project shortstop-b108a --out app/google-services.json
 ./gradlew testDebugUnitTest assembleDebug lint
+./gradlew testDebugUnitTest --tests '*ShotsTest*' -Pshots=/tmp/shots   # render every screen to PNG
 adb install app/build/outputs/apk/debug/app-debug.apk
 ```
 
