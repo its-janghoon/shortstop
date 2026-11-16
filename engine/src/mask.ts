@@ -97,11 +97,13 @@ export function maskNames(input: Masked, names: string[] = []): Masked {
     /^\d/.test(n.trim()) ? [] : n.trim().split(/[\s,]+/).filter((p) => p.length >= 3 && /^\p{Lu}/u.test(p) && !NOT_NAME.has(p) && (GIVEN.has(p) || unknownWord(p))),
   );
   const clean = [...new Set([...names, ...parts].map((n) => n.trim()))]
-    .filter((n) => n.length >= 2 && n.length <= 80 && !/^\[[A-Z]+_\d+\]$/.test(n))
+    // A model may hand back a placeholder ("NAME_1" or "[NAME_1]") as a name; it is already masked.
+    .filter((n) => n.length >= 2 && n.length <= 80 && !/^\[?[A-Z]+_\d+\]?$/.test(n))
     .sort((a, b) => b.length - a.length);
   for (const name of clean) {
     // Not inside a link or an e-mail address: "acrnebank" in acrnebank.com/secure is a site, not a person.
-    const re = new RegExp(`(?<![\\p{L}\\d./@-])${escapeRe(name)}(?![\\p{L}\\d]|\\.\\p{L}|[/@-])`, "gu");
+    // Not inside a placeholder either: "[NAME_1]" stays as it is.
+    const re = new RegExp(`(?<![\\p{L}\\d./@\\[_-])${escapeRe(name)}(?![\\p{L}\\d_]|\\.\\p{L}|[/@\\]-])`, "gu");
     if (!re.test(text)) continue;
     re.lastIndex = 0;
     const token = nextToken(entries, "NAME", name);

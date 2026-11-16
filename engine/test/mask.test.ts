@@ -49,6 +49,13 @@ describe("maskNames", () => {
     const m = maskNames(maskByRules("Ask acrnebank at https://acrnebank.com/secure"), ["acrnebank"]);
     expect(m.text).toBe("Ask [NAME_1] at https://acrnebank.com/secure");
   });
+
+  it("does not mask a placeholder the model handed back as a name", () => {
+    const first = maskNames(maskByRules("Jane Doe, call 555-201-3344."), ["Jane Doe"]);
+    const m = maskNames(first, ["NAME_1", "[PHONE_1]", "Jane Doe"]);
+    expect(m.text).toBe("[NAME_1], call [PHONE_1].");
+    expect(m.entries.map((e) => e.value)).toEqual(expect.not.arrayContaining(["NAME_1"]));
+  });
 });
 
 import { guessNames } from "../src/index";
