@@ -28,7 +28,12 @@ private val TRICKS = listOf(
     Trick("""\b(irs|tax office|police|warrant|arrest)\b.*\b(pay|fine|penalty)\b""", "threatens you with the law", 2),
     Trick("""\b(guaranteed|double your|risk[- ]free) (returns?|profit|money)\b""", "promises sure profit", 2),
     Trick("""\b(remote access|anydesk|teamviewer|install this app)\b""", "asks for remote access to your device", 2),
-    Trick("""\b(password|pin|social security number|ssn)\b""", "asks for private login details", 1),
+    // Only when the message asks for them, not when a form just has an "SSN:" field.
+    Trick(
+        """\b(send|give|enter|confirm|verify|share|provide|reply with|tell (me|us)|update)\b[^.\n]{0,40}\b(password|pin|social security number|ssn|login)\b""",
+        "asks for private login details",
+        1,
+    ),
 )
 
 data class TextSignals(val reasons: List<String>, val score: Int)
