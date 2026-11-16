@@ -20,7 +20,12 @@ const TRICKS: Trick[] = [
   { re: /\b(irs|tax office|police|warrant|arrest)\b.*\b(pay|fine|penalty)\b/i, reason: "threatens you with the law", weight: 2 },
   { re: /\b(guaranteed|double your|risk[- ]free) (returns?|profit|money)\b/i, reason: "promises sure profit", weight: 2 },
   { re: /\b(remote access|anydesk|teamviewer|install this app)\b/i, reason: "asks for remote access to your device", weight: 2 },
-  { re: /\b(password|pin|social security number|ssn)\b/i, reason: "asks for private login details", weight: 1 },
+  {
+    // Only when the message asks for them, not when a form just has an "SSN:" field.
+    re: /\b(send|give|enter|confirm|verify|share|provide|reply with|tell (me|us)|update)\b[^.\n]{0,40}\b(password|pin|social security number|ssn|login)\b/i,
+    reason: "asks for private login details",
+    weight: 1,
+  },
 ];
 
 export interface TextSignals {

@@ -42,10 +42,8 @@ function fill(tpl: string, vars: Record<string, string>): string {
 function hintsFor(links: LinkFinding[], masked: Masked, words: TextSignals): string {
   const out: string[] = [...words.reasons];
   for (const l of links) for (const r of l.reasons) out.push(r);
-  const kinds = new Set(masked.entries.map((e) => e.kind));
-  if (kinds.has("CARD")) out.push("message contains a card number");
-  if (kinds.has("ACCOUNT")) out.push("message mentions an account number");
-  if (kinds.has("SSN") || kinds.has("RRN")) out.push("message contains an ID number");
+  // Private data in a message is not a scam sign by itself (forms, contracts, receipts have it), so it is not a hint.
+  if (masked.entries.length) out.push(`${masked.entries.length} private values were masked on device (normal, not a warning sign)`);
   return out.length ? out.join("; ") : "none";
 }
 
