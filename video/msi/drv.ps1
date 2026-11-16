@@ -1,7 +1,7 @@
 # Input driver for the video capture on the Windows laptop. Runs in the desktop session (scheduled task /IT).
 # Reads one command per line from the file given as the first argument and logs every step with
 # milliseconds since start to out\<name>.log, so the edit can put a drawn cursor on the same path.
-#   wait <ms> | move <x> <y> <ms> | click | rclick | down | up | keys <SendKeys> | clip <text>
+#   wait <ms> | move <x> <y> <ms> | click | rclick | wheel <delta> | keys <SendKeys> | clip <text>
 #   shot <name> | rec <file> <seconds> | focus <title part> | mark <label> | park
 param($script)
 $ErrorActionPreference = "Stop"
@@ -47,9 +47,14 @@ foreach ($line in Get-Content $script) {
     }
     "click" { $p = Pos; L "click $($p.X) $($p.Y)"; [U]::mouse_event(2, 0, 0, 0, [IntPtr]::Zero); Start-Sleep -Milliseconds 60; [U]::mouse_event(4, 0, 0, 0, [IntPtr]::Zero) }
     "rclick" { $p = Pos; L "rclick $($p.X) $($p.Y)"; [U]::mouse_event(8, 0, 0, 0, [IntPtr]::Zero); Start-Sleep -Milliseconds 60; [U]::mouse_event(16, 0, 0, 0, [IntPtr]::Zero) }
+    "wheel" { L "wheel $rest"; [U]::mouse_event(0x0800, 0, 0, [BitConverter]::ToUInt32([BitConverter]::GetBytes([int]$rest), 0), [IntPtr]::Zero) }
     "keys" { L "keys $rest"; [System.Windows.Forms.SendKeys]::SendWait($rest) }
     "clip" { Set-Clipboard -Value ($rest -replace '\\n', "`n"); L "clip" }
-    "focus" { (New-Object -ComObject WScript.Shell).AppActivate($rest) | Out-Null; L "focus $rest" }
+    "focus" {
+      # Keys must never land in someone else's window: stop the script when the window is not found.
+      if (-not (New-Object -ComObject WScript.Shell).AppActivate($rest)) { L "focus FAILED $rest"; Set-Content "$dir\out\$name.done" "1"; exit 1 }
+      L "focus $rest"
+    }
     "mark" { L "mark $rest" }
     "park" { [U]::SetCursorPos(3000, -500) | Out-Null; L "park" }
     "shot" {
@@ -60,10 +65,14 @@ foreach ($line in Get-Content $script) {
     }
     "rec" {
       $a = $rest -split " "
-      $fa = "-y -loglevel error -f gdigrab -framerate 30 -offset_x 0 -offset_y 0 -video_size 1920x1080 -draw_mouse 0 -i desktop -t $($a[1]) -c:v libx264 -preset ultrafast -crf 14 -pix_fmt yuv420p $dir\out\$($a[0])"
+      # Desktop Duplication (ddagrab) keeps a steady 30 fps; gdigrab managed about 14 fps at 1920x1080.
+      $fa = "-y -loglevel error -f lavfi -i ddagrab=output_idx=0:framerate=30:draw_mouse=0 -t $($a[1]) -vf hwdownload,format=bgra -c:v libx264 -preset ultrafast -crf 14 -pix_fmt yuv420p $dir\out\$($a[0])"
       Start-Process -WindowStyle Hidden -FilePath "$dir\tools\ffmpeg.exe" -ArgumentList $fa
       L "rec $($a[0])"
     }
   }
 }
+# Let a recording finish writing before reporting the end.
+Get-Process ffmpeg -EA 0 | ? { $_.Path -like "$dir\tools\*" } | Wait-Process -Timeout 120 -EA 0
 L "end"
+Set-Content "$dir\out\$name.done" "1"
