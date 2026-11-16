@@ -1,6 +1,8 @@
 package io.github.itsjanghoon.shortstop
 
 import android.content.ActivityNotFoundException
+import android.content.ClipData
+import android.content.ClipboardManager
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -46,6 +48,8 @@ class MainActivity : ComponentActivity() {
             override fun openHistory() = vm.openHistory()
             override fun clearHistory() = vm.clearHistory()
             override fun back() = vm.back()
+            override fun copyCrash(text: String) = this@MainActivity.copy(text)
+            override fun dismissCrash() = vm.dismissCrash()
         }
         setContent {
             val state = vm.state.collectAsStateWithLifecycle()
@@ -56,18 +60,24 @@ class MainActivity : ComponentActivity() {
 
     override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
+        setIntent(intent)
         handleShare(intent)
     }
 
     /** A1: "Share" from a messages app (text) or a screenshot (image). */
     private fun handleShare(intent: Intent?) {
-        if (intent?.action != Intent.ACTION_SEND) return
-        val text = intent.getStringExtra(Intent.EXTRA_TEXT)
-        val uri = IntentCompat.getParcelableExtra(intent, Intent.EXTRA_STREAM, Uri::class.java)
-        if (intent.type?.startsWith("image/") == true && uri != null) {
-            lifecycleScope.launch { vm.shared(text, readImage(uri)) }
-        } else if (!text.isNullOrBlank()) {
-            vm.shared(text, null)
+        val share = runCatching { shareOf(intent) }.getOrNull() ?: return
+        if (share.image != null) {
+            lifecycleScope.launch { vm.shared(share.text, readImage(share.image)) }
+        } else if (!share.text.isNullOrBlank()) {
+            vm.shared(share.text, null)
+        }
+    }
+
+    private fun copy(text: String) {
+        runCatching {
+            getSystemService(ClipboardManager::class.java).setPrimaryClip(ClipData.newPlainText("Shortstop crash details", text))
+            Toast.makeText(this, "Copied", Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -109,4 +119,22 @@ class MainActivity : ComponentActivity() {
     private companion object {
         const val MAX_IMAGE_BYTES = 15 * 1024 * 1024
     }
+}
+
+/** What was shared to Shortstop. */
+data class Share(val text: String?, val image: Uri?)
+
+/**
+ * Reads an ACTION_SEND intent. Null for anything else, or when there is neither text nor an image.
+ * Some apps send EXTRA_TEXT as a CharSequence (styled text), so it is read that way.
+ */
+fun shareOf(intent: Intent?): Share? {
+    if (intent?.action != Intent.ACTION_SEND) return null
+    val text = runCatching { intent.getCharSequenceExtra(Intent.EXTRA_TEXT)?.toString() }.getOrNull()?.takeIf { it.isNotBlank() }
+    val image = if (intent.type?.startsWith("image/") == true) {
+        runCatching { IntentCompat.getParcelableExtra(intent, Intent.EXTRA_STREAM, Uri::class.java) }.getOrNull()
+    } else {
+        null
+    }
+    return if (text == null && image == null) null else Share(text, image)
 }
