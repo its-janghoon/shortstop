@@ -35,7 +35,7 @@ for (const mode of MODES) {
     let row;
     for (let attempt = 0; attempt < 6; attempt++) {
       row = await p.evaluate(([t, m]) => window.shortstopBench.runOne(t, m).catch((e) => ({ error: String(e?.message ?? e) })), [it.text, mode]);
-      if (!row.error || !/429|quota|exhausted|rate/i.test(row.error)) break;
+      if (!row.error || !/429|quota|exhausted|rate|depleted/i.test(row.error)) break;
       await sleep(20000 * (attempt + 1));
     }
     const leaked = (row.sent ?? []).length ? it.secrets.filter((s) => row.sent.some((x) => x.includes(s))) : [];

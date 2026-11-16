@@ -37,6 +37,9 @@ async function runOne(text: string, mode: Mode): Promise<BenchRow> {
     mode === "rules" || !b ? {} : { models: b.models, config: b.config, isReported: async () => false },
   );
   const sent = r.receipt.filter((s) => s.sent).map((s) => s.sent!);
+  // A failed model call falls back to rules in the app. For measuring, it is an error, not a result.
+  const failed = r.receipt.find((s) => /failed|unavailable \(/i.test(s.what));
+  if (mode === "shortstop" && failed) throw new Error(failed.what);
   return {
     verdict: r.verdict,
     ms: Math.round(performance.now() - t),
