@@ -33,7 +33,7 @@ Say "device $serial"
 function A { & $adb -s $serial @args }
 
 # --- screen on, unlocked, no animations (uiautomator needs an idle screen) ----------------------------
-A shell svc power stayon true | Out-Null
+# svc power stayon drops the Remote Test Lab link; keep the screen awake with taps instead.
 A shell input keyevent KEYCODE_WAKEUP | Out-Null
 A shell wm dismiss-keyguard | Out-Null
 A shell input keyevent 82 | Out-Null
@@ -49,7 +49,8 @@ Say "screen ${w}x$h"
 
 # --- install and launch -------------------------------------------------------------------------------
 Say 'installing'
-A install -r -g $Apk | Select-Object -Last 1 | ForEach-Object { Say $_ }
+$installMsg = if (-not (A shell pm list packages io.github.itsjanghoon.shortstop)) { A install -r -g $Apk | Select-Object -Last 1 } else { 'already installed' }
+Say $installMsg
 A logcat -c | Out-Null
 A shell am force-stop $Pkg | Out-Null
 A shell am start -W -n "$Pkg/.MainActivity" | Out-Null
