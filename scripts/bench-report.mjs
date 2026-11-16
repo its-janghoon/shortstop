@@ -1,7 +1,14 @@
 // Summarize bench results: node scripts/bench-report.mjs <bench.jsonl>
 import fs from "node:fs";
 
-const rows = fs.readFileSync(process.argv[2], "utf8").split("\n").filter(Boolean).map((l) => JSON.parse(l));
+const all = fs.readFileSync(process.argv[2], "utf8").split("\n").filter(Boolean).map((l) => JSON.parse(l));
+// Keep one row per text and mode: a success wins over an earlier error from a retry.
+const byKey = new Map();
+for (const r of all) {
+  const k = `${r.id}|${r.mode}`;
+  if (!byKey.has(k) || (byKey.get(k).error && !r.error)) byKey.set(k, r);
+}
+const rows = [...byKey.values()];
 const pct = (a, b) => (b ? `${((100 * a) / b).toFixed(1)}%` : "-");
 const median = (xs) => {
   const s = [...xs].sort((a, b) => a - b);

@@ -1,0 +1,750 @@
+{"id":"scam-001","kind":"scam","mode":"rules","verdict":"scam","ms":14,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-002","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-003","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-004","kind":"scam","mode":"rules","verdict":"scam","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-005","kind":"scam","mode":"rules","verdict":"suspicious","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-006","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-007","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-008","kind":"scam","mode":"rules","verdict":"scam","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-009","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-010","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":2,"leaked":[]}
+{"id":"scam-011","kind":"scam","mode":"rules","verdict":"scam","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-012","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-013","kind":"scam","mode":"rules","verdict":"scam","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-014","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-015","kind":"scam","mode":"rules","verdict":"suspicious","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-016","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-017","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-018","kind":"scam","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":2,"leaked":[]}
+{"id":"scam-019","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-020","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-021","kind":"scam","mode":"rules","verdict":"scam","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-022","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-023","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-024","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-025","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-026","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":2,"leaked":[]}
+{"id":"scam-027","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-028","kind":"scam","mode":"rules","verdict":"safe","ms":3,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-029","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-030","kind":"scam","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":3,"leaked":[]}
+{"id":"scam-031","kind":"scam","mode":"rules","verdict":"scam","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-032","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-033","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-034","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-035","kind":"scam","mode":"rules","verdict":"suspicious","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-036","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-037","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-038","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-039","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-040","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-041","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-042","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-043","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-044","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-045","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-046","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-047","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-048","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-049","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-050","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-051","kind":"scam","mode":"rules","verdict":"scam","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-052","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-053","kind":"scam","mode":"rules","verdict":"suspicious","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":3,"leaked":[]}
+{"id":"scam-054","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-055","kind":"scam","mode":"rules","verdict":"scam","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":2,"leaked":[]}
+{"id":"scam-056","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-057","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-058","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-059","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-060","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-061","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":2,"leaked":[]}
+{"id":"scam-062","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-063","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-064","kind":"scam","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":3,"leaked":[]}
+{"id":"scam-065","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-066","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-067","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-068","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-069","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-070","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-071","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-072","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":2,"leaked":[]}
+{"id":"scam-073","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-074","kind":"scam","mode":"rules","verdict":"suspicious","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":3,"leaked":[]}
+{"id":"scam-075","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-076","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-077","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-078","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-079","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-080","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-081","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-082","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-083","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-084","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-085","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-086","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":2,"leaked":[]}
+{"id":"scam-087","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-088","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-089","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-090","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-091","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-092","kind":"scam","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":3,"leaked":[]}
+{"id":"scam-093","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-094","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-095","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-096","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-097","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"scam-098","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"scam-099","kind":"scam","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":2,"leaked":[]}
+{"id":"scam-100","kind":"scam","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-001","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-002","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-003","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-004","kind":"safe","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-005","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"safe-006","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":2,"leaked":[]}
+{"id":"safe-007","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-008","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-009","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-010","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-011","kind":"safe","mode":"rules","verdict":"scam","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-012","kind":"safe","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-013","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-014","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-015","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-016","kind":"safe","mode":"rules","verdict":"suspicious","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"safe-017","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-018","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-019","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":2,"leaked":[]}
+{"id":"safe-020","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"safe-021","kind":"safe","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-022","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-023","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-024","kind":"safe","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-025","kind":"safe","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-026","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"safe-027","kind":"safe","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-028","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-029","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-030","kind":"safe","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-031","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-032","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-033","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"safe-034","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":2,"leaked":[]}
+{"id":"safe-035","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-036","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-037","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"safe-038","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-039","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-040","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"safe-041","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":2,"leaked":[]}
+{"id":"safe-042","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-043","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-044","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-045","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-046","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"safe-047","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-048","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-049","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-050","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"safe-051","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-052","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-053","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-054","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-055","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-056","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-057","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-058","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-059","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-060","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-061","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-062","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"safe-063","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-064","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-065","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"safe-066","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-067","kind":"safe","mode":"rules","verdict":"scam","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-068","kind":"safe","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":2,"leaked":[]}
+{"id":"safe-069","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-070","kind":"safe","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-071","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-072","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":2,"leaked":[]}
+{"id":"safe-073","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-074","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-075","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-076","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-077","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-078","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"safe-079","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"safe-080","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":2,"leaked":[]}
+{"id":"safe-081","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-082","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-083","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-084","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-085","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-086","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-087","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-088","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"safe-089","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-090","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"safe-091","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-092","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-093","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-094","kind":"safe","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-095","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":1,"leaked":[]}
+{"id":"safe-096","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-097","kind":"safe","mode":"rules","verdict":"suspicious","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-098","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-099","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"safe-100","kind":"safe","mode":"rules","verdict":"safe","ms":0,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":0,"leaked":[]}
+{"id":"mask-001","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":7,"leaked":[]}
+{"id":"mask-002","kind":"mask","mode":"rules","verdict":"suspicious","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":5,"leaked":[]}
+{"id":"mask-003","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":6,"leaked":[]}
+{"id":"mask-004","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":4,"leaked":[]}
+{"id":"mask-005","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":5,"leaked":[]}
+{"id":"mask-006","kind":"mask","mode":"rules","verdict":"scam","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":7,"leaked":[]}
+{"id":"mask-007","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":5,"leaked":[]}
+{"id":"mask-008","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":6,"leaked":[]}
+{"id":"mask-009","kind":"mask","mode":"rules","verdict":"suspicious","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":6,"leaked":[]}
+{"id":"mask-010","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":6,"leaked":[]}
+{"id":"mask-011","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":7,"leaked":[]}
+{"id":"mask-012","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":4,"leaked":[]}
+{"id":"mask-013","kind":"mask","mode":"rules","verdict":"suspicious","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":7,"leaked":[]}
+{"id":"mask-014","kind":"mask","mode":"rules","verdict":"suspicious","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":5,"leaked":[]}
+{"id":"mask-015","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":5,"leaked":[]}
+{"id":"mask-016","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":6,"leaked":[]}
+{"id":"mask-017","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":5,"leaked":[]}
+{"id":"mask-018","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":6,"leaked":[]}
+{"id":"mask-019","kind":"mask","mode":"rules","verdict":"suspicious","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":7,"leaked":[]}
+{"id":"mask-020","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":6,"leaked":[]}
+{"id":"mask-021","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":4,"leaked":[]}
+{"id":"mask-022","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":6,"leaked":[]}
+{"id":"mask-023","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":8,"leaked":[]}
+{"id":"mask-024","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":5,"leaked":[]}
+{"id":"mask-025","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":8,"leaked":[]}
+{"id":"mask-026","kind":"mask","mode":"rules","verdict":"suspicious","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":5,"leaked":[]}
+{"id":"mask-027","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":6,"leaked":[]}
+{"id":"mask-028","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":5,"leaked":[]}
+{"id":"mask-029","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":6,"leaked":[]}
+{"id":"mask-030","kind":"mask","mode":"rules","verdict":"suspicious","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":4,"leaked":[]}
+{"id":"mask-031","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":7,"leaked":[]}
+{"id":"mask-032","kind":"mask","mode":"rules","verdict":"suspicious","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":4,"leaked":[]}
+{"id":"mask-033","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":7,"leaked":[]}
+{"id":"mask-034","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":5,"leaked":[]}
+{"id":"mask-035","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":4,"leaked":[]}
+{"id":"mask-036","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":6,"leaked":[]}
+{"id":"mask-037","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":6,"leaked":[]}
+{"id":"mask-038","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":5,"leaked":[]}
+{"id":"mask-039","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":6,"leaked":[]}
+{"id":"mask-040","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":5,"leaked":[]}
+{"id":"mask-041","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":5,"leaked":[]}
+{"id":"mask-042","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":6,"leaked":[]}
+{"id":"mask-043","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":5,"leaked":[]}
+{"id":"mask-044","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":5,"leaked":[]}
+{"id":"mask-045","kind":"mask","mode":"rules","verdict":"suspicious","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":4,"leaked":[]}
+{"id":"mask-046","kind":"mask","mode":"rules","verdict":"suspicious","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":6,"leaked":[]}
+{"id":"mask-047","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":6,"leaked":[]}
+{"id":"mask-048","kind":"mask","mode":"rules","verdict":"suspicious","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":5,"leaked":[]}
+{"id":"mask-049","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":7,"leaked":[]}
+{"id":"mask-050","kind":"mask","mode":"rules","verdict":"safe","ms":1,"cloudCalls":0,"onDevice":false,"sentChars":0,"secrets":7,"leaked":[]}
+{"id":"scam-001","kind":"scam","mode":"shortstop","verdict":"scam","ms":1868,"cloudCalls":1,"onDevice":false,"sentChars":860,"secrets":0,"leaked":[]}
+{"id":"scam-002","kind":"scam","mode":"shortstop","verdict":"scam","ms":1697,"cloudCalls":1,"onDevice":false,"sentChars":738,"secrets":0,"leaked":[]}
+{"id":"scam-003","kind":"scam","mode":"shortstop","verdict":"scam","ms":1630,"cloudCalls":1,"onDevice":false,"sentChars":774,"secrets":0,"leaked":[]}
+{"id":"scam-004","kind":"scam","mode":"shortstop","verdict":"scam","ms":1569,"cloudCalls":1,"onDevice":false,"sentChars":760,"secrets":0,"leaked":[]}
+{"id":"scam-005","kind":"scam","mode":"shortstop","verdict":"scam","ms":1395,"cloudCalls":1,"onDevice":false,"sentChars":1106,"secrets":0,"leaked":[]}
+{"id":"scam-006","kind":"scam","mode":"shortstop","verdict":"scam","ms":3168,"cloudCalls":2,"onDevice":false,"sentChars":1497,"secrets":0,"leaked":[]}
+{"id":"scam-007","kind":"scam","mode":"shortstop","verdict":"scam","ms":1518,"cloudCalls":1,"onDevice":false,"sentChars":816,"secrets":1,"leaked":[]}
+{"id":"scam-008","kind":"scam","mode":"shortstop","verdict":"scam","ms":1488,"cloudCalls":1,"onDevice":false,"sentChars":787,"secrets":0,"leaked":[]}
+{"id":"scam-009","kind":"scam","mode":"shortstop","verdict":"scam","ms":1539,"cloudCalls":1,"onDevice":false,"sentChars":764,"secrets":1,"leaked":[]}
+{"id":"scam-010","kind":"scam","mode":"shortstop","verdict":"scam","ms":1497,"cloudCalls":1,"onDevice":false,"sentChars":812,"secrets":2,"leaked":[]}
+{"id":"scam-011","kind":"scam","mode":"shortstop","verdict":"scam","ms":1786,"cloudCalls":1,"onDevice":false,"sentChars":725,"secrets":0,"leaked":[]}
+{"id":"scam-012","kind":"scam","mode":"shortstop","verdict":"scam","ms":1493,"cloudCalls":1,"onDevice":false,"sentChars":724,"secrets":0,"leaked":[]}
+{"id":"scam-013","kind":"scam","mode":"shortstop","verdict":"scam","ms":1645,"cloudCalls":1,"onDevice":false,"sentChars":1067,"secrets":0,"leaked":[]}
+{"id":"scam-014","kind":"scam","mode":"shortstop","verdict":"scam","ms":1839,"cloudCalls":1,"onDevice":false,"sentChars":679,"secrets":1,"leaked":[]}
+{"id":"scam-015","kind":"scam","mode":"shortstop","verdict":"scam","ms":1412,"cloudCalls":1,"onDevice":false,"sentChars":741,"secrets":1,"leaked":[]}
+{"id":"scam-016","kind":"scam","mode":"shortstop","verdict":"scam","ms":1898,"cloudCalls":1,"onDevice":false,"sentChars":753,"secrets":0,"leaked":[]}
+{"id":"scam-017","kind":"scam","mode":"shortstop","verdict":"scam","ms":1887,"cloudCalls":1,"onDevice":false,"sentChars":719,"secrets":0,"leaked":[]}
+{"id":"scam-018","kind":"scam","mode":"shortstop","verdict":"scam","ms":1762,"cloudCalls":1,"onDevice":false,"sentChars":1004,"secrets":2,"leaked":[]}
+{"id":"scam-019","kind":"scam","mode":"shortstop","verdict":"scam","ms":1294,"cloudCalls":1,"onDevice":false,"sentChars":770,"secrets":0,"leaked":[]}
+{"id":"scam-020","kind":"scam","mode":"shortstop","verdict":"scam","ms":1834,"cloudCalls":1,"onDevice":false,"sentChars":741,"secrets":1,"leaked":[]}
+{"id":"scam-021","kind":"scam","mode":"shortstop","verdict":"scam","ms":1724,"cloudCalls":1,"onDevice":false,"sentChars":802,"secrets":0,"leaked":[]}
+{"id":"scam-022","kind":"scam","mode":"shortstop","verdict":"scam","ms":1459,"cloudCalls":1,"onDevice":false,"sentChars":757,"secrets":0,"leaked":[]}
+{"id":"scam-023","kind":"scam","mode":"shortstop","verdict":"scam","ms":1666,"cloudCalls":1,"onDevice":false,"sentChars":640,"secrets":0,"leaked":[]}
+{"id":"scam-024","kind":"scam","mode":"shortstop","verdict":"scam","ms":1783,"cloudCalls":1,"onDevice":false,"sentChars":751,"secrets":0,"leaked":[]}
+{"id":"scam-025","kind":"scam","mode":"shortstop","verdict":"scam","ms":1788,"cloudCalls":1,"onDevice":false,"sentChars":817,"secrets":1,"leaked":[]}
+{"id":"scam-026","kind":"scam","mode":"shortstop","verdict":"scam","ms":1479,"cloudCalls":1,"onDevice":false,"sentChars":722,"secrets":2,"leaked":[]}
+{"id":"scam-027","kind":"scam","mode":"shortstop","verdict":"scam","ms":1617,"cloudCalls":1,"onDevice":false,"sentChars":767,"secrets":1,"leaked":[]}
+{"id":"scam-028","kind":"scam","mode":"shortstop","verdict":"scam","ms":1792,"cloudCalls":1,"onDevice":false,"sentChars":763,"secrets":0,"leaked":[]}
+{"id":"scam-029","kind":"scam","mode":"shortstop","verdict":"scam","ms":1684,"cloudCalls":1,"onDevice":false,"sentChars":758,"secrets":0,"leaked":[]}
+{"id":"scam-030","kind":"scam","mode":"shortstop","verdict":"scam","ms":1895,"cloudCalls":1,"onDevice":false,"sentChars":1140,"secrets":3,"leaked":[]}
+{"id":"scam-031","kind":"scam","mode":"shortstop","verdict":"scam","ms":1742,"cloudCalls":1,"onDevice":false,"sentChars":772,"secrets":0,"leaked":[]}
+{"id":"scam-032","kind":"scam","mode":"shortstop","verdict":"scam","ms":1547,"cloudCalls":1,"onDevice":false,"sentChars":711,"secrets":1,"leaked":[]}
+{"id":"scam-033","kind":"scam","mode":"shortstop","verdict":"scam","ms":1427,"cloudCalls":1,"onDevice":false,"sentChars":797,"secrets":1,"leaked":[]}
+{"id":"scam-034","kind":"scam","mode":"shortstop","verdict":"scam","ms":1560,"cloudCalls":1,"onDevice":false,"sentChars":778,"secrets":0,"leaked":[]}
+{"id":"scam-035","kind":"scam","mode":"shortstop","verdict":"scam","ms":1841,"cloudCalls":1,"onDevice":false,"sentChars":1062,"secrets":1,"leaked":[]}
+{"id":"scam-036","kind":"scam","mode":"shortstop","verdict":"scam","ms":1746,"cloudCalls":1,"onDevice":false,"sentChars":780,"secrets":0,"leaked":[]}
+{"id":"scam-037","kind":"scam","mode":"shortstop","verdict":"scam","ms":1798,"cloudCalls":1,"onDevice":false,"sentChars":788,"secrets":0,"leaked":[]}
+{"id":"scam-038","kind":"scam","mode":"shortstop","verdict":"scam","ms":1697,"cloudCalls":1,"onDevice":false,"sentChars":783,"secrets":1,"leaked":[]}
+{"id":"scam-039","kind":"scam","mode":"shortstop","verdict":"scam","ms":1592,"cloudCalls":1,"onDevice":false,"sentChars":734,"secrets":1,"leaked":[]}
+{"id":"scam-040","kind":"scam","mode":"shortstop","verdict":"scam","ms":1484,"cloudCalls":1,"onDevice":false,"sentChars":785,"secrets":1,"leaked":[]}
+{"id":"scam-041","kind":"scam","mode":"shortstop","verdict":"scam","ms":1924,"cloudCalls":1,"onDevice":false,"sentChars":706,"secrets":1,"leaked":[]}
+{"id":"scam-042","kind":"scam","mode":"shortstop","verdict":"scam","ms":1334,"cloudCalls":1,"onDevice":false,"sentChars":688,"secrets":0,"leaked":[]}
+{"id":"scam-043","kind":"scam","mode":"shortstop","verdict":"scam","ms":1539,"cloudCalls":1,"onDevice":false,"sentChars":858,"secrets":1,"leaked":[]}
+{"id":"scam-044","kind":"scam","mode":"shortstop","verdict":"scam","ms":1714,"cloudCalls":1,"onDevice":false,"sentChars":800,"secrets":1,"leaked":[]}
+{"id":"scam-045","kind":"scam","mode":"shortstop","verdict":"scam","ms":1332,"cloudCalls":1,"onDevice":false,"sentChars":704,"secrets":1,"leaked":[]}
+{"id":"scam-046","kind":"scam","mode":"shortstop","verdict":"scam","ms":1620,"cloudCalls":1,"onDevice":false,"sentChars":786,"secrets":0,"leaked":[]}
+{"id":"scam-047","kind":"scam","mode":"shortstop","verdict":"scam","ms":1397,"cloudCalls":1,"onDevice":false,"sentChars":731,"secrets":1,"leaked":[]}
+{"id":"scam-048","kind":"scam","mode":"shortstop","verdict":"scam","ms":1989,"cloudCalls":1,"onDevice":false,"sentChars":758,"secrets":1,"leaked":[]}
+{"id":"scam-049","kind":"scam","mode":"shortstop","verdict":"scam","ms":1683,"cloudCalls":1,"onDevice":false,"sentChars":722,"secrets":0,"leaked":[]}
+{"id":"scam-050","kind":"scam","mode":"shortstop","verdict":"scam","ms":1542,"cloudCalls":1,"onDevice":false,"sentChars":759,"secrets":0,"leaked":[]}
+{"id":"scam-051","kind":"scam","mode":"shortstop","verdict":"scam","ms":1373,"cloudCalls":1,"onDevice":false,"sentChars":739,"secrets":0,"leaked":[]}
+{"id":"scam-052","kind":"scam","mode":"shortstop","verdict":"scam","ms":2298,"cloudCalls":1,"onDevice":false,"sentChars":731,"secrets":0,"leaked":[]}
+{"id":"scam-053","kind":"scam","mode":"shortstop","verdict":"scam","ms":1565,"cloudCalls":1,"onDevice":false,"sentChars":1026,"secrets":3,"leaked":[]}
+{"id":"scam-054","kind":"scam","mode":"shortstop","verdict":"scam","ms":1654,"cloudCalls":1,"onDevice":false,"sentChars":731,"secrets":0,"leaked":[]}
+{"id":"scam-055","kind":"scam","mode":"shortstop","verdict":"scam","ms":1527,"cloudCalls":1,"onDevice":false,"sentChars":876,"secrets":2,"leaked":[]}
+{"id":"scam-056","kind":"scam","mode":"shortstop","verdict":"scam","ms":1402,"cloudCalls":1,"onDevice":false,"sentChars":803,"secrets":0,"leaked":[]}
+{"id":"scam-057","kind":"scam","mode":"shortstop","verdict":"scam","ms":1755,"cloudCalls":1,"onDevice":false,"sentChars":729,"secrets":1,"leaked":[]}
+{"id":"scam-058","kind":"scam","mode":"shortstop","verdict":"suspicious","ms":3020,"cloudCalls":2,"onDevice":false,"sentChars":1563,"secrets":0,"leaked":[]}
+{"id":"scam-059","kind":"scam","mode":"shortstop","verdict":"scam","ms":1727,"cloudCalls":1,"onDevice":false,"sentChars":691,"secrets":0,"leaked":[]}
+{"id":"scam-060","kind":"scam","mode":"shortstop","verdict":"scam","ms":1835,"cloudCalls":1,"onDevice":false,"sentChars":765,"secrets":0,"leaked":[]}
+{"id":"scam-061","kind":"scam","mode":"shortstop","verdict":"scam","ms":3223,"cloudCalls":2,"onDevice":false,"sentChars":1470,"secrets":2,"leaked":[]}
+{"id":"scam-062","kind":"scam","mode":"shortstop","verdict":"scam","ms":1705,"cloudCalls":1,"onDevice":false,"sentChars":757,"secrets":0,"leaked":[]}
+{"id":"scam-063","kind":"scam","mode":"shortstop","verdict":"scam","ms":1585,"cloudCalls":1,"onDevice":false,"sentChars":763,"secrets":0,"leaked":[]}
+{"id":"scam-064","kind":"scam","mode":"shortstop","verdict":"scam","ms":1756,"cloudCalls":1,"onDevice":false,"sentChars":1103,"secrets":3,"leaked":[]}
+{"id":"scam-065","kind":"scam","mode":"shortstop","verdict":"scam","ms":1881,"cloudCalls":1,"onDevice":false,"sentChars":826,"secrets":0,"leaked":[]}
+{"id":"scam-066","kind":"scam","mode":"shortstop","verdict":"scam","ms":1963,"cloudCalls":1,"onDevice":false,"sentChars":795,"secrets":1,"leaked":[]}
+{"id":"scam-067","kind":"scam","mode":"shortstop","verdict":"scam","ms":1478,"cloudCalls":1,"onDevice":false,"sentChars":708,"secrets":0,"leaked":[]}
+{"id":"scam-068","kind":"scam","mode":"shortstop","verdict":"scam","ms":1509,"cloudCalls":1,"onDevice":false,"sentChars":685,"secrets":1,"leaked":[]}
+{"id":"scam-069","kind":"scam","mode":"shortstop","verdict":"scam","ms":1658,"cloudCalls":1,"onDevice":false,"sentChars":814,"secrets":1,"leaked":[]}
+{"id":"scam-070","kind":"scam","mode":"shortstop","verdict":"scam","ms":1861,"cloudCalls":1,"onDevice":false,"sentChars":769,"secrets":0,"leaked":[]}
+{"id":"scam-071","kind":"scam","mode":"shortstop","verdict":"scam","ms":1703,"cloudCalls":1,"onDevice":false,"sentChars":697,"secrets":0,"leaked":[]}
+{"id":"scam-072","kind":"scam","mode":"shortstop","verdict":"scam","ms":1383,"cloudCalls":1,"onDevice":false,"sentChars":747,"secrets":2,"leaked":[]}
+{"id":"scam-073","kind":"scam","mode":"shortstop","verdict":"scam","ms":1283,"cloudCalls":1,"onDevice":false,"sentChars":787,"secrets":0,"leaked":[]}
+{"id":"scam-074","kind":"scam","mode":"shortstop","verdict":"scam","ms":1528,"cloudCalls":1,"onDevice":false,"sentChars":1081,"secrets":3,"leaked":[]}
+{"id":"scam-075","kind":"scam","mode":"shortstop","verdict":"scam","ms":1590,"cloudCalls":1,"onDevice":false,"sentChars":744,"secrets":0,"leaked":[]}
+{"id":"scam-076","kind":"scam","mode":"shortstop","verdict":"scam","ms":1328,"cloudCalls":1,"onDevice":false,"sentChars":806,"secrets":1,"leaked":[]}
+{"id":"scam-077","kind":"scam","mode":"shortstop","verdict":"scam","ms":1552,"cloudCalls":1,"onDevice":false,"sentChars":735,"secrets":0,"leaked":[]}
+{"id":"scam-078","kind":"scam","mode":"shortstop","verdict":"scam","ms":1647,"cloudCalls":1,"onDevice":false,"sentChars":681,"secrets":1,"leaked":[]}
+{"id":"scam-079","kind":"scam","mode":"shortstop","verdict":"scam","ms":1405,"cloudCalls":1,"onDevice":false,"sentChars":726,"secrets":0,"leaked":[]}
+{"id":"scam-080","kind":"scam","mode":"shortstop","verdict":"scam","ms":1871,"cloudCalls":1,"onDevice":false,"sentChars":799,"secrets":0,"leaked":[]}
+{"id":"scam-081","kind":"scam","mode":"shortstop","verdict":"scam","ms":1162,"cloudCalls":1,"onDevice":false,"sentChars":690,"secrets":0,"leaked":[]}
+{"id":"scam-082","kind":"scam","mode":"shortstop","verdict":"scam","ms":1662,"cloudCalls":1,"onDevice":false,"sentChars":723,"secrets":0,"leaked":[]}
+{"id":"scam-083","kind":"scam","mode":"shortstop","verdict":"scam","ms":1693,"cloudCalls":1,"onDevice":false,"sentChars":704,"secrets":1,"leaked":[]}
+{"id":"scam-084","kind":"scam","mode":"shortstop","verdict":"scam","ms":1895,"cloudCalls":1,"onDevice":false,"sentChars":1010,"secrets":1,"leaked":[]}
+{"id":"scam-085","kind":"scam","mode":"shortstop","verdict":"scam","ms":1625,"cloudCalls":1,"onDevice":false,"sentChars":773,"secrets":0,"leaked":[]}
+{"id":"scam-086","kind":"scam","mode":"shortstop","verdict":"scam","ms":1647,"cloudCalls":1,"onDevice":false,"sentChars":804,"secrets":2,"leaked":[]}
+{"id":"scam-087","kind":"scam","mode":"shortstop","verdict":"scam","ms":1901,"cloudCalls":1,"onDevice":false,"sentChars":774,"secrets":0,"leaked":[]}
+{"id":"scam-088","kind":"scam","mode":"shortstop","verdict":"scam","ms":1418,"cloudCalls":1,"onDevice":false,"sentChars":766,"secrets":1,"leaked":[]}
+{"id":"scam-089","kind":"scam","mode":"shortstop","verdict":"scam","ms":1300,"cloudCalls":1,"onDevice":false,"sentChars":680,"secrets":1,"leaked":[]}
+{"id":"scam-090","kind":"scam","mode":"shortstop","verdict":"scam","ms":1328,"cloudCalls":1,"onDevice":false,"sentChars":746,"secrets":0,"leaked":[]}
+{"id":"scam-091","kind":"scam","mode":"shortstop","verdict":"scam","ms":1564,"cloudCalls":1,"onDevice":false,"sentChars":687,"secrets":1,"leaked":[]}
+{"id":"scam-092","kind":"scam","mode":"shortstop","verdict":"scam","ms":1417,"cloudCalls":1,"onDevice":false,"sentChars":976,"secrets":3,"leaked":[]}
+{"id":"scam-093","kind":"scam","mode":"shortstop","verdict":"scam","ms":1552,"cloudCalls":1,"onDevice":false,"sentChars":728,"secrets":0,"leaked":[]}
+{"id":"scam-094","kind":"scam","mode":"shortstop","verdict":"scam","ms":3544,"cloudCalls":2,"onDevice":false,"sentChars":1832,"secrets":1,"leaked":[]}
+{"id":"scam-095","kind":"scam","mode":"shortstop","verdict":"scam","ms":1460,"cloudCalls":1,"onDevice":false,"sentChars":750,"secrets":0,"leaked":[]}
+{"id":"scam-096","kind":"scam","mode":"shortstop","verdict":"scam","ms":1629,"cloudCalls":1,"onDevice":false,"sentChars":730,"secrets":0,"leaked":[]}
+{"id":"scam-097","kind":"scam","mode":"shortstop","verdict":"scam","ms":1677,"cloudCalls":1,"onDevice":false,"sentChars":760,"secrets":0,"leaked":[]}
+{"id":"scam-098","kind":"scam","mode":"shortstop","verdict":"scam","ms":1566,"cloudCalls":1,"onDevice":false,"sentChars":673,"secrets":1,"leaked":[]}
+{"id":"scam-099","kind":"scam","mode":"shortstop","verdict":"scam","ms":1907,"cloudCalls":1,"onDevice":false,"sentChars":908,"secrets":2,"leaked":[]}
+{"id":"scam-100","kind":"scam","mode":"shortstop","verdict":"scam","ms":1563,"cloudCalls":1,"onDevice":false,"sentChars":715,"secrets":0,"leaked":[]}
+{"id":"safe-001","kind":"safe","mode":"shortstop","verdict":"safe","ms":1422,"cloudCalls":1,"onDevice":false,"sentChars":700,"secrets":0,"leaked":[]}
+{"id":"safe-002","kind":"safe","mode":"shortstop","verdict":"safe","ms":1658,"cloudCalls":1,"onDevice":false,"sentChars":750,"secrets":0,"leaked":[]}
+{"id":"safe-003","kind":"safe","mode":"shortstop","verdict":"safe","ms":1485,"cloudCalls":1,"onDevice":false,"sentChars":708,"secrets":0,"leaked":[]}
+{"id":"safe-004","kind":"safe","mode":"shortstop","verdict":"safe","ms":1499,"cloudCalls":1,"onDevice":false,"sentChars":763,"secrets":0,"leaked":[]}
+{"id":"safe-005","kind":"safe","mode":"shortstop","verdict":"suspicious","ms":3287,"cloudCalls":2,"onDevice":false,"sentChars":1678,"secrets":1,"leaked":[]}
+{"id":"safe-006","kind":"safe","mode":"shortstop","verdict":"safe","ms":1631,"cloudCalls":1,"onDevice":false,"sentChars":732,"secrets":2,"leaked":[]}
+{"id":"safe-007","kind":"safe","mode":"shortstop","verdict":"safe","ms":1525,"cloudCalls":1,"onDevice":false,"sentChars":659,"secrets":0,"leaked":[]}
+{"id":"safe-008","kind":"safe","mode":"shortstop","verdict":"safe","ms":1684,"cloudCalls":1,"onDevice":false,"sentChars":688,"secrets":0,"leaked":[]}
+{"id":"safe-009","kind":"safe","mode":"shortstop","verdict":"safe","ms":1629,"cloudCalls":1,"onDevice":false,"sentChars":664,"secrets":0,"leaked":[]}
+{"id":"safe-010","kind":"safe","mode":"shortstop","verdict":"safe","ms":1392,"cloudCalls":1,"onDevice":false,"sentChars":751,"secrets":0,"leaked":[]}
+{"id":"safe-011","kind":"safe","mode":"shortstop","verdict":"suspicious","ms":1705,"cloudCalls":1,"onDevice":false,"sentChars":750,"secrets":0,"leaked":[]}
+{"id":"safe-012","kind":"safe","mode":"shortstop","verdict":"safe","ms":1632,"cloudCalls":1,"onDevice":false,"sentChars":727,"secrets":0,"leaked":[]}
+{"id":"safe-013","kind":"safe","mode":"shortstop","verdict":"safe","ms":1758,"cloudCalls":1,"onDevice":false,"sentChars":644,"secrets":0,"leaked":[]}
+{"id":"safe-014","kind":"safe","mode":"shortstop","verdict":"safe","ms":1408,"cloudCalls":1,"onDevice":false,"sentChars":752,"secrets":0,"leaked":[]}
+{"id":"safe-015","kind":"safe","mode":"shortstop","verdict":"safe","ms":1907,"cloudCalls":1,"onDevice":false,"sentChars":639,"secrets":0,"leaked":[]}
+{"id":"safe-016","kind":"safe","mode":"shortstop","verdict":"safe","ms":1673,"cloudCalls":1,"onDevice":false,"sentChars":958,"secrets":1,"leaked":[]}
+{"id":"safe-017","kind":"safe","mode":"shortstop","verdict":"safe","ms":1558,"cloudCalls":1,"onDevice":false,"sentChars":826,"secrets":0,"leaked":[]}
+{"id":"safe-018","kind":"safe","mode":"shortstop","verdict":"safe","ms":1528,"cloudCalls":1,"onDevice":false,"sentChars":683,"secrets":0,"leaked":[]}
+{"id":"safe-019","kind":"safe","mode":"shortstop","verdict":"safe","ms":1917,"cloudCalls":1,"onDevice":false,"sentChars":811,"secrets":2,"leaked":[]}
+{"id":"safe-020","kind":"safe","mode":"shortstop","verdict":"safe","ms":1393,"cloudCalls":1,"onDevice":false,"sentChars":678,"secrets":1,"leaked":[]}
+{"id":"safe-021","kind":"safe","mode":"shortstop","verdict":"safe","ms":1283,"cloudCalls":1,"onDevice":false,"sentChars":703,"secrets":0,"leaked":[]}
+{"id":"safe-022","kind":"safe","mode":"shortstop","verdict":"safe","ms":1649,"cloudCalls":1,"onDevice":false,"sentChars":658,"secrets":0,"leaked":[]}
+{"id":"safe-023","kind":"safe","mode":"shortstop","verdict":"safe","ms":1469,"cloudCalls":1,"onDevice":false,"sentChars":653,"secrets":0,"leaked":[]}
+{"id":"safe-024","kind":"safe","mode":"shortstop","verdict":"safe","ms":1604,"cloudCalls":1,"onDevice":false,"sentChars":663,"secrets":0,"leaked":[]}
+{"id":"safe-025","kind":"safe","mode":"shortstop","verdict":"safe","ms":1138,"cloudCalls":1,"onDevice":false,"sentChars":620,"secrets":0,"leaked":[]}
+{"id":"safe-026","kind":"safe","mode":"shortstop","verdict":"safe","ms":1265,"cloudCalls":1,"onDevice":false,"sentChars":699,"secrets":1,"leaked":[]}
+{"id":"safe-027","kind":"safe","mode":"shortstop","verdict":"safe","ms":1588,"cloudCalls":1,"onDevice":false,"sentChars":721,"secrets":0,"leaked":[]}
+{"id":"safe-028","kind":"safe","mode":"shortstop","verdict":"safe","ms":1222,"cloudCalls":1,"onDevice":false,"sentChars":669,"secrets":0,"leaked":[]}
+{"id":"safe-029","kind":"safe","mode":"shortstop","verdict":"safe","ms":1466,"cloudCalls":1,"onDevice":false,"sentChars":646,"secrets":0,"leaked":[]}
+{"id":"safe-030","kind":"safe","mode":"shortstop","verdict":"safe","ms":3353,"cloudCalls":2,"onDevice":false,"sentChars":1592,"secrets":0,"leaked":[]}
+{"id":"safe-031","kind":"safe","mode":"shortstop","verdict":"safe","ms":1568,"cloudCalls":1,"onDevice":false,"sentChars":623,"secrets":0,"leaked":[]}
+{"id":"safe-032","kind":"safe","mode":"shortstop","verdict":"safe","ms":1269,"cloudCalls":1,"onDevice":false,"sentChars":615,"secrets":0,"leaked":[]}
+{"id":"safe-033","kind":"safe","mode":"shortstop","verdict":"safe","ms":1591,"cloudCalls":1,"onDevice":false,"sentChars":650,"secrets":1,"leaked":[]}
+{"id":"safe-034","kind":"safe","mode":"shortstop","verdict":"scam","ms":3223,"cloudCalls":2,"onDevice":false,"sentChars":1548,"secrets":2,"leaked":[]}
+{"id":"safe-035","kind":"safe","mode":"shortstop","verdict":"safe","ms":1536,"cloudCalls":1,"onDevice":false,"sentChars":620,"secrets":0,"leaked":[]}
+{"id":"safe-036","kind":"safe","mode":"shortstop","verdict":"safe","ms":1197,"cloudCalls":1,"onDevice":false,"sentChars":691,"secrets":0,"leaked":[]}
+{"id":"safe-037","kind":"safe","mode":"shortstop","verdict":"safe","ms":1435,"cloudCalls":1,"onDevice":false,"sentChars":645,"secrets":1,"leaked":[]}
+{"id":"safe-038","kind":"safe","mode":"shortstop","verdict":"safe","ms":1650,"cloudCalls":1,"onDevice":false,"sentChars":622,"secrets":0,"leaked":[]}
+{"id":"safe-039","kind":"safe","mode":"shortstop","verdict":"safe","ms":1810,"cloudCalls":1,"onDevice":false,"sentChars":663,"secrets":0,"leaked":[]}
+{"id":"safe-040","kind":"safe","mode":"shortstop","verdict":"safe","ms":2021,"cloudCalls":1,"onDevice":false,"sentChars":695,"secrets":1,"leaked":[]}
+{"id":"safe-041","kind":"safe","mode":"shortstop","verdict":"safe","ms":1893,"cloudCalls":1,"onDevice":false,"sentChars":701,"secrets":2,"leaked":[]}
+{"id":"safe-042","kind":"safe","mode":"shortstop","verdict":"safe","ms":1567,"cloudCalls":1,"onDevice":false,"sentChars":649,"secrets":0,"leaked":[]}
+{"id":"safe-043","kind":"safe","mode":"shortstop","verdict":"safe","ms":1470,"cloudCalls":1,"onDevice":false,"sentChars":672,"secrets":0,"leaked":[]}
+{"id":"safe-044","kind":"safe","mode":"shortstop","verdict":"safe","ms":1187,"cloudCalls":1,"onDevice":false,"sentChars":693,"secrets":0,"leaked":[]}
+{"id":"safe-045","kind":"safe","mode":"shortstop","verdict":"safe","ms":1671,"cloudCalls":1,"onDevice":false,"sentChars":709,"secrets":0,"leaked":[]}
+{"id":"safe-046","kind":"safe","mode":"shortstop","verdict":"safe","ms":1406,"cloudCalls":1,"onDevice":false,"sentChars":657,"secrets":1,"leaked":[]}
+{"id":"safe-047","kind":"safe","mode":"shortstop","verdict":"safe","ms":1522,"cloudCalls":1,"onDevice":false,"sentChars":695,"secrets":0,"leaked":[]}
+{"id":"safe-048","kind":"safe","mode":"shortstop","verdict":"safe","ms":1803,"cloudCalls":1,"onDevice":false,"sentChars":645,"secrets":0,"leaked":[]}
+{"id":"safe-049","kind":"safe","mode":"shortstop","verdict":"safe","ms":1449,"cloudCalls":1,"onDevice":false,"sentChars":650,"secrets":0,"leaked":[]}
+{"id":"safe-050","kind":"safe","mode":"shortstop","verdict":"safe","ms":1750,"cloudCalls":1,"onDevice":false,"sentChars":724,"secrets":1,"leaked":["Ray"]}
+{"id":"safe-051","kind":"safe","mode":"shortstop","verdict":"safe","ms":1581,"cloudCalls":1,"onDevice":false,"sentChars":678,"secrets":0,"leaked":[]}
+{"id":"safe-052","kind":"safe","mode":"shortstop","verdict":"safe","ms":1539,"cloudCalls":1,"onDevice":false,"sentChars":647,"secrets":0,"leaked":[]}
+{"id":"safe-053","kind":"safe","mode":"shortstop","verdict":"safe","ms":1677,"cloudCalls":1,"onDevice":false,"sentChars":704,"secrets":0,"leaked":[]}
+{"id":"safe-054","kind":"safe","mode":"shortstop","verdict":"safe","ms":1704,"cloudCalls":1,"onDevice":false,"sentChars":678,"secrets":0,"leaked":[]}
+{"id":"safe-055","kind":"safe","mode":"shortstop","verdict":"safe","ms":1695,"cloudCalls":1,"onDevice":false,"sentChars":712,"secrets":0,"leaked":[]}
+{"id":"safe-056","kind":"safe","mode":"shortstop","verdict":"safe","ms":1378,"cloudCalls":1,"onDevice":false,"sentChars":635,"secrets":0,"leaked":[]}
+{"id":"safe-057","kind":"safe","mode":"shortstop","verdict":"safe","ms":1398,"cloudCalls":1,"onDevice":false,"sentChars":680,"secrets":0,"leaked":[]}
+{"id":"safe-058","kind":"safe","mode":"shortstop","verdict":"safe","ms":1711,"cloudCalls":1,"onDevice":false,"sentChars":705,"secrets":0,"leaked":[]}
+{"id":"safe-059","kind":"safe","mode":"shortstop","verdict":"safe","ms":1595,"cloudCalls":1,"onDevice":false,"sentChars":658,"secrets":0,"leaked":[]}
+{"id":"safe-060","kind":"safe","mode":"shortstop","verdict":"safe","ms":1612,"cloudCalls":1,"onDevice":false,"sentChars":686,"secrets":0,"leaked":[]}
+{"id":"safe-061","kind":"safe","mode":"shortstop","verdict":"safe","ms":1713,"cloudCalls":1,"onDevice":false,"sentChars":642,"secrets":0,"leaked":[]}
+{"id":"safe-062","kind":"safe","mode":"shortstop","verdict":"safe","ms":1387,"cloudCalls":1,"onDevice":false,"sentChars":688,"secrets":1,"leaked":[]}
+{"id":"safe-063","kind":"safe","mode":"shortstop","verdict":"safe","ms":1290,"cloudCalls":1,"onDevice":false,"sentChars":599,"secrets":0,"leaked":[]}
+{"id":"safe-064","kind":"safe","mode":"shortstop","verdict":"safe","ms":1455,"cloudCalls":1,"onDevice":false,"sentChars":695,"secrets":0,"leaked":[]}
+{"id":"safe-065","kind":"safe","mode":"shortstop","verdict":"safe","ms":1549,"cloudCalls":1,"onDevice":false,"sentChars":643,"secrets":1,"leaked":[]}
+{"id":"safe-066","kind":"safe","mode":"shortstop","verdict":"safe","ms":1569,"cloudCalls":1,"onDevice":false,"sentChars":654,"secrets":0,"leaked":[]}
+{"id":"safe-067","kind":"safe","mode":"shortstop","verdict":"suspicious","ms":1701,"cloudCalls":1,"onDevice":false,"sentChars":791,"secrets":0,"leaked":[]}
+{"id":"safe-068","kind":"safe","mode":"shortstop","verdict":"safe","ms":1607,"cloudCalls":1,"onDevice":false,"sentChars":678,"secrets":2,"leaked":[]}
+{"id":"safe-069","kind":"safe","mode":"shortstop","verdict":"safe","ms":1676,"cloudCalls":1,"onDevice":false,"sentChars":651,"secrets":0,"leaked":[]}
+{"id":"safe-070","kind":"safe","mode":"shortstop","verdict":"safe","ms":1637,"cloudCalls":1,"onDevice":false,"sentChars":730,"secrets":0,"leaked":[]}
+{"id":"safe-071","kind":"safe","mode":"shortstop","verdict":"safe","ms":1475,"cloudCalls":1,"onDevice":false,"sentChars":615,"secrets":0,"leaked":[]}
+{"id":"safe-072","kind":"safe","mode":"shortstop","verdict":"safe","ms":1623,"cloudCalls":1,"onDevice":false,"sentChars":652,"secrets":2,"leaked":[]}
+{"id":"safe-073","kind":"safe","mode":"shortstop","verdict":"safe","ms":1655,"cloudCalls":1,"onDevice":false,"sentChars":718,"secrets":0,"leaked":[]}
+{"id":"safe-074","kind":"safe","mode":"shortstop","verdict":"safe","ms":1231,"cloudCalls":1,"onDevice":false,"sentChars":615,"secrets":0,"leaked":[]}
+{"id":"safe-075","kind":"safe","mode":"shortstop","verdict":"safe","ms":1192,"cloudCalls":1,"onDevice":false,"sentChars":761,"secrets":0,"leaked":[]}
+{"id":"safe-076","kind":"safe","mode":"shortstop","verdict":"safe","ms":1320,"cloudCalls":1,"onDevice":false,"sentChars":635,"secrets":0,"leaked":[]}
+{"id":"safe-077","kind":"safe","mode":"shortstop","verdict":"safe","ms":1457,"cloudCalls":1,"onDevice":false,"sentChars":756,"secrets":0,"leaked":[]}
+{"id":"safe-078","kind":"safe","mode":"shortstop","verdict":"safe","ms":1447,"cloudCalls":1,"onDevice":false,"sentChars":651,"secrets":1,"leaked":[]}
+{"id":"safe-079","kind":"safe","mode":"shortstop","verdict":"safe","ms":1696,"cloudCalls":1,"onDevice":false,"sentChars":640,"secrets":1,"leaked":[]}
+{"id":"safe-080","kind":"safe","mode":"shortstop","verdict":"safe","ms":1590,"cloudCalls":1,"onDevice":false,"sentChars":726,"secrets":2,"leaked":[]}
+{"id":"safe-081","kind":"safe","mode":"shortstop","verdict":"safe","ms":1453,"cloudCalls":1,"onDevice":false,"sentChars":624,"secrets":0,"leaked":[]}
+{"id":"safe-082","kind":"safe","mode":"shortstop","verdict":"safe","ms":1359,"cloudCalls":1,"onDevice":false,"sentChars":646,"secrets":0,"leaked":[]}
+{"id":"safe-083","kind":"safe","mode":"shortstop","verdict":"safe","ms":1307,"cloudCalls":1,"onDevice":false,"sentChars":673,"secrets":0,"leaked":[]}
+{"id":"safe-084","kind":"safe","mode":"shortstop","verdict":"safe","ms":1584,"cloudCalls":1,"onDevice":false,"sentChars":642,"secrets":0,"leaked":[]}
+{"id":"safe-085","kind":"safe","mode":"shortstop","verdict":"safe","ms":1768,"cloudCalls":1,"onDevice":false,"sentChars":632,"secrets":0,"leaked":[]}
+{"id":"safe-086","kind":"safe","mode":"shortstop","verdict":"safe","ms":1594,"cloudCalls":1,"onDevice":false,"sentChars":665,"secrets":0,"leaked":[]}
+{"id":"safe-087","kind":"safe","mode":"shortstop","verdict":"safe","ms":1591,"cloudCalls":1,"onDevice":false,"sentChars":635,"secrets":0,"leaked":[]}
+{"id":"safe-088","kind":"safe","mode":"shortstop","verdict":"safe","ms":1445,"cloudCalls":1,"onDevice":false,"sentChars":623,"secrets":1,"leaked":[]}
+{"id":"safe-089","kind":"safe","mode":"shortstop","verdict":"safe","ms":1523,"cloudCalls":1,"onDevice":false,"sentChars":644,"secrets":0,"leaked":[]}
+{"id":"safe-090","kind":"safe","mode":"shortstop","verdict":"safe","ms":1289,"cloudCalls":1,"onDevice":false,"sentChars":696,"secrets":1,"leaked":[]}
+{"id":"safe-091","kind":"safe","mode":"shortstop","verdict":"safe","ms":1596,"cloudCalls":1,"onDevice":false,"sentChars":667,"secrets":0,"leaked":[]}
+{"id":"safe-092","kind":"safe","mode":"shortstop","verdict":"safe","ms":1699,"cloudCalls":1,"onDevice":false,"sentChars":658,"secrets":0,"leaked":[]}
+{"id":"safe-093","kind":"safe","mode":"shortstop","verdict":"safe","ms":1254,"cloudCalls":1,"onDevice":false,"sentChars":680,"secrets":0,"leaked":[]}
+{"id":"safe-094","kind":"safe","mode":"shortstop","verdict":"safe","ms":1554,"cloudCalls":1,"onDevice":false,"sentChars":681,"secrets":0,"leaked":[]}
+{"id":"safe-095","kind":"safe","mode":"shortstop","verdict":"safe","ms":1481,"cloudCalls":1,"onDevice":false,"sentChars":929,"secrets":1,"leaked":[]}
+{"id":"safe-096","kind":"safe","mode":"shortstop","verdict":"safe","ms":1256,"cloudCalls":1,"onDevice":false,"sentChars":690,"secrets":0,"leaked":[]}
+{"id":"safe-097","kind":"safe","mode":"shortstop","verdict":"safe","ms":1827,"cloudCalls":1,"onDevice":false,"sentChars":786,"secrets":0,"leaked":[]}
+{"id":"safe-098","kind":"safe","mode":"shortstop","verdict":"safe","ms":1398,"cloudCalls":1,"onDevice":false,"sentChars":646,"secrets":0,"leaked":[]}
+{"id":"safe-099","kind":"safe","mode":"shortstop","verdict":"safe","ms":1644,"cloudCalls":1,"onDevice":false,"sentChars":751,"secrets":0,"leaked":[]}
+{"id":"safe-100","kind":"safe","mode":"shortstop","verdict":"safe","ms":1932,"cloudCalls":1,"onDevice":false,"sentChars":667,"secrets":0,"leaked":[]}
+{"id":"mask-001","kind":"mask","mode":"shortstop","verdict":"safe","ms":1777,"cloudCalls":1,"onDevice":false,"sentChars":892,"secrets":7,"leaked":[]}
+{"id":"mask-002","kind":"mask","mode":"shortstop","verdict":"safe","ms":3072,"cloudCalls":2,"onDevice":false,"sentChars":1986,"secrets":5,"leaked":[]}
+{"id":"mask-003","kind":"mask","mode":"shortstop","verdict":"safe","ms":1474,"cloudCalls":1,"onDevice":false,"sentChars":949,"secrets":6,"leaked":[]}
+{"id":"mask-004","kind":"mask","mode":"shortstop","verdict":"safe","ms":1454,"cloudCalls":1,"onDevice":false,"sentChars":828,"secrets":4,"leaked":[]}
+{"id":"mask-005","kind":"mask","mode":"shortstop","verdict":"suspicious","ms":2860,"cloudCalls":2,"onDevice":false,"sentChars":1815,"secrets":5,"leaked":[]}
+{"id":"mask-006","kind":"mask","mode":"shortstop","verdict":"scam","ms":1819,"cloudCalls":1,"onDevice":false,"sentChars":1030,"secrets":7,"leaked":[]}
+{"id":"mask-007","kind":"mask","mode":"shortstop","verdict":"safe","ms":1467,"cloudCalls":1,"onDevice":false,"sentChars":881,"secrets":5,"leaked":[]}
+{"id":"mask-008","kind":"mask","mode":"shortstop","verdict":"safe","ms":1535,"cloudCalls":1,"onDevice":false,"sentChars":878,"secrets":6,"leaked":[]}
+{"id":"mask-009","kind":"mask","mode":"shortstop","verdict":"scam","ms":1511,"cloudCalls":1,"onDevice":false,"sentChars":881,"secrets":6,"leaked":[]}
+{"id":"mask-010","kind":"mask","mode":"shortstop","verdict":"safe","ms":1630,"cloudCalls":1,"onDevice":false,"sentChars":828,"secrets":6,"leaked":[]}
+{"id":"mask-011","kind":"mask","mode":"shortstop","verdict":"safe","ms":1509,"cloudCalls":1,"onDevice":false,"sentChars":830,"secrets":7,"leaked":[]}
+{"id":"mask-012","kind":"mask","mode":"shortstop","verdict":"scam","ms":3586,"cloudCalls":2,"onDevice":false,"sentChars":1762,"secrets":4,"leaked":[]}
+{"id":"mask-013","kind":"mask","mode":"shortstop","verdict":"scam","ms":1798,"cloudCalls":1,"onDevice":false,"sentChars":857,"secrets":7,"leaked":["Mark Young"]}
+{"id":"mask-014","kind":"mask","mode":"shortstop","verdict":"scam","ms":1497,"cloudCalls":1,"onDevice":false,"sentChars":954,"secrets":5,"leaked":[]}
+{"id":"mask-015","kind":"mask","mode":"shortstop","verdict":"safe","ms":1630,"cloudCalls":1,"onDevice":false,"sentChars":811,"secrets":5,"leaked":[]}
+{"id":"mask-016","kind":"mask","mode":"shortstop","verdict":"suspicious","ms":2902,"cloudCalls":2,"onDevice":false,"sentChars":1875,"secrets":6,"leaked":[]}
+{"id":"mask-017","kind":"mask","mode":"shortstop","verdict":"safe","ms":1425,"cloudCalls":1,"onDevice":false,"sentChars":802,"secrets":5,"leaked":[]}
+{"id":"mask-018","kind":"mask","mode":"shortstop","verdict":"safe","ms":1405,"cloudCalls":1,"onDevice":false,"sentChars":819,"secrets":6,"leaked":[]}
+{"id":"mask-019","kind":"mask","mode":"shortstop","verdict":"scam","ms":1719,"cloudCalls":1,"onDevice":false,"sentChars":867,"secrets":7,"leaked":[]}
+{"id":"mask-020","kind":"mask","mode":"shortstop","verdict":"safe","ms":1554,"cloudCalls":1,"onDevice":false,"sentChars":809,"secrets":6,"leaked":[]}
+{"id":"mask-021","kind":"mask","mode":"shortstop","verdict":"safe","ms":1560,"cloudCalls":1,"onDevice":false,"sentChars":776,"secrets":4,"leaked":[]}
+{"id":"mask-022","kind":"mask","mode":"shortstop","verdict":"safe","ms":1644,"cloudCalls":1,"onDevice":false,"sentChars":922,"secrets":6,"leaked":[]}
+{"id":"mask-023","kind":"mask","mode":"shortstop","verdict":"safe","ms":1353,"cloudCalls":1,"onDevice":false,"sentChars":771,"secrets":8,"leaked":[]}
+{"id":"mask-024","kind":"mask","mode":"shortstop","verdict":"scam","ms":2662,"cloudCalls":2,"onDevice":false,"sentChars":1820,"secrets":5,"leaked":[]}
+{"id":"mask-025","kind":"mask","mode":"shortstop","verdict":"safe","ms":1877,"cloudCalls":1,"onDevice":false,"sentChars":805,"secrets":8,"leaked":[]}
+{"id":"mask-026","kind":"mask","mode":"shortstop","verdict":"scam","ms":1560,"cloudCalls":1,"onDevice":false,"sentChars":872,"secrets":5,"leaked":[]}
+{"id":"mask-027","kind":"mask","mode":"shortstop","verdict":"safe","ms":1596,"cloudCalls":1,"onDevice":false,"sentChars":834,"secrets":6,"leaked":[]}
+{"id":"mask-028","kind":"mask","mode":"shortstop","verdict":"safe","ms":1399,"cloudCalls":1,"onDevice":false,"sentChars":861,"secrets":5,"leaked":[]}
+{"id":"mask-029","kind":"mask","mode":"shortstop","verdict":"safe","ms":1444,"cloudCalls":1,"onDevice":false,"sentChars":902,"secrets":6,"leaked":[]}
+{"id":"mask-030","kind":"mask","mode":"shortstop","verdict":"scam","ms":3430,"cloudCalls":2,"onDevice":false,"sentChars":1821,"secrets":4,"leaked":[]}
+{"id":"mask-031","kind":"mask","mode":"shortstop","verdict":"safe","ms":1574,"cloudCalls":1,"onDevice":false,"sentChars":723,"secrets":7,"leaked":[]}
+{"id":"mask-032","kind":"mask","mode":"shortstop","verdict":"safe","ms":1301,"cloudCalls":1,"onDevice":false,"sentChars":786,"secrets":4,"leaked":[]}
+{"id":"mask-033","kind":"mask","mode":"shortstop","verdict":"suspicious","ms":3429,"cloudCalls":2,"onDevice":false,"sentChars":1772,"secrets":7,"leaked":[]}
+{"id":"mask-034","kind":"mask","mode":"shortstop","verdict":"safe","ms":1553,"cloudCalls":1,"onDevice":false,"sentChars":854,"secrets":5,"leaked":[]}
+{"id":"mask-035","kind":"mask","mode":"shortstop","verdict":"safe","ms":1503,"cloudCalls":1,"onDevice":false,"sentChars":861,"secrets":4,"leaked":[]}
+{"id":"mask-036","kind":"mask","mode":"shortstop","verdict":"safe","ms":1714,"cloudCalls":1,"onDevice":false,"sentChars":830,"secrets":6,"leaked":[]}
+{"id":"mask-037","kind":"mask","mode":"shortstop","verdict":"safe","ms":1919,"cloudCalls":1,"onDevice":false,"sentChars":812,"secrets":6,"leaked":[]}
+{"id":"mask-038","kind":"mask","mode":"shortstop","verdict":"safe","ms":1714,"cloudCalls":1,"onDevice":false,"sentChars":861,"secrets":5,"leaked":[]}
+{"id":"mask-039","kind":"mask","mode":"shortstop","verdict":"safe","ms":1511,"cloudCalls":1,"onDevice":false,"sentChars":795,"secrets":6,"leaked":[]}
+{"id":"mask-040","kind":"mask","mode":"shortstop","verdict":"safe","ms":1653,"cloudCalls":1,"onDevice":false,"sentChars":834,"secrets":5,"leaked":[]}
+{"id":"mask-041","kind":"mask","mode":"shortstop","verdict":"safe","ms":1692,"cloudCalls":1,"onDevice":false,"sentChars":798,"secrets":5,"leaked":[]}
+{"id":"mask-042","kind":"mask","mode":"shortstop","verdict":"suspicious","ms":3278,"cloudCalls":2,"onDevice":false,"sentChars":1672,"secrets":6,"leaked":[]}
+{"id":"mask-043","kind":"mask","mode":"shortstop","verdict":"safe","ms":1585,"cloudCalls":1,"onDevice":false,"sentChars":849,"secrets":5,"leaked":[]}
+{"id":"mask-044","kind":"mask","mode":"shortstop","verdict":"safe","ms":1639,"cloudCalls":1,"onDevice":false,"sentChars":879,"secrets":5,"leaked":[]}
+{"id":"mask-045","kind":"mask","mode":"shortstop","verdict":"suspicious","ms":3217,"cloudCalls":2,"onDevice":false,"sentChars":1853,"secrets":4,"leaked":[]}
+{"id":"mask-046","kind":"mask","mode":"shortstop","verdict":"safe","ms":1867,"cloudCalls":1,"onDevice":false,"sentChars":833,"secrets":6,"leaked":[]}
+{"id":"mask-047","kind":"mask","mode":"shortstop","verdict":"safe","ms":1540,"cloudCalls":1,"onDevice":false,"sentChars":732,"secrets":6,"leaked":[]}
+{"id":"mask-048","kind":"mask","mode":"shortstop","verdict":"scam","ms":1304,"cloudCalls":1,"onDevice":false,"sentChars":838,"secrets":5,"leaked":[]}
+{"id":"mask-049","kind":"mask","mode":"shortstop","verdict":"safe","ms":1255,"cloudCalls":1,"onDevice":false,"sentChars":850,"secrets":7,"leaked":[]}
+{"id":"mask-050","kind":"mask","mode":"shortstop","verdict":"safe","ms":1467,"cloudCalls":1,"onDevice":false,"sentChars":866,"secrets":7,"leaked":[]}
+{"id":"scam-001","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1411,"cloudCalls":1,"onDevice":false,"sentChars":723,"secrets":0,"leaked":[]}
+{"id":"scam-002","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1117,"cloudCalls":1,"onDevice":false,"sentChars":700,"secrets":0,"leaked":[]}
+{"id":"scam-003","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1620,"cloudCalls":1,"onDevice":false,"sentChars":701,"secrets":0,"leaked":[]}
+{"id":"scam-004","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1434,"cloudCalls":1,"onDevice":false,"sentChars":689,"secrets":0,"leaked":[]}
+{"id":"scam-005","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1464,"cloudCalls":1,"onDevice":false,"sentChars":1060,"secrets":0,"leaked":[]}
+{"id":"scam-006","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1522,"cloudCalls":1,"onDevice":false,"sentChars":708,"secrets":0,"leaked":[]}
+{"id":"scam-007","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1370,"cloudCalls":1,"onDevice":false,"sentChars":812,"secrets":1,"leaked":["Mike"]}
+{"id":"scam-008","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1727,"cloudCalls":1,"onDevice":false,"sentChars":741,"secrets":0,"leaked":[]}
+{"id":"scam-009","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1583,"cloudCalls":1,"onDevice":false,"sentChars":736,"secrets":1,"leaked":["(312) 555-0119"]}
+{"id":"scam-010","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1723,"cloudCalls":1,"onDevice":false,"sentChars":805,"secrets":2,"leaked":["Laura","Dana"]}
+{"id":"scam-011","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1651,"cloudCalls":1,"onDevice":false,"sentChars":685,"secrets":0,"leaked":[]}
+{"id":"scam-012","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1687,"cloudCalls":1,"onDevice":false,"sentChars":686,"secrets":0,"leaked":[]}
+{"id":"scam-013","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1277,"cloudCalls":1,"onDevice":false,"sentChars":952,"secrets":0,"leaked":[]}
+{"id":"scam-014","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1600,"cloudCalls":1,"onDevice":false,"sentChars":684,"secrets":1,"leaked":["(646) 555-0137"]}
+{"id":"scam-015","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1610,"cloudCalls":1,"onDevice":false,"sentChars":685,"secrets":1,"leaked":["R. Kerrigan"]}
+{"id":"scam-016","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1297,"cloudCalls":1,"onDevice":false,"sentChars":742,"secrets":0,"leaked":[]}
+{"id":"scam-017","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1765,"cloudCalls":1,"onDevice":false,"sentChars":719,"secrets":0,"leaked":[]}
+{"id":"scam-018","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1518,"cloudCalls":1,"onDevice":false,"sentChars":1016,"secrets":2,"leaked":["Michael Reyes","(415) 555-0162"]}
+{"id":"scam-019","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1414,"cloudCalls":1,"onDevice":false,"sentChars":744,"secrets":0,"leaked":[]}
+{"id":"scam-020","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1588,"cloudCalls":1,"onDevice":false,"sentChars":690,"secrets":1,"leaked":["58200471193"]}
+{"id":"scam-021","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1217,"cloudCalls":1,"onDevice":false,"sentChars":742,"secrets":0,"leaked":[]}
+{"id":"scam-022","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1444,"cloudCalls":1,"onDevice":false,"sentChars":727,"secrets":0,"leaked":[]}
+{"id":"scam-023","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1495,"cloudCalls":1,"onDevice":false,"sentChars":640,"secrets":0,"leaked":[]}
+{"id":"scam-024","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1709,"cloudCalls":1,"onDevice":false,"sentChars":736,"secrets":0,"leaked":[]}
+{"id":"scam-025","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1333,"cloudCalls":1,"onDevice":false,"sentChars":822,"secrets":1,"leaked":["Grant"]}
+{"id":"scam-026","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1618,"cloudCalls":1,"onDevice":false,"sentChars":723,"secrets":2,"leaked":["Sophie","(917) 555-0128"]}
+{"id":"scam-027","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1747,"cloudCalls":1,"onDevice":false,"sentChars":740,"secrets":1,"leaked":["2049 5512 9087"]}
+{"id":"scam-028","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1672,"cloudCalls":1,"onDevice":false,"sentChars":763,"secrets":0,"leaked":[]}
+{"id":"scam-029","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1438,"cloudCalls":1,"onDevice":false,"sentChars":743,"secrets":0,"leaked":[]}
+{"id":"scam-030","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1586,"cloudCalls":1,"onDevice":false,"sentChars":1145,"secrets":3,"leaked":["Ethan","Carter","Paul Hensley"]}
+{"id":"scam-031","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1776,"cloudCalls":1,"onDevice":false,"sentChars":674,"secrets":0,"leaked":[]}
+{"id":"scam-032","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1567,"cloudCalls":1,"onDevice":false,"sentChars":707,"secrets":1,"leaked":["Lena"]}
+{"id":"scam-033","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1773,"cloudCalls":1,"onDevice":false,"sentChars":754,"secrets":1,"leaked":["Kevin"]}
+{"id":"scam-034","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1340,"cloudCalls":1,"onDevice":false,"sentChars":702,"secrets":0,"leaked":[]}
+{"id":"scam-035","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1422,"cloudCalls":1,"onDevice":false,"sentChars":1033,"secrets":1,"leaked":["Adrian Vale"]}
+{"id":"scam-036","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1387,"cloudCalls":1,"onDevice":false,"sentChars":780,"secrets":0,"leaked":[]}
+{"id":"scam-037","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1284,"cloudCalls":1,"onDevice":false,"sentChars":712,"secrets":0,"leaked":[]}
+{"id":"scam-038","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1512,"cloudCalls":1,"onDevice":false,"sentChars":781,"secrets":1,"leaked":["Rachel"]}
+{"id":"scam-039","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1635,"cloudCalls":1,"onDevice":false,"sentChars":737,"secrets":1,"leaked":["1-888-555-0104"]}
+{"id":"scam-040","kind":"scam","mode":"cloudraw","verdict":"scam","ms":2098,"cloudCalls":1,"onDevice":false,"sentChars":781,"secrets":1,"leaked":["Mark"]}
+{"id":"scam-041","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1430,"cloudCalls":1,"onDevice":false,"sentChars":694,"secrets":1,"leaked":["1-800-555-0199"]}
+{"id":"scam-042","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1402,"cloudCalls":1,"onDevice":false,"sentChars":688,"secrets":0,"leaked":[]}
+{"id":"scam-043","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1395,"cloudCalls":1,"onDevice":false,"sentChars":861,"secrets":1,"leaked":["1-888-555-0173"]}
+{"id":"scam-044","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1593,"cloudCalls":1,"onDevice":false,"sentChars":795,"secrets":1,"leaked":["Ben"]}
+{"id":"scam-045","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1550,"cloudCalls":1,"onDevice":false,"sentChars":707,"secrets":1,"leaked":["1-877-555-0150"]}
+{"id":"scam-046","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1726,"cloudCalls":1,"onDevice":false,"sentChars":786,"secrets":0,"leaked":[]}
+{"id":"scam-047","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1677,"cloudCalls":1,"onDevice":false,"sentChars":732,"secrets":1,"leaked":["1-844-555-0112"]}
+{"id":"scam-048","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1337,"cloudCalls":1,"onDevice":false,"sentChars":756,"secrets":1,"leaked":["Sandra"]}
+{"id":"scam-049","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1694,"cloudCalls":1,"onDevice":false,"sentChars":684,"secrets":0,"leaked":[]}
+{"id":"scam-050","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1766,"cloudCalls":1,"onDevice":false,"sentChars":734,"secrets":0,"leaked":[]}
+{"id":"scam-051","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1515,"cloudCalls":1,"onDevice":false,"sentChars":662,"secrets":0,"leaked":[]}
+{"id":"scam-052","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1686,"cloudCalls":1,"onDevice":false,"sentChars":692,"secrets":0,"leaked":[]}
+{"id":"scam-053","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1776,"cloudCalls":1,"onDevice":false,"sentChars":1001,"secrets":3,"leaked":["Henry Obi","claims@intl-lottery-board.co","Grace Mensah"]}
+{"id":"scam-054","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1500,"cloudCalls":1,"onDevice":false,"sentChars":669,"secrets":0,"leaked":[]}
+{"id":"scam-055","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1608,"cloudCalls":1,"onDevice":false,"sentChars":818,"secrets":2,"leaked":["Tom","Julia"]}
+{"id":"scam-056","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1520,"cloudCalls":1,"onDevice":false,"sentChars":765,"secrets":0,"leaked":[]}
+{"id":"scam-057","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1479,"cloudCalls":1,"onDevice":false,"sentChars":716,"secrets":1,"leaked":["(702) 555-0188"]}
+{"id":"scam-058","kind":"scam","mode":"cloudraw","verdict":"suspicious","ms":1471,"cloudCalls":1,"onDevice":false,"sentChars":738,"secrets":0,"leaked":[]}
+{"id":"scam-059","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1544,"cloudCalls":1,"onDevice":false,"sentChars":673,"secrets":0,"leaked":[]}
+{"id":"scam-060","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1649,"cloudCalls":1,"onDevice":false,"sentChars":667,"secrets":0,"leaked":[]}
+{"id":"scam-061","kind":"scam","mode":"cloudraw","verdict":"suspicious","ms":1331,"cloudCalls":1,"onDevice":false,"sentChars":684,"secrets":2,"leaked":["Emily","Grace"]}
+{"id":"scam-062","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1415,"cloudCalls":1,"onDevice":false,"sentChars":757,"secrets":0,"leaked":[]}
+{"id":"scam-063","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1597,"cloudCalls":1,"onDevice":false,"sentChars":740,"secrets":0,"leaked":[]}
+{"id":"scam-064","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1744,"cloudCalls":1,"onDevice":false,"sentChars":1113,"secrets":3,"leaked":["Linda","James Whitfield","James"]}
+{"id":"scam-065","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1303,"cloudCalls":1,"onDevice":false,"sentChars":795,"secrets":0,"leaked":[]}
+{"id":"scam-066","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1664,"cloudCalls":1,"onDevice":false,"sentChars":790,"secrets":1,"leaked":["David"]}
+{"id":"scam-067","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1657,"cloudCalls":1,"onDevice":false,"sentChars":693,"secrets":0,"leaked":[]}
+{"id":"scam-068","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1392,"cloudCalls":1,"onDevice":false,"sentChars":704,"secrets":1,"leaked":["lovely.anna@fabrikam-mail.co"]}
+{"id":"scam-069","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1636,"cloudCalls":1,"onDevice":false,"sentChars":787,"secrets":1,"leaked":["4471 0093 2215"]}
+{"id":"scam-070","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1570,"cloudCalls":1,"onDevice":false,"sentChars":769,"secrets":0,"leaked":[]}
+{"id":"scam-071","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1346,"cloudCalls":1,"onDevice":false,"sentChars":697,"secrets":0,"leaked":[]}
+{"id":"scam-072","kind":"scam","mode":"cloudraw","verdict":"suspicious","ms":1998,"cloudCalls":1,"onDevice":false,"sentChars":742,"secrets":2,"leaked":["Priya","Olivia"]}
+{"id":"scam-073","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1424,"cloudCalls":1,"onDevice":false,"sentChars":787,"secrets":0,"leaked":[]}
+{"id":"scam-074","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1765,"cloudCalls":1,"onDevice":false,"sentChars":1124,"secrets":3,"leaked":["Jordan Lee","hr@initech-logistics-careers.co","Melissa Grant"]}
+{"id":"scam-075","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1723,"cloudCalls":1,"onDevice":false,"sentChars":706,"secrets":0,"leaked":[]}
+{"id":"scam-076","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1339,"cloudCalls":1,"onDevice":false,"sentChars":777,"secrets":1,"leaked":["Karen"]}
+{"id":"scam-077","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1615,"cloudCalls":1,"onDevice":false,"sentChars":735,"secrets":0,"leaked":[]}
+{"id":"scam-078","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1794,"cloudCalls":1,"onDevice":false,"sentChars":687,"secrets":1,"leaked":["+1 213-555-0157"]}
+{"id":"scam-079","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1677,"cloudCalls":1,"onDevice":false,"sentChars":711,"secrets":0,"leaked":[]}
+{"id":"scam-080","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1424,"cloudCalls":1,"onDevice":false,"sentChars":799,"secrets":0,"leaked":[]}
+{"id":"scam-081","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1489,"cloudCalls":1,"onDevice":false,"sentChars":690,"secrets":0,"leaked":[]}
+{"id":"scam-082","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1166,"cloudCalls":1,"onDevice":false,"sentChars":685,"secrets":0,"leaked":[]}
+{"id":"scam-083","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1510,"cloudCalls":1,"onDevice":false,"sentChars":694,"secrets":1,"leaked":["(202) 555-0193"]}
+{"id":"scam-084","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1648,"cloudCalls":1,"onDevice":false,"sentChars":967,"secrets":1,"leaked":["(202) 555-0108"]}
+{"id":"scam-085","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1471,"cloudCalls":1,"onDevice":false,"sentChars":773,"secrets":0,"leaked":[]}
+{"id":"scam-086","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1663,"cloudCalls":1,"onDevice":false,"sentChars":798,"secrets":2,"leaked":["Daniel Ross","(312) 555-0145"]}
+{"id":"scam-087","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1557,"cloudCalls":1,"onDevice":false,"sentChars":704,"secrets":0,"leaked":[]}
+{"id":"scam-088","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1467,"cloudCalls":1,"onDevice":false,"sentChars":763,"secrets":1,"leaked":["Maria"]}
+{"id":"scam-089","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1651,"cloudCalls":1,"onDevice":false,"sentChars":686,"secrets":1,"leaked":["+1 646-555-0171"]}
+{"id":"scam-090","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1406,"cloudCalls":1,"onDevice":false,"sentChars":713,"secrets":0,"leaked":[]}
+{"id":"scam-091","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1812,"cloudCalls":1,"onDevice":false,"sentChars":690,"secrets":1,"leaked":["1-866-555-0131"]}
+{"id":"scam-092","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1533,"cloudCalls":1,"onDevice":false,"sentChars":945,"secrets":3,"leaked":["6620 1184 3375","021000555","Nadia Brooks"]}
+{"id":"scam-093","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1267,"cloudCalls":1,"onDevice":false,"sentChars":690,"secrets":0,"leaked":[]}
+{"id":"scam-094","kind":"scam","mode":"cloudraw","verdict":"suspicious","ms":1226,"cloudCalls":1,"onDevice":false,"sentChars":769,"secrets":1,"leaked":["Steve"]}
+{"id":"scam-095","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1586,"cloudCalls":1,"onDevice":false,"sentChars":712,"secrets":0,"leaked":[]}
+{"id":"scam-096","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1566,"cloudCalls":1,"onDevice":false,"sentChars":692,"secrets":0,"leaked":[]}
+{"id":"scam-097","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1689,"cloudCalls":1,"onDevice":false,"sentChars":760,"secrets":0,"leaked":[]}
+{"id":"scam-098","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1595,"cloudCalls":1,"onDevice":false,"sentChars":676,"secrets":1,"leaked":["1-833-555-0166"]}
+{"id":"scam-099","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1862,"cloudCalls":1,"onDevice":false,"sentChars":875,"secrets":2,"leaked":["Anna","Robert"]}
+{"id":"scam-100","kind":"scam","mode":"cloudraw","verdict":"scam","ms":1423,"cloudCalls":1,"onDevice":false,"sentChars":715,"secrets":0,"leaked":[]}
+{"id":"safe-001","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1667,"cloudCalls":1,"onDevice":false,"sentChars":700,"secrets":0,"leaked":[]}
+{"id":"safe-002","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1566,"cloudCalls":1,"onDevice":false,"sentChars":750,"secrets":0,"leaked":[]}
+{"id":"safe-003","kind":"safe","mode":"cloudraw","verdict":"safe","ms":2157,"cloudCalls":1,"onDevice":false,"sentChars":675,"secrets":0,"leaked":[]}
+{"id":"safe-004","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1561,"cloudCalls":1,"onDevice":false,"sentChars":745,"secrets":0,"leaked":[]}
+{"id":"safe-005","kind":"safe","mode":"cloudraw","verdict":"suspicious","ms":1842,"cloudCalls":1,"onDevice":false,"sentChars":768,"secrets":1,"leaked":["1-800-555-0100"]}
+{"id":"safe-006","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1332,"cloudCalls":1,"onDevice":false,"sentChars":733,"secrets":2,"leaked":["Luis","(617) 555-0123"]}
+{"id":"safe-007","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1542,"cloudCalls":1,"onDevice":false,"sentChars":659,"secrets":0,"leaked":[]}
+{"id":"safe-008","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1453,"cloudCalls":1,"onDevice":false,"sentChars":688,"secrets":0,"leaked":[]}
+{"id":"safe-009","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1441,"cloudCalls":1,"onDevice":false,"sentChars":664,"secrets":0,"leaked":[]}
+{"id":"safe-010","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1647,"cloudCalls":1,"onDevice":false,"sentChars":751,"secrets":0,"leaked":[]}
+{"id":"safe-011","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1404,"cloudCalls":1,"onDevice":false,"sentChars":707,"secrets":0,"leaked":[]}
+{"id":"safe-012","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1255,"cloudCalls":1,"onDevice":false,"sentChars":701,"secrets":0,"leaked":[]}
+{"id":"safe-013","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1577,"cloudCalls":1,"onDevice":false,"sentChars":644,"secrets":0,"leaked":[]}
+{"id":"safe-014","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1466,"cloudCalls":1,"onDevice":false,"sentChars":752,"secrets":0,"leaked":[]}
+{"id":"safe-015","kind":"safe","mode":"cloudraw","verdict":"suspicious","ms":1798,"cloudCalls":1,"onDevice":false,"sentChars":639,"secrets":0,"leaked":[]}
+{"id":"safe-016","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1630,"cloudCalls":1,"onDevice":false,"sentChars":933,"secrets":1,"leaked":["Sam Ortiz"]}
+{"id":"safe-017","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1456,"cloudCalls":1,"onDevice":false,"sentChars":826,"secrets":0,"leaked":[]}
+{"id":"safe-018","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1896,"cloudCalls":1,"onDevice":false,"sentChars":683,"secrets":0,"leaked":[]}
+{"id":"safe-019","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1618,"cloudCalls":1,"onDevice":false,"sentChars":802,"secrets":2,"leaked":["Rosa","Kim"]}
+{"id":"safe-020","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1276,"cloudCalls":1,"onDevice":false,"sentChars":681,"secrets":1,"leaked":["Jake Miller"]}
+{"id":"safe-021","kind":"safe","mode":"cloudraw","verdict":"safe","ms":2213,"cloudCalls":1,"onDevice":false,"sentChars":692,"secrets":0,"leaked":[]}
+{"id":"safe-022","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1826,"cloudCalls":1,"onDevice":false,"sentChars":658,"secrets":0,"leaked":[]}
+{"id":"safe-023","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1538,"cloudCalls":1,"onDevice":false,"sentChars":653,"secrets":0,"leaked":[]}
+{"id":"safe-024","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1577,"cloudCalls":1,"onDevice":false,"sentChars":637,"secrets":0,"leaked":[]}
+{"id":"safe-025","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1437,"cloudCalls":1,"onDevice":false,"sentChars":609,"secrets":0,"leaked":[]}
+{"id":"safe-026","kind":"safe","mode":"cloudraw","verdict":"suspicious","ms":1380,"cloudCalls":1,"onDevice":false,"sentChars":702,"secrets":1,"leaked":["Tom Becker"]}
+{"id":"safe-027","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1824,"cloudCalls":1,"onDevice":false,"sentChars":695,"secrets":0,"leaked":[]}
+{"id":"safe-028","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1312,"cloudCalls":1,"onDevice":false,"sentChars":669,"secrets":0,"leaked":[]}
+{"id":"safe-029","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1282,"cloudCalls":1,"onDevice":false,"sentChars":646,"secrets":0,"leaked":[]}
+{"id":"safe-030","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1887,"cloudCalls":1,"onDevice":false,"sentChars":727,"secrets":0,"leaked":[]}
+{"id":"safe-031","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1328,"cloudCalls":1,"onDevice":false,"sentChars":623,"secrets":0,"leaked":[]}
+{"id":"safe-032","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1386,"cloudCalls":1,"onDevice":false,"sentChars":615,"secrets":0,"leaked":[]}
+{"id":"safe-033","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1251,"cloudCalls":1,"onDevice":false,"sentChars":646,"secrets":1,"leaked":["Lily"]}
+{"id":"safe-034","kind":"safe","mode":"cloudraw","verdict":"suspicious","ms":1402,"cloudCalls":1,"onDevice":false,"sentChars":715,"secrets":2,"leaked":["Jake","Sarah"]}
+{"id":"safe-035","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1695,"cloudCalls":1,"onDevice":false,"sentChars":620,"secrets":0,"leaked":[]}
+{"id":"safe-036","kind":"safe","mode":"cloudraw","verdict":"safe","ms":2025,"cloudCalls":1,"onDevice":false,"sentChars":691,"secrets":0,"leaked":[]}
+{"id":"safe-037","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1758,"cloudCalls":1,"onDevice":false,"sentChars":647,"secrets":1,"leaked":["Carol"]}
+{"id":"safe-038","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1660,"cloudCalls":1,"onDevice":false,"sentChars":622,"secrets":0,"leaked":[]}
+{"id":"safe-039","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1670,"cloudCalls":1,"onDevice":false,"sentChars":663,"secrets":0,"leaked":[]}
+{"id":"safe-040","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1411,"cloudCalls":1,"onDevice":false,"sentChars":693,"secrets":1,"leaked":["Emma"]}
+{"id":"safe-041","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1686,"cloudCalls":1,"onDevice":false,"sentChars":703,"secrets":2,"leaked":["Patel","(312) 555-0110"]}
+{"id":"safe-042","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1867,"cloudCalls":1,"onDevice":false,"sentChars":649,"secrets":0,"leaked":[]}
+{"id":"safe-043","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1398,"cloudCalls":1,"onDevice":false,"sentChars":672,"secrets":0,"leaked":[]}
+{"id":"safe-044","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1274,"cloudCalls":1,"onDevice":false,"sentChars":693,"secrets":0,"leaked":[]}
+{"id":"safe-045","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1712,"cloudCalls":1,"onDevice":false,"sentChars":709,"secrets":0,"leaked":[]}
+{"id":"safe-046","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1697,"cloudCalls":1,"onDevice":false,"sentChars":653,"secrets":1,"leaked":["Jess"]}
+{"id":"safe-047","kind":"safe","mode":"cloudraw","verdict":"safe","ms":2337,"cloudCalls":1,"onDevice":false,"sentChars":695,"secrets":0,"leaked":[]}
+{"id":"safe-048","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1609,"cloudCalls":1,"onDevice":false,"sentChars":645,"secrets":0,"leaked":[]}
+{"id":"safe-049","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1734,"cloudCalls":1,"onDevice":false,"sentChars":650,"secrets":0,"leaked":[]}
+{"id":"safe-050","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1485,"cloudCalls":1,"onDevice":false,"sentChars":724,"secrets":1,"leaked":["Ray"]}
+{"id":"safe-051","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1528,"cloudCalls":1,"onDevice":false,"sentChars":678,"secrets":0,"leaked":[]}
+{"id":"safe-052","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1178,"cloudCalls":1,"onDevice":false,"sentChars":647,"secrets":0,"leaked":[]}
+{"id":"safe-053","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1567,"cloudCalls":1,"onDevice":false,"sentChars":704,"secrets":0,"leaked":[]}
+{"id":"safe-054","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1568,"cloudCalls":1,"onDevice":false,"sentChars":674,"secrets":0,"leaked":[]}
+{"id":"safe-055","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1133,"cloudCalls":1,"onDevice":false,"sentChars":712,"secrets":0,"leaked":[]}
+{"id":"safe-056","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1668,"cloudCalls":1,"onDevice":false,"sentChars":635,"secrets":0,"leaked":[]}
+{"id":"safe-057","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1933,"cloudCalls":1,"onDevice":false,"sentChars":647,"secrets":0,"leaked":[]}
+{"id":"safe-058","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1739,"cloudCalls":1,"onDevice":false,"sentChars":704,"secrets":0,"leaked":[]}
+{"id":"safe-059","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1428,"cloudCalls":1,"onDevice":false,"sentChars":658,"secrets":0,"leaked":[]}
+{"id":"safe-060","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1659,"cloudCalls":1,"onDevice":false,"sentChars":686,"secrets":0,"leaked":[]}
+{"id":"safe-061","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1710,"cloudCalls":1,"onDevice":false,"sentChars":642,"secrets":0,"leaked":[]}
+{"id":"safe-062","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1624,"cloudCalls":1,"onDevice":false,"sentChars":680,"secrets":1,"leaked":["Rivera"]}
+{"id":"safe-063","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1667,"cloudCalls":1,"onDevice":false,"sentChars":599,"secrets":0,"leaked":[]}
+{"id":"safe-064","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1557,"cloudCalls":1,"onDevice":false,"sentChars":695,"secrets":0,"leaked":[]}
+{"id":"safe-065","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1536,"cloudCalls":1,"onDevice":false,"sentChars":642,"secrets":1,"leaked":["Daniels"]}
+{"id":"safe-066","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1773,"cloudCalls":1,"onDevice":false,"sentChars":654,"secrets":0,"leaked":[]}
+{"id":"safe-067","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1526,"cloudCalls":1,"onDevice":false,"sentChars":738,"secrets":0,"leaked":[]}
+{"id":"safe-068","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1915,"cloudCalls":1,"onDevice":false,"sentChars":661,"secrets":2,"leaked":["Chen","Leo"]}
+{"id":"safe-069","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1333,"cloudCalls":1,"onDevice":false,"sentChars":651,"secrets":0,"leaked":[]}
+{"id":"safe-070","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1397,"cloudCalls":1,"onDevice":false,"sentChars":715,"secrets":0,"leaked":[]}
+{"id":"safe-071","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1624,"cloudCalls":1,"onDevice":false,"sentChars":615,"secrets":0,"leaked":[]}
+{"id":"safe-072","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1396,"cloudCalls":1,"onDevice":false,"sentChars":645,"secrets":2,"leaked":["Alex","Priya"]}
+{"id":"safe-073","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1772,"cloudCalls":1,"onDevice":false,"sentChars":718,"secrets":0,"leaked":[]}
+{"id":"safe-074","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1558,"cloudCalls":1,"onDevice":false,"sentChars":615,"secrets":0,"leaked":[]}
+{"id":"safe-075","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1322,"cloudCalls":1,"onDevice":false,"sentChars":761,"secrets":0,"leaked":[]}
+{"id":"safe-076","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1314,"cloudCalls":1,"onDevice":false,"sentChars":635,"secrets":0,"leaked":[]}
+{"id":"safe-077","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1821,"cloudCalls":1,"onDevice":false,"sentChars":756,"secrets":0,"leaked":[]}
+{"id":"safe-078","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1708,"cloudCalls":1,"onDevice":false,"sentChars":649,"secrets":1,"leaked":["Marcus"]}
+{"id":"safe-079","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1271,"cloudCalls":1,"onDevice":false,"sentChars":636,"secrets":1,"leaked":["Tina"]}
+{"id":"safe-080","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1538,"cloudCalls":1,"onDevice":false,"sentChars":720,"secrets":2,"leaked":["Jordan","Beth"]}
+{"id":"safe-081","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1809,"cloudCalls":1,"onDevice":false,"sentChars":624,"secrets":0,"leaked":[]}
+{"id":"safe-082","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1269,"cloudCalls":1,"onDevice":false,"sentChars":646,"secrets":0,"leaked":[]}
+{"id":"safe-083","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1395,"cloudCalls":1,"onDevice":false,"sentChars":673,"secrets":0,"leaked":[]}
+{"id":"safe-084","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1684,"cloudCalls":1,"onDevice":false,"sentChars":642,"secrets":0,"leaked":[]}
+{"id":"safe-085","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1634,"cloudCalls":1,"onDevice":false,"sentChars":632,"secrets":0,"leaked":[]}
+{"id":"safe-086","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1721,"cloudCalls":1,"onDevice":false,"sentChars":665,"secrets":0,"leaked":[]}
+{"id":"safe-087","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1681,"cloudCalls":1,"onDevice":false,"sentChars":635,"secrets":0,"leaked":[]}
+{"id":"safe-088","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1417,"cloudCalls":1,"onDevice":false,"sentChars":628,"secrets":1,"leaked":["22 Birch Lane"]}
+{"id":"safe-089","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1811,"cloudCalls":1,"onDevice":false,"sentChars":644,"secrets":0,"leaked":[]}
+{"id":"safe-090","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1449,"cloudCalls":1,"onDevice":false,"sentChars":692,"secrets":1,"leaked":["Nina"]}
+{"id":"safe-091","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1539,"cloudCalls":1,"onDevice":false,"sentChars":667,"secrets":0,"leaked":[]}
+{"id":"safe-092","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1490,"cloudCalls":1,"onDevice":false,"sentChars":658,"secrets":0,"leaked":[]}
+{"id":"safe-093","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1474,"cloudCalls":1,"onDevice":false,"sentChars":680,"secrets":0,"leaked":[]}
+{"id":"safe-094","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1487,"cloudCalls":1,"onDevice":false,"sentChars":666,"secrets":0,"leaked":[]}
+{"id":"safe-095","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1388,"cloudCalls":1,"onDevice":false,"sentChars":926,"secrets":1,"leaked":["Megan"]}
+{"id":"safe-096","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1916,"cloudCalls":1,"onDevice":false,"sentChars":690,"secrets":0,"leaked":[]}
+{"id":"safe-097","kind":"safe","mode":"cloudraw","verdict":"safe","ms":2053,"cloudCalls":1,"onDevice":false,"sentChars":756,"secrets":0,"leaked":[]}
+{"id":"safe-098","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1528,"cloudCalls":1,"onDevice":false,"sentChars":646,"secrets":0,"leaked":[]}
+{"id":"safe-099","kind":"safe","mode":"cloudraw","verdict":"safe","ms":1278,"cloudCalls":1,"onDevice":false,"sentChars":751,"secrets":0,"leaked":[]}
+{"id":"safe-100","kind":"safe","mode":"cloudraw","verdict":"safe","ms":2002,"cloudCalls":1,"onDevice":false,"sentChars":667,"secrets":0,"leaked":[]}
+{"id":"mask-001","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1481,"cloudCalls":1,"onDevice":false,"sentChars":905,"secrets":7,"leaked":["Gregory Hale","1200 Oak Street","Maria Lopez","(415) 555-0134","maria.lopez@acmemail.com","77 Willow Lane","4410 2287 1934"]}
+{"id":"mask-002","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1656,"cloudCalls":1,"onDevice":false,"sentChars":935,"secrets":5,"leaked":["Robert Kim","078-05-1120","45 Cedar Ave","Helen Park","(312) 555-0187"]}
+{"id":"mask-003","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1519,"cloudCalls":1,"onDevice":false,"sentChars":973,"secrets":6,"leaked":["Kevin Wright","3301 8842 7710","Linda Torres","900 Harbor Blvd","linda.torres@northwind-logistics.example","(617) 555-0122"]}
+{"id":"mask-004","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1635,"cloudCalls":1,"onDevice":false,"sentChars":865,"secrets":4,"leaked":["Aisha Rahman","18 Pine Court","(646) 555-0158","aisha.rahman@fabrikam-mail.com"]}
+{"id":"mask-005","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1838,"cloudCalls":1,"onDevice":false,"sentChars":867,"secrets":5,"leaked":["Daniel Brooks","dan.brooks@contoso-mail.com","4111 1111 1111 1111","360 Elm Street","(202) 555-0176"]}
+{"id":"mask-006","kind":"mask","mode":"cloudraw","verdict":"scam","ms":1410,"cloudCalls":1,"onDevice":false,"sentChars":940,"secrets":7,"leaked":["Sarah Mitchell","Tom Becker","14 Birch Road","7781 2290 4436","(303) 555-0149","078-05-1133","tom.becker@acmemail.com"]}
+{"id":"mask-007","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1349,"cloudCalls":1,"onDevice":false,"sentChars":892,"secrets":5,"leaked":["Jamal Carter","820 Lakeside Drive","9920 1147 3385","jamal.carter@globexmail.com","(213) 555-0115"]}
+{"id":"mask-008","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1617,"cloudCalls":1,"onDevice":false,"sentChars":894,"secrets":6,"leaked":["Emily Nguyen","UMB-55120-HX","3 Harbor View Ct","Frank Olsen","(858) 555-0190","emily.nguyen@umbrella-mail.example"]}
+{"id":"mask-009","kind":"mask","mode":"cloudraw","verdict":"suspicious","ms":1915,"cloudCalls":1,"onDevice":false,"sentChars":812,"secrets":6,"leaked":["Carlos Mendez","078-05-1141","Ana Mendez","078-05-1142","1550 Sunset Blvd","0044 1782 9931"]}
+{"id":"mask-010","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1353,"cloudCalls":1,"onDevice":false,"sentChars":847,"secrets":6,"leaked":["Alvarez","Grace Liu","62 Maple Ave","(217) 555-0103","grace.liu@acmemail.com","Samuel Price"]}
+{"id":"mask-011","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1527,"cloudCalls":1,"onDevice":false,"sentChars":849,"secrets":7,"leaked":["Peter Novak","410 River Road","(518) 555-0161","Hannah Schultz","29 Spruce Street","hannah.s@contoso-mail.com","5512 0087 3341"]}
+{"id":"mask-012","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1715,"cloudCalls":1,"onDevice":false,"sentChars":852,"secrets":4,"leaked":["Olivia Grant","5555 5555 5555 4444","7 Chestnut Lane","olivia.grant@fabrikam-mail.com"]}
+{"id":"mask-013","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1621,"cloudCalls":1,"onDevice":false,"sentChars":832,"secrets":7,"leaked":["Benjamin Ortiz","2210 Valley Road","078-05-1150","Rachel Adams","(414) 555-0127","Mark Young","(414) 555-0128"]}
+{"id":"mask-014","kind":"mask","mode":"cloudraw","verdict":"scam","ms":1336,"cloudCalls":1,"onDevice":false,"sentChars":936,"secrets":5,"leaked":["Chloe Bennett","Victor Hayes","500 Market Street","078-05-1162","chloe.bennett@acmemail.com"]}
+{"id":"mask-015","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1412,"cloudCalls":1,"onDevice":false,"sentChars":851,"secrets":5,"leaked":["Mia Thompson","Laura Thompson","(708) 555-0181","laura.t@northwind-mail.com","15 Hawthorn Drive"]}
+{"id":"mask-016","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1267,"cloudCalls":1,"onDevice":false,"sentChars":888,"secrets":6,"leaked":["Steven Clarke","88 Granite Way","Amanda Ross","12 Quarry Road","6607 2213 9048","(952) 555-0144"]}
+{"id":"mask-017","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1633,"cloudCalls":1,"onDevice":false,"sentChars":815,"secrets":5,"leaked":["Hiroshi Tanaka","850315-1234567","301 Ocean Ave","Mei Lin","hiroshi.tanaka@contoso-mail.com"]}
+{"id":"mask-018","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1650,"cloudCalls":1,"onDevice":false,"sentChars":817,"secrets":6,"leaked":["Duncan","640 Forest Ave","1188 4402 7765","(503) 555-0109","Jenna Morales","jenna.morales@acmemail.com"]}
+{"id":"mask-019","kind":"mask","mode":"cloudraw","verdict":"suspicious","ms":1600,"cloudCalls":1,"onDevice":false,"sentChars":810,"secrets":7,"leaked":["William Foster","078-05-1171","Karen Foster","078-05-1172","19 Lighthouse Road","7700 3412 8856","(207) 555-0138"]}
+{"id":"mask-020","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1375,"cloudCalls":1,"onDevice":false,"sentChars":863,"secrets":6,"leaked":["Noah Fischer","5 Garden Street","noah.fischer@globexmail.com","(402) 555-0172","Ingrid Sato","ingrid.sato@initech.example"]}
+{"id":"mask-021","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1515,"cloudCalls":1,"onDevice":false,"sentChars":782,"secrets":4,"leaked":["Isabella Rossi","1020 Meadow Lane","4012 8888 8888 1881","(864) 555-0116"]}
+{"id":"mask-022","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1251,"cloudCalls":1,"onDevice":false,"sentChars":931,"secrets":6,"leaked":["Tyler Brooks","Gary Whitman","Denise Park","(608) 555-0153","77 Ash Street","tyler.b@fabrikam-mail.com"]}
+{"id":"mask-023","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1522,"cloudCalls":1,"onDevice":false,"sentChars":816,"secrets":8,"leaked":["Melissa Grant","230 Elm Court","(203) 555-0124","Jason Grant","18 Bay Road","(203) 555-0125","Ava Grant","Leo Grant"]}
+{"id":"mask-024","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1358,"cloudCalls":1,"onDevice":false,"sentChars":810,"secrets":5,"leaked":["Omar Haddad","4400 Pinecrest Drive","5105 1051 0510 5100","2235 7781 0046","omar.haddad@acmemail.com"]}
+{"id":"mask-025","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1767,"cloudCalls":1,"onDevice":false,"sentChars":889,"secrets":8,"leaked":["Rebecca Stone","rebecca.stone@contoso.example","Luis Navarro","luis.navarro@contoso.example","300 Harbor Street","Kate Moreno","kate.moreno@fabrikam.example","(206) 555-0107"]}
+{"id":"mask-026","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1612,"cloudCalls":1,"onDevice":false,"sentChars":843,"secrets":5,"leaked":["George Patel","078-05-1180","9 Willowbrook Ct","Anita Patel","(774) 555-0166"]}
+{"id":"mask-027","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1610,"cloudCalls":1,"onDevice":false,"sentChars":852,"secrets":6,"leaked":["Sophie Martin","Lucas Martin","1801 Bayshore Blvd","8844 1209 3367","Diane Holt","diane.holt@northwind-pm.example"]}
+{"id":"mask-028","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1587,"cloudCalls":1,"onDevice":false,"sentChars":902,"secrets":5,"leaked":["Ethan Walker","52 Maple Ave","ethan.walker@acmemail.com","(973) 555-0131","Margaret Lowe"]}
+{"id":"mask-029","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1929,"cloudCalls":1,"onDevice":false,"sentChars":898,"secrets":6,"leaked":["Natalie Cruz","(480) 555-0177","Brian Holt","(480) 555-0178","UM-88123","2700 Desert Rose Lane"]}
+{"id":"mask-030","kind":"mask","mode":"cloudraw","verdict":"suspicious","ms":1550,"cloudCalls":1,"onDevice":false,"sentChars":786,"secrets":4,"leaked":["Fatima Ali","600 Linden Street","078-05-1188","3390 2214 7781"]}
+{"id":"mask-031","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1670,"cloudCalls":1,"onDevice":false,"sentChars":760,"secrets":7,"leaked":["Paul & Jane Rivera","14 Rose Street","(203) 555-0141","Ted Morris","ted.morris@globexmail.com","Kim Sato","88 Lark Lane"]}
+{"id":"mask-032","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1387,"cloudCalls":1,"onDevice":false,"sentChars":797,"secrets":4,"leaked":["Derek Hughes","derek.hughes@initech.example","33 Oakridge Drive","(469) 555-0193"]}
+{"id":"mask-033","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1467,"cloudCalls":1,"onDevice":false,"sentChars":840,"secrets":7,"leaked":["Monica","Andrew Shaw","Julia Shaw","4242 4242 4242 4242","17 Kingfisher Road","andrew.shaw@acmemail.com","Andrew"]}
+{"id":"mask-034","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1696,"cloudCalls":1,"onDevice":false,"sentChars":859,"secrets":5,"leaked":["Hannah Weiss","210 Spring Street","Paul Becker","(860) 555-0114","6011 1111 1111 1117"]}
+{"id":"mask-035","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1329,"cloudCalls":1,"onDevice":false,"sentChars":869,"secrets":4,"leaked":["Yuna Choi","41 Highland Ave","920704-2345678","yuna.choi@fabrikam-mail.com"]}
+{"id":"mask-036","kind":"mask","mode":"cloudraw","verdict":"safe","ms":2034,"cloudCalls":1,"onDevice":false,"sentChars":848,"secrets":6,"leaked":["Martin Kowalski","5 Lakeview Terrace","4401 7788 2215","Sheila Grant","(612) 555-0135","sheila@northwind-hoa.example"]}
+{"id":"mask-037","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1569,"cloudCalls":1,"onDevice":false,"sentChars":833,"secrets":6,"leaked":["Grace Adeyemi","90 Clover Street","grace.adeyemi@contoso-mail.com","(570) 555-0102","Carol Diaz","(570) 555-0103"]}
+{"id":"mask-038","kind":"mask","mode":"cloudraw","verdict":"safe","ms":2029,"cloudCalls":1,"onDevice":false,"sentChars":826,"secrets":5,"leaked":["Victor Reyes","145 Orchard Road","77120044518","5555 5555 5555 4444","(737) 555-0160"]}
+{"id":"mask-039","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1723,"cloudCalls":1,"onDevice":false,"sentChars":832,"secrets":6,"leaked":["Walter James Harris","26 Elm Street","Dorothy Harris","Michael Harris","Susan Lee","(631) 555-0146"]}
+{"id":"mask-040","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1724,"cloudCalls":1,"onDevice":false,"sentChars":870,"secrets":5,"leaked":["Priya Nair","priya.nair@globex.example","Alan Brooks","812 Willow Street","(914) 555-0151"]}
+{"id":"mask-041","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1628,"cloudCalls":1,"onDevice":false,"sentChars":788,"secrets":5,"leaked":["Hannah Lee","300 Park Avenue","Samuel Ortiz","(719) 555-0118","6630 1102 9984"]}
+{"id":"mask-042","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1544,"cloudCalls":1,"onDevice":false,"sentChars":774,"secrets":6,"leaked":["Minji Park","950812-2123456","47 Magnolia Street","(703) 555-0169","minji.park@acmemail.com","David Park"]}
+{"id":"mask-043","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1645,"cloudCalls":1,"onDevice":false,"sentChars":818,"secrets":5,"leaked":["Eleanor Price","4111 1111 1111 1111","0099 1145 7723","8 Juniper Court","(623) 555-0105"]}
+{"id":"mask-044","kind":"mask","mode":"cloudraw","verdict":"suspicious","ms":2082,"cloudCalls":1,"onDevice":false,"sentChars":840,"secrets":5,"leaked":["Owen Carter","1500 Birchwood Ave","77-554-210","3782 822463 10005","Leah Morgan"]}
+{"id":"mask-045","kind":"mask","mode":"cloudraw","verdict":"safe","ms":2063,"cloudCalls":1,"onDevice":false,"sentChars":829,"secrets":4,"leaked":["Ryan Mitchell","61 Sycamore Street","078-05-1197","Teresa Wong"]}
+{"id":"mask-046","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1748,"cloudCalls":1,"onDevice":false,"sentChars":855,"secrets":6,"leaked":["Ken","(972) 555-0179","jess.ward@northwind-mail.com","Paula Diaz","19 Cobblestone Lane","Jess Ward"]}
+{"id":"mask-047","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1845,"cloudCalls":1,"onDevice":false,"sentChars":788,"secrets":6,"leaked":["Sofia Hernandez","1312 Mission Street","(408) 555-0183","sofia.hernandez@acmemail.com","Jorge Hernandez","Lucia Hernandez"]}
+{"id":"mask-048","kind":"mask","mode":"cloudraw","verdict":"scam","ms":1590,"cloudCalls":1,"onDevice":false,"sentChars":784,"secrets":5,"leaked":["Thomas Reed","078-05-1124","220 Brookside Drive","(316) 555-0186","5105 1051 0510 5100"]}
+{"id":"mask-049","kind":"mask","mode":"cloudraw","verdict":"safe","ms":1864,"cloudCalls":1,"onDevice":false,"sentChars":858,"secrets":7,"leaked":["Nora Quinn","2290 4471 6602","9 Alder Way","Jack Quinn","Eddie Marsh","(541) 555-0112","nora.quinn@contoso-mail.com"]}
+{"id":"mask-050","kind":"mask","mode":"cloudraw","verdict":"suspicious","ms":1538,"cloudCalls":1,"onDevice":false,"sentChars":884,"secrets":7,"leaked":["Lily Chen","455 Riverside Drive","lily.chen@fabrikam-mail.com","Marco Bianchi","(305) 555-0197","12 Coral Way","5507 3321 8890"]}
