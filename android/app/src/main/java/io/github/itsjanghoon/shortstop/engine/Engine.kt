@@ -105,7 +105,7 @@ class Engine(private val shared: Shared) {
             // Safety net: a model "safe" never hides a fake link or a pile of scam tricks.
             if ((strongLink(linkReasons) || words.score >= 3) && verdict == Verdict.SAFE) verdict = Verdict.SUSPICIOUS
             val extra = if (verdict == Verdict.SAFE) emptyList() else words.reasons
-            val signals = (linkReasons + a.signals + extra).map { unmask(it, masked.entries) }.distinct().take(5)
+            val signals = mergeSignals(linkReasons, (a.signals + extra).map { unmask(it, masked.entries) })
             val action = if (a.action.isNotEmpty() && a.verdict == verdict) unmask(a.action, masked.entries) else ACTIONS.getValue(verdict)
             val t = triage
             return Result(
@@ -208,4 +208,44 @@ private fun maskValues(note: String, masked: Masked): String {
     var out = note
     for (e in masked.entries) out = out.replace(e.value, e.token)
     return out
+}
+
+/** What a reason is about, so "says your account is locked" and "Claims account is locked" count once. */
+private val TOPICS: List<Pair<String, Regex>> = listOf(
+    "link" to js("""\b(link|url|domain|site|website|address|look-?alike|typo|spoof|mimic|impersonat\w* (a )?(site|domain))""", RegexOption.IGNORE_CASE),
+    "hurry" to js("""\b(hurry|urgen\w*|immediate\w*|right away|within \d+|deadline|act now|pressure|rush)""", RegexOption.IGNORE_CASE),
+    "locked" to js("""\b(locked|suspend\w*|frozen|blocked|disabled|unusual (sign|log))""", RegexOption.IGNORE_CASE),
+    "fee" to js("""\b(fee|small payment|redeliver\w*|customs|package on hold)""", RegexOption.IGNORE_CASE),
+    "code" to js("""\b(code|otp|one-time|verification number)""", RegexOption.IGNORE_CASE),
+    "gift" to js("""\bgift ?cards?\b""", RegexOption.IGNORE_CASE),
+    "secret" to js("""\b(secret|don'?t tell|keep (it|this) (quiet|between))""", RegexOption.IGNORE_CASE),
+    "won" to js("""\b(won|winner|prize|lottery|reward)""", RegexOption.IGNORE_CASE),
+    "law" to js("""\b(arrest|warrant|police|legal action|lawsuit|fine)\b""", RegexOption.IGNORE_CASE),
+    "profit" to js("""\b(profit|return|invest\w*|double)""", RegexOption.IGNORE_CASE),
+    "remote" to js("""\b(remote access|anydesk|teamviewer|install)""", RegexOption.IGNORE_CASE),
+    "login" to js("""\b(password|pin|login|log in|credential|ssn|social security)""", RegexOption.IGNORE_CASE),
+    "money" to js("""\b(wire|crypto|bitcoin|zelle|transfer money|send money)""", RegexOption.IGNORE_CASE),
+)
+
+private fun topicOf(s: String): String? = TOPICS.firstOrNull { (_, re) -> re.containsMatchIn(s) }?.first
+
+/** Link findings first (they are exact), then model and rule reasons, one per topic, at most 5. */
+fun mergeSignals(linkReasons: List<String>, others: List<String>): List<String> {
+    val out = mutableListOf<String>()
+    val seen = HashSet<String>()
+    fun add(s: String) {
+        val key = s.trim().lowercase()
+        if (key.isEmpty() || key in seen) return
+        seen.add(key)
+        out.add(s.trim())
+    }
+    linkReasons.forEach(::add)
+    val topics = HashSet<String>(if (linkReasons.isNotEmpty()) listOf("link") else emptyList())
+    for (s in others) {
+        val t = topicOf(s)
+        if (t != null && t in topics) continue
+        if (t != null) topics.add(t)
+        add(s)
+    }
+    return out.take(5)
 }

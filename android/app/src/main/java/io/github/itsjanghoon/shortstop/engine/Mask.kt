@@ -24,7 +24,7 @@ fun luhn(num: String): Boolean {
  * Compile a pattern with JavaScript meaning, so the JVM (tests) and Android (ICU) match like the web:
  * `\b` is an ASCII word boundary and `\s` includes Unicode spaces.
  */
-private fun js(pattern: String, vararg options: RegexOption): Regex {
+internal fun js(pattern: String, vararg options: RegexOption): Regex {
     val p = pattern
         .replace("""\b""", """(?:(?<=[A-Za-z0-9_])(?![A-Za-z0-9_])|(?<![A-Za-z0-9_])(?=[A-Za-z0-9_]))""")
         .replace("""\s""", """[\s\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]""")
