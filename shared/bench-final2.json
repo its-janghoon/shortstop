@@ -1,0 +1,1499 @@
+{
+ "$comment": "Second untouched synthetic English test set for Shortstop, written without seeing the engine or other test sets. No real people, numbers or companies.",
+ "items": [
+  {
+   "id": "f2-scam-001",
+   "kind": "scam",
+   "category": "delivery",
+   "text": "Northwind Parcel: your package NW48213 is held at our depot due to an unpaid customs fee of $1.99. Pay within 24h or it will be returned: http://northwind-parcel-fee.top/p/48213",
+   "secrets": []
+  },
+  {
+   "id": "f2-scam-002",
+   "kind": "scam",
+   "category": "delivery",
+   "text": "Hi, this is Tailspin Express. We tried to deliver your parcel today but no one was home. Reschedule and confirm your address here: tailspin-redeliver.info/r?id=88A",
+   "secrets": []
+  },
+  {
+   "id": "f2-scam-003",
+   "kind": "scam",
+   "category": "delivery",
+   "text": "Wingtip Post: The address for shipment WP-2290-41 is incomplete. To avoid return to sender, update your details at wingtip-post.support-center.cc before 6 PM today. Reply STOP to opt out.",
+   "secrets": []
+  },
+  {
+   "id": "f2-scam-004",
+   "kind": "scam",
+   "category": "delivery",
+   "text": "Subject: Delivery attempt failed\n\nDear customer,\nYour Globex Freight package could not be delivered because import duties of 2.40 USD were not paid. Please open the attached label (Label_Globex.html) and enter your card details to release the shipment.\n\nGlobex Freight Customer Care",
+   "secrets": []
+  },
+  {
+   "id": "f2-scam-005",
+   "kind": "scam",
+   "category": "bank_alert",
+   "text": "WOODGROVE BANK ALERT: A login from a new device was detected. If this was not you, verify your identity immediately at woodgrove-secure-verify.com or your account will be suspended.",
+   "secrets": []
+  },
+  {
+   "id": "f2-scam-006",
+   "kind": "scam",
+   "category": "bank_alert",
+   "text": "Woodgrove Fraud Team: Did you attempt a purchase of $842.19 at Fabrikam Electronics? Reply NO and one of our agents will call you to secure your account. Please have your card and the code we text you ready.",
+   "secrets": []
+  },
+  {
+   "id": "f2-scam-007",
+   "kind": "scam",
+   "category": "bank_alert",
+   "text": "This is Daniel from Adatum Credit Union security. We've blocked a suspicious transfer on your account. To cancel it, read me the 6-digit code we just sent to your phone. Do not share it with anyone else.",
+   "secrets": [
+    "Daniel"
+   ]
+  },
+  {
+   "id": "f2-scam-008",
+   "kind": "scam",
+   "category": "bank_alert",
+   "text": "Your Contoso Bank account has been locked for your protection. To keep your savings safe, our fraud department will move your balance to a temporary secure account. Call 555-0142 now and quote reference CB-7731.",
+   "secrets": [
+    "555-0142"
+   ]
+  },
+  {
+   "id": "f2-scam-009",
+   "kind": "scam",
+   "category": "family_new_number",
+   "text": "Hi Mum, it's me, I dropped my phone in the toilet 🙈 this is my new number. Can you save it and message me on here? x",
+   "secrets": []
+  },
+  {
+   "id": "f2-scam-010",
+   "kind": "scam",
+   "category": "family_new_number",
+   "text": "mum its me again. i need to pay a bill today but my banking app is locked on the new phone. can you send £640 to my friend's account and i'll pay you back tomorrow? sort code 55-01-23 acct 41029384, name J Okafor",
+   "secrets": [
+    "55-01-23",
+    "41029384",
+    "J Okafor"
+   ]
+  },
+  {
+   "id": "f2-scam-011",
+   "kind": "scam",
+   "category": "family_emergency",
+   "text": "Grandpa, it's Tyler. I'm in trouble, I got arrested after a car accident and I need bail money. Please don't tell Mom. My lawyer Mr. Bennett will call you at 555-0177 to explain how to send it.",
+   "secrets": [
+    "Tyler",
+    "Mr. Bennett",
+    "555-0177"
+   ]
+  },
+  {
+   "id": "f2-scam-012",
+   "kind": "scam",
+   "category": "family_emergency",
+   "text": "Dad I'm at the airport and my card got declined, flight boards in 40 min. Can you buy a $200 Litware gift card and send me a photo of the back? I'll explain later, phone about to die",
+   "secrets": []
+  },
+  {
+   "id": "f2-scam-013",
+   "kind": "scam",
+   "category": "investment",
+   "text": "Join our VIP crypto signal group! Members made 340% last month. Deposit just $250 at proseware-coin-pro.io and our AI bot trades for you. Guaranteed returns, no risk.",
+   "secrets": []
+  },
+  {
+   "id": "f2-scam-014",
+   "kind": "scam",
+   "category": "investment",
+   "text": "Hi, sorry to bother you, is this Mr. Lin? My aunt gave me this number about the tea order. Oh, wrong number? So sorry! Nice to meet you anyway, I'm Vivian, I work in gold trading in Singapore 😊",
+   "secrets": [
+    "Mr. Lin",
+    "Vivian"
+   ]
+  },
+  {
+   "id": "f2-scam-015",
+   "kind": "scam",
+   "category": "investment",
+   "text": "The platform I use is Globex Digital Assets, my uncle is an analyst there and tells me the exact minute to buy. Start with $1,000 so you can see how it works. When you want to withdraw you just pay the 15% tax first, that's normal. – Vivian",
+   "secrets": [
+    "Vivian"
+   ]
+  },
+  {
+   "id": "f2-scam-016",
+   "kind": "scam",
+   "category": "investment",
+   "text": "Subject: Your Initech Shares Dividend Is Ready\n\nDear Investor,\nAn unclaimed dividend of $14,880 is registered under your name. To release it, a refundable processing deposit of $480 in USDT is required within 72 hours. Reply to receive the wallet address.\n\nInitech Shareholder Services",
+   "secrets": []
+  },
+  {
+   "id": "f2-scam-017",
+   "kind": "scam",
+   "category": "tech_support",
+   "text": "Litware Security Warning: Your computer is infected with 5 viruses. Call Litware Support at 555-0163 immediately. Do not shut down or restart your PC.",
+   "secrets": [
+    "555-0163"
+   ]
+  },
+  {
+   "id": "f2-scam-018",
+   "kind": "scam",
+   "category": "tech_support",
+   "text": "Subject: Your Contoso 365 subscription renewal of $399.99\n\nThank you for renewing your plan. Your card will be charged today. If you did not authorize this charge, call our billing desk at 555-0118 within 24 hours to cancel and receive a refund.",
+   "secrets": [
+    "555-0118"
+   ]
+  },
+  {
+   "id": "f2-scam-019",
+   "kind": "scam",
+   "category": "tech_support",
+   "text": "Hi, this is Marco from Fabrikam Remote Help. To process your refund I need you to install AnyAssist from fabrikam-help.net and give me the 9-digit session ID. Then log in to your bank so I can deposit the money.",
+   "secrets": [
+    "Marco"
+   ]
+  },
+  {
+   "id": "f2-scam-020",
+   "kind": "scam",
+   "category": "prize",
+   "text": "Congratulations! You've won a $1,000 Fourth Coffee gift card! Claim now at fourthcoffee-rewards-winner.com. Only a $4.95 shipping fee is required.",
+   "secrets": []
+  },
+  {
+   "id": "f2-scam-021",
+   "kind": "scam",
+   "category": "prize",
+   "text": "Alpine Ski Club annual draw: your membership was picked for a 3-night lodge stay! To confirm, pay the $89 resort tax by card at alpineski-draw.events within 48 hours or the prize goes to the next member.",
+   "secrets": []
+  },
+  {
+   "id": "f2-scam-022",
+   "kind": "scam",
+   "category": "prize",
+   "text": "Northwind Customer Survey: you have been selected! Answer 3 quick questions and get a brand-new premium smartphone for just $1. Offer ends tonight: nw-survey-gift.click",
+   "secrets": []
+  },
+  {
+   "id": "f2-scam-023",
+   "kind": "scam",
+   "category": "romance",
+   "text": "My darling, customs are holding my gold shipment and I can't reach my accounts from the oil rig. If you send $3,500 for the release fee I can finally fly to you next week. You are the only one I trust. — Richard",
+   "secrets": [
+    "Richard"
+   ]
+  },
+  {
+   "id": "f2-scam-024",
+   "kind": "scam",
+   "category": "romance",
+   "text": "I know we've only talked for two months but I feel so close to you, Ana. My daughter is in hospital and the bank froze my card while I'm deployed. I hate asking. Could you help with the deposit? I'll pay back every cent.",
+   "secrets": [
+    "Ana"
+   ]
+  },
+  {
+   "id": "f2-scam-025",
+   "kind": "scam",
+   "category": "romance",
+   "text": "Hey beautiful, the video call keeps failing because my camera is broken here on base 😔 can you buy me a Wingtip gift card so I can get a new phone and finally see your face?",
+   "secrets": []
+  },
+  {
+   "id": "f2-scam-026",
+   "kind": "scam",
+   "category": "job_task",
+   "text": "Hello! We found your CV online. Part-time remote job, $300-$800 per day, just like and rate products in our app. Contact HR on chat: +1 555-0129",
+   "secrets": [
+    "+1 555-0129"
+   ]
+  },
+  {
+   "id": "f2-scam-027",
+   "kind": "scam",
+   "category": "job_task",
+   "text": "Welcome to the Adatum Optimization team, Priya! Your first 40 tasks are complete 🎉 Your account now shows a negative balance of $186 because you received a combo order. Top up with USDT to unlock your $2,340 commission.",
+   "secrets": [
+    "Priya"
+   ]
+  },
+  {
+   "id": "f2-scam-028",
+   "kind": "scam",
+   "category": "job_task",
+   "text": "Subject: Offer of Employment – Remote Data Entry Clerk\n\nDear Samuel,\nFollowing your chat interview, Initech is pleased to offer you the position. We will mail you a check for $2,950 to buy home-office equipment from our approved vendor. Deposit the check and send the remainder to the vendor by wire the same day.\n\nInitech HR",
+   "secrets": [
+    "Samuel"
+   ]
+  },
+  {
+   "id": "f2-scam-029",
+   "kind": "scam",
+   "category": "job_task",
+   "text": "Hi Mei, recruiter from Tailspin Talent here. Before onboarding, please send a photo of your passport, your SSN and your online banking login so payroll can set up direct deposit today.",
+   "secrets": [
+    "Mei"
+   ]
+  },
+  {
+   "id": "f2-scam-030",
+   "kind": "scam",
+   "category": "government",
+   "text": "STATE TOLL SERVICES: You have an unpaid toll balance of $6.85. To avoid a $50 late fee and licence suspension, pay now: toll-services-pay.top/us",
+   "secrets": []
+  },
+  {
+   "id": "f2-scam-031",
+   "kind": "scam",
+   "category": "government",
+   "text": "Revenue Office: You are eligible for a tax refund of $428.60. Submit your bank card details to receive the refund: refund-claim-gov.info/form",
+   "secrets": []
+  },
+  {
+   "id": "f2-scam-032",
+   "kind": "scam",
+   "category": "government",
+   "text": "This is Officer Grant from the Federal Benefits Office. Your Social Security number has been linked to a drug case and will be suspended. Press 1 or call 555-0190 to speak to an agent and protect your assets.",
+   "secrets": [
+    "Officer Grant",
+    "555-0190"
+   ]
+  },
+  {
+   "id": "f2-scam-033",
+   "kind": "scam",
+   "category": "government",
+   "text": "Subject: Final Notice – Unpaid Parking Penalty PCN 7714-22\n\nOur records show an unpaid penalty of $45.00. Payment must be made today by gift card or cryptocurrency to prevent court action. Reply to this e-mail for payment instructions.\n\nCity Enforcement Unit",
+   "secrets": []
+  },
+  {
+   "id": "f2-scam-034",
+   "kind": "scam",
+   "category": "fake_invoice",
+   "text": "Subject: Invoice INV-20931 overdue\n\nHi Lauren,\nPlease find attached the updated invoice from Proseware Supplies. Note that our bank details have changed; please use the new account below for this and all future payments:\nAccount 88213409, routing 055001234.\n\nRegards,\nAccounts Team",
+   "secrets": [
+    "Lauren",
+    "88213409",
+    "055001234"
+   ]
+  },
+  {
+   "id": "f2-scam-035",
+   "kind": "scam",
+   "category": "fake_invoice",
+   "text": "Hey Tom, I'm in board meetings all day and can't talk. I need you to process an urgent wire of $48,200 to a new supplier before 3pm. Keep it quiet until the deal is announced. Details coming. – Sarah (sent from my phone)",
+   "secrets": [
+    "Tom",
+    "Sarah"
+   ]
+  },
+  {
+   "id": "f2-scam-036",
+   "kind": "scam",
+   "category": "fake_invoice",
+   "text": "Your Globex Antivirus plan has been auto-renewed for $289.00. Order #GX-55102. If you wish to cancel and get a refund, call 555-0151.",
+   "secrets": [
+    "555-0151"
+   ]
+  },
+  {
+   "id": "f2-scam-037",
+   "kind": "scam",
+   "category": "marketplace",
+   "text": "Hi, I'll buy your sofa for the asking price. I'm out of town so my mover will collect it. I sent $950 instead of $650 by mistake, please refund the extra $300 to my mover in cash when he comes.",
+   "secrets": []
+  },
+  {
+   "id": "f2-scam-038",
+   "kind": "scam",
+   "category": "marketplace",
+   "text": "Is the bike still available? Before I drive over I want to make sure you're a real person. I'll send a code to your phone, please tell me the 6 digits.",
+   "secrets": []
+  },
+  {
+   "id": "f2-scam-039",
+   "kind": "scam",
+   "category": "marketplace",
+   "text": "Northwind Market: The buyer has paid for your item. To receive the funds, your account must be upgraded to a business seller. Pay the refundable $100 activation fee at northwind-market-secure.shop",
+   "secrets": []
+  },
+  {
+   "id": "f2-scam-040",
+   "kind": "scam",
+   "category": "marketplace",
+   "text": "I'm happy to buy your camera. I'll pay through Tailspin Escrow so we're both protected, you'll get an e-mail from tailspin-escrow-payments.com once the money is held. Then ship it to my nephew and the money is released to you.",
+   "secrets": []
+  },
+  {
+   "id": "f2-scam-041",
+   "kind": "scam",
+   "category": "rental",
+   "text": "Hi Daniela, thanks for your interest in the flat on Elm Street. I'm working abroad so I can't show it, but if you wire the first month and deposit ($2,400) I'll courier you the keys. Lots of people want it so please be quick.",
+   "secrets": [
+    "Daniela"
+   ]
+  },
+  {
+   "id": "f2-scam-042",
+   "kind": "scam",
+   "category": "rental",
+   "text": "The apartment at 42 Harbor Lane is still available. To book a viewing, pay a $150 holding fee with a gift card. The fee is refundable after the viewing.",
+   "secrets": [
+    "42 Harbor Lane"
+   ]
+  },
+  {
+   "id": "f2-scam-043",
+   "kind": "scam",
+   "category": "recovery_code",
+   "text": "hey!! sorry i accidentally sent my verification code to your number, could you forward it to me? it's a 6 digit code from Contoso Chat",
+   "secrets": []
+  },
+  {
+   "id": "f2-scam-044",
+   "kind": "scam",
+   "category": "recovery_code",
+   "text": "Hi Jordan, it's Ellie from the book club! I'm signing you up for the community vote for the garden prize, you'll get a code by text, just send it back to me 💐",
+   "secrets": [
+    "Jordan",
+    "Ellie"
+   ]
+  },
+  {
+   "id": "f2-scam-045",
+   "kind": "scam",
+   "category": "recovery_code",
+   "text": "Fabrikam Mail: Someone requested to recover your account. If this wasn't you, reply with the code you just received so we can cancel the request.",
+   "secrets": []
+  },
+  {
+   "id": "f2-scam-046",
+   "kind": "scam",
+   "category": "recovery_code",
+   "text": "Contoso Account Team: We noticed unusual sign-in activity. To keep your mailbox active, reply with your password and the code we send you within 2 hours.",
+   "secrets": []
+  },
+  {
+   "id": "f2-scam-047",
+   "kind": "scam",
+   "category": "charity",
+   "text": "After the earthquake, families need you. Donate via the Globex Relief Fund: send any amount in crypto to our wallet or buy Litware gift cards and send the codes. 100% goes to victims.",
+   "secrets": []
+  },
+  {
+   "id": "f2-scam-048",
+   "kind": "scam",
+   "category": "charity",
+   "text": "Hello, I'm collecting for the flood victims in our county with Northwind Community Aid. Could you donate $50 today? We can only take payment by wire to my personal account because the charity account is still being set up. – Kevin",
+   "secrets": [
+    "Kevin"
+   ]
+  },
+  {
+   "id": "f2-scam-049",
+   "kind": "scam",
+   "category": "bank_alert",
+   "text": "Woodgrove Bank: A payee 'R. Moss' was added to your account. If you did not do this, call us on 555-0136 immediately. Do not use the app, it may be compromised.",
+   "secrets": [
+    "R. Moss",
+    "555-0136"
+   ]
+  },
+  {
+   "id": "f2-scam-050",
+   "kind": "scam",
+   "category": "investment",
+   "text": "Hey it's Raj from college! Long time 😄 I've been doing really well with a forex mentor, made enough to quit my job. He's only taking 3 new students this month, $500 entry. Want me to introduce you?",
+   "secrets": [
+    "Raj"
+   ]
+  },
+  {
+   "id": "f2-safe-001",
+   "kind": "safe",
+   "category": "bank_alert",
+   "text": "Woodgrove Bank: We declined a card purchase of $312.40 at an online store. If you don't recognise it, call the number on the back of your card. We will never ask for your PIN, password or one-time codes.",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-002",
+   "kind": "safe",
+   "category": "bank_alert",
+   "text": "Adatum Credit Union: Did you use your card ending 4821 for $59.99 at Fabrikam Online? Reply Y or N. We will never call you to ask for a code.",
+   "secrets": [
+    "4821"
+   ]
+  },
+  {
+   "id": "f2-safe-003",
+   "kind": "safe",
+   "category": "otp",
+   "text": "Your Contoso sign-in code is 482913. You requested it at 9:14 AM. It expires in 10 minutes. Don't share this code with anyone; Contoso staff will never ask for it.",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-004",
+   "kind": "safe",
+   "category": "otp",
+   "text": "Fabrikam: 731 205 is your verification code for logging in on a new browser. If you didn't request it, ignore this message.",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-005",
+   "kind": "safe",
+   "category": "delivery",
+   "text": "Northwind Parcel: Your package NW-7730-1182 is out for delivery today between 1 PM and 5 PM. Track it at northwind.example/track. No action needed.",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-006",
+   "kind": "safe",
+   "category": "delivery",
+   "text": "Tailspin Express: we left your parcel with your neighbour as requested. Details are in the Tailspin app.",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-007",
+   "kind": "safe",
+   "category": "password_reset",
+   "text": "Subject: Reset your Litware password\n\nHi Chidi,\nWe received a request to reset your password from the Litware app on an Android device. If this was you, use the button below within 30 minutes. If you didn't ask, you can ignore this e-mail and your password won't change.\n\n— Litware Accounts",
+   "secrets": [
+    "Chidi"
+   ]
+  },
+  {
+   "id": "f2-safe-008",
+   "kind": "safe",
+   "category": "school_payment",
+   "text": "Dear parents, the Year 5 museum trip is on 14 March. Please pay the $18 fee through the usual payments section of the school app by Friday. Contact the office if the cost is a concern. — Ms. Okonkwo",
+   "secrets": [
+    "Ms. Okonkwo"
+   ]
+  },
+  {
+   "id": "f2-safe-009",
+   "kind": "safe",
+   "category": "landlord_payment",
+   "text": "Hi Tomás, reminder that December rent is due on the 1st. Please pay through the Wingtip Residents portal as usual. There are no changes to the bank details. Thanks, Helen (building manager)",
+   "secrets": [
+    "Tomás",
+    "Helen"
+   ]
+  },
+  {
+   "id": "f2-safe-010",
+   "kind": "safe",
+   "category": "friend_loan",
+   "text": "yo it's jun, left my wallet at home 🤦 can you spot me for lunch today? i'll pay you back when i see you at the gym tonight",
+   "secrets": [
+    "jun"
+   ]
+  },
+  {
+   "id": "f2-safe-011",
+   "kind": "safe",
+   "category": "official_link",
+   "text": "Hi team, HR has posted the new benefits enrollment form on the intranet: intranet.globex.example/benefits. Deadline is the 30th. Ping me if the link doesn't work. – Aiko",
+   "secrets": [
+    "Aiko"
+   ]
+  },
+  {
+   "id": "f2-safe-012",
+   "kind": "safe",
+   "category": "loyalty_prize",
+   "text": "Fourth Coffee Rewards: Congrats, you won this month's member draw! A free drink every week for a year has been added to your account. Open the Fourth Coffee app to see it. No payment or details needed.",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-013",
+   "kind": "safe",
+   "category": "bank_alert",
+   "text": "Woodgrove Bank: A new payee was added to your account today at 10:42. If this wasn't you, call us on the number on the back of your card or in the app. We'll never ask you to move money to a 'safe account'.",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-014",
+   "kind": "safe",
+   "category": "bank_alert",
+   "text": "Subject: Your monthly statement is ready\n\nHello Ngozi, your Adatum statement for October is available. Log in to the Adatum app or type adatum.example into your browser to view it. We don't include links in statement e-mails.",
+   "secrets": [
+    "Ngozi"
+   ]
+  },
+  {
+   "id": "f2-safe-015",
+   "kind": "safe",
+   "category": "otp",
+   "text": "Wingtip Airlines: Your booking code is K7PQ2X. Use it with your surname at check-in or in the app to manage your trip.",
+   "secrets": [
+    "K7PQ2X"
+   ]
+  },
+  {
+   "id": "f2-safe-016",
+   "kind": "safe",
+   "category": "delivery",
+   "text": "Globex Freight: Duties of $12.40 are due on your international parcel GF-30018. Pay in the Globex app, at globex.example/duties, or to the courier on delivery. We never ask for payment through a text link.",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-017",
+   "kind": "safe",
+   "category": "government",
+   "text": "Revenue Office: Your annual tax return has been processed. Any refund will go to the bank account you gave in your return. Sign in to your online account to see the details. We will never text you a link.",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-018",
+   "kind": "safe",
+   "category": "account_security",
+   "text": "Subject: New sign-in to your Contoso account\n\nWe noticed a new sign-in from a Windows browser in Lisbon. If this was you, you don't need to do anything. If not, open Security settings in your account and change your password.",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-019",
+   "kind": "safe",
+   "category": "new_number",
+   "text": "aunty Fola here. new phone, same me 😄 save this number. no rush, just wanted you to have it. see you sunday at grandma's",
+   "secrets": [
+    "Fola"
+   ]
+  },
+  {
+   "id": "f2-safe-020",
+   "kind": "safe",
+   "category": "loyalty_prize",
+   "text": "Alpine Ski Rentals: You've earned a free day rental with your loyalty points (1,200 pts). Show your member card at the counter to use it. Nothing to pay.",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-021",
+   "kind": "safe",
+   "category": "invoice",
+   "text": "Subject: Invoice INV-4410 from Proseware Design\n\nHi Marta,\nAttached is the invoice for the logo work we agreed on (€850). Payment details are the same as on our contract. Thanks for a great project!\n\nOliver",
+   "secrets": [
+    "Marta",
+    "Oliver"
+   ]
+  },
+  {
+   "id": "f2-safe-022",
+   "kind": "safe",
+   "category": "marketplace",
+   "text": "Hi! Is the desk still for sale? I can come by Saturday morning and pay cash when I pick it up. If it's gone, no worries.",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-023",
+   "kind": "safe",
+   "category": "job",
+   "text": "Hi Kwame, thanks for interviewing with Initech last week. We'd like to invite you to a final interview at our office on Tuesday. Please choose a time in the candidate portal. We never ask for payment or bank details during hiring.",
+   "secrets": [
+    "Kwame"
+   ]
+  },
+  {
+   "id": "f2-safe-024",
+   "kind": "safe",
+   "category": "charity",
+   "text": "Northwind Community Aid: Thank you for your $25 donation to the flood appeal. Your receipt is in your account. To give again, visit northwind-aid.example.",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-025",
+   "kind": "safe",
+   "category": "recovery_code",
+   "text": "Litware: You asked to recover your account. Enter this code in the Litware app: 559021. Never give it to anyone, even if they say they're from Litware.",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-026",
+   "kind": "safe",
+   "category": "bank_alert",
+   "text": "Hi, it's Adatum Credit Union. We tried to reach you about recent activity on your account. Please call us back on the number on our website or your card. Don't share codes with anyone who calls you.",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-027",
+   "kind": "safe",
+   "category": "family_loan",
+   "text": "mom can i borrow $60 for the school trip? i'll do extra chores, can you leave it on the kitchen table",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-028",
+   "kind": "safe",
+   "category": "rental",
+   "text": "Hi Sofia, the viewing for the 2-bed is confirmed for Thursday at 6pm. I'll meet you in the lobby. No fees until you've seen it and signed the lease. – Raymond, Wingtip Lettings",
+   "secrets": [
+    "Sofia",
+    "Raymond"
+   ]
+  },
+  {
+   "id": "f2-safe-029",
+   "kind": "safe",
+   "category": "government",
+   "text": "Tailspin Toll Road: Your account balance is low ($3.20) and auto top-up is off. Sign in at tailspin-toll.example or in the app to add funds.",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-030",
+   "kind": "safe",
+   "category": "it_notice",
+   "text": "Hi Pavel, IT here. Your laptop is due for the security update. It'll install automatically tonight, just leave it plugged in. You don't need to do anything or share your password. – Grace, Initech IT",
+   "secrets": [
+    "Pavel",
+    "Grace"
+   ]
+  },
+  {
+   "id": "f2-safe-031",
+   "kind": "safe",
+   "category": "chat",
+   "text": "are we still on for dinner at 7? i booked the thai place",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-032",
+   "kind": "safe",
+   "category": "chat",
+   "text": "Hey Siobhan! Happy birthday 🎂 hope you have the best day, drinks on me friday",
+   "secrets": [
+    "Siobhan"
+   ]
+  },
+  {
+   "id": "f2-safe-033",
+   "kind": "safe",
+   "category": "chat",
+   "text": "running 10 min late, train is stuck outside the station",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-034",
+   "kind": "safe",
+   "category": "chat",
+   "text": "Can you pick up milk and eggs on your way home? also the dog food",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-035",
+   "kind": "safe",
+   "category": "appointment",
+   "text": "Hi, Dr. Haddad's office here, reminding you of your appointment tomorrow at 9:30 AM. Reply C to confirm.",
+   "secrets": [
+    "Dr. Haddad"
+   ]
+  },
+  {
+   "id": "f2-safe-036",
+   "kind": "safe",
+   "category": "chat",
+   "text": "lol did you see the game last night 😂 ref was blind",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-037",
+   "kind": "safe",
+   "category": "chat",
+   "text": "Thanks for sending the slides, Arjun. I'll review them before the 2pm call.",
+   "secrets": [
+    "Arjun"
+   ]
+  },
+  {
+   "id": "f2-safe-038",
+   "kind": "safe",
+   "category": "chat",
+   "text": "ok i'm outside, white car with the bike rack",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-039",
+   "kind": "safe",
+   "category": "chat",
+   "text": "Reminder: book club this Wednesday, we're on chapter 12. Bring snacks if you can! – Beatriz",
+   "secrets": [
+    "Beatriz"
+   ]
+  },
+  {
+   "id": "f2-safe-040",
+   "kind": "safe",
+   "category": "chat",
+   "text": "can you send me that pasta recipe? the one with lemon",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-041",
+   "kind": "safe",
+   "category": "chat",
+   "text": "Hey bilal, the plumber's coming at 11 so I'll be home late morning",
+   "secrets": [
+    "bilal"
+   ]
+  },
+  {
+   "id": "f2-safe-042",
+   "kind": "safe",
+   "category": "booking",
+   "text": "Fabrikam Gym: your Spin 45 class tomorrow at 7:00 has been booked. See you there!",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-043",
+   "kind": "safe",
+   "category": "chat",
+   "text": "great meeting today! let's sync again next week about the roadmap",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-044",
+   "kind": "safe",
+   "category": "chat",
+   "text": "grandma says thanks for the flowers 💐 she put them by the window",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-045",
+   "kind": "safe",
+   "category": "chat",
+   "text": "Hi Yuki, the kids' soccer practice moved to field B this Saturday.",
+   "secrets": [
+    "Yuki"
+   ]
+  },
+  {
+   "id": "f2-safe-046",
+   "kind": "safe",
+   "category": "chat",
+   "text": "did you water the plants? the basil looked sad",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-047",
+   "kind": "safe",
+   "category": "order",
+   "text": "Fourth Coffee: Your order #2281 is ready for pickup at the counter.",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-048",
+   "kind": "safe",
+   "category": "chat",
+   "text": "Hey Mateo, I paid you back for the concert tickets, check your account 👍",
+   "secrets": [
+    "Mateo"
+   ]
+  },
+  {
+   "id": "f2-safe-049",
+   "kind": "safe",
+   "category": "chat",
+   "text": "meeting moved to room 3B, same time",
+   "secrets": []
+  },
+  {
+   "id": "f2-safe-050",
+   "kind": "safe",
+   "category": "chat",
+   "text": "Hi Leilani, welcome to the team! Your desk is next to mine, grab me for coffee when you're settled.",
+   "secrets": [
+    "Leilani"
+   ]
+  },
+  {
+   "id": "f2-mask-001",
+   "kind": "mask",
+   "category": "lease",
+   "text": "RESIDENTIAL LEASE AGREEMENT\nThis lease is made between Landlord Harold Whitcombe and Tenant Amara Nwosu for the premises at 1187 Juniper Court, Apt 4B, Riverton. Rent: $1,650 per month, due on the 1st. Security deposit of $1,650 paid by card 4111 1111 1111 1111. Tenant contact: (415) 555-0143, amara.nwosu@fabrikam.example. Amara may not sublet without written consent.",
+   "secrets": [
+    "Harold Whitcombe",
+    "Amara Nwosu",
+    "1187 Juniper Court, Apt 4B",
+    "4111 1111 1111 1111",
+    "(415) 555-0143",
+    "amara.nwosu@fabrikam.example",
+    "Amara"
+   ]
+  },
+  {
+   "id": "f2-mask-002",
+   "kind": "mask",
+   "category": "contract",
+   "text": "EMPLOYMENT AGREEMENT\nEmployer: Initech Ltd.\nEmployee: Rafael Domínguez Ortega, born 03/14/1988, SSN 078-05-1120, residing at 22 Willow Bend Road, Fairhaven.\nStart date: 6 January. Salary: $84,000 per year, paid to account 300148229.\nMr. Domínguez agrees to a 90-day probation period.",
+   "secrets": [
+    "Rafael Domínguez Ortega",
+    "03/14/1988",
+    "078-05-1120",
+    "22 Willow Bend Road, Fairhaven",
+    "300148229",
+    "Mr. Domínguez"
+   ]
+  },
+  {
+   "id": "f2-mask-003",
+   "kind": "mask",
+   "category": "medical",
+   "text": "Patient: Li Wei (MRN 00482917)\nDOB: 1975-09-02\nReferred by Dr. Anika Sharma.\nPresenting complaint: chest tightness for 3 days, worse on exertion. No prior cardiac history.\nNext of kin: daughter Xiaoling, 555-0158.",
+   "secrets": [
+    "Li Wei",
+    "00482917",
+    "1975-09-02",
+    "Dr. Anika Sharma",
+    "Xiaoling",
+    "555-0158"
+   ]
+  },
+  {
+   "id": "f2-mask-004",
+   "kind": "mask",
+   "category": "hr",
+   "text": "Subject: Performance concern – J. Okoro\n\nHi Denise,\nFollowing our call, I want to document the attendance issues with Jide Okoro (employee ID E-20431). Jide missed four shifts in October without notice. Please keep this confidential.\n\nThanks,\nMarcus Bell, Ops Manager, 555-0112",
+   "secrets": [
+    "J. Okoro",
+    "Denise",
+    "Jide Okoro",
+    "E-20431",
+    "Jide",
+    "Marcus Bell",
+    "555-0112"
+   ]
+  },
+  {
+   "id": "f2-mask-005",
+   "kind": "mask",
+   "category": "cv",
+   "text": "CURRICULUM VITAE\nHannah Schröder\n17 Linden Strasse, Apt 3, Hamburg 20095\n555-0171 | hannah.schroeder@litware.example | born 22.07.1994\n\nPROFILE\nLogistics analyst with 6 years at Northwind Traders.",
+   "secrets": [
+    "Hannah Schröder",
+    "17 Linden Strasse, Apt 3, Hamburg 20095",
+    "555-0171",
+    "hannah.schroeder@litware.example",
+    "22.07.1994"
+   ]
+  },
+  {
+   "id": "f2-mask-006",
+   "kind": "mask",
+   "category": "support_ticket",
+   "text": "Ticket #48821 – Can't log in\nCustomer: kenji tanaka (kenji.t@northwind.example)\nAccount number: NW-9920-4471\nPhone on file: 555-0134\nMessage: hi, i'm locked out after changing phones. my billing address is 9 Cedar Row, Millbrook. please help",
+   "secrets": [
+    "kenji tanaka",
+    "kenji.t@northwind.example",
+    "NW-9920-4471",
+    "555-0134",
+    "9 Cedar Row, Millbrook"
+   ]
+  },
+  {
+   "id": "f2-mask-007",
+   "kind": "mask",
+   "category": "email_thread",
+   "text": "From: Priscilla Mensah <p.mensah@woodgrove.example>\nTo: Dan\nSubject: Re: wire for closing\n\nDan, the closing for 305 Birch Hollow Drive is on the 12th. Please send the down payment from your account ending 7781 only after you call me at 555-0127 to confirm the details.\n– Cilla",
+   "secrets": [
+    "Priscilla Mensah",
+    "p.mensah@woodgrove.example",
+    "Dan",
+    "305 Birch Hollow Drive",
+    "7781",
+    "555-0127",
+    "Cilla"
+   ]
+  },
+  {
+   "id": "f2-mask-008",
+   "kind": "mask",
+   "category": "school_form",
+   "text": "STUDENT EMERGENCY CONTACT FORM\nStudent: Aiyana Redcloud, Grade 3, DOB 04/11/2017\nParent/Guardian: Mr. Thomas Redcloud, phone 555-0109\nSecond contact: auntie Wren (Wren Hollis), 555-0188\nHome address: 61 Prairie View Lane",
+   "secrets": [
+    "Aiyana Redcloud",
+    "04/11/2017",
+    "Mr. Thomas Redcloud",
+    "555-0109",
+    "Wren",
+    "Wren Hollis",
+    "555-0188",
+    "61 Prairie View Lane"
+   ]
+  },
+  {
+   "id": "f2-mask-009",
+   "kind": "mask",
+   "category": "insurance_claim",
+   "text": "CLAIM FORM – Tailspin Insurance\nPolicy number: TSI-77120-883\nPolicyholder: Gabriela 'Gabi' Moreau\nDate of loss: 2 November\nAddress of loss: 480 Seaview Terrace, Unit 12\nDescription: burst pipe under kitchen sink, water damage to floor and cabinets.\nContact: gabi.moreau@contoso.example, 555-0165",
+   "secrets": [
+    "TSI-77120-883",
+    "Gabriela 'Gabi' Moreau",
+    "Gabi",
+    "480 Seaview Terrace, Unit 12",
+    "gabi.moreau@contoso.example",
+    "555-0165"
+   ]
+  },
+  {
+   "id": "f2-mask-010",
+   "kind": "mask",
+   "category": "immigration",
+   "text": "Applicant family name: Haddad\nGiven names: Youssef Karim\nDate of birth: 1990-12-05\nPassport number: P8830147\nCurrent address: 15 Orchard Mews, Flat 2\nSponsor: Leila Haddad (sister), phone 555-0193",
+   "secrets": [
+    "Haddad",
+    "Youssef Karim",
+    "1990-12-05",
+    "P8830147",
+    "15 Orchard Mews, Flat 2",
+    "Leila Haddad",
+    "555-0193"
+   ]
+  },
+  {
+   "id": "f2-mask-011",
+   "kind": "mask",
+   "category": "loan",
+   "text": "LOAN APPLICATION – Woodgrove Bank\nApplicant: Oluwaseun Adeyemi\nSSN: 078-05-1133\nDate of birth: 08/30/1983\nHome address: 2210 Maple Ridge Ave\nEmployer: Fabrikam Inc., annual income $96,500\nExisting account: 552019384\nEmail: seun.adeyemi@adatum.example",
+   "secrets": [
+    "Oluwaseun Adeyemi",
+    "078-05-1133",
+    "08/30/1983",
+    "2210 Maple Ridge Ave",
+    "552019384",
+    "seun.adeyemi@adatum.example"
+   ]
+  },
+  {
+   "id": "f2-mask-012",
+   "kind": "mask",
+   "category": "lease",
+   "text": "hey can you check this sublet agreement for me?\n\nSublessor: Brooke Callahan. Subtenant: Diego Ferreira. Unit: 77 Ashford Street #5. Diego pays Brooke $900/mo by transfer to acct 11920348. Brooke's cell 555-0102.",
+   "secrets": [
+    "Brooke Callahan",
+    "Diego Ferreira",
+    "77 Ashford Street #5",
+    "Diego",
+    "Brooke",
+    "11920348",
+    "555-0102"
+   ]
+  },
+  {
+   "id": "f2-mask-013",
+   "kind": "mask",
+   "category": "contract",
+   "text": "SERVICES AGREEMENT\nBetween Litware Studio (\"Client\") and Ines Albuquerque, sole trader, tax ID 078-05-1145, of 8 Quayside Walk, Portwell (\"Contractor\").\nFees: $4,000 per milestone, paid to account 40917733.\nNotices: ines.albuquerque@wingtip.example",
+   "secrets": [
+    "Ines Albuquerque",
+    "078-05-1145",
+    "8 Quayside Walk, Portwell",
+    "40917733",
+    "ines.albuquerque@wingtip.example"
+   ]
+  },
+  {
+   "id": "f2-mask-014",
+   "kind": "mask",
+   "category": "medical",
+   "text": "DISCHARGE SUMMARY\nName: Mrs. Eleanor Pike\nDOB: 19 Feb 1948\nMRN: 7731905\nAdmitted with community-acquired pneumonia, treated with IV antibiotics.\nFollow up with Dr. Okafor in 2 weeks. Son Peter to collect, tel 555-0115.",
+   "secrets": [
+    "Mrs. Eleanor Pike",
+    "19 Feb 1948",
+    "7731905",
+    "Dr. Okafor",
+    "Peter",
+    "555-0115"
+   ]
+  },
+  {
+   "id": "f2-mask-015",
+   "kind": "mask",
+   "category": "hr",
+   "text": "LEAVE REQUEST\nName: Fatima Zahra El Idrissi\nEmployee no.: 004512\nType: medical leave (fertility treatment), 10 days from 2 December\nManager: Chris Doyle\nPersonal email: fatima.elidrissi@globex.example",
+   "secrets": [
+    "Fatima Zahra El Idrissi",
+    "004512",
+    "Chris Doyle",
+    "fatima.elidrissi@globex.example"
+   ]
+  },
+  {
+   "id": "f2-mask-016",
+   "kind": "mask",
+   "category": "cv",
+   "text": "RESUME\nNguyen Thi Lan (Lan Nguyen)\nPhone: 555-0122 · lan.nguyen@proseware.example\n44 Riverside Drive, Apt 9C\n\nEXPERIENCE\nSenior accountant, Contoso Ltd, 2019–present\n\nREFERENCES\nMr. Henrik Larsen, 555-0147",
+   "secrets": [
+    "Nguyen Thi Lan",
+    "Lan Nguyen",
+    "555-0122",
+    "lan.nguyen@proseware.example",
+    "44 Riverside Drive, Apt 9C",
+    "Mr. Henrik Larsen",
+    "555-0147"
+   ]
+  },
+  {
+   "id": "f2-mask-017",
+   "kind": "mask",
+   "category": "support_ticket",
+   "text": "Hi support, I was charged twice for the same order. Card: 5555 5555 5555 4444. Name on card: ROBERT J. KOWALSKI. You can reach me at bobby.k@wingtip.example or 555-0174. Thanks, Bobby",
+   "secrets": [
+    "5555 5555 5555 4444",
+    "ROBERT J. KOWALSKI",
+    "bobby.k@wingtip.example",
+    "555-0174",
+    "Bobby"
+   ]
+  },
+  {
+   "id": "f2-mask-018",
+   "kind": "mask",
+   "category": "email_thread",
+   "text": "From: amma <devi.ramanathan@fourthcoffee.example>\nSubject: pension form\n\nkanna, please fill in my pension form. My pension number is PN-338104 and my bank account is 61200457. Our address is 3 Temple Road, Lakeside. Appa's date of birth is 11/06/1951.",
+   "secrets": [
+    "devi.ramanathan@fourthcoffee.example",
+    "kanna",
+    "PN-338104",
+    "61200457",
+    "3 Temple Road, Lakeside",
+    "11/06/1951"
+   ]
+  },
+  {
+   "id": "f2-mask-019",
+   "kind": "mask",
+   "category": "school_form",
+   "text": "FIELD TRIP PERMISSION SLIP\nI, Carmen Ruiz, give permission for my child Mateo Ruiz-Bianchi (student ID 2024-1187) to attend the science center trip. Allergies: peanuts. Emergency phone: 555-0156.\nSigned: C. Ruiz",
+   "secrets": [
+    "Carmen Ruiz",
+    "Mateo Ruiz-Bianchi",
+    "2024-1187",
+    "555-0156",
+    "C. Ruiz"
+   ]
+  },
+  {
+   "id": "f2-mask-020",
+   "kind": "mask",
+   "category": "insurance_claim",
+   "text": "AUTO CLAIM\nInsured: Sipho Dlamini, policy AX-55120-09, licence no. D4481-2207-88\nOther driver: Margaret 'Peg' O'Neill, 555-0181\nIncident: rear-ended at a red light, bumper and tail light damaged. Peg admitted fault at the scene.",
+   "secrets": [
+    "Sipho Dlamini",
+    "AX-55120-09",
+    "D4481-2207-88",
+    "Margaret 'Peg' O'Neill",
+    "Peg",
+    "555-0181"
+   ]
+  },
+  {
+   "id": "f2-mask-021",
+   "kind": "mask",
+   "category": "immigration",
+   "text": "VISA INVITATION LETTER\nTo the Consular Officer,\nI, Dr. Ayşe Yılmaz, of 90 Hillcrest Avenue, invite my nephew Emre Kaya (passport U44019283, born 21 May 2001) to stay with me for three weeks. I will cover all costs.\nPhone 555-0138, e-mail ayse.yilmaz@alpineski.example",
+   "secrets": [
+    "Dr. Ayşe Yılmaz",
+    "90 Hillcrest Avenue",
+    "Emre Kaya",
+    "U44019283",
+    "21 May 2001",
+    "555-0138",
+    "ayse.yilmaz@alpineski.example"
+   ]
+  },
+  {
+   "id": "f2-mask-022",
+   "kind": "mask",
+   "category": "loan",
+   "text": "Small business loan intake\nOwner: Chen Jun-hao (goes by Jay Chen)\nSSN: 078-05-1108\nBusiness address: 1500 Commerce Blvd, Suite 210\nHome address: 7 Magnolia Close\nBusiness account: 77310045\nCell: 555-0161",
+   "secrets": [
+    "Chen Jun-hao",
+    "Jay Chen",
+    "078-05-1108",
+    "1500 Commerce Blvd, Suite 210",
+    "7 Magnolia Close",
+    "77310045",
+    "555-0161"
+   ]
+  },
+  {
+   "id": "f2-mask-023",
+   "kind": "mask",
+   "category": "support_ticket",
+   "text": "[10:02] Agent: Can I confirm your name and date of birth?\n[10:02] Customer: emma louise hart, 2 april 1992\n[10:03] Agent: And your member number?\n[10:03] Customer: WG-88120374\n[10:04] Customer: also my new address is 18 Fernhill Gardens\n[10:05] Agent: Thanks Emma, that's updated.",
+   "secrets": [
+    "emma louise hart",
+    "2 april 1992",
+    "WG-88120374",
+    "18 Fernhill Gardens",
+    "Emma"
+   ]
+  },
+  {
+   "id": "f2-mask-024",
+   "kind": "mask",
+   "category": "hr",
+   "text": "CONFIDENTIAL – Separation agreement\nEmployee: Viktor Petrov (ID 66812)\nSeverance of 3 months' salary will be paid to the account ending 4410. Viktor's home address on file: 230 Lakeshore Rd.\nWitness: Sandra Ng",
+   "secrets": [
+    "Viktor Petrov",
+    "66812",
+    "4410",
+    "Viktor",
+    "230 Lakeshore Rd",
+    "Sandra Ng"
+   ]
+  },
+  {
+   "id": "f2-mask-025",
+   "kind": "mask",
+   "category": "medical",
+   "text": "PRESCRIPTION\nPatient: Omar Farouk, DOB 07/19/1966\nInsurance member ID: NWH-4471209\nMetformin 500 mg, twice daily with meals, 90 days.\nPrescriber: Dr. Julia Brandt, prescriber ID PR-20118, clinic phone 555-0105",
+   "secrets": [
+    "Omar Farouk",
+    "07/19/1966",
+    "NWH-4471209",
+    "Dr. Julia Brandt",
+    "PR-20118",
+    "555-0105"
+   ]
+  },
+  {
+   "id": "f2-mask-026",
+   "kind": "mask",
+   "category": "lease",
+   "text": "Hi Mrs. Abara, attached is the renewal for 12 Kestrel Way. New rent is $1,420 from February. Please sign and return. Your tenant portal login is chinwe.abara@tailspin.example.\n– Paul Mercer, Mercer Property",
+   "secrets": [
+    "Mrs. Abara",
+    "12 Kestrel Way",
+    "chinwe.abara@tailspin.example",
+    "Paul Mercer"
+   ]
+  },
+  {
+   "id": "f2-mask-027",
+   "kind": "mask",
+   "category": "contract",
+   "text": "MUTUAL NON-DISCLOSURE AGREEMENT\nBetween Adatum Robotics and Sven Lindqvist of 4 Birchwood Lane. Notices to sven.l@contoso.example. Sven's ID number: 078-05-1112.\nSigned for Adatum by its CEO, Marisol Vega.",
+   "secrets": [
+    "Sven Lindqvist",
+    "4 Birchwood Lane",
+    "sven.l@contoso.example",
+    "Sven",
+    "078-05-1112",
+    "Marisol Vega"
+   ]
+  },
+  {
+   "id": "f2-mask-028",
+   "kind": "mask",
+   "category": "cv",
+   "text": "Kofi Boateng\nkofi.boateng@initech.example · 555-0119 · 33 Palm Grove\nBorn 1997-03-08\n\nSoftware engineer, 4 years. Python, Go, cloud infrastructure.",
+   "secrets": [
+    "Kofi Boateng",
+    "kofi.boateng@initech.example",
+    "555-0119",
+    "33 Palm Grove",
+    "1997-03-08"
+   ]
+  },
+  {
+   "id": "f2-mask-029",
+   "kind": "mask",
+   "category": "email_thread",
+   "text": "From: Rhys Morgan\nTo: Bea\nCc: hiring committee\n\nBea — Sanjay's offer is $112k. Please don't forward. His personal cell is 555-0144 if you need him before Monday. Home address for the courier: 6 Gorse Hill, Little Fenby.\n— R",
+   "secrets": [
+    "Rhys Morgan",
+    "Bea",
+    "Sanjay",
+    "555-0144",
+    "6 Gorse Hill, Little Fenby"
+   ]
+  },
+  {
+   "id": "f2-mask-030",
+   "kind": "mask",
+   "category": "insurance_claim",
+   "text": "HEALTH CLAIM\nMember: Aroha Ngata\nMember ID: FB-2209-4417\nGroup no.: 88301\nDate of service: 3 October\nProvider: Dr. Tama Wiremu\nAmount paid by card 4242 4242 4242 4242: $180.00",
+   "secrets": [
+    "Aroha Ngata",
+    "FB-2209-4417",
+    "88301",
+    "Dr. Tama Wiremu",
+    "4242 4242 4242 4242"
+   ]
+  },
+  {
+   "id": "f2-mask-031",
+   "kind": "mask",
+   "category": "immigration",
+   "text": "Form section 2 – Information about you\nFull name: María José Castillo Vargas\nOther names used: Majo\nA-Number: A-204-881-339\nSSN: 078-05-1127\nDate of birth: 1986-02-17\nAddress: 5100 Sunset Parkway, Apt 22",
+   "secrets": [
+    "María José Castillo Vargas",
+    "Majo",
+    "A-204-881-339",
+    "078-05-1127",
+    "1986-02-17",
+    "5100 Sunset Parkway, Apt 22"
+   ]
+  },
+  {
+   "id": "f2-mask-032",
+   "kind": "mask",
+   "category": "loan",
+   "text": "MORTGAGE PRE-APPROVAL\nCo-borrowers: Ethan Brooks and Zoe Brooks-Khan.\nEthan SSN 078-05-1139, Zoe SSN 078-05-1140.\nProperty: 914 Copper Creek Lane.\nContact: zoe.bk@woodgrove.example",
+   "secrets": [
+    "Ethan Brooks",
+    "Zoe Brooks-Khan",
+    "Ethan",
+    "Zoe",
+    "078-05-1139",
+    "078-05-1140",
+    "914 Copper Creek Lane",
+    "zoe.bk@woodgrove.example"
+   ]
+  },
+  {
+   "id": "f2-mask-033",
+   "kind": "mask",
+   "category": "support_ticket",
+   "text": "customer says: my name is ravi, ravi shankar iyer, number 555-0103, account 2290118876, and someone ported my number without permission!! my pin is 4471 btw",
+   "secrets": [
+    "ravi",
+    "ravi shankar iyer",
+    "555-0103",
+    "2290118876",
+    "4471"
+   ]
+  },
+  {
+   "id": "f2-mask-034",
+   "kind": "mask",
+   "category": "school_form",
+   "text": "IEP MEETING NOTES\nStudent: Noah Feldman (DOB 09/09/2014)\nParents present: Rachel and David Feldman\nSummary: ADHD diagnosis confirmed; extra time on tests agreed.\nCase manager: Ms. Ortiz\nParent e-mail: rachel.feldman@litware.example",
+   "secrets": [
+    "Noah Feldman",
+    "09/09/2014",
+    "Rachel",
+    "David Feldman",
+    "Ms. Ortiz",
+    "rachel.feldman@litware.example"
+   ]
+  },
+  {
+   "id": "f2-mask-035",
+   "kind": "mask",
+   "category": "hr",
+   "text": "NEW HIRE FORM\nLegal name: Thandiwe Mokoena (preferred: Thandi)\nSSN: 078-05-1149\nDOB: 1999-11-23\nAddress: 55 Jacaranda St\nEmergency contact: Lindiwe Mokoena, 555-0196\nDirect deposit account: 830021457",
+   "secrets": [
+    "Thandiwe Mokoena",
+    "Thandi",
+    "078-05-1149",
+    "1999-11-23",
+    "55 Jacaranda St",
+    "Lindiwe Mokoena",
+    "555-0196",
+    "830021457"
+   ]
+  },
+  {
+   "id": "f2-mask-036",
+   "kind": "mask",
+   "category": "medical",
+   "text": "Session note – client 'Mo' (Mohammed Al-Rashid), 14 Nov.\nClient reports low mood and poor sleep since losing his job. Safety plan reviewed. Next session booked.\nClient mobile 555-0131. Address for letters: 27 Cypress Walk.",
+   "secrets": [
+    "Mo",
+    "Mohammed Al-Rashid",
+    "555-0131",
+    "27 Cypress Walk"
+   ]
+  },
+  {
+   "id": "f2-mask-037",
+   "kind": "mask",
+   "category": "contract",
+   "text": "BILL OF SALE\nSeller: Grzegorz Nowak, 81 Old Mill Road\nBuyer: Isabella Rossi, 3 Via Verde Court\nVehicle: 2016 hatchback, VIN 1FTWX33P58E004417\nPrice: $6,200, paid by transfer from account 99104552.",
+   "secrets": [
+    "Grzegorz Nowak",
+    "81 Old Mill Road",
+    "Isabella Rossi",
+    "3 Via Verde Court",
+    "1FTWX33P58E004417",
+    "99104552"
+   ]
+  },
+  {
+   "id": "f2-mask-038",
+   "kind": "mask",
+   "category": "email_thread",
+   "text": "Hi Karen,\nI've attached my doctor's note. Dr. Felix Amano says I need two weeks off after the surgery on the 20th. My insurance member number is CT-5531-2208 if HR needs it.\nThanks,\nJosé",
+   "secrets": [
+    "Karen",
+    "Dr. Felix Amano",
+    "CT-5531-2208",
+    "José"
+   ]
+  },
+  {
+   "id": "f2-mask-039",
+   "kind": "mask",
+   "category": "lease",
+   "text": "RENTAL APPLICATION\nApplicant: Yasmin Haddadi\nCurrent address: 402 Elmwood Ave, Apt 7\nDate of birth: 05/05/1995\nSSN: 078-05-1116\nCurrent landlord: Mr. Greaves, 555-0124\nMonthly income: $5,200",
+   "secrets": [
+    "Yasmin Haddadi",
+    "402 Elmwood Ave, Apt 7",
+    "05/05/1995",
+    "078-05-1116",
+    "Mr. Greaves",
+    "555-0124"
+   ]
+  },
+  {
+   "id": "f2-mask-040",
+   "kind": "mask",
+   "category": "insurance_claim",
+   "text": "TRAVEL CLAIM\nTraveller: Siddharth 'Sid' Menon\nPolicy: TW-118-2093-5\nPassport: Z3301872\nClaim: luggage lost on connecting flight, value $1,340.\nReimburse to account 47701288\nPhone: 555-0148",
+   "secrets": [
+    "Siddharth 'Sid' Menon",
+    "Sid",
+    "TW-118-2093-5",
+    "Z3301872",
+    "47701288",
+    "555-0148"
+   ]
+  },
+  {
+   "id": "f2-mask-041",
+   "kind": "mask",
+   "category": "support_ticket",
+   "text": "From: jessie.wu@globex.example\nSubject: ownership transfer\n\nHi, our admin has left the company. Please transfer ownership of our workspace to me, Jessie Wu. The former admin was Tom Albrecht (tom.albrecht@globex.example). Our customer ID is CUST-004417.",
+   "secrets": [
+    "jessie.wu@globex.example",
+    "Jessie Wu",
+    "Tom Albrecht",
+    "tom.albrecht@globex.example",
+    "CUST-004417"
+   ]
+  },
+  {
+   "id": "f2-mask-042",
+   "kind": "mask",
+   "category": "loan",
+   "text": "STUDENT LOAN DEFERMENT REQUEST\nBorrower: Malik Johnson\nLoan account: 6602-118-447\nSSN: 078-05-1123\nAddress: 19 Brookside Circle\nReason: enrolled full time at Northwind University, student ID NU20431",
+   "secrets": [
+    "Malik Johnson",
+    "6602-118-447",
+    "078-05-1123",
+    "19 Brookside Circle",
+    "NU20431"
+   ]
+  },
+  {
+   "id": "f2-mask-043",
+   "kind": "mask",
+   "category": "lease",
+   "text": "COMMERCIAL LEASE\nThis lease is between Fourth Coffee Holdings and Siobhan Gallagher (trading as 'Shiv's Bakes') for 2 High Street, Unit B, for a term of 5 years.\nGuarantor: Declan Gallagher, DOB 30/01/1960, of 4 Rowan Close.",
+   "secrets": [
+    "Siobhan Gallagher",
+    "Shiv",
+    "2 High Street, Unit B",
+    "Declan Gallagher",
+    "30/01/1960",
+    "4 Rowan Close"
+   ]
+  },
+  {
+   "id": "f2-mask-044",
+   "kind": "mask",
+   "category": "cv",
+   "text": "here's my resume can you make it sound better:\n\nalex 'lexi' kim\nlexi.kim@contoso.example\n555-0179\n808 Spruce St\n\nbarista at fourth coffee 2 yrs, now looking for marketing roles",
+   "secrets": [
+    "alex 'lexi' kim",
+    "lexi",
+    "lexi.kim@contoso.example",
+    "555-0179",
+    "808 Spruce St"
+   ]
+  },
+  {
+   "id": "f2-mask-045",
+   "kind": "mask",
+   "category": "hr",
+   "text": "FORMAL GRIEVANCE\nI, Ama Owusu (staff no. 30914), wish to report repeated comments about my accent from my supervisor, Greg Halvorsen. Witness: Lucía Fernández. I can be reached at 555-0185.",
+   "secrets": [
+    "Ama Owusu",
+    "30914",
+    "Greg Halvorsen",
+    "Lucía Fernández",
+    "555-0185"
+   ]
+  },
+  {
+   "id": "f2-mask-046",
+   "kind": "mask",
+   "category": "medical",
+   "text": "LAB REPORT\nPatient: Hiroshi Watanabe\nDOB: 1958-04-30\nMRN: 22091847\nHbA1c: 7.9% (high)\nLDL: 3.1 mmol/L\nOrdering physician: Dr. Mbali Zulu",
+   "secrets": [
+    "Hiroshi Watanabe",
+    "1958-04-30",
+    "22091847",
+    "Dr. Mbali Zulu"
+   ]
+  },
+  {
+   "id": "f2-mask-047",
+   "kind": "mask",
+   "category": "immigration",
+   "text": "WORK PERMIT RENEWAL\nApplicant: Abdi Warsame\nPermit number: WP-7740912\nDate of birth: 12/12/1989\nEmployer: Proseware Logistics\nHome address: 66 Thornbury Road, Flat 1\nPhone: 555-0153",
+   "secrets": [
+    "Abdi Warsame",
+    "WP-7740912",
+    "12/12/1989",
+    "66 Thornbury Road, Flat 1",
+    "555-0153"
+   ]
+  },
+  {
+   "id": "f2-mask-048",
+   "kind": "mask",
+   "category": "insurance_claim",
+   "text": "Hi, this is Nia Thompson, policy WG-HO-447120. Our basement flooded last night at 1290 Brookhaven Dr. My husband Marcus can be reached at 555-0110 during the day. Please send an adjuster.",
+   "secrets": [
+    "Nia Thompson",
+    "WG-HO-447120",
+    "1290 Brookhaven Dr",
+    "Marcus",
+    "555-0110"
+   ]
+  },
+  {
+   "id": "f2-mask-049",
+   "kind": "mask",
+   "category": "loan",
+   "text": "AUTO LOAN APPLICATION\nName: Bjørn Haugen\nDOB: 1979-06-14\nSSN: 078-05-1131\nAddress: 2 Fjord View Lane\nCard for down payment: 4012 8888 8888 1881\nEmail: bjorn.haugen@tailspin.example",
+   "secrets": [
+    "Bjørn Haugen",
+    "1979-06-14",
+    "078-05-1131",
+    "2 Fjord View Lane",
+    "4012 8888 8888 1881",
+    "bjorn.haugen@tailspin.example"
+   ]
+  },
+  {
+   "id": "f2-mask-050",
+   "kind": "mask",
+   "category": "school_form",
+   "text": "TRANSCRIPT REQUEST\nStudent: Precious Chukwu-Eze\nStudent number: S1029384\nDate of birth: 18/08/2000\nSend to: 10 Alder Way\nE-mail: precious.ce@adatum.example",
+   "secrets": [
+    "Precious Chukwu-Eze",
+    "S1029384",
+    "18/08/2000",
+    "10 Alder Way",
+    "precious.ce@adatum.example"
+   ]
+  }
+ ]
+}
