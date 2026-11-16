@@ -183,7 +183,7 @@ export async function analyze(input: Input, deps: Deps = {}): Promise<Result> {
     // Safety net: a model "safe" never hides a fake link or a pile of scam tricks.
     if ((strongLink(linkReasons) || words.score >= 3) && verdict === "safe") verdict = "suspicious";
     const extra = verdict === "safe" ? [] : words.reasons;
-    const signals = [...new Set([...linkReasons, ...a.signals, ...extra].map((s) => unmask(s, masked.entries)))].slice(0, 5);
+    const signals = mergeSignals(linkReasons, [...a.signals, ...extra].map((s) => unmask(s, masked.entries)));
     const action = a.action && a.verdict === verdict ? unmask(a.action, masked.entries) : ACTIONS[verdict];
     return {
       verdict,
@@ -205,4 +205,43 @@ function unmaskFree(note: string, masked: Masked): string {
   let out = note;
   for (const e of masked.entries) out = out.split(e.value).join(e.token);
   return out;
+}
+
+/** What a reason is about, so "says your account is locked" and "Claims account is locked" count once. */
+const TOPICS: [string, RegExp][] = [
+  ["link", /\b(link|url|domain|site|website|address|look-?alike|typo|spoof|mimic|impersonat\w* (a )?(site|domain))/i],
+  ["hurry", /\b(hurry|urgen\w*|immediate\w*|right away|within \d+|deadline|act now|pressure|rush)/i],
+  ["locked", /\b(locked|suspend\w*|frozen|blocked|disabled|unusual (sign|log))/i],
+  ["fee", /\b(fee|small payment|redeliver\w*|customs|package on hold)/i],
+  ["code", /\b(code|otp|one-time|verification number)/i],
+  ["gift", /\bgift ?cards?\b/i],
+  ["secret", /\b(secret|don'?t tell|keep (it|this) (quiet|between))/i],
+  ["won", /\b(won|winner|prize|lottery|reward)/i],
+  ["law", /\b(arrest|warrant|police|legal action|lawsuit|fine)\b/i],
+  ["profit", /\b(profit|return|invest\w*|double)/i],
+  ["remote", /\b(remote access|anydesk|teamviewer|install)/i],
+  ["login", /\b(password|pin|login|log in|credential|ssn|social security)/i],
+  ["money", /\b(wire|crypto|bitcoin|zelle|transfer money|send money)/i],
+];
+const topicOf = (s: string) => TOPICS.find(([, re]) => re.test(s))?.[0];
+
+/** Link findings first (they are exact), then model and rule reasons, one per topic, at most 5. */
+export function mergeSignals(linkReasons: string[], others: string[]): string[] {
+  const out: string[] = [];
+  const seen = new Set<string>();
+  const add = (s: string) => {
+    const key = s.trim().toLowerCase();
+    if (!key || seen.has(key)) return;
+    seen.add(key);
+    out.push(s.trim());
+  };
+  linkReasons.forEach(add);
+  const topics = new Set<string>(linkReasons.length ? ["link"] : []);
+  for (const s of others) {
+    const t = topicOf(s);
+    if (t && topics.has(t)) continue;
+    if (t) topics.add(t);
+    add(s);
+  }
+  return out.slice(0, 5);
 }
