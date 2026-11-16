@@ -13,11 +13,12 @@ extras.className = "extras";
 extras.append(await pasteGuardPanel(), await historyPanel());
 root.querySelector(".wrap")!.append(extras);
 
-type Pending = { text: string; at: number };
+type Pending = { text: string; at: number; demo?: boolean };
 async function takePending() {
   const { pending } = (await chrome.storage.session.get("pending")) as { pending?: Pending };
   if (!pending) return;
   await chrome.storage.session.remove("pending");
+  if (pending.demo) document.documentElement.dataset.demo = "ext";
   if (pending.text) await app.setText(pending.text);
 }
 await takePending();

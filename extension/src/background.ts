@@ -36,6 +36,8 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
     if (info.menuItemId === MENU.selection) text = info.selectionText ?? "";
     else if (info.menuItemId === MENU.link) text = info.linkUrl ?? "";
     else if (info.menuItemId === MENU.page) text = await pageText(tab.id!);
-    await chrome.storage.session.set({ pending: { text, at: Date.now() } });
+    // Pages with ?demo= (the contest video's fake inbox) put the side panel in demo mode too.
+    const demo = /[?&]demo=/.test(info.pageUrl ?? tab.url ?? "");
+    await chrome.storage.session.set({ pending: { text, at: Date.now(), demo } });
   })();
 });
