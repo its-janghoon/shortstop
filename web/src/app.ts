@@ -3,7 +3,7 @@ import { analyze, NeedsOnDeviceError } from "../../engine/src/engine";
 import { registrable } from "../../engine/src/links";
 import { configFromEnv, connect, type Backend } from "../../engine/src/firebase";
 import type { Result } from "../../engine/src/types";
-import { esc, fieldHtml, ICONS, icon, phoneResultHtml } from "./ui";
+import { BASES, esc, fieldHtml, ICONS, icon, phoneResultHtml } from "./ui";
 
 const STATUS: Record<string, { text: string; tone: "ok" | "warn" | "off" }> = {
   available: { text: "Gemini Nano on this device", tone: "ok" },
@@ -16,11 +16,11 @@ const STATUS: Record<string, { text: string; tone: "ok" | "warn" | "off" }> = {
 const IDLE_FIELD = `
   <div class="play-head"><h3>The play</h3><p class="big">Every check starts on your device.</p></div>
   <div class="diamond idle"><svg viewBox="0 0 760 470" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-    <path d="M380 440 L618 236 L380 32 L142 236 Z" fill="rgba(201,138,82,.10)" stroke="rgba(255,255,255,.3)" stroke-width="3"/>
-    <path d="M380 440 L740 130 M380 440 L20 130" stroke="rgba(255,255,255,.12)" stroke-width="3"/>
+    ${BASES}
     <line class="wall" x1="470" y1="40" x2="470" y2="430"/>
     <text x="478" y="58" class="lbl cloudc wall-lbl">MASKED ONLY</text><text x="40" y="58" class="lbl">YOUR DEVICE</text><text x="720" y="58" text-anchor="end" class="lbl cloudc">CLOUD</text>
-    <circle cx="262" cy="196" r="34" fill="var(--chalk)"/><text x="262" y="202" text-anchor="middle" class="base">SS</text>
+    <g class="ss"><circle cx="262" cy="196" r="34" fill="var(--chalk)"/><text x="262" y="202" text-anchor="middle" class="base">SS</text></g>
+    <g class="glove" transform="translate(296 172)"><g class="spin"><circle r="11" fill="#fff" stroke="var(--scam)" stroke-width="3"/><path d="M-5 -8 Q0 0 -5 8 M5 -8 Q0 0 5 8" fill="none" stroke="var(--scam)" stroke-width="1.6"/></g></g>
     <text x="262" y="254" text-anchor="middle" class="t">Small model on your device</text><text x="262" y="274" text-anchor="middle" class="sub">catches it first, hides your secrets</text>
     <circle cx="618" cy="236" r="30" fill="var(--cloud)"/><text x="618" y="242" text-anchor="middle" class="base dark">1B</text>
     <text x="618" y="290" text-anchor="middle" class="t">Big model in the cloud</text><text x="618" y="310" text-anchor="middle" class="sub">only when unsure, only masked text</text>
@@ -156,6 +156,7 @@ export async function mount(root: HTMLElement, opts: { initialText?: string; bac
   async function run(label = "") {
     if (!draft.trim() && !image) return;
     screen.className = "screen checking";
+    field.classList.add("working");
     screen.innerHTML = `<div class="from">Checking…</div><div class="msg pending">${esc(draft.slice(0, 400))}</div><div class="spinner" aria-label="Checking"></div>`;
     try {
       const r = await analyze(
@@ -171,6 +172,7 @@ export async function mount(root: HTMLElement, opts: { initialText?: string; bac
           ${backend && r.verdict === "scam" && r.links.some((l) => l.reasons.length) ? `<button id="report" class="ghost">${icon("alert")}Report this site</button>` : ""}
           <button id="again" class="btn">${icon("back")}Check another</button>
         </div>`;
+      field.classList.remove("working");
       field.innerHTML = fieldHtml(r, play);
       // Restart CSS animations on every check.
       for (const el of [screen, field]) {
@@ -194,6 +196,7 @@ export async function mount(root: HTMLElement, opts: { initialText?: string; bac
           rep.disabled = true;
         };
     } catch (e) {
+      field.classList.remove("working");
       compose();
       screen.insertAdjacentHTML(
         "afterbegin",

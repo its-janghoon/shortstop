@@ -97,6 +97,20 @@ export function phoneResultHtml(r: Result, from: string): { html: string; play: 
   return { html, play: p };
 }
 
+/** Demo mode (the contest video) leaves out wall-clock times; the video plays waits sped up. */
+const demoMode = () => typeof document !== "undefined" && !!document.documentElement.dataset.demo;
+
+/** The infield: home at the bottom, 1B right, 2B top, 3B left. SS stands between 2B and 3B. */
+export const BASES = `
+    <path d="M380 440 L618 236 L380 32 L142 236 Z" fill="rgba(201,138,82,.10)" stroke="rgba(255,255,255,.3)" stroke-width="3"/>
+    <path d="M380 440 L740 130 M380 440 L20 130" stroke="rgba(255,255,255,.12)" stroke-width="3"/>
+    <rect x="370" y="22" width="20" height="20" transform="rotate(45 380 32)" fill="var(--chalk)" opacity=".85"/>
+    <text x="406" y="38" class="bl">2B</text>
+    <rect x="132" y="226" width="20" height="20" transform="rotate(45 142 236)" fill="var(--chalk)" opacity=".85"/>
+    <text x="112" y="242" text-anchor="end" class="bl">3B</text>
+    <rect x="371" y="431" width="18" height="18" transform="rotate(45 380 440)" fill="var(--chalk)"/>
+    <text x="404" y="446" class="bl">HOME</text>`;
+
 const fmtMs = (ms: number) => (ms >= 1000 ? `${(ms / 1000).toFixed(2)}s` : ms < 1 ? "<1 ms" : `${ms} ms`);
 
 export function fieldHtml(r: Result, p: Play): string {
@@ -112,9 +126,9 @@ export function fieldHtml(r: Result, p: Play): string {
     ? `hid ${r.mask.length} secret${r.mask.length === 1 ? "" : "s"} · checked links`
     : p.skippedShortstop
       ? "rules hid the secrets instead"
-      : `${fmtMs(device?.ms ?? 0)} · hid ${r.mask.length} secret${r.mask.length === 1 ? "" : "s"} · ${fl.verdict} (${fl.confidence.toFixed(2)})`;
+      : `${demoMode() ? "" : `${fmtMs(device?.ms ?? 0)} · `}hid ${r.mask.length} secret${r.mask.length === 1 ? "" : "s"} · ${fl.verdict} (${fl.confidence.toFixed(2)})`;
   const fbTitle = p.cloud ? "Gemini in the cloud" : "Cloud not needed";
-  const fbSub = p.cloud ? `${fmtMs(cloudMs)} · ${r.verdict} (${r.confidence.toFixed(2)}) · saw placeholders only` : "stayed on the bench";
+  const fbSub = p.cloud ? `${demoMode() ? "" : `${fmtMs(cloudMs)} · `}${r.verdict} (${r.confidence.toFixed(2)}) · saw placeholders only` : "stayed on the bench";
   const firstSent = sent[sent.length - 1]?.sent ?? "";
   const shown = firstSent.match(/<msg>\n([\s\S]*?)\n<\/msg>/)?.[1] ?? firstSent;
   const tokens = (s: string) => esc(s).replace(/\[([A-Z]+_\d+)\]/g, "<code>$1</code>");
@@ -127,13 +141,11 @@ export function fieldHtml(r: Result, p: Play): string {
     p.cloud ? "Fielded on your device. Thrown to the cloud, masked." : "Fielded on your device. Nothing left it."
   }</p></div>
   <div class="diamond"><svg viewBox="0 0 760 470" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Where each step ran">
-    <path d="M380 440 L618 236 L380 32 L142 236 Z" fill="rgba(201,138,82,.10)" stroke="rgba(255,255,255,.3)" stroke-width="3"/>
-    <path d="M380 440 L740 130 M380 440 L20 130" stroke="rgba(255,255,255,.12)" stroke-width="3"/>
+    ${BASES}
     <line class="wall" x1="470" y1="40" x2="470" y2="430"/>
     <text x="478" y="58" class="lbl cloudc wall-lbl">MASKED ONLY</text>
     <text x="40" y="58" class="lbl">YOUR DEVICE</text>
     <text x="720" y="58" text-anchor="end" class="lbl cloudc">CLOUD</text>
-    <rect x="371" y="431" width="18" height="18" transform="rotate(45 380 440)" fill="var(--chalk)"/>
     <text x="380" y="418" text-anchor="middle" class="sm">Message in</text>
     <g class="${p.skippedShortstop ? "dim" : ""}">
       <circle class="glow" ${t(1.1)} cx="262" cy="196" r="0" fill="var(--chalk)"/>
@@ -159,10 +171,10 @@ export function fieldHtml(r: Result, p: Play): string {
       ? `<div class="sent" ${t(throwAt + 0.6)}><em>${icon("cloud")}Exactly what left your device</em>${tokens(shown)}</div>`
       : `<div class="sent home" ${t(p.verdictAt)}><em>${icon("home")}Nothing left your device</em>The whole check ran here.</div>`
   }
-  <div class="score">
+  <div class="score${demoMode() ? " three" : ""}">
     <div class="cell"><b>${r.mask.length}</b><span>secrets kept home</span></div>
     <div class="cell ${leaked ? "bad" : ""}"><b>${leaked}</b><span>secrets sent</span></div>
     <div class="cell cloudc"><b>${sent.length}</b><span>cloud assist${sent.length === 1 ? "" : "s"}</span></div>
-    <div class="cell"><b>${fmtMs(total)}</b><span>total</span></div>
+    ${demoMode() ? "" : `<div class="cell"><b>${fmtMs(total)}</b><span>total</span></div>`}
   </div>`;
 }
