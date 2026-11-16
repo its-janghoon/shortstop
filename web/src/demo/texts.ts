@@ -7,6 +7,8 @@ export const TEXTS = {
     "Jane Doe, a transfer of $642.10 from your Acme Bank account 302918470021 is waiting. Reply YES to approve or NO to cancel. Questions? Call 555-201-3344.",
   payee:
     "Hi Jane Doe, Acme Bank here. A new payee was added to account 302918470021 today. If this was not you, call our fraud team at 555-201-3344 and have your card ready.",
+  card:
+    "Jane Doe, your Acme Bank card on account 302918470021 was used for $1,240 at an electronics store. If this was not you, our fraud team will call from 555-201-3344. Have the code we text you ready to cancel it.",
   realParcel:
     "Acme Parcel: your package was delivered at 2:14 PM and left at the front door. Track it in the Acme Parcel app or at acmeparcel.com.",
 };

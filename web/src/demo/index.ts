@@ -78,14 +78,17 @@ async function probe(app: App) {
   const out = document.createElement("pre");
   out.style.cssText = "position:fixed;inset:auto 0 0 0;z-index:99999;max-height:60vh;overflow:auto;margin:0;background:#000;color:#0f0;font:14px/1.4 monospace;padding:10px";
   document.body.append(out);
-  const n = Number(new URLSearchParams(location.search).get("n") ?? 2);
+  const sp = new URLSearchParams(location.search);
+  const n = Number(sp.get("n") ?? 2);
+  const only = sp.get("only")?.split(",");
   for (const [k, t] of Object.entries(TEXTS)) {
+    if (only && !only.includes(k)) continue;
     for (let i = 0; i < n; i++) {
       const t0 = performance.now();
       await app.setText(t);
       const v = q(".verdict")?.className.match(/v-(\w+)/)?.[1];
       const cloud = !!q(".sent:not(.home)");
-      const ss = q(".captions div")?.textContent?.replace(/\s+/g, " ");
+      const ss = [...document.querySelectorAll(".captions div")].map((d) => d.textContent?.replace(/\s+/g, " ")).join(" | ");
       out.textContent += `${k} #${i}: ${v} cloud=${cloud} ${Math.round(performance.now() - t0)}ms | ${ss}\n`;
       await sleep(500);
     }
@@ -98,6 +101,6 @@ export async function start(scene: string, ready: Promise<App>) {
   document.documentElement.dataset.demo = scene;
   if (scene === "probe") return probe(app);
   if (scene === "s1") return checkScene(TEXTS.parcel, { wifi: true });
-  if (scene === "s2") return checkScene(TEXTS[(new URLSearchParams(location.search).get("t") as keyof typeof TEXTS) ?? "payee"] ?? TEXTS.payee);
+  if (scene === "s2") return checkScene(TEXTS[(new URLSearchParams(location.search).get("t") as keyof typeof TEXTS) ?? "card"] ?? TEXTS.card);
   if (scene === "s3") return checkScene(TEXTS.realParcel);
 }
