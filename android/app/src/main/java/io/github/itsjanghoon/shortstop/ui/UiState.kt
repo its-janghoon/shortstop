@@ -25,6 +25,8 @@ data class UiState(
     val examples: List<Example> = emptyList(),
     /** One line crediting the word list (from shared/words.NOTICE). */
     val credits: String = "",
+    /** Crash report from the last run, shown once as a dismissible card. */
+    val lastCrash: String? = null,
 )
 
 interface UiActions {
@@ -41,4 +43,6 @@ interface UiActions {
     fun openHistory() {}
     fun clearHistory() {}
     fun back() {}
+    fun copyCrash(text: String) {}
+    fun dismissCrash() {}
 }

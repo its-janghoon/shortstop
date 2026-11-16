@@ -16,6 +16,7 @@ import io.github.itsjanghoon.shortstop.engine.Verdict
 import io.github.itsjanghoon.shortstop.engine.registrable
 import io.github.itsjanghoon.shortstop.ui.Screen
 import io.github.itsjanghoon.shortstop.ui.UiState
+import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -31,17 +32,33 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
     private var backend: Backend? = null
     private var job: Job? = null
 
+    /** A failed job shows an error line and is kept in last-crash.txt; it never closes the app. */
+    private val handler = CoroutineExceptionHandler { _, e ->
+        Crash.record(app, "view model", e)
+        _state.update {
+            it.copy(
+                screen = if (it.screen == Screen.CHECKING) Screen.COMPOSE else it.screen,
+                error = "Something went wrong: ${e.message ?: e.javaClass.simpleName}",
+            )
+        }
+    }
+
     init {
-        viewModelScope.launch {
+        _state.update { it.copy(lastCrash = shortstop.lastCrash) }
+        viewModelScope.launch(handler) { shortstop.problem.collect { p -> if (p != null) _state.update { it.copy(error = p) } } }
+        viewModelScope.launch(handler) {
             backend = shortstop.backend.await()
             val device = backend?.device ?: flowOf(DeviceStatus.RULES)
             device.collect { d -> _state.update { it.copy(device = d) } }
         }
-        viewModelScope.launch { onlineFlow(app).collect { on -> _state.update { it.copy(online = on) } } }
-        viewModelScope.launch { shortstop.history.checks().all().collect { h -> _state.update { it.copy(history = h) } } }
+        viewModelScope.launch(handler) { onlineFlow(app).collect { on -> _state.update { it.copy(online = on) } } }
+        viewModelScope.launch(handler) { shortstop.history.checks().all().collect { h -> _state.update { it.copy(history = h) } } }
     }
 
-    fun draft(text: String) = _state.update { it.copy(draft = text, error = null) }
+    fun draft(text: String) {
+        shortstop.clearProblem()
+        _state.update { it.copy(draft = text, error = null) }
+    }
 
     fun setImage(image: Image?) = _state.update { it.copy(image = image, error = null) }
 
@@ -61,7 +78,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
         if (s.draft.isBlank() && s.image == null) return
         job?.cancel()
         _state.update { it.copy(screen = Screen.CHECKING, error = null, reported = false) }
-        job = viewModelScope.launch {
+        job = viewModelScope.launch(handler) {
             // Wait a little for Firebase on a cold start (share sheet), then go on with what is ready.
             val b = backend ?: withTimeoutOrNull(8000) { shortstop.backend.await() }
             try {
@@ -89,9 +106,11 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
                 )
             } catch (e: NeedsOnDeviceException) {
                 _state.update { it.copy(screen = Screen.COMPOSE, error = e.message) }
-            } catch (e: Exception) {
+            } catch (e: Throwable) {
+                // Errors too (a class that failed to load, a missing method): show them, never close the app.
                 if (e is kotlinx.coroutines.CancellationException) throw e
-                _state.update { it.copy(screen = Screen.COMPOSE, error = "Could not check: ${e.message}") }
+                if (e !is Exception) Crash.record(getApplication(), "check", e)
+                _state.update { it.copy(screen = Screen.COMPOSE, error = "Could not check: ${e.message ?: e.javaClass.simpleName}") }
             }
         }
     }
@@ -101,7 +120,7 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
     fun report() {
         val r = _state.value.result ?: return
         val b = backend ?: return
-        viewModelScope.launch {
+        viewModelScope.launch(handler) {
             runCatching { for (l in r.links) if (l.reasons.isNotEmpty()) b.report(registrable(l.host)) }
                 .onSuccess { _state.update { it.copy(reported = true) } }
                 .onFailure { e -> _state.update { it.copy(error = "Could not report: ${e.message}") } }
@@ -112,8 +131,20 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
 
     fun back() = _state.update { it.copy(screen = if (it.result != null) Screen.RESULT else Screen.COMPOSE) }
 
+    /** Tests: run a check against a given backend. */
+    @androidx.annotation.VisibleForTesting
+    internal fun checkWith(b: Backend) {
+        backend = b
+        check()
+    }
+
+    fun dismissCrash() {
+        shortstop.dismissCrash()
+        _state.update { it.copy(lastCrash = null) }
+    }
+
     fun clearHistory() {
-        viewModelScope.launch { shortstop.history.checks().clear() }
+        viewModelScope.launch(handler) { shortstop.history.checks().clear() }
     }
 }
 

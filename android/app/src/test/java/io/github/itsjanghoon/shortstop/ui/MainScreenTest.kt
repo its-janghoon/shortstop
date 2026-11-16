@@ -48,6 +48,31 @@ class MainScreenTest {
     }
 
     @Test
+    fun crashFromLastRunShowsACardWithCopyAndDismiss() {
+        val text = io.github.itsjanghoon.shortstop.Crash.text("test", IllegalStateException("boom"))
+        var copied: String? = null
+        var dismissed = false
+        compose.setContent {
+            MainScreen(
+                UiState(examples = examples, device = DeviceStatus.UNAVAILABLE, lastCrash = text),
+                object : UiActions {
+                    override fun copyCrash(text: String) {
+                        copied = text
+                    }
+                    override fun dismissCrash() {
+                        dismissed = true
+                    }
+                },
+            )
+        }
+        compose.onNodeWithText("Shortstop closed last time").assertIsDisplayed()
+        compose.onNodeWithTag("crash-copy").performClick()
+        assertEquals(text, copied)
+        compose.onNodeWithTag("crash-dismiss").performClick()
+        assertEquals(true, dismissed)
+    }
+
+    @Test
     fun removeAnimationsJumpsStraightToTheEndOfThePlay() {
         val ctx = androidx.test.core.app.ApplicationProvider.getApplicationContext<android.content.Context>()
         android.provider.Settings.Global.putFloat(ctx.contentResolver, android.provider.Settings.Global.ANIMATOR_DURATION_SCALE, 0f)

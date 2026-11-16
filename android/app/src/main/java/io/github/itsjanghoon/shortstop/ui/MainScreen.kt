@@ -118,6 +118,7 @@ fun MainScreen(state: UiState, actions: UiActions) {
             verticalArrangement = Arrangement.spacedBy(12.dp),
         ) {
             Header(state, actions)
+            state.lastCrash?.let { CrashCard(it, actions) }
             if (!state.online) OfflineBanner(state.device)
             Column(
                 Modifier
@@ -174,9 +175,14 @@ fun StatusChip(device: DeviceStatus?) {
         DeviceStatus.DOWNLOADING, DeviceStatus.UNAVAILABLE -> device.label to Ball.gold
         DeviceStatus.RULES -> device.label to Ball.off
     }
-    val pulse by rememberInfiniteTransition(label = "pulse").animateFloat(
-        1f, .3f, infiniteRepeatable(tween(700), RepeatMode.Reverse), label = "dot",
-    )
+    // No endless pulse when the user turned animations off.
+    val pulse = if (reducedMotion()) {
+        1f
+    } else {
+        rememberInfiniteTransition(label = "pulse").animateFloat(
+            1f, .3f, infiniteRepeatable(tween(700), RepeatMode.Reverse), label = "dot",
+        ).value
+    }
     Row(
         Modifier
             .clip(CircleShape)
@@ -332,7 +338,11 @@ private fun CheckingCard(state: UiState) {
         )
     }
     Box(Modifier.fillMaxWidth().padding(24.dp), contentAlignment = Alignment.Center) {
-        CircularProgressIndicator(color = Ball.dirt, trackColor = Ball.paper, strokeWidth = 5.dp, modifier = Modifier.size(54.dp))
+        if (reducedMotion()) {
+            CircularProgressIndicator(progress = { .25f }, color = Ball.dirt, trackColor = Ball.paper, strokeWidth = 5.dp, modifier = Modifier.size(54.dp))
+        } else {
+            CircularProgressIndicator(color = Ball.dirt, trackColor = Ball.paper, strokeWidth = 5.dp, modifier = Modifier.size(54.dp))
+        }
     }
 }
 
@@ -687,5 +697,37 @@ private fun IdleField() {
         Text("Every check starts on your device.", color = Ball.chalk, fontSize = 22.sp, lineHeight = 27.sp, fontWeight = FontWeight.ExtraBold)
         Diamond(null, null)
         DiamondLegend(null, null)
+    }
+}
+
+/** "Shortstop closed last time": the first lines of the saved trace, a copy button and a dismiss button. */
+@Composable
+private fun CrashCard(text: String, actions: UiActions) {
+    Column(
+        Modifier
+            .fillMaxWidth()
+            .clip(RoundedCornerShape(18.dp))
+            .background(Color(0xFFFFE4E0))
+            .padding(14.dp)
+            .testTag("crash"),
+        verticalArrangement = Arrangement.spacedBy(8.dp),
+    ) {
+        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+            Icon(Glyph.ALERT, Color(0xFF9B1C12))
+            Text("Shortstop closed last time", color = Color(0xFF9B1C12), fontSize = 15.sp, fontWeight = FontWeight.ExtraBold)
+        }
+        Text(
+            io.github.itsjanghoon.shortstop.Crash.summary(text, 4),
+            color = Ball.ink,
+            fontSize = 12.sp,
+            lineHeight = 16.sp,
+            maxLines = 4,
+            overflow = TextOverflow.Ellipsis,
+            fontFamily = androidx.compose.ui.text.font.FontFamily.Monospace,
+        )
+        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            Ghost("Copy details", Glyph.CHECK, Modifier.testTag("crash-copy")) { actions.copyCrash(text) }
+            Ghost("Dismiss", null, Modifier.testTag("crash-dismiss")) { actions.dismissCrash() }
+        }
     }
 }

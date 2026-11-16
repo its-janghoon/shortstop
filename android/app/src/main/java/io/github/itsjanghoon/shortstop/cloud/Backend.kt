@@ -10,9 +10,6 @@ import com.google.firebase.ai.InferenceMode
 import com.google.firebase.ai.InferenceSource
 import com.google.firebase.ai.OnDeviceConfig
 import com.google.firebase.ai.ai
-import com.google.firebase.ai.DownloadStatus
-import com.google.firebase.ai.OnDeviceExtension
-import com.google.firebase.ai.OnDeviceModelStatus
 import com.google.firebase.ai.type.GenerativeBackend
 import com.google.firebase.ai.type.PublicPreviewAPI
 import com.google.firebase.ai.type.Schema
@@ -26,13 +23,12 @@ import com.google.firebase.remoteconfig.remoteConfig
 import com.google.firebase.remoteconfig.remoteConfigSettings
 import io.github.itsjanghoon.shortstop.engine.AppConfig
 import io.github.itsjanghoon.shortstop.engine.EngineConfig
-import io.github.itsjanghoon.shortstop.engine.Image
 import io.github.itsjanghoon.shortstop.engine.ModelCall
 import io.github.itsjanghoon.shortstop.engine.Models
 import io.github.itsjanghoon.shortstop.engine.Shared
 import io.github.itsjanghoon.shortstop.engine.Where
 import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.delay
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
@@ -89,7 +85,8 @@ fun schemaFrom(json: JsonObject): Schema {
 object FirebaseBackend {
     private const val TAG = "Shortstop"
 
-    suspend fun connect(context: Context, shared: Shared, scope: CoroutineScope): Backend? {
+    /** [foreground] is true while the app is visible: ML Kit GenAI refuses calls from the background. */
+    suspend fun connect(context: Context, shared: Shared, scope: CoroutineScope, foreground: Flow<Boolean>): Backend? {
         val app = FirebaseApp.getApps(context).firstOrNull() ?: FirebaseApp.initializeApp(context) ?: return null
 
         // App Check: Play Integrity in release, debug provider in debug builds. Never block the app on it.
@@ -133,25 +130,21 @@ object FirebaseBackend {
         val deepModel = ai.generativeModel(modelName = config.cloudModel, generationConfig = cloudJson)
 
         val device = MutableStateFlow(DeviceStatus.UNAVAILABLE)
-        triageModel.onDeviceExtension?.let { ext -> scope.launch { watchDevice(ext, device) } }
+        runCatching { triageModel.onDeviceExtension }.getOrNull()?.let { ext -> scope.launch { watchDevice(ExtensionModel(ext), device, foreground) } }
 
-        val models = object : Models {
-            override suspend fun triage(prompt: String, image: Image?): ModelCall {
-                if (image != null) {
-                    check(device.value == DeviceStatus.AVAILABLE) { "on-device model not ready" }
-                    val bitmap = decode(image.bytes) ?: error("could not read the picture")
-                    return structured(photoModel, content {
-                        image(bitmap)
-                        text(prompt)
-                    })
-                }
-                // If the on-device model is not ready, do not wait for a download; go to the cloud (masked text only).
-                if (device.value == DeviceStatus.AVAILABLE || config.engine.strictOnDevice) return structured(triageModel, content { text(prompt) })
-                return plain(deepModel, prompt)
-            }
-
-            override suspend fun deep(prompt: String): ModelCall = plain(deepModel, prompt)
-        }
+        val models = HybridModels(
+            device = device,
+            strict = config.engine.strictOnDevice,
+            onDevice = { prompt -> structured(triageModel, content { text(prompt) }) },
+            onDevicePhoto = { prompt, image ->
+                val bitmap = decode(image.bytes) ?: error("could not read the picture")
+                structured(photoModel, content {
+                    image(bitmap)
+                    text(prompt)
+                })
+            },
+            cloud = { prompt -> plain(deepModel, prompt) },
+        )
 
         val db = Firebase.firestore
         return Backend(
@@ -189,42 +182,5 @@ object FirebaseBackend {
         var sample = 1
         while (maxOf(bounds.outWidth, bounds.outHeight) / sample > 1600) sample *= 2
         return BitmapFactory.decodeByteArray(bytes, 0, bytes.size, BitmapFactory.Options().apply { inSampleSize = sample })
-    }
-
-    /** Check the on-device model, start the download if it can be downloaded, and keep the chip up to date. */
-    private suspend fun watchDevice(ext: OnDeviceExtension, state: MutableStateFlow<DeviceStatus>) {
-        repeat(60) {
-            val s = withTimeoutOrNull(5000) { runCatching { ext.checkStatus() }.getOrNull() }
-            when (s) {
-                OnDeviceModelStatus.AVAILABLE -> {
-                    state.value = DeviceStatus.AVAILABLE
-                    // Load Gemini Nano into memory so the first check is fast.
-                    runCatching { ext.warmUp() }
-                    return
-                }
-                OnDeviceModelStatus.DOWNLOADABLE -> {
-                    state.value = DeviceStatus.DOWNLOADING
-                    runCatching {
-                        ext.download().collect { d ->
-                            when (d) {
-                                is DownloadStatus.DownloadCompleted -> state.value = DeviceStatus.AVAILABLE
-                                is DownloadStatus.DownloadFailed -> state.value = DeviceStatus.UNAVAILABLE
-                                else -> state.value = DeviceStatus.DOWNLOADING
-                            }
-                        }
-                    }.onFailure { state.value = DeviceStatus.UNAVAILABLE }
-                    if (state.value == DeviceStatus.AVAILABLE) {
-                        runCatching { ext.warmUp() }
-                        return
-                    }
-                }
-                OnDeviceModelStatus.DOWNLOADING -> state.value = DeviceStatus.DOWNLOADING
-                else -> {
-                    state.value = DeviceStatus.UNAVAILABLE
-                    return
-                }
-            }
-            delay(10_000)
-        }
     }
 }

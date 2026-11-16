@@ -135,9 +135,13 @@ fun Diamond(r: Result?, t: Float?, modifier: Modifier = Modifier) {
     val play = remember(r) { r?.let(::Play) }
     val measurer = rememberTextMeasurer()
     val reduced = reducedMotion()
-    val dash by rememberInfiniteTransition(label = "wall").animateFloat(
-        0f, if (reduced) 0f else -28f, infiniteRepeatable(tween(1000, easing = LinearEasing), RepeatMode.Restart), label = "dash",
-    )
+    val dash = if (reduced) {
+        0f
+    } else {
+        rememberInfiniteTransition(label = "wall").animateFloat(
+            0f, -28f, infiniteRepeatable(tween(1000, easing = LinearEasing), RepeatMode.Restart), label = "dash",
+        ).value
+    }
     val desc = when {
         play == null -> "Field: your device on the left, the cloud on the right"
         play.cloud -> "The ball went to the shortstop on your device, then masked text was thrown to the cloud"
