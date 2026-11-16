@@ -44,6 +44,11 @@ describe("maskNames", () => {
     const m = maskNames(maskByRules("Annabel met Ann."), ["Ann"]);
     expect(m.text).toBe("Annabel met [NAME_1].");
   });
+
+  it("does not hide a word that is part of a link", () => {
+    const m = maskNames(maskByRules("Ask acrnebank at https://acrnebank.com/secure"), ["acrnebank"]);
+    expect(m.text).toBe("Ask [NAME_1] at https://acrnebank.com/secure");
+  });
 });
 
 import { guessNames } from "../src/index";

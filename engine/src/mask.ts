@@ -100,7 +100,8 @@ export function maskNames(input: Masked, names: string[] = []): Masked {
     .filter((n) => n.length >= 2 && n.length <= 80 && !/^\[[A-Z]+_\d+\]$/.test(n))
     .sort((a, b) => b.length - a.length);
   for (const name of clean) {
-    const re = new RegExp(`(?<![\\p{L}\\d])${escapeRe(name)}(?![\\p{L}\\d])`, "gu");
+    // Not inside a link or an e-mail address: "acrnebank" in acrnebank.com/secure is a site, not a person.
+    const re = new RegExp(`(?<![\\p{L}\\d./@-])${escapeRe(name)}(?![\\p{L}\\d]|\\.\\p{L}|[/@-])`, "gu");
     if (!re.test(text)) continue;
     re.lastIndex = 0;
     const token = nextToken(entries, "NAME", name);
