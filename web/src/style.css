@@ -178,3 +178,4 @@ textarea:focus { outline: 3px solid var(--dirt); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01s !important; animation-delay: 0s !important; }
 }
+.pill.dl { cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }

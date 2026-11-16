@@ -58,9 +58,47 @@ export async function mount(root: HTMLElement, opts: { initialText?: string; bac
   compose();
   try {
     backend = opts.backend ? await opts.backend() : cfg ? await connect(cfg) : undefined;
-    setStatus(backend ? await Promise.race([backend.onDeviceStatus(), new Promise<"unavailable">((r) => setTimeout(() => r("unavailable"), 3000))]) : "rules");
+    const st = backend ? await Promise.race([backend.onDeviceStatus(), new Promise<"unavailable">((r) => setTimeout(() => r("unavailable"), 3000))]) : "rules";
+    setStatus(st);
+    if (st === "downloadable" || st === "downloading") offerDownload();
   } catch {
     setStatus("rules");
+  }
+
+  /** Chrome only downloads Gemini Nano after a click, so the status pill becomes a download button. */
+  function offerDownload() {
+    const lm = (self as unknown as { LanguageModel?: { create: (o: unknown) => Promise<{ destroy(): void }> } }).LanguageModel;
+    if (!lm) return;
+    const pill = $("#status");
+    pill.setAttribute("role", "button");
+    pill.tabIndex = 0;
+    pill.classList.add("dl");
+    $("#status span").textContent = "Download on-device model (about 4 GB)";
+    const start = () => {
+      pill.onclick = null;
+      $("#status span").textContent = "Downloading on-device model… 0%";
+      lm.create({
+        expectedInputs: [{ type: "text", languages: ["en"] }],
+        expectedOutputs: [{ type: "text", languages: ["en"] }],
+        monitor(m: EventTarget) {
+          m.addEventListener("downloadprogress", (e) => {
+            $("#status span").textContent = `Downloading on-device model… ${Math.round(((e as unknown as { loaded: number }).loaded ?? 0) * 100)}%`;
+          });
+        },
+      })
+        .then((s) => {
+          s.destroy();
+          location.reload();
+        })
+        .catch((e: Error) => {
+          setStatus("unavailable");
+          $("#status span").textContent = `On-device model failed: ${e.message}`;
+        });
+    };
+    pill.onclick = start;
+    pill.onkeydown = (e) => {
+      if (e.key === "Enter" || e.key === " ") start();
+    };
   }
 
   function compose() {
