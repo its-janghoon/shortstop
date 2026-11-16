@@ -23,7 +23,7 @@
   @keyframes stamp { 0% { opacity: 0; transform: rotate(-14deg) scale(2.4); } 60% { opacity: 1; transform: rotate(-8deg) scale(.92); } 100% { opacity: 1; transform: rotate(-8deg) scale(1); } }
 
   /* open */
-  #open .cam { animation: openCam 7s 1s cubic-bezier(.65,0,.35,1) both; }
+  #open .cam { animation: openCam 5.6s .2s cubic-bezier(.65,0,.35,1) both; }
   @keyframes openCam { to { transform: translate(200px, 150px) scale(1.4); } }
   .phone { position: absolute; left: 50%; top: 70px; width: 520px; height: 1000px; margin-left: -260px; background: #101a14; border-radius: 64px; padding: 16px; box-shadow: 0 40px 90px rgba(0,0,0,.45), inset 0 0 0 3px #2a3a30; }
   .phone .screen { width: 100%; height: 100%; border-radius: 50px; background: #f6f5f0; color: #1e2420; overflow: hidden; }
@@ -31,16 +31,18 @@
   .bar i { width: 44px; height: 44px; border-radius: 50%; background: #c9b8f0; display: inline-block; }
   .time { text-align: center; color: #8a877d; font-size: 16px; margin: 30px 0 18px; }
   .sms { margin: 0 26px; background: #e9e6dc; border-radius: 26px 26px 26px 8px; padding: 22px 24px; font-size: 25px; line-height: 1.5; }
-  .sms .fee { border-radius: 6px; padding: 0 3px; animation: hl .5s 6.6s both; }
+  .sms .fee { border-radius: 6px; padding: 0 3px; animation: hl .5s 2.6s both; }
   .sms .lnk { color: #1f5fd6; text-decoration: underline; }
   @keyframes hl { to { background: rgba(255,77,61,.28); } }
-  .who { position: absolute; left: 300px; top: 380px; display: flex; gap: 22px; align-items: center; animation: up .8s .3s both; }
+  .who { position: absolute; left: 300px; top: 380px; display: flex; gap: 22px; align-items: center; animation: up .8s .1s both; }
   .av { width: 120px; height: 120px; border-radius: 50%; background: var(--chalk); display: grid; place-items: center; }
   .av svg { width: 84px; height: 84px; }
   .who b { display: block; font-size: 44px; font-weight: 800; } .who span { font-size: 26px; opacity: .75; }
-  .q { position: absolute; left: 1010px; top: 520px; width: 110px; height: 110px; border-radius: 50%; background: var(--gold); color: var(--ink); display: grid; place-items: center; font-size: 76px; font-weight: 900; animation: pop .6s 7.6s both; }
+  .q { position: absolute; left: 1010px; top: 520px; width: 110px; height: 110px; border-radius: 50%; background: var(--gold); color: var(--ink); display: grid; place-items: center; font-size: 76px; font-weight: 900; animation: pop .6s 3.4s both; }
 
   /* problem */
+  #problem .cam { animation: drift 7s linear both; }
+  @keyframes drift { from { transform: scale(1); } to { transform: scale(1.05); } }
   .two { position: absolute; inset: 120px 110px 140px; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
   .card { background: rgba(0,0,0,.22); border: 2px solid rgba(255,255,255,.12); border-radius: 40px; padding: 44px; position: relative; overflow: hidden; }
   .card h3 { font-size: 44px; font-weight: 800; letter-spacing: -.01em; }
@@ -48,21 +50,21 @@
   .mini { position: absolute; left: 44px; top: 230px; width: 380px; background: var(--chalk); color: var(--ink); border-radius: 22px 22px 22px 6px; padding: 18px 22px; font-size: 22px; line-height: 1.5; }
   .mini .pv { background: rgba(255,77,61,.25); border-radius: 5px; padding: 0 3px; font-weight: 700; }
   .cloudic { position: absolute; right: 60px; top: 230px; width: 220px; height: 150px; }
-  .fly { animation: fly 1.6s 1.4s cubic-bezier(.6,0,.3,1) both; }
+  .fly { animation: fly 1.4s .9s cubic-bezier(.6,0,.3,1) both; }
   @keyframes fly { 0% { transform: none; } 100% { transform: translate(300px, -20px) scale(.55) rotate(6deg); opacity: .0; } }
-  .eye { position: absolute; right: 120px; top: 410px; font-size: 26px; font-weight: 800; color: var(--scam); background: rgba(255,77,61,.14); border-radius: 999px; padding: 10px 20px; animation: pop .5s 3s both; }
+  .eye { position: absolute; right: 120px; top: 410px; font-size: 26px; font-weight: 800; color: var(--scam); background: rgba(255,77,61,.14); border-radius: 999px; padding: 10px 20px; animation: pop .5s 1.7s both; }
   .leak { position: absolute; left: 44px; right: 44px; bottom: 44px; display: flex; gap: 12px; flex-wrap: wrap; }
   .leak span { background: var(--scam); color: #fff; border-radius: 10px; padding: 8px 14px; font-weight: 800; font-size: 22px; }
-  .leak span:nth-child(1) { animation: pop .4s 3.3s both; } .leak span:nth-child(2) { animation: pop .4s 3.5s both; } .leak span:nth-child(3) { animation: pop .4s 3.7s both; }
+  .leak span:nth-child(1) { animation: pop .4s 1.9s both; } .leak span:nth-child(2) { animation: pop .4s 2.1s both; } .leak span:nth-child(3) { animation: pop .4s 2.3s both; }
   .chip { position: absolute; left: 50%; top: 260px; margin-left: -90px; width: 180px; height: 180px; border-radius: 34px; background: var(--chalk); display: grid; place-items: center; }
   .chip i { width: 70px; height: 70px; border-radius: 16px; background: var(--dirt); }
-  .qq { position: absolute; left: 50%; top: 200px; margin-left: 60px; width: 96px; height: 96px; border-radius: 50%; background: var(--gold); color: var(--ink); display: grid; place-items: center; font-size: 64px; font-weight: 900; animation: pop .5s 5.6s both; }
-  .slip { position: absolute; left: -420px; top: 500px; width: 380px; background: var(--chalk); color: var(--ink); border-radius: 22px; padding: 16px 20px; font-size: 21px; line-height: 1.45; animation: slip 3.4s 4.2s cubic-bezier(.45,0,.25,1) both; }
+  .qq { position: absolute; left: 50%; top: 200px; margin-left: 60px; width: 96px; height: 96px; border-radius: 50%; background: var(--gold); color: var(--ink); display: grid; place-items: center; font-size: 64px; font-weight: 900; animation: pop .5s 3.9s both; }
+  .slip { position: absolute; left: -420px; top: 500px; width: 380px; background: var(--chalk); color: var(--ink); border-radius: 22px; padding: 16px 20px; font-size: 21px; line-height: 1.45; animation: slip 3s 3.6s cubic-bezier(.45,0,.25,1) both; }
   @keyframes slip { 0% { transform: translateX(0); } 45% { transform: translateX(640px); } 60% { transform: translateX(640px); } 100% { transform: translateX(1300px); } }
-  .missed { position: absolute; right: 60px; bottom: 60px; font-size: 26px; font-weight: 800; color: var(--gold); background: rgba(255,216,77,.14); border-radius: 999px; padding: 10px 20px; animation: pop .5s 6.6s both; }
+  .missed { position: absolute; right: 60px; bottom: 60px; font-size: 26px; font-weight: 800; color: var(--gold); background: rgba(255,216,77,.14); border-radius: 999px; padding: 10px 20px; animation: pop .5s 5s both; }
 
   /* name + field */
-  #name .cam { animation: nameCam 10s cubic-bezier(.45,0,.3,1) both; }
+  #name .cam { animation: nameCam 8s cubic-bezier(.45,0,.3,1) both; }
   @keyframes nameCam { from { transform: scale(1); } to { transform: scale(1.12); } }
   .title { position: absolute; left: 0; right: 0; top: 70px; text-align: center; }
   .title h1 { font-size: 104px; font-weight: 900; letter-spacing: -.03em; display: inline-flex; gap: 28px; align-items: center; }
@@ -73,17 +75,19 @@
   .lbl { font: 800 22px Pretendard, sans-serif; letter-spacing: .14em; fill: var(--chalk); }
   .cl { fill: var(--cloud); }
   .base { font: 900 34px Pretendard, sans-serif; fill: var(--ink); }
+  .bl { font: 900 26px Pretendard, sans-serif; letter-spacing: .08em; fill: var(--chalk); opacity: .9; }
   .t { font: 800 30px Pretendard, sans-serif; fill: var(--chalk); }
   .sub { font: 500 22px Pretendard, sans-serif; fill: rgba(244,241,230,.75); }
   .wall { stroke: var(--cloud); stroke-width: 5; stroke-dasharray: 14 12; animation: dash 1.6s linear infinite; }
   @keyframes dash { to { stroke-dashoffset: -52; } }
   .ball { fill: #fff; stroke: var(--scam); stroke-width: 3; offset-rotate: 0deg; }
-  .b1 { offset-path: path('M 800 690 Q 620 470 560 330'); animation: run 1.4s 2.6s cubic-bezier(.3,.1,.2,1) both; }
-  .b2 { offset-path: path('M 560 330 Q 880 160 1170 380'); animation: run 1.5s 4.6s cubic-bezier(.4,0,.2,1) both; }
+  .b1 { offset-path: path('M 800 690 Q 620 470 560 330'); animation: run 1.2s 1s cubic-bezier(.3,.1,.2,1) both; }
+  .b2 { offset-path: path('M 560 330 Q 880 160 1170 380'); animation: run 1.3s 3.6s cubic-bezier(.4,0,.2,1) both; }
   @keyframes run { 0% { offset-distance: 0%; opacity: 0; } 3% { opacity: 1; } 80% { offset-distance: 100%; opacity: 1; } 100% { offset-distance: 100%; opacity: 0; } }
   .tag { position: absolute; padding: 6px 12px; border-radius: 8px; font-weight: 800; font-size: 22px; background: var(--ink); color: var(--chalk); }
 
   /* numbers */
+  #s7 .cam { animation: drift 14s linear both; }
   .nums { position: absolute; inset: 90px 160px; }
   .nums h2 { font-size: 64px; font-weight: 900; letter-spacing: -.02em; }
   .nums .src { font-size: 24px; opacity: .7; margin-top: 10px; }
@@ -101,7 +105,7 @@
   .cmp strong { width: 220px; white-space: nowrap; text-align: right; font-size: 30px; }
 
   /* end */
-  #end .cam { animation: endCam 10s cubic-bezier(.45,0,.3,1) both; }
+  #end .cam { animation: endCam 6s cubic-bezier(.45,0,.3,1) both; }
   @keyframes endCam { from { transform: scale(1.08); } to { transform: scale(1); } }
   .endc { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; }
   .endc .logo { width: 170px; height: 170px; border-radius: 44px; margin: 0 auto 36px; }
@@ -121,7 +125,7 @@
   <div class="phone"><div class="screen">
     <div class="bar"><i></i>72870</div>
     <div class="time">Today 9:41 AM</div>
-    <div class="sms a" style="animation:up .7s .6s both">Acme Parcel: your package is on hold because of an unpaid fee of <span class="fee">$1.99</span>. Pay within 24 hours or it will be returned: <span class="lnk">acme-parcel-redelivery.co/pay</span></div>
+    <div class="sms a" style="animation:up .7s .3s both">Acme Parcel: your package is on hold because of an unpaid fee of <span class="fee">$1.99</span>. Pay within 24 hours or it will be returned: <span class="lnk">acme-parcel-redelivery.co/pay</span></div>
   </div></div>
   <div class="q">?</div>
 </div></section>
@@ -134,7 +138,7 @@
     <div class="eye">It reads everything</div>
     <div class="leak"><span>Jane Doe</span><span>302918470021</span><span>555-201-3344</span></div>
   </div>
-  <div class="card a" style="animation:up .7s 2.6s both">
+  <div class="card a" style="animation:up .7s 2.9s both">
     <h3>Small models alone</h3><p class="sub">stay private, but guess</p>
     <div class="chip"><i></i></div><div class="qq">?</div>
     <div class="slip">Hi Jane Doe, a new payee was added to your account today…</div>
@@ -147,36 +151,38 @@
   <div class="field"><svg viewBox="0 0 1600 780">
     <path d="M800 700 L1170 380 L800 60 L430 380 Z" fill="rgba(201,138,82,.12)" stroke="rgba(255,255,255,.35)" stroke-width="4"/>
     <path d="M800 700 L1580 40 M800 700 L20 40" stroke="rgba(255,255,255,.12)" stroke-width="4"/>
-    <g class="a" style="animation:fade .8s 1.2s both"><line class="wall" x1="950" y1="40" x2="950" y2="740"/><text x="966" y="70" class="lbl cl">MASKED ONLY</text><text x="40" y="70" class="lbl">YOUR DEVICE</text><text x="1560" y="70" text-anchor="end" class="lbl cl">CLOUD</text></g>
-    <rect x="786" y="686" width="28" height="28" transform="rotate(45 800 700)" fill="#f4f1e6"/>
-    <g class="a" style="animation:pop .6s .9s both;transform-origin:560px 330px"><circle cx="560" cy="330" r="56" fill="#f4f1e6"/><text x="560" y="342" text-anchor="middle" class="base">SS</text>
+    <g class="a" style="animation:fade .8s .7s both"><line class="wall" x1="950" y1="40" x2="950" y2="740"/><text x="966" y="70" class="lbl cl">MASKED ONLY</text><text x="40" y="70" class="lbl">YOUR DEVICE</text><text x="1560" y="70" text-anchor="end" class="lbl cl">CLOUD</text></g>
+    <rect x="786" y="686" width="28" height="28" transform="rotate(45 800 700)" fill="#f4f1e6"/><text x="836" y="716" class="bl">HOME</text>
+    <rect x="786" y="46" width="28" height="28" transform="rotate(45 800 60)" fill="#f4f1e6" opacity=".85"/><text x="836" y="72" class="bl">2B</text>
+    <rect x="416" y="366" width="28" height="28" transform="rotate(45 430 380)" fill="#f4f1e6" opacity=".85"/><text x="392" y="392" text-anchor="end" class="bl">3B</text>
+    <g class="a" style="animation:pop .6s .5s both;transform-origin:560px 330px"><circle cx="560" cy="330" r="56" fill="#f4f1e6"/><text x="560" y="342" text-anchor="middle" class="base">SS</text>
       <text x="560" y="430" text-anchor="middle" class="t">Small model on your device</text><text x="560" y="466" text-anchor="middle" class="sub">fields it first</text></g>
-    <g class="a" style="animation:pop .6s 1.5s both;transform-origin:1170px 380px"><circle cx="1170" cy="380" r="50" fill="#6cb6ff"/><text x="1170" y="392" text-anchor="middle" class="base">1B</text>
+    <g class="a" style="animation:pop .6s 2.4s both;transform-origin:1170px 380px"><circle cx="1170" cy="380" r="50" fill="#6cb6ff"/><text x="1170" y="392" text-anchor="middle" class="base">1B</text>
       <text x="1170" y="470" text-anchor="middle" class="t">Big model in the cloud</text><text x="1170" y="506" text-anchor="middle" class="sub">only when unsure</text></g>
     <circle class="ball b1" r="16"/><circle class="ball b2" r="16"/>
   </svg>
-    <span class="tag a" style="left:860px;top:150px;animation:pop .4s 5.4s both">NAME_1</span>
-    <span class="tag a" style="left:990px;top:200px;animation:pop .4s 5.6s both">ACCOUNT_1</span>
+    <span class="tag a" style="left:860px;top:150px;animation:pop .4s 5.2s both">NAME_1</span>
+    <span class="tag a" style="left:990px;top:200px;animation:pop .4s 5.45s both">ACCOUNT_1</span>
   </div>
 </div></section>
 
 <section class="scene" id="s7"><div class="cam"><div class="nums">
   <h2 class="a" style="animation:up .7s .2s both">150 unseen messages</h2>
   <p class="src a" style="animation:fade .7s .5s both">Measured on a laptop with Gemini Nano in Chrome · same messages for every checker</p>
-  <div class="row a" style="animation:up .6s 1.4s both"><div class="k">Correct answers, Shortstop<b>92.6%</b></div>
-    <div class="track"><div class="fill" style="width:92.6%;animation-delay:1.6s"></div><div class="tick a" style="left:98%;animation:fade .4s 2.4s both"><span>plain cloud checker 98.0%</span></div><div class="tick a" style="left:81.2%;animation:fade .4s 2.6s both"><span>Gemini Nano alone 81.2%</span></div></div></div>
-  <div class="row a" style="animation:up .6s 4.1s both;margin-top:84px"><div class="k">Scams caught<b>98%</b></div><div class="track"><div class="fill" style="width:98%;background:var(--gold);animation-delay:4.3s"></div></div></div>
-  <div class="row a" style="animation:up .6s 6.9s both"><div class="k">Finished on the laptop, nothing sent<b>82%</b></div><div class="track"><div class="fill" style="width:82%;background:var(--safe);animation-delay:7.1s"></div></div></div>
-  <div class="row a" style="animation:up .6s 9.8s both"><div class="k">Private values sent to the cloud</div>
-    <div class="cmp"><em>Shortstop</em><div class="track"><div class="fill" style="width:.6%;min-width:16px;background:var(--gold);animation-delay:10s"></div></div><strong>1 of 348</strong></div>
-    <div class="cmp"><em>Plain cloud checker</em><div class="track"><div class="fill" style="width:100%;background:var(--scam);animation-delay:10.6s"></div></div><strong>348 of 348</strong></div></div>
+  <div class="row a" style="animation:up .6s .9s both"><div class="k">Correct answers, Shortstop<b>92.6%</b></div>
+    <div class="track"><div class="fill" style="width:92.6%;animation-delay:1.1s"></div><div class="tick a" style="left:98%;animation:fade .4s 1.9s both"><span>plain cloud checker 98.0%</span></div><div class="tick a" style="left:81.2%;animation:fade .4s 2.1s both"><span>Gemini Nano alone 81.2%</span></div></div></div>
+  <div class="row a" style="animation:up .6s 3.3s both;margin-top:84px"><div class="k">Scams caught<b>98%</b></div><div class="track"><div class="fill" style="width:98%;background:var(--gold);animation-delay:3.5s"></div></div></div>
+  <div class="row a" style="animation:up .6s 6.1s both"><div class="k">Finished on the laptop, nothing sent<b>82%</b></div><div class="track"><div class="fill" style="width:82%;background:var(--safe);animation-delay:6.3s"></div></div></div>
+  <div class="row a" style="animation:up .6s 8.9s both"><div class="k">Private values sent to the cloud</div>
+    <div class="cmp"><em>Shortstop</em><div class="track"><div class="fill" style="width:.6%;min-width:16px;background:var(--gold);animation-delay:9.1s"></div></div><strong>1 of 348</strong></div>
+    <div class="cmp"><em>Plain cloud checker</em><div class="track"><div class="fill" style="width:100%;background:var(--scam);animation-delay:10.9s"></div></div><strong>348 of 348</strong></div></div>
 </div></div></section>
 
 <section class="scene" id="end"><div class="cam"><div class="endc"><div>
   <div class="logo a" style="animation:pop .7s .2s both"><i></i></div>
   <h1 class="a" style="animation:up .7s .5s both">Shortstop</h1>
-  <p class="a" style="animation:up .7s 1.4s both">Small model first. Your secrets stay home.</p>
-  <div class="pf a" style="animation:up .7s 3.2s both"><span>Web</span><span>Chrome extension</span><span>Android</span><span>Firebase AI Logic</span></div>
+  <p class="a" style="animation:up .7s 1.2s both">Small model first. Your secrets stay home.</p>
+  <div class="pf a" style="animation:up .7s 2.4s both"><span>Web</span><span>Chrome extension</span><span>Android</span><span>Firebase AI Logic</span></div>
   <div class="repo a" id="repo" style="animation:fade .7s 4s both"></div>
 </div></div></div></section>
 

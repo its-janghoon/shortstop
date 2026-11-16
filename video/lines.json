@@ -6,7 +6,7 @@
     { "id": "problem", "text": "Cloud checkers read your private messages. Small models miss the hard ones." },
     { "id": "name", "text": "Shortstop fields it first. When unsure, it throws to first base, secrets masked." },
     { "id": "s1", "text": "Offline. On device. Scam." },
-    { "id": "s2", "text": "Harder one. Only the masked text goes to the cloud. It never sees Jane's name or account." },
+    { "id": "s2", "text": "Harder one. Shortstop isn't sure, so it throws to first base. Only the masked text goes to the cloud. It never sees Jane's name or account." },
     { "id": "s3", "text": "And it doesn't cry wolf." },
     { "id": "s4", "text": "One letter is off. Shortstop flags it before John clicks." },
     { "id": "s5", "text": "Same engine, outgoing. Names and numbers stay home." },

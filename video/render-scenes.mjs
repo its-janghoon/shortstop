@@ -8,7 +8,7 @@ const require = createRequire(import.meta.url);
 const { chromium } = require(process.env.PLAYWRIGHT_CORE ?? "playwright-core");
 const [out, exe] = process.argv.slice(2);
 const FPS = 30;
-const SCENES = { open: 10, problem: 10, name: 10, s7: 18, end: 10 };
+const SCENES = { open: 6, problem: 7, name: 8, s7: 14, end: 6 };
 const only = process.env.ONLY?.split(",");
 fs.mkdirSync(out, { recursive: true });
 
