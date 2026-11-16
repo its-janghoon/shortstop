@@ -32,7 +32,9 @@ const q = <T extends Element>(s: string) => document.querySelector<T>(s);
 async function checkScene(text: string, opts: { wifi?: boolean } = {}) {
   hideMouse();
   const wifi = opts.wifi ? wifiSwitch(document.body) : undefined;
-  await trigger();
+  const go = trigger();
+  await warmUp();
+  await go;
   const c = new Cursor();
   await sleep(600);
   if (wifi) {
@@ -55,7 +57,20 @@ async function checkScene(text: string, opts: { wifi?: boolean } = {}) {
   btn.click();
   // Get out of the way of the result.
   await sleep(400);
-  await c.move(innerWidth * 0.36, innerHeight * 0.93, 1200);
+  await c.move(innerWidth * 0.12, innerHeight * 0.62, 1200);
+}
+
+/** Loads Gemini Nano once before the take, so the first check does not include model start-up. */
+async function warmUp() {
+  const lm = (self as unknown as { LanguageModel?: { create(o: unknown): Promise<{ prompt(s: string): Promise<string>; destroy(): void }> } }).LanguageModel;
+  if (!lm) return;
+  try {
+    const s = await lm.create({ expectedInputs: [{ type: "text", languages: ["en"] }], expectedOutputs: [{ type: "text", languages: ["en"] }] });
+    await s.prompt("Reply with OK.");
+    s.destroy();
+  } catch {
+    /* no model: the take shows the cloud path */
+  }
 }
 
 /** Runs each candidate text a few times and lists where it was decided. For picking scene texts. */
