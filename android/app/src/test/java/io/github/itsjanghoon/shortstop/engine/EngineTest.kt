@@ -173,4 +173,26 @@ class EngineTest {
         assertEquals(listOf("x"), a.signals)
         assertEquals("Hang up.", a.action)
     }
+
+    @Test
+    fun hintsCountMaskedValuesInsteadOfCallingThemWarningSigns() = runTest {
+        val prompts = mutableListOf<String>()
+        val models = object : Models {
+            override suspend fun triage(prompt: String, image: Image?): ModelCall {
+                prompts.add(prompt)
+                return ModelCall(answer("safe", 0.95), Where.ON_DEVICE)
+            }
+            override suspend fun deep(prompt: String) = ModelCall(answer("safe", 0.95), Where.IN_CLOUD)
+        }
+        engine.analyze(Input("Card 4111 1111 1111 1111, account no. 123456789012, SSN 123-45-6789."), Deps(models = models))
+        assertTrue(prompts[0].contains("3 private values were masked on device (normal, not a warning sign)"))
+        for (old in listOf("card number", "account number", "ID number")) assertFalse(old, prompts[0].contains("message contains a $old") || prompts[0].contains("message mentions an $old"))
+    }
+
+    @Test
+    fun loginDetailsRuleNeedsAnAskingVerb() {
+        assertFalse(textSignals("Patient form. SSN: [SSN_1]. PIN on file.").reasons.contains("asks for private login details"))
+        assertTrue(textSignals("Please verify your password here today").reasons.contains("asks for private login details"))
+        assertTrue(textSignals("Reply with your PIN to unlock").reasons.contains("asks for private login details"))
+    }
 }

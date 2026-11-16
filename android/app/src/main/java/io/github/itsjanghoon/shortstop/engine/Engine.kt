@@ -55,10 +55,8 @@ class Engine(private val shared: Shared) {
     private fun hintsFor(links: List<LinkFinding>, masked: Masked, words: TextSignals): String {
         val out = words.reasons.toMutableList()
         for (l in links) out.addAll(l.reasons)
-        val kinds = masked.entries.map { it.kind }.toSet()
-        if (MaskKind.CARD in kinds) out.add("message contains a card number")
-        if (MaskKind.ACCOUNT in kinds) out.add("message mentions an account number")
-        if (MaskKind.SSN in kinds || MaskKind.RRN in kinds) out.add("message contains an ID number")
+        // Private data in a message is not a scam sign by itself (forms, contracts, receipts have it), so it is not a hint.
+        if (masked.entries.isNotEmpty()) out.add("${masked.entries.size} private values were masked on device (normal, not a warning sign)")
         return if (out.isEmpty()) "none" else out.joinToString("; ")
     }
 
