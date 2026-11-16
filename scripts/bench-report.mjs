@@ -15,7 +15,7 @@ const median = (xs) => {
   return s.length ? s[Math.floor(s.length / 2)] : 0;
 };
 const out = [];
-for (const mode of ["rules", "shortstop", "cloudraw"]) {
+for (const mode of ["rules", "device", "shortstop", "cloudraw"]) {
   const r = rows.filter((x) => x.mode === mode && !x.error);
   if (!r.length) continue;
   const errors = rows.filter((x) => x.mode === mode && x.error).length;
