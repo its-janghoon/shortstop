@@ -29,7 +29,8 @@ private val ACTIONS = mapOf(
     Verdict.SAFE to "No warning signs found. Still never share codes or passwords.",
 )
 
-private val VAR = Regex("""\{(\w+)}""")
+// Both braces escaped: Android compiles regexes with ICU, which rejects a bare "}" (the JVM accepts it).
+private val VAR = Regex("""\{(\w+)\}""")
 
 private fun fill(tpl: String, vars: Map<String, String>) = VAR.replace(tpl) { vars[it.groupValues[1]] ?: "" }
 
