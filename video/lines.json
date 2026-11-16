@@ -1,0 +1,17 @@
+{
+  "$comment": "Voice-over lines from the storyboard (contest spec section 8.2). id = scene.",
+  "voice": "Sulafat",
+  "lines": [
+    { "id": "open", "text": "Jane gets this text. Should she pay?" },
+    { "id": "problem", "text": "Cloud checkers read your private messages. Small models miss the hard ones." },
+    { "id": "name", "text": "Shortstop fields it first. When unsure, it throws to first base, secrets masked." },
+    { "id": "s1", "text": "Offline. On device. Scam." },
+    { "id": "s2", "text": "Harder one. Only the masked text goes to the cloud. It never sees Jane's name or account." },
+    { "id": "s3", "text": "And it doesn't cry wolf." },
+    { "id": "s4", "text": "One letter is off. Shortstop flags it before John clicks." },
+    { "id": "s5", "text": "Same engine, outgoing. Names and numbers stay home." },
+    { "id": "s6", "text": "Same engine on Android." },
+    { "id": "s7", "text": "On 150 unseen messages: 98% of scams caught, 82% never left the laptop, one private value out of 348 sent." },
+    { "id": "end", "text": "Shortstop. Small model first. Your secrets stay home." }
+  ]
+}
