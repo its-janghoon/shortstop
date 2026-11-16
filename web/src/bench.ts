@@ -70,6 +70,60 @@ const SETS: Record<string, () => Promise<{ default: { items: { id: string; kind:
 const q = new URLSearchParams(location.search);
 const runSet = q.get("run");
 if (runSet && SETS[runSet]) void selfRun(runSet, (q.get("modes") ?? "device,shortstop").split(",") as RunMode[]);
+if (q.has("timing")) void timing(Number(q.get("timing")) || 12);
+
+/** Where does on-device time go? Compares the Firebase SDK path with direct Prompt API sessions. */
+async function timing(n: number) {
+  const out = document.getElementById("out")!;
+  const b = await ready;
+  const items = (await SETS["bench-final2"]!()).default.items.filter((_, i) => i % 12 === 0).slice(0, n);
+  type LMS = { prompt(i: string, o?: unknown): Promise<string>; clone(): Promise<LMS>; destroy(): void };
+  const lm = (self as unknown as { LanguageModel: { create(o: unknown): Promise<LMS> } }).LanguageModel;
+  const opts = { expectedInputs: [{ type: "text", languages: ["en"] }], expectedOutputs: [{ type: "text", languages: ["en"] }] };
+  const { $comment: _c, ...schema } = (await import("../../shared/verdict.schema.json")).default as Record<string, unknown>;
+  const split = (p: string) => {
+    const i = p.indexOf("\nRule checks already found:");
+    return [p.slice(0, i), p.slice(i + 1)] as const;
+  };
+  const res: Record<string, number[]> = { sdk: [], create: [], createPrompt: [], clone: [], clonePrompt: [], cloneNoSchema: [] };
+  const t0 = performance.now();
+  const base = await lm.create({ ...opts, initialPrompts: [{ role: "system", content: split(prompts.triage)[0] }] });
+  const baseMs = performance.now() - t0;
+  for (const [k, it] of items.entries()) {
+    out.textContent = `timing ${k + 1}/${items.length}`;
+    const prompt = prompts.triage.replace("{hints}", "none").replace("{text}", it.text);
+    let t = performance.now();
+    await b!.models.triage(prompt);
+    res.sdk!.push(performance.now() - t);
+    t = performance.now();
+    const s = await lm.create(opts);
+    res.create!.push(performance.now() - t);
+    t = performance.now();
+    await s.prompt(prompt, { responseConstraint: schema });
+    res.createPrompt!.push(performance.now() - t);
+    s.destroy();
+    t = performance.now();
+    const c = await base.clone();
+    res.clone!.push(performance.now() - t);
+    t = performance.now();
+    await c.prompt(split(prompt)[1], { responseConstraint: schema });
+    res.clonePrompt!.push(performance.now() - t);
+    c.destroy();
+    t = performance.now();
+    const c2 = await base.clone();
+    await c2.prompt(split(prompt)[1] + "\nAnswer with short JSON: verdict, confidence, at most 3 signals, action, names.");
+    res.cloneNoSchema!.push(performance.now() - t);
+    c2.destroy();
+  }
+  const med = (x: number[]) => Math.round([...x].sort((a, b) => a - b)[Math.floor(x.length / 2)]!);
+  const summary = { n: items.length, baseCreateMs: Math.round(baseMs), ...Object.fromEntries(Object.entries(res).map(([k, v]) => [k, med(v)])) };
+  out.textContent = JSON.stringify(summary);
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(summary, null, 1)], { type: "application/json" }));
+  a.download = "shortstop-timing.json";
+  document.body.append(a);
+  a.click();
+}
 
 type RunMode = Mode | "device";
 async function selfRun(set: string, modes: RunMode[]) {
