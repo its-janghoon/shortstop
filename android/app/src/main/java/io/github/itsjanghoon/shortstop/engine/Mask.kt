@@ -69,6 +69,7 @@ private val RULES = listOf(
 )
 
 private val TOKEN = Regex("""^\[[A-Z]+_\d+]$""")
+private val LOOSE_TOKEN = Regex("""^\[?[A-Z]+_\d+\]?$""")
 
 data class Masked(val text: String, val entries: List<MaskEntry>)
 
@@ -118,10 +119,13 @@ fun maskNames(input: Masked, names: List<String> = emptyList()): Masked {
         }
     }
     val clean = (names + parts).map { it.trim() }.distinct()
-        .filter { it.length in 2..80 && !TOKEN.matches(it) }
+        // A model may hand back a placeholder ("NAME_1" or "[NAME_1]") as a name; it is already masked.
+        .filter { it.length in 2..80 && !LOOSE_TOKEN.matches(it) }
         .sortedByDescending { it.length }
     for (name in clean) {
-        val re = Regex("""(?<![\p{L}\d])${Regex.escape(name)}(?![\p{L}\d])""")
+        // Not inside a link or an e-mail address: "acrnebank" in acrnebank.com/secure is a site, not a person.
+        // Not inside a placeholder either: "[NAME_1]" stays as it is.
+        val re = Regex("""(?<![\p{L}\d./@\[_-])${Regex.escape(name)}(?![\p{L}\d_]|\.\p{L}|[/@\]-])""")
         if (!re.containsMatchIn(text)) continue
         val token = nextToken(entries, MaskKind.NAME, name)
         text = re.replace(text) { token }

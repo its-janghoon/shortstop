@@ -49,6 +49,20 @@ class MaskTest {
     }
 
     @Test
+    fun doesNotHideAWordThatIsPartOfALink() {
+        val m = maskNames(maskByRules("Ask acrnebank at https://acrnebank.com/secure"), listOf("acrnebank"))
+        assertEquals("Ask [NAME_1] at https://acrnebank.com/secure", m.text)
+    }
+
+    @Test
+    fun doesNotMaskAPlaceholderTheModelHandedBackAsAName() {
+        val first = maskNames(maskByRules("Jane Doe, call 555-201-3344."), listOf("Jane Doe"))
+        val m = maskNames(first, listOf("NAME_1", "[PHONE_1]", "Jane Doe"))
+        assertEquals("[NAME_1], call [PHONE_1].", m.text)
+        assertFalse(m.entries.map { it.value }.contains("NAME_1"))
+    }
+
+    @Test
     fun guessNamesFindsLabelledNamesAndStreetAddresses() {
         val t = "Tenant: John Smith, 48 Maple Ave, Springfield. Dear Jane Doe, thanks."
         // Unknown capitalized words such as the town name are masked too: extra masking is safe.
