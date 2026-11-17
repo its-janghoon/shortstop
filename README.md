@@ -6,6 +6,30 @@ Shortstop checks texts, e-mails and links for scams with on-device AI first. Whe
 
 Built with [Firebase AI Logic](https://firebase.google.com/docs/ai-logic) hybrid inference for #BuildHybridAI 2026.
 
+| | |
+|---|---|
+| Try it | https://shortstop-b108a.web.app (press any example) |
+| Video | https://youtu.be/x3d33KkGsHY |
+| Chrome extension and Android APK | [Releases](https://github.com/its-janghoon/shortstop/releases/latest) |
+
+## Results
+
+150 synthetic test messages written by someone who never saw the engine or the earlier test sets (50 scams, 50 tricky legitimate messages, 50 documents full of private data), measured once, in Chrome on a laptop with Gemini Nano (RTX 4060). Raw rows: `bench-results/bench-final2-nano.jsonl`; scripts: `scripts/bench.mjs`, `scripts/bench-report.mjs`.
+
+| | Correct | Scams caught | Finished on device | Private values sent to the cloud |
+|---|---|---|---|---|
+| Gemini Nano alone | 81.2% | 78% | 100% | 0 of 346 |
+| Plain cloud checker (original text) | 98.0% | 100% | 0% | 348 of 348 |
+| **Shortstop** | **92.6%** | **98%** | **82%** | **1 of 348** |
+
+Without an on-device model (every first look goes to the cloud with rule-masked text) Shortstop scored 96.7% with 33 of 348 values sent: the rules miss lower-case first names that Nano catches (`bench-results/bench-final2.jsonl`).
+
+## Test it as a judge
+
+1. **Web:** open https://shortstop-b108a.web.app in Chrome and press an example. Without Gemini Nano the pill says "No on-device model" and the first look runs in the cloud on masked text. To see the on-device path, Chrome 138+ on a supported desktop: turn on Settings → AI innovations → On-device AI, then click the yellow pill "Download on-device model". Turn Wi-Fi off and press "Parcel fee text": the verdict still appears.
+2. **Chrome extension:** download `shortstop-extension.zip` from Releases, unzip, `chrome://extensions` → Developer mode → Load unpacked. Right-click a link or selected text → "Check with Shortstop". The side panel opens. For the paste guard, open a site and press "Turn on for this site" in the side panel.
+3. **Android:** install `shortstop.apk` from Releases. Share any text to "Check with Shortstop". On [phones that support the ML Kit Prompt API](https://developers.google.com/ml-kit/genai#prompt-device) the first look runs on the phone. Cloud calls from a sideloaded APK need an App Check debug token (shown in logcat as `DebugAppCheckProvider`); without it the app falls back to on-device or rules and says so.
+
 ## How it decides
 
 ```
